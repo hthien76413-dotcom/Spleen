@@ -5,6 +5,8 @@
 
 - Original 4-case submission: `Wandering spleen in children A novel splenopexy technique.docx`
 - Revised 5-case version (adds Patient 5, updates follow-up): `Wandering spleen in children A novel splenopexy technique - 5 cases revised.docx`
+- **EJP Original Article (the version to submit): `Wandering spleen in children - EJP original article.docx`** — 2477 words, Table 1 (per encounter), 5 figures, 20 references, structured abstract, What is Known/What is New box
+- EJP Brief Report (fallback if the editor asks to downgrade): `Wandering spleen in children - EJP brief report.docx` — 1188 words, 1 table, 1 figure, 12 references
 
 ## Submission history
 - **International Journal of Surgery** (IJS-D-26-02226): rejected 21 Sep 2026 after ~7-month review. Reviewers #1/#2 positive; Reviewer #3 gave "Major revision" and flagged: overstated efficacy of the reinforced-fixation technique (n=1, 6-month follow-up), wrong manuscript type (filed as Quality Improvement Study, is actually a retrospective case series), and heterogeneous outcomes (3/4 original patients lost the spleen). IJS offered an automatic transfer to Annals of Medicine and Surgery / Medicine — **declined**: IJS and AMSU are both part of the Riaz Agha journal group currently under a Clarivate citation-manipulation hold (Retraction Watch, Mar 2026); not pursuing either.
@@ -23,9 +25,17 @@ Other journals evaluated and set aside: Journal of Pediatric Surgery (Q2, IF 2.3
 ## Outstanding before submission
 - Figs. 11–12 of the full version (Patient 5 CT whirl sign / intraoperative photo) — legend placeholders only, images not yet supplied. These are still highlighted yellow in the 5-case .docx.
 
+## Article type — decided
+**Original Article.** EJP allows 3000 words and ~6 tables/figures (excess to supplementary); Brief Report allows only 1500 words, one table and/or figure, and 12 references. The figures are the paper's strongest asset (praised by IJS Reviewer #1), the rare-disease value lies in the longitudinal detail, and an editor can downgrade a submission to Brief Report but never upgrade one. The Brief Report version is kept as the fallback.
+
+Both EJP versions are reframed around **delay, not technique, as the determinant of splenic loss**, with the reinforced two-pole fixation presented as a preliminary technical description. This answers IJS Reviewer #3's two heaviest criticisms directly.
+
+## Data corrections applied
+- **Case 3's interval from first presentation to splenic surgery is 62 months** (4.5 → 9.67 years), not 36 months. The "36 months" in the original case history is the gap between her *second* and *third* encounters and is correct there. The three-case mean of 32 months (16 + 19 + 62) is unchanged.
+
 ## Still open
-- **Article type for EJP: Original Article vs Brief Report — not yet decided.** Recommendation given: Original Article (3000 words, ~6 tables/figures), because the figures are the paper's strongest asset (praised by IJS Reviewer #1), the rare-disease value is in the longitudinal detail, and an editor can downgrade to Brief Report but never upgrade. The Brief Report version already exists as a fallback.
-- Whether to soften "demonstrates safety and feasibility" / drop the "giant wandering spleen" claim in the conclusion of the **full 5-case version** (the brief report already uses tempered wording) — not yet actioned.
+- Whether to soften "demonstrates safety and feasibility" / drop the "giant wandering spleen" claim in the conclusion of the **full 5-case version** (both EJP versions already use tempered wording) — not yet actioned.
+- Ethics approval number: both EJP versions cite 2025R156-E01; replace if the supplementary approval has its own number.
 
 ## Repo / PR
 - Working branch: `claude/trusting-davinci-70prup`
