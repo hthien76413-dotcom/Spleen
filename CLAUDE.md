@@ -14,16 +14,18 @@
 
 Other journals evaluated and set aside: Journal of Pediatric Surgery (Q2, IF 2.3 — good fallback), BMC Pediatrics / Frontiers in Pediatrics–Pediatric Surgery section (Q2, ~1.9–2.2 — good fallback), Surgical Endoscopy (Q1, IF ~2.7 — stretch, scope less specific), Frontiers in Medicine (Q1, IF 3.6 — rejected, no pediatric-surgery section, poor scope fit), The Journal of Pediatrics (Q1, IF 3.6 — rejected, general-pediatrics scope, ~15% acceptance rate, Brief Report format capped at 1000 words/2 illustrations which would gut the case detail).
 
-## Outstanding before submission (highlighted yellow in the revised .docx)
-1. **Case 4 (reinforced splenopexy) true follow-up interval** — currently filled as 13 months (6 + the 7-month IJS review cycle); needs the real interval from the operation date.
-2. Patient 5 preoperative platelet count — exact figure not in the supplied records (was within normal range).
-3. Patient 5 dipyridamole administration — assumed consistent with the other splenectomy patients; needs confirmation.
-4. Figs. 11–12 (Patient 5 CT whirl sign / intraoperative photo) — legend placeholders only, images not yet supplied.
+## Data confirmed by the author (21 Sep 2026) — all applied, highlights cleared
+1. Case 4 (reinforced splenopexy) follow-up: **13 months** — confirmed correct.
+2. Patient 5 preoperative platelet count: **normal** (no exact figure available; tables read "PC normal").
+3. Patient 5 did receive postoperative oral dipyridamole — confirmed.
+4. Ethics approval has been supplemented to cover Patient 5. Both manuscripts still cite **2025R156-E01**; update if the supplementary approval carries its own number.
+
+## Outstanding before submission
+- Figs. 11–12 of the full version (Patient 5 CT whirl sign / intraoperative photo) — legend placeholders only, images not yet supplied. These are still highlighted yellow in the 5-case .docx.
 
 ## Still open
-- Whether to soften "demonstrates safety and feasibility" / drop the "giant wandering spleen" claim in the conclusion (recommended given n=1 for the reinforced technique and 4/5 patients overall losing the spleen) — not yet actioned, awaiting user decision.
-- Ethics approval (2025R156-E01) predates Patient 5 (Apr 2026); may need a supplementary/extended approval before submitting to EJP.
-- Reformatting case histories/figures to fit EJP's manuscript-type conventions (no dedicated case-series track).
+- **Article type for EJP: Original Article vs Brief Report — not yet decided.** Recommendation given: Original Article (3000 words, ~6 tables/figures), because the figures are the paper's strongest asset (praised by IJS Reviewer #1), the rare-disease value is in the longitudinal detail, and an editor can downgrade to Brief Report but never upgrade. The Brief Report version already exists as a fallback.
+- Whether to soften "demonstrates safety and feasibility" / drop the "giant wandering spleen" claim in the conclusion of the **full 5-case version** (the brief report already uses tempered wording) — not yet actioned.
 
 ## Repo / PR
 - Working branch: `claude/trusting-davinci-70prup`
