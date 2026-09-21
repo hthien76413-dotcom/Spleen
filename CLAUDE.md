@@ -89,9 +89,11 @@ Author asked whether the comma before "and a reinforced two-pole splenopexy" cou
 - **Fig. 1–4 resolution** (Original Article) — extracted from the original submission docx at roughly 430–705 px on the long axis, well below the ~300 dpi Springer typically expects at print width. These need PACS re-export at the same time as the Case 5 whirl-sign image, not just Case 5's.
 - The 4 language-polish items from the review — none flagged as rejection-risk, left as-is pending author's discretion.
 
+## Ethics approval number — decided (21 Sep 2026)
+**Keep 2025R156-E01 for submission.** Author confirmed this stands even though it predates the Patient 5 supplementary approval; no separate number to substitute. Both EJP versions already cite it as-is — no document change needed. If the supplementary approval is later found to carry its own distinct number, update both documents' Ethics approval declaration before final submission.
+
 ## Still open
 - Whether to soften "demonstrates safety and feasibility" / drop the "giant wandering spleen" claim in the conclusion of the **full 5-case version** (both EJP versions already use tempered wording) — not yet actioned.
-- Ethics approval number: both EJP versions cite 2025R156-E01; replace if the supplementary approval has its own number.
 - Case 5 whirl-sign figure: awaiting a proper PACS export from the author.
 
 ## Repo / PR
