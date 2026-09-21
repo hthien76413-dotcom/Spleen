@@ -51,11 +51,20 @@ New title (both versions): **"Wandering spleen in children: splenic loss is asso
 
 Word counts after fixes: Original Article 2549/3000; Brief Report 1247/1500 — both still comfortably under their EJP limits.
 
-## Review findings not yet actioned (author's call)
-From the same review, still open:
+## General-tier review items — also applied (21 Sep 2026)
+Author asked for these to be done too. Applied to both versions unless noted:
+- **Case 5 vs Cases 1–3 "same mechanism" wording** (Original Article Discussion only — Brief Report's Discussion didn't make this claim to begin with): now distinguishes "diagnostic [delay]" (Case 5, misdiagnosed elsewhere) from "a deferred decision to operate" (Cases 1–3, family declined a correct diagnosis), rather than asserting they were the same mechanism.
+- **Case 5's follow-up duration now stated in the Results running text**, not just in Table 1: Original Article adds "He remains well at the most recent follow-up, 5 months after operation" to the Case 5 paragraph; Brief Report adds "; he remains well 5 months later" to the same sentence.
+- **Wandering spleen now explicitly defined in Methods** in both versions ("an abnormally mobile spleen displaced from its normal fossa on ultrasonography or computed tomography, with or without torsion of the vascular pedicle" / similar wording).
+- **Thrombocytosis-timing mechanism reframed as an explicit hypothesis** (Original Article only — Brief Report's existing "appears to reflect" phrasing was already adequately hedged and was left unchanged): "The most plausible explanation is... Reactive thrombocytosis requires..." → "We hypothesize that... is thought to require... may mark...".
+- Incidental fix while inserting the Brief Report's Methods definition: spelled out "computed tomography" instead of the bare abbreviation "CT", since Brief Report's Introduction never defines CT before Methods (Original Article's Introduction does, so no equivalent issue there).
+
+Word counts after this round: Original Article 2609/3000 (391 words of headroom); Brief Report 1277/1500 (223 words of headroom).
+
+## Review findings still not actioned (author's call — lower priority, not rejection-risk)
 - **Reference [14] (Okazaki et al.) verification** — cited in the Original Article/Brief Report Discussion for "a position also reached from larger multicentre experience" / "the great pretender" framing; Claude matched it by title only and did not read the full text, so the author should confirm it actually supports the specific claim it's attached to before submission. Same caveat applies to all 20 (Original Article) / 12 (Brief Report) reference journal-abbreviation forms — not individually verified against NLM Catalog.
 - **Fig. 1–4 resolution** (Original Article) — extracted from the original submission docx at roughly 430–705 px on the long axis, well below the ~300 dpi Springer typically expects at print width. These need PACS re-export at the same time as the Case 5 whirl-sign image, not just Case 5's.
-- Minor/General-tier items from the review (Case 5 vs Cases 1–3 "same mechanism" wording, Table 1's Case 5 "well at 5 months" not echoed in Results running text, no explicit wandering-spleen diagnostic-criteria sentence in Methods, thrombocytosis mechanism stated as fact rather than hypothesis) and the 4 language-polish items — none flagged as rejection-risk, left as-is pending author's discretion.
+- The 4 language-polish items from the review — none flagged as rejection-risk, left as-is pending author's discretion.
 
 ## Still open
 - Whether to soften "demonstrates safety and feasibility" / drop the "giant wandering spleen" claim in the conclusion of the **full 5-case version** (both EJP versions already use tempered wording) — not yet actioned.
