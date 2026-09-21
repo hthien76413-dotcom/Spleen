@@ -95,6 +95,15 @@ At the author's request, Claude did a full read-through of both final EJP files 
 
 Word counts after these fixes: Original Article 2624/3000; Brief Report 1297/1500 — both still comfortably under EJP's limits. No placeholder/TODO/highlight remnants found in either final docx.
 
+## English-language polish pass (21 Sep 2026)
+Author asked for a pure language polish of both EJP documents, under explicit constraints: no change to any number, abbreviation or reference number; no new data or references; do not strengthen "associated with" into causal language; do not alter statistical wording; remove repetition and colloquialisms; concise standard medical-journal English; remove AI-sounding phrasing. Re-verified after: citation audit clean (no orphan/out-of-range refs in either document), word counts essentially unchanged (Original Article 2614/3000, Brief Report 1296/1500).
+
+Changes applied — wording only, no facts, numbers, hedge strength or reference numbers altered:
+- **Original Article**, 6 edits: tightened an unparallel Abstract sentence (mixed "the family declined" / "one had been treated" subjects) into a parallel "in three, ...; in one, ..." construction; removed a throat-clearing Discussion opener ("The central observation of this series is that..." → states the finding directly); simplified a wordplay sentence ("That resolution is not evidence of a resolved problem" → "This does not indicate that the underlying problem has resolved"); de-stacked a sentence that hedged the same idea three times ("is thought to require... may mark..." → single "we hypothesize that" framing carried through once, same overall epistemic status); replaced a colloquial "is worth seeking specifically" with "should be sought specifically"; removed a redundant "both because... because..." construction.
+- **Brief Report**, 1 edit: "a period of functional asplenia of sufficient duration" → "a sufficiently long period of functional asplenia" (redundant period/duration doubling).
+
+No other passages needed changing — the text had already been through several precision-focused editing rounds and had little remaining redundancy or informal phrasing.
+
 ## Still outstanding (author's call, not rejection-risk)
 - **Fig. 1–4 resolution** (Original Article) — extracted from the original submission docx at roughly 430–705 px on the long axis, well below the ~300 dpi Springer typically expects at print width. These need PACS re-export at the same time as the Case 5 whirl-sign image, not just Case 5's.
 - The 4 language-polish items from the review — none flagged as rejection-risk, left as-is pending author's discretion.
