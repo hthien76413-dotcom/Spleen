@@ -74,8 +74,13 @@ Claude did a full in-text-citation ↔ reference-list audit of the Original Arti
 
 Word counts after these fixes: Original Article 2621/3000; Brief Report 1275/1500.
 
-## Review findings still not actioned (author's call — lower priority, not rejection-risk)
-- **Journal-abbreviation forms** for all 20 (Original Article) / 12 (Brief Report) references — not individually verified against NLM Catalog (the citation-content itself has now been verified against real abstracts, per above; only the exact abbreviation format of each journal name remains unchecked).
+## Journal-abbreviation audit (21 Sep 2026)
+Checked all 20 (Original Article) / 12 (Brief Report) journal-abbreviation forms against actual PubMed records (not just NLM Catalog convention guessing). One confirmed error, fixed in both documents:
+- **Colombo et al. 2019** ("Torsion of wandering spleen involving the pancreatic tail"): PubMed's actual abbreviation is **"Ann Med Surg (Lond)"**, not the bare "Ann Med Surg" that was used — "Annals of Medicine and Surgery" needs the "(Lond)" disambiguator per NLM. Fixed in both `EJP original article.docx` (ref 7) and `EJP brief report.docx` (ref 11).
+
+Also independently confirmed via PubMed (previously unverified): Al Blooshi et al. 2025 (BMC Pediatr 25:631 — correct as written) and Gashaw Wubie et al. 2025 (J Med Case Rep 19:41 — correct as written). All other abbreviations (J Laparoendosc Adv Surg Tech A, Front Pediatr, J Pediatr Surg, Pediatr Radiol, Pediatr Emerg Care, Isr Med Assoc J, Pediatr Surg Int, J Minim Access Surg, Asian J Endosc Surg, J Med Case Rep, J Radiol Case Rep, BMC Pediatr) were confirmed correct via PubMed listings already surfaced during the citation-content audit, or independently searched. **The full reference list has now been verified end-to-end: content-accuracy (citation-correspondence audit) and bibliographic-format (this abbreviation audit) both checked against primary sources, not just titles.**
+
+## Still outstanding (author's call, not rejection-risk)
 - **Fig. 1–4 resolution** (Original Article) — extracted from the original submission docx at roughly 430–705 px on the long axis, well below the ~300 dpi Springer typically expects at print width. These need PACS re-export at the same time as the Case 5 whirl-sign image, not just Case 5's.
 - The 4 language-polish items from the review — none flagged as rejection-risk, left as-is pending author's discretion.
 
