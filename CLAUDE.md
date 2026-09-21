@@ -33,9 +33,16 @@ Both EJP versions are reframed around **delay, not technique, as the determinant
 ## Data corrections applied
 - **Case 3's interval from first presentation to splenic surgery is 62 months** (4.5 → 9.67 years), not 36 months. The "36 months" in the original case history is the gap between her *second* and *third* encounters and is correct there. The three-case mean of 32 months (16 + 19 + 62) is unchanged.
 
+## Title — decided (both EJP versions)
+**"Wandering spleen in children: delay determines splenic loss, and a reinforced two-pole splenopexy technique"** — author wanted the technique named in the title; combined with the delay finding for search visibility and impact. Applied to both `EJP original article.docx` and `EJP brief report.docx`.
+
+## Case 5 imaging — pending, author will supply
+Author sent two candidate whirl-sign CT photos (phone photos of a screen — not PACS exports). Neither clearly shows a diagnostic whirl sign on visual review by Claude: one is a low pelvic-level slice showing the ectopic spleen mass itself but below the pedicle level; the other is a higher slice showing indeterminate mesenteric/perisplenic stranding, not a clear spiral vessel pattern. Recommended: author to get a proper PACS export (PNG/TIFF, de-identified) of the splenic hilar level, and have the whirl sign confirmed by radiology before use. **Author says the whirl-sign image will be supplied "tomorrow."** Neither the Original Article nor the Brief Report currently uses any Case 5 image — both are already fully self-contained with Figs. 1–5 (Original Article) / Fig. 1 (Brief Report), none tied to Case 5. If a good Case 5 image arrives, the plan discussed is to swap out Fig. 1 (Case 2 infarct CT, most replaceable — Table 1 already carries that data) to stay within EJP's ~6 table/figure guidance.
+
 ## Still open
 - Whether to soften "demonstrates safety and feasibility" / drop the "giant wandering spleen" claim in the conclusion of the **full 5-case version** (both EJP versions already use tempered wording) — not yet actioned.
 - Ethics approval number: both EJP versions cite 2025R156-E01; replace if the supplementary approval has its own number.
+- Case 5 whirl-sign figure: awaiting a proper PACS export from the author.
 
 ## Repo / PR
 - Working branch: `claude/trusting-davinci-70prup`
