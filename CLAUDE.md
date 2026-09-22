@@ -36,8 +36,16 @@ Both EJP versions are reframed around **delay, not technique, as the determinant
 ## Title — decided (both EJP versions)
 **"Wandering spleen in children: delay determines splenic loss and a reinforced two-pole splenopexy technique"** (no comma before "and" — author asked to remove it) — author wanted the technique named in the title; combined with the delay finding for search visibility and impact. Applied to both `EJP original article.docx` and `EJP brief report.docx`.
 
-## Case 5 imaging — pending, author will supply
-Author sent two candidate whirl-sign CT photos (phone photos of a screen — not PACS exports). Neither clearly shows a diagnostic whirl sign on visual review by Claude: one is a low pelvic-level slice showing the ectopic spleen mass itself but below the pedicle level; the other is a higher slice showing indeterminate mesenteric/perisplenic stranding, not a clear spiral vessel pattern. Recommended: author to get a proper PACS export (PNG/TIFF, de-identified) of the splenic hilar level, and have the whirl sign confirmed by radiology before use. **Author says the whirl-sign image will be supplied "tomorrow."** Neither the Original Article nor the Brief Report currently uses any Case 5 image — both are already fully self-contained with Figs. 1–5 (Original Article) / Fig. 1 (Brief Report), none tied to Case 5. If a good Case 5 image arrives, the plan discussed is to swap out Fig. 1 (Case 2 infarct CT, most replaceable — Table 1 already carries that data) to stay within EJP's ~6 table/figure guidance.
+## Case 5 imaging — first round rejected, second round applied (22 Sep 2026)
+Author's first two candidate whirl-sign CT photos (phone photos of a screen — not PACS exports) were reviewed and rejected: neither clearly showed a diagnostic whirl sign (one was a low pelvic slice showing the ectopic spleen mass below the pedicle level; the other showed indeterminate stranding, not a clear spiral vessel pattern).
+
+Author then supplied a second pair: an axial slice at a low/sacral level, and a coronal reconstruction showing bilateral hip joints, dilated bowel loops, and a swirled soft-tissue structure centrally. Claude's read: the coronal image's swirled structure sits in the right anatomical position to represent the twisted splenic vessels wrapping around the splenic flexure of the colon — matching the Results text's existing description ("splenic vessels encircling the splenic flexure of the colon") — more convincingly than the axial candidate, which looked more like generic perisplenic fat stranding. Flagged to the author that this read is not radiologist-confirmed and asked whether the radiology report specifies the diagnostic slice; author replied by choosing the coronal image without further comment on the report.
+
+**Applied to the Original Article** (per the swap plan already agreed): Fig. 1 (Case 2 infarct CT — the most replaceable image, since Table 1 already carries that data) replaced with the new Case 5 whirl-sign coronal image. The Case 2 sentence in Results lost its "(Fig. 1)" citation (text otherwise unchanged); the Case 5 paragraph gained "(Fig. 1)" after "a whirl sign formed by the spiralling splenic vessels." No other figure needed renumbering — Fig. 1 was the only citation before Case 5's paragraph in reading order, so Figs. 2–5 (Case 3 ×3, technique schematic) kept their numbers unchanged. New Fig. 1 legend: "Coronal CT in Case 5, showing a whirl sign formed by the twisted splenic vessels encircling the splenic flexure of the colon, with the spleen displaced into the pelvis" — deliberately has no "(arrow)"/"(star)" pointer, since the supplied image carries no annotation overlay (unlike Figs. 2–4, which do). Re-verified after rebuild: figure citations run 1→5 in sequential first-appearance order, reference citations still 1→20 with no orphans/out-of-range, word count unchanged (2614/3000).
+
+**Not applied to the Brief Report** — its single figure slot is already used for the technique schematic, and EJP's Brief Report format caps it at one table and/or figure total, so there is no room to add a second image there; this was never part of the swap plan.
+
+**Resolution caveat still applies.** The new Fig. 1 image is 568×683 px natively — the same sub-print-quality range already flagged for Figs. 2–4 (formerly Figs. 1–4). It still needs a proper de-identified PACS export before submission; using it as-is at print size would look same as the current low-resolution figures.
 
 ## Self-review and fixes applied (21 Sep 2026)
 Claude reviewed both EJP versions as a strict peer reviewer against 9 criteria (novelty, title/abstract/body/conclusion consistency, design and inclusion criteria, statistics, results-vs-conclusions, overclaiming/causal misuse, table-figure-text consistency, academic writing norms, rejection risks) and classified findings as Major/General/Language. The author asked for the 4 Major (must-fix) text-level items to be applied to **both** `EJP original article.docx` and `EJP brief report.docx`:
@@ -105,7 +113,7 @@ Changes applied — wording only, no facts, numbers, hedge strength or reference
 No other passages needed changing — the text had already been through several precision-focused editing rounds and had little remaining redundancy or informal phrasing.
 
 ## Still outstanding (author's call, not rejection-risk)
-- **Fig. 1–4 resolution** (Original Article) — extracted from the original submission docx at roughly 430–705 px on the long axis, well below the ~300 dpi Springer typically expects at print width. These need PACS re-export at the same time as the Case 5 whirl-sign image, not just Case 5's.
+- **All 5 Original Article figures need PACS re-export at print resolution** — Fig. 1 (new Case 5 whirl-sign image, 568×683 px) and Figs. 2–4 (Case 3 series, ~430–705 px) are all below the ~300 dpi Springer typically expects at print width. Fig. 5 (technique schematic) is the only one already high-resolution.
 - The 4 language-polish items from the review — none flagged as rejection-risk, left as-is pending author's discretion.
 
 ## Ethics approval number — decided (21 Sep 2026)
@@ -113,7 +121,7 @@ No other passages needed changing — the text had already been through several 
 
 ## Still open
 - Whether to soften "demonstrates safety and feasibility" / drop the "giant wandering spleen" claim in the conclusion of the **full 5-case version** (both EJP versions already use tempered wording) — not yet actioned.
-- Case 5 whirl-sign figure: awaiting a proper PACS export from the author.
+- Case 5 whirl-sign figure: now in place as Fig. 1 of the Original Article, but not radiologist-confirmed and not yet a proper PACS export — see "Case 5 imaging" above.
 
 ## Repo / PR
 - Working branch: `claude/trusting-davinci-70prup`
