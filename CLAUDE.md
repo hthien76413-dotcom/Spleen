@@ -47,6 +47,8 @@ Author then supplied a second pair: an axial slice at a low/sacral level, and a 
 
 **Resolution caveat still applies.** The new Fig. 1 image is 568×683 px natively — the same sub-print-quality range already flagged for Figs. 2–4 (formerly Figs. 1–4). It still needs a proper de-identified PACS export before submission; using it as-is at print size would look same as the current low-resolution figures.
 
+**Whirl-sign finding now confirmed by the actual radiology report (22 Sep 2026).** Author supplied Case 5's official CT report (Wuhan Women and Children Medical and Health Care Center, non-contrast abdominal/pelvic CT). Findings text matches the manuscript's Case 5 CT description essentially line-for-line, including the whirl sign ("旋涡状" vessel pattern) and — most importantly — "脾脏血管缠绕结肠脾曲" (splenic vessels encircling the splenic flexure of the colon), which is the exact finding the chosen coronal image was picked to illustrate. Impression: 游走脾伴脾扭转 (wandering spleen with splenic torsion), 脾大、密度不均 (enlarged, heterogeneous spleen), consistent with the manuscript throughout. No manuscript text changes needed — the existing Results paragraph is already accurate to this report. The report itself is not committed to the repository (carries the patient's name and exam ID); only the diagnostic content is recorded here. This resolves the "not radiologist-confirmed" caveat for the whirl-sign finding itself — the resolution/PACS-export caveat above is separate and still open.
+
 ## Self-review and fixes applied (21 Sep 2026)
 Claude reviewed both EJP versions as a strict peer reviewer against 9 criteria (novelty, title/abstract/body/conclusion consistency, design and inclusion criteria, statistics, results-vs-conclusions, overclaiming/causal misuse, table-figure-text consistency, academic writing norms, rejection risks) and classified findings as Major/General/Language. The author asked for the 4 Major (must-fix) text-level items to be applied to **both** `EJP original article.docx` and `EJP brief report.docx`:
 
@@ -121,7 +123,7 @@ No other passages needed changing — the text had already been through several 
 
 ## Still open
 - Whether to soften "demonstrates safety and feasibility" / drop the "giant wandering spleen" claim in the conclusion of the **full 5-case version** (both EJP versions already use tempered wording) — not yet actioned.
-- Case 5 whirl-sign figure: now in place as Fig. 1 of the Original Article, but not radiologist-confirmed and not yet a proper PACS export — see "Case 5 imaging" above.
+- Case 5 whirl-sign figure: now in place as Fig. 1 of the Original Article, and the whirl-sign finding is confirmed by the actual radiology report; still needs a proper PACS export at print resolution — see "Case 5 imaging" above.
 
 ## Repo / PR
 - Working branch: `claude/trusting-davinci-70prup`
