@@ -129,3 +129,18 @@ No other passages needed changing — the text had already been through several 
 ## Repo / PR
 - Working branch: `claude/trusting-davinci-70prup`
 - PR #1 (draft): adds the 5-case revised manuscript, all 10 original figures and formatting preserved, schema-validated.
+
+## EJP outcome and pivot to case series + systematic review (Sep 2026)
+- **EJP desk-rejected** the Original Article (no reviewer comments). Next-journal shortlist discussed: Pediatric Surgery International first choice for a case series.
+- **Decided: upgrade to "institutional case series + systematic review with individual patient data (IPD)"**, extracting interval to surgery and splenic preservation for every published paediatric case. Chinese-language reports to be included (NLM format).
+- Author placed 53 hand-collected PDFs on origin/main (`wandering spleen literature.zip`). All 53 read; pilot extraction in `literature-pilot-extraction-53-papers.csv` (91 rows, status column flags excluded/aggregate/duplicate rows).
+
+### Pilot findings (hand-curated sample — not a systematic search)
+- 45 papers contribute IPD on **76 unique children**; 16 lost the spleen (21%). Interval reported in 54/76; the 18 with no interval reported were all preserved (reporting bias).
+- Loss by interval: <1 wk 3/17; **1 wk–1 mo 9/17**; 1–12 mo 3/14; **>12 mo 0/6**; asymptomatic 1/4. Non-monotonic: acute (index-episode) delay shows a signal, long chronic histories mostly preserved — own Cases 1–3 (16–62 mo, lost) run against the literature pattern, so the primary exposure should be redefined (index-episode duration primary; total history, missed diagnosis, known-but-deferred secondary).
+- Known-but-deferred literature cases: 5; 3 torsed while awaiting surgery (35-3, 52-1, 53-2), all salvaged — supports "operate at diagnosis" via a torsion-while-waiting outcome.
+- Outcome must separate non-viable spleen at operation from viable spleens removed for technical reasons (Wang 2022 case 3, 16-cm spleen) and post-splenopexy losses (Cohen 2018 case 1; Fiquet-Francois 3/5 mesh ischaemia).
+- GV/GOO-associated subgroup: 19 cases, 18 preserved — analyse separately.
+- **Prior SR exists: Ganarin 2021 (JLAST, PROSPERO CRD42018089971, 197 children, English only, 1990–2018) — no delay/interval analysis.** Novelty = time exposure with IPD, 2019–2026 update, Chinese literature.
+- Duplicates: 13 and 19 within 22; 31-1 = 18-1; 35-4/5 = 04-1/4; 39-1 = 25. Paper 03 (李索林) is 中华医学杂志 **2000**;80(1):37 despite "1999" filename.
+- Still needed: documented database search (PubMed, Embase, WoS, Scopus, CNKI, Wanfang, CBM), second reviewer, protocol registration (PROSPERO/OSF, declaring the pilot), IPD requests to authors of aggregate-only series.
