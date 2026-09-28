@@ -153,6 +153,15 @@ No other passages needed changing — the text had already been through several 
 - **Technique NOT in the title.** Working title: "Time to surgery and splenic salvage in children with wandering spleen: a single-centre case series and systematic review of individual patient data". The reinforced two-pole technique stays in the Discussion (enlarged-spleen fixation context) and the schematic figure, described as n=1.
 - Independent reviewers: **Jun Shu** (reviewer 1) and **Fei Peng** (reviewer 2), both confirmed by the author 28 Sep 2026; adjudicator Jun Yang; statistical analysis **Ji Wang**. **Embase and Scopus both accessible** — kept in the search plan.
 
+### Candidate journals for the SR + case-series paper (discussed 28 Sep 2026, not yet decided)
+IFs below are the June 2026 JCR release as reported by third-party metric sites — recheck at submission (planned completion Jun 2027, after the 2027 JCR release).
+- Orphanet Journal of Rare Diseases (BMC, OA/APC) — IF 3.6, Q2; rare-disease scope, publishes pooled-case systematic reviews. Highest IF of the realistic options.
+- Journal of Pediatric Surgery — IF 2.3, Q2; the specialty's most-read journal; its exclusion of <=5-case series no longer applies to an SR.
+- BMJ Paediatrics Open (OA/APC) — IF 2.6, Q1.
+- World Journal of Pediatric Surgery (OA) — IF 2.1, Q2; Pediatric Surgery International — IF 1.8, Q2; European Journal of Pediatric Surgery — IF 1.8.
+- European Journal of Pediatrics — possible (substantially new study) but same journal desk-rejected the case series in Sep 2026; not first choice.
+- Not realistic: JAMA Pediatrics / Pediatrics / Annals of Surgery (very-low-certainty evidence from case reports). Still avoid IJS/AMSU group.
+
 ### ORCID requirement clarified (28 Sep 2026)
 Verified via web search against crd.york.ac.uk: as of 2026, PROSPERO requires the **named contact who creates the account** (i.e. whoever does the registration — presumably Jun Yang, the corresponding author) to hold an ORCID; a free ORCID takes about 2 minutes to create at orcid.org if not already held. ORCID for the other 4 team members listed in the record is optional/recommended, not mandatory — can be left blank if unavailable. Protocol document updated with this distinction as an italic note above the review-team table; the 5 ORCID cells remain yellow-highlighted pending whatever each author supplies.
 
