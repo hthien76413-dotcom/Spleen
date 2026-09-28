@@ -144,3 +144,10 @@ No other passages needed changing — the text had already been through several 
 - **Prior SR exists: Ganarin 2021 (JLAST, PROSPERO CRD42018089971, 197 children, English only, 1990–2018) — no delay/interval analysis.** Novelty = time exposure with IPD, 2019–2026 update, Chinese literature.
 - Duplicates: 13 and 19 within 22; 31-1 = 18-1; 35-4/5 = 04-1/4; 39-1 = 25. Paper 03 (李索林) is 中华医学杂志 **2000**;80(1):37 despite "1999" filename.
 - Still needed: documented database search (PubMed, Embase, WoS, Scopus, CNKI, Wanfang, CBM), second reviewer, protocol registration (PROSPERO/OSF, declaring the pilot), IPD requests to authors of aggregate-only series.
+
+### Decisions for the SR manuscript (28 Sep 2026)
+- **Primary exposure: duration of the index symptomatic episode** (onset of the current continuous symptoms → operation, in days). Primary analysis on the continuous scale (log-days) to avoid choosing cut-points after seeing the pilot; categories secondary. The pilot informed this hypothesis and must be declared as such in the protocol.
+- **Secondary exposures:** total history from first attributable symptom; missed diagnosis (prior contact/imaging without diagnosis); known diagnosis with surgery deferred (includes own Cases 1–3).
+- **Primary outcome:** spleen non-viable at operation (total or partial splenectomy for infarction). Reported separately: viable spleen removed for technical reasons, post-splenopexy loss, torsion while awaiting surgery.
+- **Technique NOT in the title.** Working title: "Time to surgery and splenic salvage in children with wandering spleen: a single-centre case series and systematic review of individual patient data". The reinforced two-pole technique stays in the Discussion (enlarged-spleen fixation context) and the schematic figure, described as n=1.
+- Still open: second independent reviewer; Embase/Scopus access.
