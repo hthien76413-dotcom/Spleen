@@ -153,7 +153,11 @@ No other passages needed changing — the text had already been through several 
 - **Technique NOT in the title.** Working title: "Time to surgery and splenic salvage in children with wandering spleen: a single-centre case series and systematic review of individual patient data". The reinforced two-pole technique stays in the Discussion (enlarged-spleen fixation context) and the schematic figure, described as n=1.
 - Independent reviewers: **Jun Shu** (reviewer 1) and **Fei Peng** (reviewer 2), both confirmed by the author 28 Sep 2026; adjudicator Jun Yang; statistical analysis **Ji Wang**. **Embase and Scopus both accessible** — kept in the search plan.
 
-### Candidate journals for the SR + case-series paper (discussed 28 Sep 2026, not yet decided)
+### Target journal for the SR + case-series paper — DECIDED 28 Sep 2026: Orphanet Journal of Rare Diseases first
+Author chose **Orphanet Journal of Rare Diseases** (BMC/Springer Nature, open access, IF 3.6 Q2) as first submission. Fallback order from the list below: Journal of Pediatric Surgery → BMJ Paediatrics Open → World J Pediatr Surg / Pediatr Surg Int / Eur J Pediatr Surg.
+Confirmed from search results only (official guideline pages ojrd.biomedcentral.com and link.springer.com were blocked by the container's network proxy on 28 Sep 2026, so not read directly): OJRD accepts systematic reviews; a PRISMA flow diagram and a replicable search strategy are expected. **Still to check on the official "Submission guidelines" page before writing:** exact article-type name for a systematic review, abstract structure and word limit, main-text length limits, declarations list, and the current APC.
+
+### Candidate journals for the SR + case-series paper (discussed 28 Sep 2026)
 IFs below are the June 2026 JCR release as reported by third-party metric sites — recheck at submission (planned completion Jun 2027, after the 2027 JCR release).
 - Orphanet Journal of Rare Diseases (BMC, OA/APC) — IF 3.6, Q2; rare-disease scope, publishes pooled-case systematic reviews. Highest IF of the realistic options.
 - Journal of Pediatric Surgery — IF 2.3, Q2; the specialty's most-read journal; its exclusion of <=5-case series no longer applies to an SR.
