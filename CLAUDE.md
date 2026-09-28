@@ -129,7 +129,7 @@ No other passages needed changing — the text had already been through several 
 ## Repo / PR
 - Working branch: `claude/trusting-davinci-70prup`
 - PR #1: closed at the author's request (22 Sep 2026).
-- PR #2 (draft, open): same branch; carries all manuscript work plus the SR pilot and protocol.
+- PR #2: closed at the author's request (28 Sep 2026). Author has closed both PRs — do not open a new PR for this branch unless asked; push work to the branch only.
 
 ## EJP outcome and pivot to case series + systematic review (Sep 2026)
 - **EJP desk-rejected** the Original Article (no reviewer comments). Next-journal shortlist discussed: Pediatric Surgery International first choice for a case series.
@@ -151,9 +151,9 @@ No other passages needed changing — the text had already been through several 
 - **Secondary exposures:** total history from first attributable symptom; missed diagnosis (prior contact/imaging without diagnosis); known diagnosis with surgery deferred (includes own Cases 1–3).
 - **Primary outcome:** spleen non-viable at operation (total or partial splenectomy for infarction). Reported separately: viable spleen removed for technical reasons, post-splenopexy loss, torsion while awaiting surgery.
 - **Technique NOT in the title.** Working title: "Time to surgery and splenic salvage in children with wandering spleen: a single-centre case series and systematic review of individual patient data". The reinforced two-pole technique stays in the Discussion (enlarged-spleen fixation context) and the schematic figure, described as n=1.
-- Second independent reviewer: **Fei Peng** (author confirmed 28 Sep 2026). First reviewer not yet named. **Embase and Scopus both accessible** — kept in the search plan.
+- Independent reviewers: **Jun Shu** (reviewer 1) and **Fei Peng** (reviewer 2), both confirmed by the author 28 Sep 2026; adjudicator Jun Yang. **Embase and Scopus both accessible** — kept in the search plan.
 
 ### Protocol draft (28 Sep 2026)
-- `Systematic review protocol - PROSPERO draft.docx`: English registration text by PROSPERO field, a Chinese instruction page (delete before registering), Appendix A search strategies (PubMed, Embase, WoS, Scopus, CNKI, Wanfang, SinoMed + Google Scholar/citation searching; "check" lines depend on thesaurus terms to be confirmed by a librarian), Appendix B search log, Appendix C extraction codebook with 9 duration-conversion rules. Stage-of-review field discloses the 53-paper pilot. 12 yellow placeholders remain (first reviewer, statistician, ORCIDs, dates, reference manager, calibration-set size, software); reviewer 2 (Fei Peng) and Embase/Scopus filled in.
+- `Systematic review protocol - PROSPERO draft.docx`: English registration text by PROSPERO field, a Chinese instruction page (delete before registering), Appendix A search strategies (PubMed, Embase, WoS, Scopus, CNKI, Wanfang, SinoMed + Google Scholar/citation searching; "check" lines depend on thesaurus terms to be confirmed by a librarian), Appendix B search log, Appendix C extraction codebook with 9 duration-conversion rules. Stage-of-review field discloses the 53-paper pilot. 11 yellow placeholders remain (statistician, ORCIDs ×5, start/completion dates, reference manager, calibration-set size, software); reviewers (Jun Shu, Fei Peng) and Embase/Scopus filled in.
 - Generated from `build_protocol.js` in the session scratchpad (Node docx), schema-validated. LibreOffice in the container could not load any .docx on 28 Sep, so no rendered visual check was possible.
 - **Caveat flagged to the author:** under the new primary exposure, own losses occurred after SHORT index episodes (Case 1: 1 d, Case 2: 1 d, Case 5: 18 h; Case 4 preserved at 2 h; Case 3 first operation after 9 d). Own cases therefore illustrate the deferred-surgery secondary exposure, not the primary hypothesis; symptom duration may also under-measure silent chronic torsion (measurement-bias point for the Discussion). Result must be reported whatever its direction.
