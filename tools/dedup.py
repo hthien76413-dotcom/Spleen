@@ -13,6 +13,7 @@ Tiers, applied in this order (each merge removes one record from the unique coun
   T5  identical normalised title + year within +/-1 + same volume + compatible pages (a single page inside the
       other record's range counts as compatible); different journal/volume/pages are kept apart
   T6  Chinese records: identical title + same year + same journal + compatible pages
+  T7  identical title + same year + similar journal + same volume + compatible/missing pages
   MANUAL  decisions in DECISIONS below, taken after reading the residual pairs (listed in the audit files)
 Identical-title pairs that match none of these are NOT merged and are listed for review.
 
@@ -348,6 +349,38 @@ for ids in by_title_zh.values():
                     and not cluster_blocked(ids[x], ids[y]):
                 union(ids[x], ids[y], "T6 Chinese title+year+journal+pages")
 
+# T7: identical title, same year, similar journal name, same volume (leading number) and compatible or missing pages
+# (catches the same article indexed with differently written first authors, e.g. "Riaz ul Haq" / "Ul Haq")
+def vol_key(v):
+    m = re.match(r"\d+", v or "")
+    return m.group(0) if m else ""
+
+
+def journals_similar(a, b):
+    ja, jb = norm_title(a), norm_title(b)
+    if not ja or not jb:
+        return False
+    if ja == jb:
+        return True
+    short, long_ = sorted((ja, jb), key=len)
+    return (len(short) >= 12 and long_.startswith(short)) or difflib.SequenceMatcher(None, ja, jb).ratio() >= 0.85
+
+
+for nt, ids in by_title_all.items():
+    for x in range(len(ids)):
+        for y in range(x + 1, len(ids)):
+            a, b = recs[ids[x]], recs[ids[y]]
+            if find(ids[x]) == find(ids[y]) or len(nt) < 6:
+                continue
+            if not (a["year"] and a["year"] == b["year"] and vol_key(a["vol"]) and vol_key(a["vol"]) == vol_key(b["vol"])):
+                continue
+            if not journals_similar(a["journal"], b["journal"]):
+                continue
+            if a["pages"] and b["pages"] and not pages_compatible(a["pages"], b["pages"]):
+                continue
+            if not cluster_blocked(ids[x], ids[y]):
+                union(ids[x], ids[y], "T7 title+year+journal+volume")
+
 # manual decisions
 for sa, ta, sb, tb, why in DECISIONS:
     ia = [i for i, r in enumerate(recs) if r["source"] == sa and r["nt"].startswith(norm_title(ta))]
@@ -497,7 +530,7 @@ P("")
 P("## Duplicates removed by tier (in the order applied)")
 cum = n_rec
 for tname in ["T1 DOI", "T2 title+author+year", "T2b English title (cross-script)", "T3 similar title+author+year",
-              "T4 author+year+volume+first page", "T5 title+volume+pages", "T6 Chinese title+year+journal+pages", "MANUAL merge"]:
+              "T4 author+year+volume+first page", "T5 title+volume+pages", "T6 Chinese title+year+journal+pages", "T7 title+year+journal+volume", "MANUAL merge"]:
     cum -= merges[tname]
     P(f"- {tname}: {merges[tname]} (records left after this step: {cum})")
 P(f"- identical-title pairs with a different author, correctly kept apart: {residual_diff_author}")
