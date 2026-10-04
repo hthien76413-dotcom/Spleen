@@ -301,6 +301,7 @@ ch.push(h2("A8. Supplementary sources"));
   "Forward citation searching: reports citing Ganarin et al. 2021 [1], via Web of Science or Google Scholar.",
   "Authors of series reported only in aggregate: individual data requested by email (Section 14).",
 ].forEach((t) => ch.push(bullet(t)));
+ch.push(para("Status on 4 October 2026: the supplementary sources were not completed. (1) Google Scholar was not searched: Google returned its unusual-traffic block page and no results were seen. (2) Forward citation searching of Ganarin et al. 2021 was started on 4 October 2026 (Jun Shu): the cited-by lists in Web of Science and in Scopus each showed 13 documents, but the lists were not exported and therefore were not screened. (3) Backward citation searching of the reference lists of the previous reviews listed above was not done. (4) Backward citation searching of the included reports depends on the final included set and has not started. No record from these sources entered the screening set, which consists of the six database searches in A1 and A3 to A7. The omissions are reported as deviations from the registered protocol in the PROSPERO amendment, the Methods and the Limitations.", { indent: 360, size: 20, align: AlignmentType.JUSTIFIED }));
 
 // ---------------------------------------------------------------- Appendix B
 ch.push(h1("Appendix B. Search log"));
@@ -315,8 +316,8 @@ ch.push(table([2000, 1500, 1200, 1300, 1300, 1300], ["Source", "Platform / inter
   ["CNKI check: TKA='游离脾'", "153 records, not merged; all titles browsed — mostly \"结肠脾曲\" (colonic splenic flexure) mobilisation in colorectal surgery, and splenectomy/transplant \"脾脏游离\" operative steps, none on wandering spleen", "2026-09-28", "", "153", "Jun Shu"],
   ["万方数据", "wanfangdata.com.cn", "2026-09-28", "inception–2026-09-28", "423", "Jun Shu"],
   ["CBM", "SinoMed", "2026-09-29", "inception–2026-09-29", "421", "Jun Shu"],
-  ["Google Scholar", "first 200 records (number browsed: ___)", "", "", "", ""],
-  ["Citation searching", "backward / forward", "", "", "", ""],
+  ["Google Scholar", "NOT SEARCHED — blocked by Google (unusual-traffic page); no results seen", "2026-10-04", "", "0", ""],
+  ["Citation searching", "Forward (Ganarin 2021 cited-by): lists viewed in WoS (13) and Scopus (13), not exported or screened; backward: not done", "2026-10-04", "", "0", "Jun Shu"],
   ["Records after deduplication", "", "", "", "", ""],
 ]));
 
