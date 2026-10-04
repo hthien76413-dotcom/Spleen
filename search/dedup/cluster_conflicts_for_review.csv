@@ -1,0 +1,183 @@
+﻿final_id,reason,source,source_id,year,first_author,doi,volume,pages,tier,title
+WS0065,different DOIs in one cluster,PubMed,40412853,2025,garcia-hidalgo,10.1016/j.rxeng.2024.11.006,67,395-398,,Acute abdomen secondary to torsion of a wandering spleen.
+WS0065,different DOIs in one cluster,WoS,WOS:001488824500001,2025,garcia-hidalgo,10.1016/j.rx.2024.11.004,67,395-398,T2 title+author+year,Acute abdomen secondary to torsion of a wandering spleen
+WS0065,different DOIs in one cluster,Scopus,105003583447,2025,garcia-hidalgo,10.1016/j.rx.2024.11.004,67,395-398,T1 DOI,Acute abdomen secondary to torsion of a wandering spleen
+WS0096,different DOIs in one cluster,PubMed,38986904,2025,abellan,10.1016/j.cireng.2024.05.019,103,54,,Wandering spleen as a cause of acute abdomen.
+WS0096,different DOIs in one cluster,WoS,WOS:001413788500001,2025,lopez,10.1016/j.ciresp.2024.05.020,103,54-54,,Wandering spleen as a cause of acute abdomen
+WS0096,different DOIs in one cluster,Scopus,85199963660,2025,abellan,10.1016/j.ciresp.2024.05.020,103,54,T1 DOI,Wandering spleen as a cause of acute abdomen
+WS0124,different DOIs in one cluster,PubMed,37985350,2024,lajusticia,10.1016/j.anpede.2023.11.004,100,79-80,,Splenic torsion as a cause of acute abdomen.
+WS0124,different DOIs in one cluster,WoS,WOS:001165333700001,2024,lajusticia,10.1016/j.anpedi.2023.08.010,100,79-80,T2 title+author+year,Splenic torsion as a cause of acute abdomen
+WS0124,different DOIs in one cluster,Scopus,85174469014,2024,lajusticia,10.1016/j.anpedi.2023.08.010,100,79-80,T1 DOI,Splenic torsion as a cause of acute abdomen
+WS0171,different DOIs in one cluster,PubMed,35882312,2023,ferrer-inaebnit,10.1016/j.cireng.2022.07.013,101,217-218,,"Laparoscopic approach to accessory wandering spleen, an uncommon association."
+WS0171,different DOIs in one cluster,WoS,WOS:000954502200001,2023,ferrer-inaebnit,10.1016/j.ciresp.2022.06.017,101,217-218,T2 title+author+year,"Laparoscopic approach to accessory wandering spleen, an uncommon association"
+WS0171,different DOIs in one cluster,Scopus,85148768876,2023,ferrer-inaebnit,10.1016/j.ciresp.2022.06.017,101,217-218,T1 DOI,"Laparoscopic approach to accessory wandering spleen, an uncommon association"
+WS0190,different volume/first page in one cluster,PubMed,35342100,2022,gunes,,92,59-64,,Splenic surgery: a ten years experience of a tertiary center in Turkey.
+WS0190,different volume/first page in one cluster,WoS,WOS:000886951900009,2022,gunes,,93,59-64,T2 title+author+year,Splenic surgery: a ten years experience of a tertiary center in Turkey
+WS0190,different volume/first page in one cluster,Scopus,85127233650,2022,gunes,,93,59-64,T2 title+author+year,Splenic surgery: a ten years experience of a tertiary center in Turkey
+WS0232,different DOIs in one cluster,PubMed,33343117,2020,skiba,10.4103/jiaps.jiaps_216_19,25,323-325,,Torsion of a Wandering Spleen Managed Conservatively: Rare and Interesting.
+WS0232,different DOIs in one cluster,Scopus,85091358972,2020,skiba,10.4103/jiaps.jiaps-216-19,25,323-325,T2 title+author+year,Torsion of a wandering spleen managed conservatively: Rare and interesting
+WS0246,different volume/first page in one cluster,PubMed,32868755,2020,koliakos,10.12659/ajcr.925301,21,e925301,,Wandering Spleen Volvulus: A Case Report and Literature Review of This Diagnostic  Challenge.
+WS0246,different volume/first page in one cluster,Scopus,85090105938,2020,koliakos,10.12659/ajcr.925301,21,1-4,T1 DOI,Wandering spleen volvulus: A case report and literature review of this diagnostic challenge
+WS0254,different volume/first page in one cluster,PubMed,32508109,2020,el-helou,10.1308/rcsann.2020.0131,102,e1-e3,,Small bowel obstruction due to splenosis 30 years after splenectomy.
+WS0254,different volume/first page in one cluster,WoS,WOS:000584413800003,2020,el-helou,10.1308/rcsann.2020.0131,102,E228-E230,T1 DOI,Small bowel obstruction due to splenosis 30 years after splenectomy
+WS0254,different volume/first page in one cluster,Scopus,85094983258,2020,el-helou,10.1308/rcsann.2020.0131,102,E228-E230,T1 DOI,Small bowel obstruction due to splenosis 30 years after splenectomy
+WS0357,different volume/first page in one cluster,PubMed,28009140,2016,peretti,10.4081/pmc.2016.119,38,119,,Wandering spleen with a ten-time twisted vascular pedicle.
+WS0357,different volume/first page in one cluster,Scopus,85010915229,2016,peretti,10.4081/pmc.2016.119,38,93-94,T1 DOI,Wandering spleen with a ten-time twisted vascular pedicle
+WS0358,different volume/first page in one cluster,PubMed,27499224,2016,touarsa,10.1016/j.lpm.2016.06.005,45,935-937,,[Upper gastrointestinal bleeding in portal hypertensive gastropathy reveals a  wandering spleen].
+WS0358,different volume/first page in one cluster,WoS,WOS:000388399600021,2016,touarsa,10.1016/j.lpm.2016.06.005,45,934-937,T1 DOI,Upper gastrointestinal bleeding in portal hypertensive gastropathy reveals a wandering spleen
+WS0358,different volume/first page in one cluster,Scopus,84992532979,2016,touarsa,10.1016/j.lpm.2016.06.005,45,935-937,T1 DOI,Upper gastrointestinal bleeding in portal hypertensive gastropathy reveals a wandering spleen
+WS0409,different volume/first page in one cluster,PubMed,25897284,2014,faridi,,21,57-60,,Wandering Spleen- A diagnostic Challenge: Case Report and Review of Literature.
+WS0409,different volume/first page in one cluster,Scopus,84908648649,2014,faridi,,21,56-59,T2 title+author+year,Wandering spleen- A diagnostic challenge: Case report and review of literature
+WS0413,different DOIs in one cluster,PubMed,25738479,2015,wu,10.1097/md.0000000000000586,94,e586,,Solitary perihepatic splenosis mimicking liver lesion: a case report and  literature review.
+WS0413,different DOIs in one cluster,WoS,WOS:000350756800011,2015,wu,10.1097/md.0000000000000536,94,,T2 title+author+year,Solitary Perihepatic Splenosis Mimicking Liver Lesion A Case Report and Literature Review
+WS0413,different DOIs in one cluster,Scopus,84926352043,2015,wu,10.1097/md.0000000000000586,94,e586,T1 DOI,Solitary perihepatic splenosis mimicking liver lesion
+WS0461,different volume/first page in one cluster,PubMed,23873601,2013,oegema,10.1002/ajmg.a.36109,161A,2376-84,,Novel no-stop FLNA mutation causes multi-organ involvement in males.
+WS0461,different volume/first page in one cluster,WoS,WOS:000327798800037,2013,oegema,10.1002/ajmg.a.36109,161,2376-2384,T1 DOI,Novel No-Stop FLNA Mutation Causes Multi-Organ Involvement in Males
+WS0461,different volume/first page in one cluster,Scopus,84881663552,2013,oegema,10.1002/ajmg.a.36109,161,2376-2384,T1 DOI,Novel no-stop FLNA mutation causes multi-organ involvement in males
+WS0481,different volume/first page in one cluster,PubMed,23415210,2012,de,,80,283-6,,[Acute torsion of wandering spleen: a rare cause of acute abdomen].
+WS0481,different volume/first page in one cluster,WoS,WOS:000306687500013,2012,de,,80,262-265,T2 title+author+year,Acute torsion of wandering spleen: a rare cause of acute abdomen
+WS0481,different volume/first page in one cluster,Scopus,84864704231,2012,de,,80,283-286,T2 title+author+year,Acute torsion of wandering spleen: A rare cause of acute abdomen
+WS0546,different volume/first page in one cluster,PubMed,20852856,2010,gok,10.1007/s00247-010-1822-4,40 Suppl 1,S88,,Torsion of a splenule.
+WS0546,different volume/first page in one cluster,WoS,WOS:000285153000044,2010,gok,10.1007/s00247-010-1822-4,40,88-88,T1 DOI,Torsion of a splenule
+WS0553,different volume/first page in one cluster,PubMed,20593169,2010,sanchez,10.1007/s00247-010-1756-x,40 Suppl 1,S89-91,,Wandering spleen causing gastric outlet obstruction and pancreatitis.
+WS0553,different volume/first page in one cluster,WoS,WOS:000285153000045,2010,sanchez,10.1007/s00247-010-1756-x,40,89-91,T1 DOI,Wandering spleen causing gastric outlet obstruction and pancreatitis
+WS0553,different volume/first page in one cluster,Scopus,79955656415,2010,sanchez,10.1007/s00247-010-1756-x,40,S89-S91,T1 DOI,Wandering spleen causing gastric outlet obstruction and pancreatitis
+WS0585,different volume/first page in one cluster,PubMed,19281417,2009,francois-fiquet,10.1089/lap.2008.0091.supp,19 Suppl 1,S137-9,,Laparoscopic gastropexy for the treatment of gastric volvulus associated with  wandering spleen.
+WS0585,different volume/first page in one cluster,WoS,WOS:000265319500034,2009,francois-fiquet,10.1089/lap.2008.0091.supp,19,S137-S139,T1 DOI,Laparoscopic Gastropexy for the Treatment of Gastric Volvulus Associated with Wandering Spleen
+WS0585,different volume/first page in one cluster,Scopus,65349120025,2009,franois-fiquet,10.1089/lap.2008.0091.supp,19,S137-S139,T1 DOI,Laparoscopic gastropexy for the treatment of gastric volvulus associated with wandering spleen
+WS0586,different volume/first page in one cluster,PubMed,19263715,2008,satpathi,,56,819-20,,Ectopic spleen with cirrhosis of liver.
+WS0586,different volume/first page in one cluster,Scopus,54349094026,2008,satpathi,,56,816-817,T2 title+author+year,Ectopic spleen with cirrhosis of liver
+WS0596,different volume/first page in one cluster,PubMed,18765060,2008,lebron,,12,310-3,,Wandering spleen presenting as recurrent pancreatitis.
+WS0596,different volume/first page in one cluster,WoS,WOS:000258833000019,2008,lebron,,12,310-313,T2 title+author+year,Wandering spleen presenting as recurrent pancreatitis
+WS0596,different volume/first page in one cluster,Scopus,70350462147,2008,lebron,,12,314-317,T2 title+author+year,Wandering spleen presenting as recurrent pancreatitis
+WS0704,different volume/first page in one cluster,PubMed,14972263,2003,moran,10.1016/s0149-7944(02)00737-7,60,310-2,,Spontaneous rupture of a wandering spleen: case report and literature review.
+WS0704,different volume/first page in one cluster,Scopus,85001655055,2002,moran,10.1016/s0149-7944(02)00737-7,47,512-514,T1 DOI,Spontaneous rupture of a wandering spleen: Case report and literature review
+WS0704,different volume/first page in one cluster,Scopus,0037408226,2003,moran,10.1016/s0149-7944(02)00737-7,60,310-312,T1 DOI,Spontaneous rupture of a wandering spleen: Case report and literature review
+WS0779,different DOIs in one cluster,PubMed,11083221,2000,nomura,,10,332-4,,Laparoscopic splenopexy for adult wandering spleen: sandwich method with two  sheets of absorbable knitted mesh.
+WS0779,different DOIs in one cluster,WoS,WOS:000089804000015,2000,nomura,10.1097/00019509-200010000-00016,10,332-334,T2 title+author+year,Laparoscopic splenopexy for adult wandering spleen: Sandwich method with two sheets of absorbable knitted mesh
+WS0779,different DOIs in one cluster,Scopus,0033770832,2000,nomura,10.1097/00129689-200010000-00016,10,332-334,T2 title+author+year,Laparoscopic splenopexy for adult wandering spleen: Sandwich method with two sheets of absorbable knitted mesh
+WS0786,different DOIs in one cluster,PubMed,10800003,2000,danaci,10.1002/(sici)1097-0096(200006)28:5<246::aid-jcu6>3.0.co;2-#,28,246-8,,Power Doppler sonographic diagnosis of torsion in a wandering spleen.
+WS0786,different DOIs in one cluster,WoS,WOS:000087053200006,2000,danaci,10.1002/(sici)1097-0096(200006)28:5<246::aid-jcu6>3.0.co;2-#,28,246-248,T1 DOI,Power Doppler sonographic diagnosis of torsion in a wandering spleen
+WS0786,different DOIs in one cluster,Scopus,0034025068,2000,danaci,10.1002/(sici)1097-0096(200006)28:5<246::aid-jcu6>3.0.co;2-%23,28,246-248,T2 title+author+year,Power Doppler sonographic diagnosis of torsion in a wandering spleen
+WS0793,different DOIs in one cluster,PubMed,10525216,1999,vural,10.1002/(sici)1097-0096(199911/12)27:9<534::aid-jcu8>3.0.co;2-x,27,534-6,,Symptomatic wandering accessory spleen in the pelvis: sonographic findings.
+WS0793,different DOIs in one cluster,WoS,WOS:000083386300008,1999,vural,10.1002/(sici)1097-0096(199911/12)27:9<534::aid-jcu8>3.3.co;2-o,27,534-536,T2 title+author+year,Symptomatic wandering accessory spleen in the pelvis: Sonographic findings
+WS0793,different DOIs in one cluster,Scopus,0032735432,1999,vural,10.1002/(sici)1097-0096(199911/12)27:9<534::aid-jcu8>3.0.co;2-x,27,534-536,T1 DOI,Symptomatic wandering accessory spleen in the pelvis: Sonographic findings
+WS0822,different DOIs in one cluster,PubMed,9672348,1998,uc,10.1111/j.1572-0241.1998.00349.x,93,1146-8,,Gastric volvulus and wandering spleen.
+WS0822,different DOIs in one cluster,WoS,WOS:000074785600028,1998,ue,,93,1146-1148,T5 title+volume+pages,Gastric volvulus and wandering spleen
+WS0822,different DOIs in one cluster,Scopus,0032463814,1998,uc,10.1016/s0002-9270(98)00230-5,93,1146-1148,T2 title+author+year,Gastric volvulus and wandering spleen
+WS0871,different volume/first page in one cluster,PubMed,7756237,1995,melikoglu,10.1055/s-2008-1066163,5,48-9,,Two unusual cases of wandering spleen requiring splenectomy.
+WS0871,different volume/first page in one cluster,Scopus,0028954027,1995,melikoglu,10.1055/s-2008-1066163,5,48-49,T1 DOI,Two Unusual Cases of Wandering Spleen Requiring Splenectomy
+WS0871,different volume/first page in one cluster,Scopus,0029898579,1996,melikoglu,,6,48-49,T2 title+author+year,Two unusual cases of wandering spleen requiring splenectomy
+WS0930,different DOIs in one cluster,PubMed,2278783,1990,alerci,,31,589-90,,Computed tomography of cystic lymphangioma in a wandering spleen.
+WS0930,different DOIs in one cluster,Scopus,84970481919,1990,alerci,10.1080/02841859009173103,31,589-590,T2 title+author+year,Computed tomography of cystic lymphangioma in a wandering spleen
+WS0930,different DOIs in one cluster,Scopus,0025572493,1990,alerci,10.1177/028418519003100611,31,589-590,T2 title+author+year,Computed tomography of cystic lymphangioma in a wandering spleen
+WS1165,different volume/first page in one cluster,PubMed,14167331,1964,maleki,,7,601-2,,[A PELVIC SPLEEN].
+WS1165,different volume/first page in one cluster,Scopus,75949151341,1964,maleki,,112,601-602,T2 title+author+year,A PELVIC SPLEEN.
+WS1167,different volume/first page in one cluster,PubMed,14177601,1963,cerra,,67,SUPPL:3720-6,,[A CASE OF ENLARGED ECTOPIC SPLEEN IN A SUBUMBILICAL SITE].
+WS1167,different volume/first page in one cluster,Scopus,75549105213,1963,cerra,,68,SUPPL:3720-3726,T2 title+author+year,A CASE OF ENLARGED ECTOPIC SPLEEN IN A SUBUMBILICAL SITE.
+WS1209,different volume/first page in one cluster,PubMed,13175460,1954,michaels,10.1016/s0140-6736(54)90008-2,267,23,,Spontaneous torsion of spleen involving tail of pancreas.
+WS1209,different volume/first page in one cluster,Scopus,50449147672,1954,michaels,10.1016/s0140-6736(54)90008-2,264,23,T1 DOI,SPONTANEOUS TORSION OF SPLEEN INVOLVING TAIL OF PANCREAS
+WS1316,different DOIs in one cluster,WoS,WOS:000079903300017,1998,moger,10.1139/cjz-76-10-1957,76,1957-1959,,Elevated urinary cortisol in a timber wolf (Canis lupus):: a result of social behaviour or adrenal pathology?
+WS1316,different DOIs in one cluster,Scopus,0032452121,1998,moger,10.1139/z98-125,76,1957-1959,T2 title+author+year,Elevated urinary cortisol in a timber wolf (Canis lupus): A result of social behaviour or adrenal pathology
+WS1322,different DOIs in one cluster,WoS,WOS:000582334700019,2020,ozer,10.9775/kvfd.2020.24000,26,841-848,,An Overlooked Entities in Small Animal Surgery: Splenic Disorders
+WS1322,different DOIs in one cluster,Scopus,85093831584,2020,ozer,10.9775/kvfd.2020.24551,26,841-848,T2 title+author+year,An overlooked entities in small animal surgery: Splenic disorders
+WS1464,different volume/first page in one cluster,WoS,WOS:000250668800016,2007,kannu,10.1002/ajmg.a.31989,143A,2607-2611,,An unclassifiable short rib-polydactyly syndrome with acromesomelic hypomineralization and campomelia in siblings
+WS1464,different volume/first page in one cluster,Scopus,35848971236,2007,kannu,10.1002/ajmg.a.31989,143,2607-2611,T1 DOI,An unclassifiable short rib-polydactyly syndrome with acromesomelic hypomineralization and campomelia in siblings
+WS1490,different volume/first page in one cluster,Scopus,85073427744,2019,rathore,10.5146/tjpath.2017.01403,35,242-246,,Primary splenic pregnancy- a rare but imperative cause of hemoperitoneum - case report and review of literature
+WS1490,different volume/first page in one cluster,Scopus,85190319449,2017,rathore,10.5146/tjpath.2017.01403,1,1-5,T1 DOI,Primary Splenic Pregnancy- A Rare but Imperative Cause of Hemoperitoneum - Case Report and Review of Literature
+WS1514,different DOIs in one cluster,Scopus,85171176357,2023,li,10.3760/cma.j.cn101785-202202018-016,22,185-187,,Absence of splenic ligament and in situ splenic torsion in a child： One case report with a literature review
+WS1514,different DOIs in one cluster,CNKI,https://kns.cnki.net/kcms2/article/abstract?v=DgjXjbKQq8fwz6Wh0AtLIkIPzzvJceSrhQPtp_NqH_MAbwfkPjVhm4v9e7ZPDTuNSK3iyE0U9V_9ah-Mph_j-MIvJSYppwYcTt4FnF8tMYKqT-HXUbf-q03z7PqtKnk-tTTmc7BdmDX8607yM0DS0MxN1xCg0GDMYG94C9pMgxJJCW6SM6c4-A==&uniplatform=NZKPT&language=CHS,2023,李立帜,,22,185-187,,小儿脾韧带缺如并原位脾扭转1例并文献复习
+WS1514,different DOIs in one cluster,Wanfang,https://d.wanfangdata.com.cn/periodical/CiBQZXJpb2RpY2FsQ0hJU29scjkyMDI2MDkxNTE0MjIxORIRbGN4ZXdrenoyMDIzMDIwMTYaCGliMWIydWh6,2023,李立帜,10.3760/cma.j.cn101785—202205024—016,22,185-187,T2 title+author+year,小儿脾韧带缺如并原位脾扭转1例并文献复习
+WS1514,different DOIs in one cluster,CBM,2023313209,2023,李立帜,,22,185-187,T2 title+author+year,小儿脾韧带缺如并原位脾扭转1例并文献复习
+WS1872,different DOIs in one cluster,CNKI,https://link.cnki.net/doi/10.19542/j.cnki.1006-5180.007480,2023,韩晓静,10.19542/j.cnki.1006-5180.007480,30,55-56,,内镜全层切除术治疗胃底异位脾1例
+WS1872,different DOIs in one cluster,Wanfang,https://d.wanfangdata.com.cn/periodical/CiBQZXJpb2RpY2FsQ0hJU29scjkyMDI2MDkxNTE0MjIxORIPemd4Y3l5MjAyMzE3MDI0GghpYjFiMnVoeg%3D%3D,2023,韩晓静,10.3969/j.issn.1006-5180.2023.17.024,30,55-56,T2 title+author+year,内镜全层切除术治疗胃底异位脾1例
+WS1872,different DOIs in one cluster,CBM,2023397248,2023,韩晓静,,30,55-56,T2 title+author+year,内镜全层切除术治疗胃底异位脾1例
+WS1882,different DOIs in one cluster,CNKI,https://link.cnki.net/doi/10.14010/j.cnki.wjyx.2022.12.005,2022,杜明华,10.14010/j.cnki.wjyx.2022.12.005,33,1073-1076,,游走脾急腹症1例
+WS1882,different DOIs in one cluster,Wanfang,https://d.wanfangdata.com.cn/periodical/CiBQZXJpb2RpY2FsQ0hJU29scjkyMDI2MDkxNTE0MjIxORINd2p5eDIwMjIxMjAxNhoIaWIxYjJ1aHo%3D,2022,杜明华,10.3969/j.issn.1004-3594.2022.12.016,33,1073-1076,T2 title+author+year,游走脾急腹症1例
+WS1882,different DOIs in one cluster,CBM,2023273613,2022,杜明华,,33,1073-1076,T2 title+author+year,游走脾急腹症1例
+WS1888,different DOIs in one cluster,CNKI,https://link.cnki.net/doi/10.19542/j.cnki.1006-5180.006087,2022,葛淑琼,10.19542/j.cnki.1006-5180.006087,29,49-50,,内镜黏膜下挖除术治疗胃底异位脾2例并文献复习
+WS1888,different DOIs in one cluster,Wanfang,https://d.wanfangdata.com.cn/periodical/CiBQZXJpb2RpY2FsQ0hJU29scjkyMDI2MDkxNTE0MjIxORIPemd4Y3l5MjAyMjA2MDI0GghpYjFiMnVoeg%3D%3D,2022,葛淑琼,10.3969/j.issn.1006-5180.2022.06.024,29,49-50,T2 title+author+year,内镜黏膜下挖除术治疗胃底异位脾2例并文献复习
+WS1888,different DOIs in one cluster,CBM,2022251039,2022,葛淑琼,,29,49-50,T2 title+author+year,内镜黏膜下挖除术治疗胃底异位脾2例并文献复习
+WS1894,different DOIs in one cluster,CNKI,https://link.cnki.net/doi/10.16245/j.cnki.issn1008-6978.2021.03.030,2021,杨薇,10.16245/j.cnki.issn1008-6978.2021.03.030,23,239,,超声诊断儿童脾扭转并副脾扭转1例
+WS1894,different DOIs in one cluster,Wanfang,https://d.wanfangdata.com.cn/periodical/CiBQZXJpb2RpY2FsQ0hJU29scjkyMDI2MDkxNTE0MjIxORIRbGNjc3l4enoyMDIxMDMwMjgaCGliMWIydWh6,2021,杨薇,10.3969/j.issn.1008-6978.2021.03.028,23,239,T2 title+author+year,超声诊断儿童脾扭转并副脾扭转1例
+WS1894,different DOIs in one cluster,CBM,2021264303,2021,杨薇,,23,239,T2 title+author+year,超声诊断儿童脾扭转并副脾扭转1例
+WS1916,different DOIs in one cluster,CNKI,https://link.cnki.net/doi/10.16245/j.cnki.issn1008-6978.2019.08.009,2019,蔡沁村,10.16245/j.cnki.issn1008-6978.2019.08.009,21,592,,肝内异位脾超声造影表现1例
+WS1916,different DOIs in one cluster,Wanfang,https://d.wanfangdata.com.cn/periodical/CiBQZXJpb2RpY2FsQ0hJU29scjkyMDI2MDkxNTE0MjIxORIRbGNjc3l4enoyMDE5MDgwMDkaCGliMWIydWh6,2019,蔡沁村,10.3969/j.issn.1008-6978.2019.08.009,21,592,T2 title+author+year,肝内异位脾超声造影表现1例
+WS1916,different DOIs in one cluster,CBM,2019604359,2019,蔡沁村,,21,592,T2 title+author+year,肝内异位脾超声造影表现1例
+WS1960,different DOIs in one cluster,CNKI,https://link.cnki.net/doi/10.19542/j.cnki.1006-5180.2015.23.034,2015,王佳,10.19542/j.cnki.1006-5180.2015.23.034,22,54,,彩超诊断盆腔异位脾1例
+WS1960,different DOIs in one cluster,Wanfang,https://d.wanfangdata.com.cn/periodical/CiBQZXJpb2RpY2FsQ0hJU29scjkyMDI2MDkxNTE0MjIxORIPemd4Y3l5MjAxNTIzMDMyGghpYjFiMnVoeg%3D%3D,2015,王佳,10.3969/j.issn.1006-5180.2015.23.032,22,54,T2 title+author+year,彩超诊断盆腔异位脾1例
+WS1960,different DOIs in one cluster,CBM,2016203902,2015,王佳,,22,54,T2 title+author+year,彩超诊断盆腔异位脾1例
+WS1962,different DOIs in one cluster,CNKI,https://link.cnki.net/doi/10.19542/j.cnki.1006-5180.2015.19.033,2015,王珺,10.19542/j.cnki.1006-5180.2015.19.033,22,50,,脾脏异位妊娠伴失血性休克1例
+WS1962,different DOIs in one cluster,Wanfang,https://d.wanfangdata.com.cn/periodical/CiBQZXJpb2RpY2FsQ0hJU29scjkyMDI2MDkxNTE0MjIxORIPemd4Y3l5MjAxNTE5MDMyGghpYjFiMnVoeg%3D%3D,2015,王珺,10.3969/j.issn.1006-5180.2015.19.032,22,50,T2 title+author+year,脾脏异位妊娠伴失血性休克1例
+WS1962,different DOIs in one cluster,CBM,2016103965,2015,王珺,,22,50,T2 title+author+year,脾脏异位妊娠伴失血性休克1例
+WS2020,different DOIs in one cluster,CNKI,https://link.cnki.net/doi/10.13609/j.cnki.1000-0313.2011.04.026,2011,黄从刚,10.13609/j.cnki.1000-0313.2011.04.026,26,472,,CT诊断儿童游走脾伴脾蒂扭转一例
+WS2020,different DOIs in one cluster,Wanfang,https://d.wanfangdata.com.cn/periodical/CiBQZXJpb2RpY2FsQ0hJU29scjkyMDI2MDkxNTE0MjIxORIOZnN4c2oyMDExMDQwNDEaCGliMWIydWh6,2011,黄从刚,10.3969/j.issn.1000-0313.2011.04.041,26,472-472,T2 title+author+year,CT诊断儿童游走脾伴脾蒂扭转一例
+WS2020,different DOIs in one cluster,CBM,2011622517,2011,黄从刚,,26,472,T3 similar title+author+year,CT诊断儿童游走脾伴脾蒂扭转1例
+WS2021,different DOIs in one cluster,CNKI,https://link.cnki.net/doi/10.19539/j.cnki.2095-2694.2011.02.038,2011,赵玉英,10.19539/j.cnki.2095-2694.2011.02.038,13,197,,B超诊断脾异位1例
+WS2021,different DOIs in one cluster,Wanfang,https://d.wanfangdata.com.cn/periodical/CiBQZXJpb2RpY2FsQ0hJU29scjkyMDI2MDkxNTE0MjIxORISaGJtdHl4eXhiMjAxMTAyMDM4GghpYjFiMnVoeg%3D%3D,2011,赵玉英,10.3969/j.issn.1008-6633.2011.02.038,13,197,T2 title+author+year,B超诊断脾异位1例
+WS2021,different DOIs in one cluster,CBM,2011494257,2011,赵玉英,,13,197,T2 title+author+year,B超诊断脾异位1例
+WS2022,different DOIs in one cluster,CNKI,https://link.cnki.net/doi/10.16096/j.cnki.nmgyxzz.2011.01.043,2011,缪经瑞,10.16096/j.cnki.nmgyxzz.2011.01.043,43,125,,大网膜异位脾一例
+WS2022,different DOIs in one cluster,Wanfang,https://d.wanfangdata.com.cn/periodical/CiBQZXJpb2RpY2FsQ0hJU29scjkyMDI2MDkxNTE0MjIxORIQbm1neXh6ejIwMTEwMTA1MhoIaWIxYjJ1aHo%3D,2011,缪经瑞,10.3969/j.issn.1004-0951.2011.01.052,43,125,T2 title+author+year,大网膜异位脾一例
+WS2022,different DOIs in one cluster,CBM,2011526822,2011,缪经瑞,,43,125,T4 author+year+volume+first page,大网膜异位脾1例
+WS2035,different DOIs in one cluster,CNKI,https://link.cnki.net/doi/10.14163/j.cnki.11-5547/r.2009.36.111,2009,廖桦,10.14163/j.cnki.11-5547/r.2009.36.111,4,63-64,,150例脾切除手术回顾性分析
+WS2035,different DOIs in one cluster,Wanfang,https://d.wanfangdata.com.cn/periodical/CiBQZXJpb2RpY2FsQ0hJU29scjkyMDI2MDkxNTE0MjIxORIPemdzeXl5MjAwOTM2MDM3GghpYjFiMnVoeg%3D%3D,2009,廖桦,10.3969/j.issn.1673-7555.2009.36.037,4,63-64,T2 title+author+year,150例脾切除手术回顾性分析
+WS2035,different DOIs in one cluster,CBM,2010149830,2009,廖桦,,4,63-64,T2 title+author+year,150例脾切除手术回顾性分析
+WS2038,different DOIs in one cluster,CNKI,https://link.cnki.net/doi/10.13929/j.1003-3289.2009.09.035,2009,侯敏,10.13929/j.1003-3289.2009.09.035,25,1696,,超声诊断脾脏异位妊娠1例
+WS2038,different DOIs in one cluster,Wanfang,https://d.wanfangdata.com.cn/periodical/CiBQZXJpb2RpY2FsQ0hJU29scjkyMDI2MDkxNTE0MjIxORIRemd5eHl4anMyMDA5MDkwNzIaCGliMWIydWh6,2009,侯敏,10.3321/j.issn:1003-3289.2009.09.072,25,1696-1696,T2 title+author+year,超声诊断脾脏异位妊娠1例
+WS2038,different DOIs in one cluster,CBM,2009492039,2009,侯敏,,,1696,T2 title+author+year,超声诊断脾脏异位妊娠1例
+WS2044,different DOIs in one cluster,CNKI,https://link.cnki.net/doi/10.19485/j.cnki.issn1007-0931.2009.08.033,2009,赵瑾,10.19485/j.cnki.issn1007-0931.2009.08.033,21,59+65,,副脾误诊为卵巢肿瘤1例报告
+WS2044,different DOIs in one cluster,Wanfang,https://d.wanfangdata.com.cn/periodical/CiBQZXJpb2RpY2FsQ0hJU29scjkyMDI2MDkxNTE0MjIxORIPemp5Znl4MjAwOTA4MDMzGghpYjFiMnVoeg%3D%3D,2009,赵瑾,10.3969/j.issn.1007-0931.2009.08.033,21,"59,65",T2 title+author+year,副脾误诊为卵巢肿瘤1例报告
+WS2044,different DOIs in one cluster,CBM,2009422394,2009,赵瑾,,21,"59,65",T2 title+author+year,副脾误诊为卵巢肿瘤1例报告
+WS2047,different DOIs in one cluster,CNKI,https://link.cnki.net/doi/10.16096/j.cnki.nmgyxzz.2009.02.017,2009,刘步育,10.16096/j.cnki.nmgyxzz.2009.02.017,41,254,,彩超诊断游走脾一例报告
+WS2047,different DOIs in one cluster,Wanfang,https://d.wanfangdata.com.cn/periodical/CiBQZXJpb2RpY2FsQ0hJU29scjkyMDI2MDkxNTE0MjIxORIQbm1neXh6ejIwMDkwMjA1OBoIaWIxYjJ1aHo%3D,2009,刘步育,10.3969/j.issn.1004-0951.2009.02.058,41,254,T2 title+author+year,彩超诊断游走脾一例报告
+WS2047,different DOIs in one cluster,CBM,2009285466,2009,刘步育,,41,254,T3 similar title+author+year,彩超诊断游走脾1例报告
+WS2049,different DOIs in one cluster,CNKI,https://link.cnki.net/doi/10.13609/j.cnki.1000-0313.2008.11.011,2008,胡杉,10.13609/j.cnki.1000-0313.2008.11.011,,1192,,肠系膜异位脾种植一例
+WS2049,different DOIs in one cluster,Wanfang,https://d.wanfangdata.com.cn/periodical/CiBQZXJpb2RpY2FsQ0hJU29scjkyMDI2MDkxNTE0MjIxORIOZnN4c2oyMDA4MTEwMzAaCGliMWIydWh6,2008,胡杉,10.3969/j.issn.1000-0313.2008.11.030,23,1192-1192,T2 title+author+year,肠系膜异位脾种植一例
+WS2049,different DOIs in one cluster,CBM,2009176903,2008,胡杉,,23,1192,T3 similar title+author+year,肠系膜异位脾种植1例
+WS2052,different DOIs in one cluster,CNKI,https://link.cnki.net/doi/10.16252/j.cnki.issn1004-0501-2008.08.040,2008,邱江涛,10.16252/j.cnki.issn1004-0501-2008.08.040,,1046,,游走脾并蒂扭转1例
+WS2052,different DOIs in one cluster,Wanfang,https://d.wanfangdata.com.cn/periodical/CiBQZXJpb2RpY2FsQ0hJU29scjkyMDI2MDkxNTE0MjIxORINc2N5eDIwMDgwODA3OBoIaWIxYjJ1aHo%3D,2008,邱江涛,10.3969/j.issn.1004-0501.2008.08.078,29,1046,T2 title+author+year,游走脾并蒂扭转1例
+WS2052,different DOIs in one cluster,CBM,2008370977,2008,邱江涛,,29,1046,T2 title+author+year,游走脾并蒂扭转1例
+WS2068,different DOIs in one cluster,CNKI,https://link.cnki.net/doi/10.13315/j.cnki.cjcep.2006.05.046,2006,奉孝荣,10.13315/j.cnki.cjcep.2006.05.046,,633-634,,脾脏异位胰腺癌1例
+WS2068,different DOIs in one cluster,Wanfang,https://d.wanfangdata.com.cn/periodical/CiBQZXJpb2RpY2FsQ0hJU29scjkyMDI2MDkxNTE0MjIxORITbGN5c3libHh6ejIwMDYwNTAzNxoIaWIxYjJ1aHo%3D,2006,奉孝荣,10.3969/j.issn.1001-7399.2006.05.037,22,633-634,T2 title+author+year,脾脏异位胰腺癌1例
+WS2068,different DOIs in one cluster,CBM,2006309446,2006,奉孝荣,,22,633-634,T2 title+author+year,脾脏异位胰腺癌1例
+WS2073,different DOIs in one cluster,CNKI,https://link.cnki.net/doi/10.13481/j.1671-587x.2006.04.030,2006,付京,10.13481/j.1671-587x.2006.04.030,,614,,游离脾扭转1例报告
+WS2073,different DOIs in one cluster,Wanfang,https://d.wanfangdata.com.cn/periodical/CiBQZXJpb2RpY2FsQ0hJU29scjkyMDI2MDkxNTE0MjIxORISYnFleWtkeHhiMjAwNjA0MDY5GghpYjFiMnVoeg%3D%3D,2006,付京,10.3969/j.issn.1671-587x.2006.04.069,32,614,T2 title+author+year,游离脾扭转1例报告
+WS2073,different DOIs in one cluster,CBM,2006212314,2006,付京,,32,614,T2 title+author+year,游离脾扭转1例报告
+WS2094,different DOIs in one cluster,CNKI,https://link.cnki.net/doi/10.16245/j.cnki.issn1008-6978.2004.04.038,2004,高峰,10.16245/j.cnki.issn1008-6978.2004.04.038,,254,,游离脾扭转1例
+WS2094,different DOIs in one cluster,Wanfang,https://d.wanfangdata.com.cn/periodical/CiBQZXJpb2RpY2FsQ0hJU29scjkyMDI2MDkxNTE0MjIxORIRbGNjc3l4enoyMDA0MDQwMzgaCGliMWIydWh6,2004,高峰,10.3969/j.issn.1008-6978.2004.04.038,6,254,T2 title+author+year,游离脾扭转1例
+WS2094,different DOIs in one cluster,CBM,2003632009,2004,高峰,,6,254,T2 title+author+year,游离脾扭转1例
+WS2097,different DOIs in one cluster,CNKI,https://link.cnki.net/doi/10.13705/j.issn.1671-6825.2004.03.040,2004,夏自强,10.13705/j.issn.1671-6825.2004.03.040,,471-473,,肝脾固定治疗犬肝前性门脉高压效果观察
+WS2097,different DOIs in one cluster,Wanfang,https://d.wanfangdata.com.cn/periodical/CiBQZXJpb2RpY2FsQ0hJU29scjkyMDI2MDkxNTE0MjIxORISaGVuYW55a2R4MjAwNDAzMDQwGghpYjFiMnVoeg%3D%3D,2004,夏自强,10.3969/j.issn.1671-6825.2004.03.040,39,471-473,T2 title+author+year,肝脾固定治疗犬肝前性门脉高压效果观察
+WS2097,different DOIs in one cluster,CBM,2003518958,2004,夏自强,,39,471-473,T2 title+author+year,肝脾固定治疗犬肝前性门脉高压效果观察
+WS2105,different DOIs in one cluster,CNKI,https://link.cnki.net/doi/10.16096/j.cnki.nmgyxzz.2003.05.013,2003,党永康,10.16096/j.cnki.nmgyxzz.2003.05.013,,400-401,,脾保留手术治疗外伤性脾破裂15例临床分析
+WS2105,different DOIs in one cluster,Wanfang,https://d.wanfangdata.com.cn/periodical/CiBQZXJpb2RpY2FsQ0hJU29scjkyMDI2MDkxNTE0MjIxORIQbm1neXh6ejIwMDMwNTAxMRoIaWIxYjJ1aHo%3D,2003,党永康,10.3969/j.issn.1004-0951.2003.05.011,35,400-401,T2 title+author+year,脾保留手术治疗外伤性脾破裂15例临床分析
+WS2105,different DOIs in one cluster,CBM,2004097643,2003,党永康,,35,400-401,T2 title+author+year,脾保留手术治疗外伤性脾破裂15例临床分析
+WS2109,different DOIs in one cluster,CNKI,https://link.cnki.net/doi/10.13345/j.cjb.2003.04.011,2003,张玲,10.13345/j.cjb.2003.04.011,,428-432,,Smad3基因剔除对小鼠造血功能的影响
+WS2109,different DOIs in one cluster,Wanfang,https://d.wanfangdata.com.cn/periodical/CiBQZXJpb2RpY2FsQ0hJU29scjkyMDI2MDkxNTE0MjIxORIPc3dnY3hiMjAwMzA0MDEwGghpYjFiMnVoeg%3D%3D,2003,张玲,10.3321/j.issn:1000-3061.2003.04.010,19,428-432,T2 title+author+year,Smad3基因剔除对小鼠造血功能的影响
+WS2109,different DOIs in one cluster,CBM,2004003702,2003,张玲,,19,428-432,T2 title+author+year,Smad3基因剔除对小鼠造血功能的影响
+WS2121,different DOIs in one cluster,CNKI,https://link.cnki.net/doi/10.15921/j.cnki.cyxb.2002.01.055,2002,赵永红,10.15921/j.cnki.cyxb.2002.01.055,,73-74,,脾扭转误诊2例
+WS2121,different DOIs in one cluster,Wanfang,https://d.wanfangdata.com.cn/periodical/CiBQZXJpb2RpY2FsQ0hJU29scjkyMDI2MDkxNTE0MjIxORIQY2R5eHl4YjIwMDIwMTA1NRoIaWIxYjJ1aHo%3D,2002,赵永红,10.3969/j.issn.1004-6879.2002.01.055,19,73-74,T2 title+author+year,脾扭转误诊2例
+WS2121,different DOIs in one cluster,CBM,2002193966,2002,赵永红,,19,73-74,T2 title+author+year,脾扭转误诊2例
+WS2135,different DOIs in one cluster,CNKI,https://link.cnki.net/doi/10.16245/j.cnki.issn1008-6978.2001.01.044,2001,唐歌,10.16245/j.cnki.issn1008-6978.2001.01.044,,60,,B超诊断游走脾一例
+WS2135,different DOIs in one cluster,Wanfang,https://d.wanfangdata.com.cn/periodical/CiBQZXJpb2RpY2FsQ0hJU29scjkyMDI2MDkxNTE0MjIxORIRbGNjc3l4enoyMDAxMDEwNDQaCGliMWIydWh6,2001,唐歌,10.3969/j.issn.1008-6978.2001.01.044,3,60,T2 title+author+year,B超诊断游走脾一例
+WS2135,different DOIs in one cluster,CBM,2001157613,2001,唐歌,,3,60,T4 author+year+volume+first page,B超诊断游走脾1例
+WS2136,different DOIs in one cluster,CNKI,https://link.cnki.net/doi/10.13586/j.cnki.yjyx1984.2001.01.018,2001,那民,10.13586/j.cnki.yjyx1984.2001.01.018,,29,,游走脾合并原发性腹膜炎1例
+WS2136,different DOIs in one cluster,Wanfang,https://d.wanfangdata.com.cn/periodical/CiBQZXJpb2RpY2FsQ0hJU29scjkyMDI2MDkxNTE0MjIxORITemd5amd5eXh6ejIwMDEwMTA1NBoIaWIxYjJ1aHo%3D,2001,那民,10.3969/j.issn.1005-5495.2001.01.054,18,25,T2 title+author+year,游走脾合并原发性腹膜炎1例
+WS2136,different DOIs in one cluster,CBM,2001157703,2001,那民,,18,25,T2 title+author+year,游走脾合并原发性腹膜炎1例
+WS2163,different DOIs in one cluster,CNKI,https://link.cnki.net/doi/10.13929/j.1003-3289.1998.11.026,1998,代景儒,10.13929/j.1003-3289.1998.11.026,,47,,异位脾致局限性球形膈膨出1例
+WS2163,different DOIs in one cluster,Wanfang,https://d.wanfangdata.com.cn/periodical/CiBQZXJpb2RpY2FsQ0hJU29scjkyMDI2MDkxNTE0MjIxORIRemd5eHl4anMxOTk4MTEwNDYaCGliMWIydWh6,1998,代景儒,10.3321/j.issn:1003-3289.1998.11.046,14,839,T2 title+author+year,异位脾致局限性球形膈膨出1例
+WS2163,different DOIs in one cluster,CBM,1999018719,1998,代景儒,,14,839,T2 title+author+year,异位脾致局限性球形膈膨出1例
+WS2167,different volume/first page in one cluster,CNKI,https://kns.cnki.net/kcms2/article/abstract?v=DgjXjbKQq8fnxXQWevlU4-IhY_cD4CYJL8BWm2DZNbKE2lHLzyoov9PZP_X2wNHkonHpFnkFbh5z14eeBTfqfJxY3oxdT_E_y6cpSurBAzLuCDdu1aE7Kz62g1ehAb1JP_v0EEz0WAbuhLyp_Ti_SPMyKWMkzOptYYiWZzGV4L0L9onX57G5Kg==&uniplatform=NZKPT&language=CHS,1998,肖春梅,,,134-135,,脾移植治疗血友病甲10例的护理
+WS2167,different volume/first page in one cluster,Wanfang,https://d.wanfangdata.com.cn/periodical/CiBQZXJpb2RpY2FsQ0hJU29scjkyMDI2MDkxNTE0MjIxORIOaGx4enoxOTk4MDMwMDIaCGliMWIydWh6,1998,肖春梅,10.3969/j.issn.1001-4152.1998.03.002,13,0,T2 title+author+year,脾移植治疗血友病甲10例的护理
+WS2167,different volume/first page in one cluster,CBM,1998113841,1998,肖春梅,,13,134-135,T2 title+author+year,脾移植治疗血友病甲10例的护理
+WS2203,different volume/first page in one cluster,CNKI,https://kns.cnki.net/kcms2/article/abstract?v=DgjXjbKQq8dA-kPCHS4PypHOsPfgkNzvb1Z0co1XsYsea9L184EEMkYcR7jbuQMXVYxVDDovma0Paq16pOqKBFuY5Fpfh0TmIciQLSbMcHF7A2wzbBHesbswhIHasRGnh9KCgc9NeXDE9QBjEfhI8fKwhFxpP0Xeo6_Slrbz_Qt9tIoXf9P3zw==&uniplatform=NZKPT&language=CHS,1994,陈晓波,,,489,,游走脾囊肿误诊为卵巢囊肿一例
+WS2203,different volume/first page in one cluster,Wanfang,https://d.wanfangdata.com.cn/periodical/CiBQZXJpb2RpY2FsQ0hJU29scjkyMDI2MDkxNTE0MjIxORIOemhmY2sxOTk0MDgwMTUaCGliMWIydWh6,1994,陈晓波,,29,489,T2 title+author+year,游走脾囊肿误诊为卵巢囊肿一例
+WS2203,different volume/first page in one cluster,Wanfang,https://d.wanfangdata.com.cn/periodical/CiBQZXJpb2RpY2FsQ0hJU29scjkyMDI2MDkxNTE0MjIxORIOUUsxOTk0MDA0NTMxNjEaCGliMWIydWh6,1994,陈晓波,,,489,,游走脾合并脾囊肿误诊为卵巢囊肿1例
+WS2203,different volume/first page in one cluster,CBM,1994156890,1994,陈晓波,,7,489,T2 title+author+year,游走脾合并脾囊肿误诊为卵巢囊肿1例
+WS2203,different volume/first page in one cluster,CBM,1994102755,1994,陈晓波,,29,489,T3 similar title+author+year,游走脾囊肿误诊为卵巢囊肿1例
+WS2312,different volume/first page in one cluster,CNKI,https://kns.cnki.net/kcms2/article/abstract?v=DgjXjbKQq8drwNqkV18FdNcWwubKfwHPKg3WwLE165jGRzKnV21ZS3npmfMCimzFpiRPtZfo8Zzqzuib056n2pU1H43JmEWbYfeSrl6b0swTjBD7Cp8roqmvfLRsGFvZ8pdNqiymdiL1Vy4muBBqd00I26RiZXm6UcnC3FsiYavThK8R_Y3nUQ==&uniplatform=NZKPT&language=CHS,1953,,,1,122,,游动脾合并脾蒂扭转
+WS2312,different volume/first page in one cluster,Wanfang,https://d.wanfangdata.com.cn/periodical/CiBQZXJpb2RpY2FsQ0hJU29scjkyMDI2MDkxNTE0MjIxORINemh3azE5NTMwMjAwMxoIaWIxYjJ1aHo%3D,1953,瞿祖德,,1,120-122,T5 title+volume+pages,游动脾合并脾蒂扭转
+WS2313,different volume/first page in one cluster,CNKI,https://kns.cnki.net/kcms2/article/abstract?v=DgjXjbKQq8ea0YijLb4AA549VGjqRaMP8a4t1gkdnw9hvdZWTSCj-h7eRPRJS7SBfwHbtDBW4rgZlZtboIBvh9eLBhxEMKZOcnxl0glpXxqKnp4Tuq1t3E7ou-2Xy1W5cimugG3NI51F6sBjx14wi5k7eYH2L5FxOQe8EF-smSoo1vz9dL4hjw==&uniplatform=NZKPT&language=CHS,1958,,,44,507,,人工气腹并发脾蒂扭转一例
+WS2313,different volume/first page in one cluster,Wanfang,https://d.wanfangdata.com.cn/periodical/CiBQZXJpb2RpY2FsQ0hJU29scjkyMDI2MDkxNTE0MjIxORINemh5eDE5NTgwNTAwMxoIaWIxYjJ1aHo%3D,1958,许学受,,44,506-507,T5 title+volume+pages,人工气腹并发脾蒂扭转一例
+WS2323,different volume/first page in one cluster,Wanfang,https://d.wanfangdata.com.cn/periodical/CiBQZXJpb2RpY2FsQ0hJU29scjkyMDI2MDkxNTE0MjIxORIVemhvbmdnd2N3a3p6MjAxMTA2MDA3GghpYjFiMnVoeg%3D%3D,2011,孙媛媛,10.3969/j.issn.1009-6604.2011.06.007,16,"502-504,510",,妊娠期急腹症腹腔镜的应用原则
+WS2323,different volume/first page in one cluster,CBM,2011664434,2011,孙媛媛,,11,"502-504,510",T2 title+author+year,妊娠期急腹症腹腔镜的应用原则

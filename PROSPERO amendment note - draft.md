@@ -23,7 +23,7 @@ Six databases were searched, without language, date or study-design limits:
 | Wanfang Data | 28 Sep 2026 | 423 |
 | China Biology Medicine database (CBM, via SinoMed) | 29 Sep 2026 | 421 |
 
-Total before deduplication: 4,906 records. The records will be deduplicated in EndNote and screened in Rayyan. All searches were run by Jun Shu. Full as-run strategies, hit counts and notes are in Appendices A and B of protocol version 1.2.
+Total before deduplication: 4,906 records. Duplicates were removed with a documented, rule-based script (4,906 records identified; 2,351 duplicates removed; 2,555 records to screen) [to be confirmed after the EndNote duplicate check; if EndNote disagrees, update these numbers]. The records will be screened in Rayyan. All searches were run by Jun Shu. Full as-run strategies, hit counts and notes are in Appendices A and B of protocol version 1.2.
 
 Changes to the search strategies since registration (made before any formal search): a medical librarian tested the PubMed strategy; phrases that PubMed silently ignores were replaced by proximity searches; term lists were unified across the English-language databases; thesaurus terms were confirmed (MeSH, SinoMed subject heading); a separate exclusion check was run in CNKI (153 records, none relevant).
 

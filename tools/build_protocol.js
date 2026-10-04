@@ -318,7 +318,7 @@ ch.push(table([2000, 1500, 1200, 1300, 1300, 1300], ["Source", "Platform / inter
   ["CBM", "SinoMed", "2026-09-29", "inception–2026-09-29", "421", "Jun Shu"],
   ["Google Scholar", "NOT SEARCHED — blocked by Google (unusual-traffic page); no results seen", "2026-10-04", "", "0", ""],
   ["Citation searching", "Forward (Ganarin 2021 cited-by): lists viewed in WoS (13) and Scopus (13), not exported or screened; backward: not done", "2026-10-04", "", "0", "Jun Shu"],
-  ["Records after deduplication", "", "", "", "", ""],
+  ["Records after deduplication", "Rule-based script (tools/dedup.py; tiers: DOI, title+author+year, similar title, author+year+volume+page, title+volume+pages), 4 October 2026; 4,906 identified, 2,351 duplicates removed; EndNote check pending", "2026-10-04", "", "2555", ""],
 ]));
 
 // ---------------------------------------------------------------- Appendix C
