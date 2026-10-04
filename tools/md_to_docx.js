@@ -21,7 +21,7 @@ function runs(text, base = {}) {
   while ((m = re.exec(text)) !== null) {
     if (m.index > last) out.push(new TextRun({ text: text.slice(last, m.index), font: FONT, ...base }));
     const tok = m[0];
-    if (tok.startsWith("**")) out.push(new TextRun({ text: tok.slice(2, -2), bold: true, font: FONT, ...base }));
+    if (tok.startsWith("**")) out.push(new TextRun({ text: tok.slice(2, -2).replace(/`/g, ""), bold: true, font: FONT, ...base }));
     else out.push(new TextRun({ text: tok.slice(1, -1), font: MONO, size: (base.size || 21) - 2, shading: { type: ShadingType.CLEAR, fill: "EEEEEE" }, ...base, bold: base.bold }));
     last = m.index + tok.length;
   }
