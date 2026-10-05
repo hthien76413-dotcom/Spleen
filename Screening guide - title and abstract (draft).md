@@ -31,6 +31,10 @@
 - 建议额外使用两个标签：
   - `review-for-refs`：没有新病例的综述，不纳入，但保留它的参考文献，将来如果补做引文追溯可以用。
   - `lang-other`：既不是英文也不是中文的文章（法、德、西、葡、意、俄、土耳其等）。
+- **先改 Rayyan 的默认高亮关键词（5 Oct 校准项目截图所见）。** 右侧 Keywords for exclude 里默认有 `case report`、`case reports`、`literature review`、`this review`（红色），Keywords for include 里是 RCT、placebo、randomly 等随机对照试验用词。本综述要找的恰恰是病例报告，红色的 `case report` 会误导。**开始筛选前删掉这些默认词，只保留下面建议的词**；两位筛选员的设置要一致（高亮是个人设置还是项目共享，请在校准时确认）。
+- **不使用 Rayyan 的 AI 功能来做决定**（AI Reviewer、Analyze、ResearchPilot 聊天等）：协议 v1.2 没有写使用 AI 或自动化工具辅助筛选。如果以后要用，先修改协议，并在方法部分说明。
+- 每条记录下方有 **Add note**（备注）框：E6 的具体说明、可能是重复患者的提示都写在这里。
+- 记录标题下写着"作者和期刊信息已隐藏"（有 Show 按钮）：标题摘要阶段不需要作者和期刊，保持隐藏即可；如果有人点了 Show，在校准讨论时说明。
 - 高亮词建议：
   - 绿色（可能相关）：wandering, floating spleen, movable, pelvic spleen, splenoptosis, torsion, volvulus, splenopexy, child, pediatric, infant, 游走脾, 游动脾, 漂浮脾, 脾下垂, 脾蒂扭转, 儿童, 小儿, 患儿。
   - 红色（可能排除）：splenosis, accessory, supernumerary, pregnancy, dog, canine, cat, rat, mouse, patent, 脾种植, 副脾, 妊娠, 犬, 大鼠, 小鼠, 专利。
