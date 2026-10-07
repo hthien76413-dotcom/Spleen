@@ -146,10 +146,15 @@
 
 ## 7. 解决分歧
 
-1. Rayyan 里两人都筛完之后，打开冲突列表。
-2. 先讨论，达成一致后统一决定。
-3. 讨论不一致的，交杨军仲裁，仲裁结果记入备注。
-4. 记录分歧条数，PRISMA 和方法部分可以引用。
+**分歧在 Rayyan 外面解决（舒俊 2026 年 10 月 7 日选定；杨军不需要 Rayyan 账号）。** Rayyan 里保留两人各自独立的原始决定，不在里面改。
+
+1. 两人都筛完全部记录后，才由舒俊关闭正式项目的 Blind Mode。关闭前请先各自记下自己的数字。
+2. 舒俊导出：Review data → 右上 "···" → Export，范围 All references，格式 CSV，勾选 decisions、exclusion reasons、labels、user notes。导出会得到两个文件（`articles.csv` 和 `customizations_log.csv`），其中带有筛选员的邮箱，**不要提交到仓库**。
+3. 用 `tools/screening_conflicts.py` 处理（Claude 或舒俊运行；用法见脚本开头）。它生成四个不含邮箱的文件：全部记录的两人决定表；**分歧清单**（含标题、摘要、两人的决定和理由，以及讨论和仲裁要填的列）；"纳入对 Maybe"清单；汇总（一致率、kappa、没选理由的 Exclude 数、未能对应到 WS 编号的记录数）。
+4. **只有"一人 Exclude、另一人 Include 或 Maybe"的分歧需要解决**，因为这类记录会不会进入全文取决于它。**"Include 对 Maybe"两种都进入全文，只报告条数，不解决**（这一条是 Claude 的建议，待三位确认）。
+5. 解决顺序：先由舒俊和彭飞讨论，达成一致的决定填入 `discussion_agreed_decision`，理由写在 `discussion_note`；讨论不一致的交杨军，杨军填 `adjudicator_decision` 和 `adjudicator_note`；最后在 `final_decision` 填最终决定。杨军直接用 Excel 或 WPS 打开分歧清单即可，清单里有标题和摘要。
+6. 填好的分歧清单提交到仓库 `search/screening/formal/`，作为可核对的记录。**进入全文阶段的记录** = 两人一致的 Include 和 Maybe + 分歧解决后的 Include 和 Maybe。PRISMA 的数字从这些文件计算。
+7. 记录：分歧条数、讨论解决条数、仲裁条数、一致率和 kappa（方法部分引用）。
 
 ## 8. 待作者决定的事项
 
@@ -205,6 +210,7 @@
 | 一条记录同时符合两条理由时，任选一条适用的即可 | 第 5 节 |
 | 每次开始筛选前确认作者和期刊处于隐藏状态；发现显示了先记录并告知 | 第 3 节 |
 | 增加导出决定的方法；不点 Detect duplicates 和 Auto resolve | 第 3 节 |
+| 分歧在 Rayyan 外面解决，用导出文件生成分歧清单，杨军不需要 Rayyan 账号（舒俊选定）；"Include 对 Maybe"只报告不解决（Claude 建议，待三位确认） | 第 7 节 |
 
 **没有改的：** 第 8 节的 6 项待决定事项仍待三位商定；筛选员人数不变，仍是两人各筛一遍（协议规定），不改为一人筛选。
 
