@@ -39,6 +39,7 @@
 - **不使用 Rayyan 的 AI 功能来做决定**（AI Reviewer、Analyze、ResearchPilot 聊天等）：协议 v1.2 没有写使用 AI 或自动化工具辅助筛选。如果以后要用，先修改协议，并在方法部分说明。
 - 每条记录下方有 **Add note**（备注）框：E6 的具体说明、可能是重复患者的提示都写在这里。
 - 记录标题下写着"作者和期刊信息已隐藏"（有 Show 按钮）：标题摘要阶段不需要作者和期刊，保持隐藏即可。**校准中发现这条在筛选过程中变成了显示状态，原因不明（见第 11 节）。因此正式筛选时，两人每次开始之前都先确认处于隐藏状态；如果发现显示了，不要继续筛，先记下日期和时间，并告诉其他人。**
+- **筛选时只用 Screening 标签。** Review data 标签的列表会直接显示作者和日期，不受"隐藏"设置约束（2026 年 10 月 7 日彭飞的截图所见）；这个标签只在导出时使用，不要在筛选过程中打开。这是操作提醒，不改变任何判断规则。
 - **导出决定的方法**：Review data 标签 → 右上角 "···" → Review settings 面板 → Export；范围选 All references，格式 CSV，勾选 decisions、exclusion reasons、labels、user notes。
 - **不要点** Detect duplicates 和 Auto resolve：去重已经由脚本和 EndNote 完成，Rayyan 的查重会把标题通用的记录（如 "Wandering spleen."）误判为重复。
 - 高亮词建议：
