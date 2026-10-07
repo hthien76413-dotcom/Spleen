@@ -55,8 +55,8 @@ const ch = [];
 // ---------------------------------------------------------------- cover
 ch.push(para([["Systematic review protocol — PROSPERO CRD420261520329", { bold: true, size: 30 }]], { after: 160 }));
 ch.push(para([["Time to surgery and splenic salvage in children with wandering spleen: a systematic review of individual patient data, with a single-centre case series", { bold: true, size: 24 }]], { after: 160 }));
-ch.push(para("Version 1.2, 4 October 2026. Prepared for the review team of Wuhan Children's Hospital.", { after: 120 }));
-ch.push(para([["Version history. ", { bold: true, size: 20 }], ["Version 1.0 (uploaded at registration as draft v0.1). Version 1.1: search strategies (Section 5, Appendices A and B) revised after review by a medical librarian, before the formal searches were run; eligibility criteria, exposures, outcomes and analysis are unchanged. Version 1.2 (4 October 2026): as-run details of the formal searches added to Appendices A and B; deduplication done with a documented script and checked in EndNote (Section 14, Appendix B); Embase and Google Scholar were not searched and citation searching was not completed (see Appendices A2, A8 and B); eligibility criteria, exposures, outcomes and analysis are unchanged.", { size: 20 }]], { after: 240, align: AlignmentType.JUSTIFIED }));
+ch.push(para("Version 1.3, 7 October 2026. Prepared for the review team of Wuhan Children's Hospital.", { after: 120 }));
+ch.push(para([["Version history. ", { bold: true, size: 20 }], ["Version 1.0 (uploaded at registration as draft v0.1). Version 1.1: search strategies (Section 5, Appendices A and B) revised after review by a medical librarian, before the formal searches were run; eligibility criteria, exposures, outcomes and analysis are unchanged. Version 1.2 (4 October 2026): as-run details of the formal searches added to Appendices A and B; deduplication done with a documented script and checked in EndNote (Section 14, Appendix B); Embase and Google Scholar were not searched and citation searching was not completed (see Appendices A2, A8 and B); eligibility criteria, exposures, outcomes and analysis are unchanged. Version 1.3 (7 October 2026, before formal screening started): the screening procedure actually set up (calibration result, screening guide rules, handling of disagreements, agreement reporting) added to Section 14, and the stage of review at amendment added to Section 1; eligibility criteria, exposures, outcomes and analysis are unchanged.", { size: 20 }]], { after: 240, align: AlignmentType.JUSTIFIED }));
 
 // ---------------------------------------------------------------- 1
 ch.push(h1("1. Review title and timescale"));
@@ -68,6 +68,15 @@ ch.push(h2("Stage of review at time of registration"));
 ch.push(table([5200, 1700, 1700], ["Review stage", "Started", "Completed"], [
   ["Preliminary searches", "Yes", "Yes"],
   ["Piloting of the study selection process", "Yes", "No"],
+  ["Formal screening of search results against eligibility criteria", "No", "No"],
+  ["Data extraction", "No", "No"],
+  ["Risk of bias (quality) assessment", "No", "No"],
+  ["Data analysis", "No", "No"],
+]));
+ch.push(h2("Stage of review at the time of amendment (version 1.3, 7 October 2026)"));
+ch.push(table([5200, 1700, 1700], ["Review stage", "Started", "Completed"], [
+  ["Preliminary searches", "Yes", "Yes"],
+  ["Piloting of the study selection process (calibration on 50 records)", "Yes", "Yes"],
   ["Formal screening of search results against eligibility criteria", "No", "No"],
   ["Data extraction", "No", "No"],
   ["Risk of bias (quality) assessment", "No", "No"],
@@ -173,6 +182,10 @@ ch.push(h1("13. Additional outcomes"));
 ch.push(h1("14. Data extraction (selection and coding)"));
 ch.push(para([
   ["Records were deduplicated with a documented, rule-based script (identical DOI; identical title with the same first author and year; similar title with the same first author; same first author, year, volume and first page; and further rules for Chinese-language records and for differently written author names; the tiers are listed in Appendix B), and EndNote’s duplicate finder was then run on the result as a check. The deduplicated records will be screened in Rayyan. Two reviewers will independently screen titles and abstracts, then full texts, against the eligibility criteria; disagreements will be resolved by discussion or, if needed, by a third reviewer (JY). Chinese-language reports will be screened by reviewers fluent in Chinese. Before formal screening, both reviewers will screen a calibration set of 50 records and discuss discrepancies.", {}],
+], { align: AlignmentType.JUSTIFIED }));
+ch.push(para([
+  ["Screening procedure as set up (added in version 1.3). ", { bold: true }],
+  ["Screening is done in Rayyan with its blind mode on until both reviewers have finished a stage; author and journal details are hidden. Before formal screening, the two reviewers independently screened a random calibration set of 50 of the 2,548 deduplicated records (random seed 20261004) and compared their decisions (Include, Maybe, Exclude): they agreed on 45 of 50 records (90.0%; Cohen's kappa 0.83), and all five disagreements were among the 11 records without an abstract. Author and journal details were visible to both reviewers during part of the calibration. A written screening guide, revised after the calibration, applies the eligibility criteria above without changing them. Its main rules are: when in doubt, choose Maybe; an Exclude decision at the title and abstract stage must carry one of six fixed reasons (not human; not wandering spleen; adults only; no original patient data; not a formal article; other); records without an abstract are judged on the title and may be rated Maybe or Exclude only; conference papers with an abstract only are excluded as not a formal article; theses with clinical data and series that mix children and adults are kept as Maybe for full-text assessment. Rayyan's artificial-intelligence functions, its automatic duplicate detection and its automatic conflict resolution are not used. Where one reviewer excludes and the other includes or marks Maybe, the two reviewers discuss the record and, if they do not agree, the adjudicator (JY) decides from an exported list outside Rayyan; each step is recorded and the completed list is kept with the review files. Differences between Include and Maybe, which both lead to full-text assessment, are counted and reported but not adjudicated. Agreement at the title and abstract stage will be reported as Cohen's kappa, in addition to the kappa for data extraction.", {}],
 ], { align: AlignmentType.JUSTIFIED }));
 ch.push(para("Two reviewers will independently extract data for every included patient with the form in Appendix C, after calibration on 10 reports. Agreement on the primary exposure and the primary outcome will be reported as Cohen's kappa. Where a report describes several patients only in aggregate, the corresponding author will be emailed twice, four weeks apart, to request individual data; if none are supplied, the report will be described narratively.", { align: AlignmentType.JUSTIFIED }));
 ch.push(para("Duplicate reports of the same patient will be identified by matching institution, study period, age, sex and clinical details. The most complete report will be used and the others linked to it.", { align: AlignmentType.JUSTIFIED }));
