@@ -1,0 +1,51 @@
+﻿final_id,rayyan_id,year,title,R1_JunShu_decision,R1_reason,R2_FeiPeng_decision,R2_reason,has_abstract,language
+WS0073,716293552,2025,Pheochromocytoma in a patient with heterotaxy syndrome: a case report.,Exclude,E3 adults only,Exclude,E3 adults only,yes,eng
+WS0090,716293553,2024,Computed tomography features and surgical treatment of wandering spleen torsion: A case report.,Exclude,E3 adults only,Exclude,E3 adults only,yes,eng
+WS0222,716293554,2021,An infarcted wandering spleen leading to a sigmoid volvulus presenting with acute large bowel obstruction: a case report.,Maybe,,Maybe,,yes,eng
+WS0250,716293555,2020,Accessory spleen originating from the intrinsic muscularis of the stomach misdiagnosed as gastrointestinal stromal tumor: a case report.,Exclude,E3 adults only,Exclude,E3 adults only,yes,eng
+WS0303,716293556,2019,A rare case of accessory spleen torsion in a child diagnosed by ultrasound (US) and contrast-enhanced ultrasound (CEUS).,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,yes,eng
+WS0388,716293557,2015,"Wandering spleen, gastric and pancreatic volvulus and right-sided descending and sigmoid colon.",Maybe,,Maybe,,yes,eng
+WS0519,716293558,2011,[A case of wandering spleen: a rare cause of acute abdomen].,Include,,Include,,yes,fre
+WS0520,716293559,2012,Laparoscopic splenectomy of a wandering spleen with coincidental enormous splenomegaly.,Maybe,,Maybe,,yes,eng
+WS0594,716293560,2008,Unusual association of omphalocele and wandering spleen.,Include,,Include,,yes,eng
+WS0607,716293561,2007,Wandering spleen with torsion.,Maybe,,Maybe,,no,eng
+WS0636,716293562,2006,Postcesarean splenic torsion.,Exclude,E3 adults only,Exclude,E3 adults only,yes,eng
+WS0716,716293563,2003,[Case report: Acute abdomen and pelvic mass due to torsion of a wandering spleen].,Maybe,,Maybe,,yes,tur
+WS0735,716293564,2002,[Partial resection of the spleen in the treatment of benign and traumatic lesions].,Maybe,,Maybe,,yes,hrv
+WS0768,716293565,2001,"Laparoscopic splenopexy by peritoneal and omental pouch construction for intermittent splenic torsion (""wandering spleen"").",Exclude,E3 adults only,Exclude,E3 adults only,yes,eng
+WS0777,716293566,2000,Wandering spleen presenting as an asymptomatic mass.,Maybe,,Maybe,,no,eng
+WS0782,716293567,2000,Chronic primary splenic torsion with peritoneal adhesions in a dog: case report and literature review.,Exclude,E1 non-human,Exclude,E1 non-human,yes,eng
+WS0853,716293568,1996,Wandering spleen: a rare emergency condition.,Maybe,,Maybe,,no,eng
+WS0877,716293569,1994,Wandering spleen with torsion: appearance on CT and ultrasound.,Maybe,,Maybe,,yes,eng
+WS0902,716293570,1993,Torsion of a wandering spleen.,Maybe,,Maybe,,no,eng
+WS0938,716293571,1990,Elective splenopexy for wandering spleen.,Include,,Include,,yes,eng
+WS1015,716293572,1984,Radiologic diagnosis of wandering spleen complicated by splenic volvulus and infarction.,Maybe,,Maybe,,yes,eng
+WS1020,716293573,1983,Wandering spleen.,Maybe,,Maybe,,no,eng
+WS1042,716293574,1981,One case of recurrent torsion of a visceroptotic spleen,Maybe,,Maybe,,yes,French
+WS1070,716293575,1978,Wandering spleen with torsion of pedicle in a child presenting as an intermittently-appearing abdominal mass.,Maybe,,Maybe,,yes,eng
+WS1095,716293576,1975,Torsion of the wandering spleen.,Maybe,,Maybe,,yes,eng
+WS1125,716293577,1970,Ectopic spleen mimicking an intrinsic fundal lesion of the stomach,Exclude,E3 adults only,Exclude,E3 adults only,yes,English
+WS1142,716293578,1967,[Torsion of a floating spleen in a 13-year-old girl].,Include,,Maybe,,no,pol
+WS1151,716293579,1966,[Therapeutic possibilities of intra-pulmonary splenopexy in certain cases of portal hypertension].,Maybe,,Exclude,,no,fre
+WS1191,716293580,1957,[Differential diagnosis of genital tumors & floating spleens].,Maybe,,Exclude,,no,ger
+WS1241,716293581,1946,[Leukemic spleen with twisted pedicle that simulated gynecological disease; splenectomy required].,Maybe,,Exclude,,no,spa
+WS1343,716293582,1998,The laparoscopic extirpation of a wandering spleen,Maybe,,Maybe,,no,English
+WS1367,716293583,2025,Beyond the usual: three unique cases of wandering spleen in Indonesia,Maybe,,Maybe,,yes,English
+WS1473,716293584,1999,Expression of human blood clotting factor VIII in the mammary gland of transgenic sheep,Exclude,E1 non-human,Exclude,E1 non-human,yes,English
+WS1512,716293585,2017,Splenic torsion presenting as splenic vein thrombosis,Include,,Include,,yes,English
+WS1513,716293586,2023,小儿脾韧带缺如并原位脾扭转1例并文献复习,Include,,Include,,yes,Chinese
+WS1585,716293587,2017,Splenectomy,Exclude,E1 non-human,Exclude,E1 non-human,yes,English
+WS1610,716293588,2016,A patient with abdominal mass and thrombocytopenia (ectopic spleen): A case report,Exclude,E3 adults only,Exclude,E3 adults only,yes,Persian
+WS1612,716293589,2018,A wandering spleen detected by 99mTc-denatured RBC scan,Include,,Include,,yes,English
+WS1629,716293590,2009,Acute torsion of wandering spleen: Report of one case,Exclude,E3 adults only,Exclude,E3 adults only,yes,Arabic
+WS1724,716293591,1989,Implications for percutaneous left renal invasive procedures,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,yes,English
+WS1751,716293592,1965,Some Diagnostic Applications of Combined Radioisotope Scanning of Adjacent Organs,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,yes,English
+WS1763,716293593,1987,Sonography of the Spleen: A Review,Exclude,E4 no original patient data,Exclude,E4 no original patient data,yes,English
+WS1950,716293594,2016,胰腺内异位脾脏伴表皮样囊肿1例,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,yes,Chinese
+WS2143,716293595,2000,放射学诊断拾零,Maybe,,Exclude,,no,Chinese
+WS2226,716293596,1991,游走脾合并脾囊肿一例,Exclude,E3 adults only,Exclude,E3 adults only,yes,Chinese
+WS2422,716293597,,中蜂复脾野巢式盒蜜及生产方法和设备,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,yes,Chinese
+WS2441,716293598,2017,腹腔镜治疗胃底体异位脾脏1例报告,Exclude,E3 adults only,Exclude,E3 adults only,yes,Chinese
+WS2446,716293599,2014,心脏永久起搏器植入464例并发症分析,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,yes,Chinese
+WS2496,716293600,2008,脾脏的基础研究进展与展望,Exclude,E4 no original patient data,Exclude,E4 no original patient data,yes,Chinese
+WS2515,716293601,2002,脾移植术后早期管理体会:附5例报告,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,yes,Chinese
