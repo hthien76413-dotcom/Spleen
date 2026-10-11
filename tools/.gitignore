@@ -1,2 +1,3 @@
 node_modules/
 protocol_raw.docx
+__pycache__/
