@@ -5,9 +5,11 @@ Usage:
     python3 -I tools/compare_extractions.py extraction_E1.xlsx extraction_E2.xlsx -o comparison.xlsx
     python3 -I tools/compare_extractions.py E1.xlsx E2.xlsx -o comparison.xlsx --sheets Patients Reports
     python3 -I tools/compare_extractions.py E1.xlsx E2.xlsx -o comparison.xlsx --tol-days 1 0.10
+    python3 -I tools/compare_extractions.py rob_R1.xlsx rob_R2.xlsx -o rob_comparison.xlsx --sheets RoB
 
 What it does
-  * Matches rows by patient_id (Patients sheet) or report_id (Reports sheet).
+  * Matches rows by patient_id (Patients sheet) or report_id (Reports sheet, and RoB sheet of the risk-of-bias
+    workbook built by tools/build_rob_workbook.py; for RoB, kappa is reported for adequate_primary and for each item).
   * Compares every categorical and numeric field. Free-text fields, source columns, notes, extractor and date
     are not compared (listed in the Summary sheet).
   * Blank = "not yet extracted" (protocol README); NR = "not reported". A field that is blank for one extractor and
@@ -74,7 +76,18 @@ REPORT_FIELDS = {
         "extractor", "date_extracted", "notes",
     ],
 }
-SHEETS = {"Patients": PATIENT_FIELDS, "Reports": REPORT_FIELDS}
+ROB_FIELDS = {  # risk-of-bias workbook (tools/build_rob_workbook.py); one row per report, one file per reviewer
+    "key": ["report_id"],
+    "identity": [],
+    "derived": ["adequate_primary"],
+    "categorical": ["q_selection", "q_exposure", "q_outcome", "q_alternative", "q_followup", "q_reporting"],
+    "numeric": [],
+    "free": [
+        "reviewer", "date_assessed", "support_selection", "support_exposure", "support_outcome", "support_other",
+        "notes",
+    ],
+}
+SHEETS = {"Patients": PATIENT_FIELDS, "Reports": REPORT_FIELDS, "RoB": ROB_FIELDS}
 
 # absolute and relative tolerance for "agreement within tolerance"; (0, 0) = exact. Day fields can be overridden.
 DAY_FIELDS = ["idx_dur_days", "idx_dur_alt_days", "total_hist_days", "waiting_interval_days"]
@@ -157,6 +170,14 @@ def derive_outcome(viability, procedure):
     if v == "NR":  # canon() returns NR in capitals
         return "NR - removed, check reason" if removal else "NR"
     return "Not applicable"
+
+
+def derive_adequate(exposure, outcome, reporting):
+    """Risk-of-bias workbook column adequate_primary: Yes only if exposure, outcome and reporting items are all Yes."""
+    items = [canon(x) for x in (exposure, outcome, reporting)]
+    if any(i is None for i in items):
+        return None
+    return "Yes" if all(i == "yes" for i in items) else "No"
 
 
 def derive_thrombocytosis(platelets):
@@ -337,7 +358,7 @@ def main(argv=None):
             s = stats[f]
             field_rows.append((sh, f, s["n"], s["agree"], s["agree"] / s["n"], s["exact"], s["exact"] / s["n"]))
 
-        if sh == "Patients":
+        if sh in ("Patients", "RoB"):
             def derived_pairs(fn):
                 out_pairs = []
                 for pid in matched:
@@ -346,22 +367,30 @@ def main(argv=None):
                         out_pairs.append((canon(a), canon(b)))
                 return out_pairs
 
-            def cat(row):
-                return derive_category(row.get("idx_dur_days"), row.get("idx_dur_cat_imprecise"))
+            if sh == "Patients":
+                def cat(row):
+                    return derive_category(row.get("idx_dur_days"), row.get("idx_dur_cat_imprecise"))
 
-            def outcome(row):
-                return derive_outcome(row.get("viability"), row.get("procedure"))
+                def outcome(row):
+                    return derive_outcome(row.get("viability"), row.get("procedure"))
 
-            def binary(row):
-                o = outcome(row)
-                return None if o is None else ("Non-viable" if o == "Non-viable" else "Other")
+                def binary(row):
+                    o = outcome(row)
+                    return None if o is None else ("Non-viable" if o == "Non-viable" else "Other")
 
-            specs = [
-                ("主要暴露：指数发作时长类别（四类+缺失）/ primary exposure category", cat, DUR_CATS + ["NR"]),
-                ("主要结局：primary_outcome（推导列，全部类别）", outcome, ["Non-viable", "Viable", "Review"]),
-                ("主要结局：Non-viable vs 其他（协议第 12 节的二分类）", binary, ["Non-viable", "Other"]),
-                ("脾脏存活原始字段 viability", lambda r: r.get("viability"), VIABILITY),
-            ]
+                specs = [
+                    ("主要暴露：指数发作时长类别（四类+缺失）/ primary exposure category", cat, DUR_CATS + ["NR"]),
+                    ("主要结局：primary_outcome（推导列，全部类别）", outcome, ["Non-viable", "Viable", "Review"]),
+                    ("主要结局：Non-viable vs 其他（协议第 12 节的二分类）", binary, ["Non-viable", "Other"]),
+                    ("脾脏存活原始字段 viability", lambda r: r.get("viability"), VIABILITY),
+                ]
+            else:
+                def adequate(row):
+                    return derive_adequate(row.get("q_exposure"), row.get("q_outcome"), row.get("q_reporting"))
+
+                specs = [("偏倚风险：adequate_primary（推导列）/ adequate for the primary question", adequate, ["Yes", "No"])]
+                for item in ROB_FIELDS["categorical"]:
+                    specs.append((f"偏倚风险：{item}", (lambda r, item=item: r.get(item)), ["Yes", "No", "Unclear", "Not applicable"]))
             log("")
             log("  Cohen's kappa（未加权；SE 为大样本近似，n 小时不可靠）")
             for label, fn, order in specs:
@@ -380,7 +409,7 @@ def main(argv=None):
                 cats, mat = confusion(pairs, order)
                 conf_blocks.append((label, cats, mat))
             # days: exact vs within tolerance, among patients where both gave a number
-            for f in ("idx_dur_days", "total_hist_days"):
+            for f in (("idx_dur_days", "total_hist_days") if sh == "Patients" else ()):
                 s = stats.get(f)
                 if s and s["n"]:
                     log(f"  {f}: 两人都填 {s['n']} 例，精确一致 {s['exact']}，容差内一致 {s['agree']}")

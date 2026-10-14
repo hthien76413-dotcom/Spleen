@@ -14,7 +14,7 @@ from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
 from openpyxl.utils import get_column_letter
 from openpyxl.worksheet.datavalidation import DataValidation
 
-VERSION = "v2026-10-11a"
+VERSION = "v2026-10-14a"
 OUT = sys.argv[1] if len(sys.argv) > 1 else "Extraction workbook - template (draft).xlsx"
 
 N_PAT, N_REP, N_FT, N_IPD = 1500, 800, 2000, 300  # pre-formatted rows
@@ -388,7 +388,7 @@ README_LINES = [
     ("b", "A6  加了 extractor、date_extracted、same_patient_as、idx_dur_rules、idx_dur_lower_bound、idx_dur_cat_imprecise（规则 5 和 9 要求标记）、src_* 出处列。"),
     ("b", "A7  Age 的取值：协议写'年，两位小数（月数 ÷ 12）'；未报告填 NR；原文写法另存 age_verbatim。只写'child'或'患儿'而没有具体年龄的，年龄填 NR（见全文指南 D2）。"),
     ("h", "4. 没有验证的事"),
-    ("b", "灰色列的公式用 Python 的 formulas 库按公式文本计算过（九行虚构的测试数据，覆盖各分支，没有保存）；容器里没有 Excel，也没有 LibreOffice 的 Calc，所以文件没有在 Excel 或 WPS 里打开过，下拉列表和版面实际是否正常没有验证。第一次用时请随便填几行试一下，有问题告诉 Claude。"),
+    ("b", "灰色列的公式已用三种方式核对：Python 的 formulas 库、独立的 Python 规则、LibreOffice Calc（10 组虚构的测试数据，覆盖各分支，结果一致；空行保持为空）。LibreOffice Calc 能正常打开本文件，所有下拉列表都被识别。**但没有在 Excel 或 WPS 里打开过，版面（列宽、冻结窗格、颜色）也没有人眼检查过。** 第一次用时请随便填几行试一下，有问题告诉 Claude。"),
 ]
 
 RULES_ROWS_DURATION = [

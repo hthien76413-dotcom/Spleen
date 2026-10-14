@@ -28,23 +28,24 @@ import compare_extractions as ce  # noqa: E402
 from openpyxl import load_workbook  # noqa: E402
 
 BUILDER = os.path.join(HERE, "build_extraction_workbook.py")
+ROB_BUILDER = os.path.join(HERE, "build_rob_workbook.py")
 
 
-def template_codes():
-    """Field codes of PATIENT_COLS and REPORT_COLS, read from the generator's source with ast."""
-    with open(BUILDER, encoding="utf-8") as fh:
+def template_codes(builder=BUILDER, names=("PATIENT_COLS", "REPORT_COLS")):
+    """Field codes of the named column lists, read from a generator's source with ast (the generator is not run)."""
+    with open(builder, encoding="utf-8") as fh:
         tree = ast.parse(fh.read())
     out = {}
     for node in tree.body:
         if isinstance(node, ast.Assign) and isinstance(node.targets[0], ast.Name):
             name = node.targets[0].id
-            if name in ("PATIENT_COLS", "REPORT_COLS"):
+            if name in names:
                 out[name] = [row[0] for row in ast.literal_eval(node.value)]
     return out
 
 
-def build_template(path):
-    subprocess.run([sys.executable, "-I", BUILDER, path], check=True, capture_output=True)
+def build_template(path, builder=BUILDER):
+    subprocess.run([sys.executable, "-I", builder, path], check=True, capture_output=True)
 
 
 def col_index(ws):
@@ -81,6 +82,12 @@ class TemplateCoverageTests(unittest.TestCase):
             self.assertEqual(len(classified), len(set(classified)), f"{name}: a column is in two groups")
             self.assertEqual(sorted(classified), sorted(codes[name]),
                              f"{name}: template and compare_extractions.py disagree on the column list")
+
+    def test_rob_template_columns_are_classified_once(self):
+        codes = template_codes(ROB_BUILDER, ("ROB_COLS",))["ROB_COLS"]
+        classified = [c for group in ce.ROB_FIELDS.values() for c in group]
+        self.assertEqual(len(classified), len(set(classified)))
+        self.assertEqual(sorted(classified), sorted(codes))
 
 
 class DerivedTests(unittest.TestCase):
@@ -251,6 +258,182 @@ class EndToEndTests(unittest.TestCase):
             # both filled with a value or NR: 9 matched patients; disagreements: only WS0005 (40 vs 25).
             # exact agreement misses 1 vs 1.2 and 7 vs 8 as well -> 6 of 9 exact, 8 of 9 within tolerance
             self.assertEqual((days[2], days[3], days[5]), (9, 8, 6))
+
+
+class RoBTests(unittest.TestCase):
+    """Risk-of-bias workbook: derived adequacy column and the two-reviewer comparison."""
+
+    COMBOS = [  # (q_exposure, q_outcome, q_reporting)
+        ("Yes", "Yes", "Yes"), ("Yes", "Yes", "No"), ("Yes", "No", "Yes"), ("No", "Yes", "Yes"),
+        ("Yes", "Unclear", "Yes"), ("Yes", "Yes", "Unclear"), ("Unclear", "Unclear", "Unclear"),
+        ("Yes", "Yes", None), (None, None, None), ("yes", "YES", "Yes"),
+    ]
+
+    def test_adequate_rule_by_hand(self):
+        self.assertEqual(ce.derive_adequate("Yes", "Yes", "Yes"), "Yes")
+        self.assertEqual(ce.derive_adequate("yes", "YES", "Yes"), "Yes")     # case-insensitive, as in Excel
+        self.assertEqual(ce.derive_adequate("Yes", "Unclear", "Yes"), "No")  # Unclear is not "satisfied"
+        self.assertEqual(ce.derive_adequate("Yes", "Yes", "No"), "No")
+        self.assertIsNone(ce.derive_adequate("Yes", "Yes", None))            # a blank item leaves it open
+        self.assertIsNone(ce.derive_adequate(None, None, None))
+
+    @unittest.skipUnless(__import__("importlib").util.find_spec("formulas"), "package `formulas` not installed")
+    def test_python_adequate_equals_workbook_formula(self):
+        import formulas  # noqa: WPS433
+        with tempfile.TemporaryDirectory() as tmp:
+            tpl = os.path.join(tmp, "rob.xlsx")
+            build_template(tpl, ROB_BUILDER)
+            wb = load_workbook(tpl)
+            ws = wb["RoB"]
+            idx = col_index(ws)
+            letter = {c: ws.cell(row=1, column=i).column_letter for c, i in idx.items()}
+            first, n = ce.FIRST_DATA_ROW, len(self.COMBOS)
+            for r in range(first + n, ws.max_row + 1):
+                ws.cell(row=r, column=idx["adequate_primary"]).value = None
+            for i, (e, o, p) in enumerate(self.COMBOS):
+                for code, val in (("report_id", f"WS{i:04d}"), ("q_exposure", e), ("q_outcome", o), ("q_reporting", p)):
+                    ws.cell(row=first + i, column=idx[code]).value = val
+            for name in wb.sheetnames:
+                if name != "RoB":
+                    del wb[name]
+            ws.data_validations.dataValidation = []
+            small = os.path.join(tmp, "small.xlsx")
+            wb.save(small)
+            sol = formulas.ExcelModel().loads(small).finish().calculate()
+            for i, (e, o, p) in enumerate(self.COMBOS):
+                key = f"'[{os.path.basename(small)}]ROB'!{letter['adequate_primary']}{first + i}".upper()
+                got = next(sol[k].value[0, 0] for k in sol if k.upper() == key)
+                got = None if got in ("", None) or str(got) == "empty" else got
+                self.assertEqual(got, ce.derive_adequate(e, o, p), f"combo {i}: {(e, o, p)}")
+
+    def test_end_to_end_two_reviewers(self):
+        r1 = {"WS0001": ("Yes", "Yes", "Yes", "Yes", "Yes", "Yes"), "WS0002": ("Yes", "Yes", "Yes", "Yes", "Yes", "Yes"),
+              "WS0003": ("No", "Yes", "Yes", "Yes", "Yes", "Yes"), "WS0004": ("Yes", "Unclear", "Yes", "Yes", "Yes", "Yes"),
+              "WS0005": ("Yes", "Yes", "Unclear", "Yes", "Yes", "Yes"), "WS0006": ("Yes", "Yes", "Yes", "Yes", "Yes", "Yes")}
+        r2 = dict(r1)
+        r2["WS0002"] = ("Yes", "No", "Yes", "Yes", "Yes", "Yes")        # outcome item differs
+        r2["WS0005"] = ("Yes", "Yes", "Yes", "Yes", "Yes", "Yes")       # reporting item differs
+        # tuple order: q_exposure, q_outcome, q_reporting, q_selection, q_alternative, q_followup
+        codes = ("q_exposure", "q_outcome", "q_reporting", "q_selection", "q_alternative", "q_followup")
+        with tempfile.TemporaryDirectory() as tmp:
+            tpl = os.path.join(tmp, "rob.xlsx")
+            build_template(tpl, ROB_BUILDER)
+            paths = []
+            for name, data in (("r1.xlsx", r1), ("r2.xlsx", r2)):
+                wb = load_workbook(tpl)
+                ws = wb["RoB"]
+                idx = col_index(ws)
+                for i, (rid, vals) in enumerate(data.items()):
+                    ws.cell(row=ce.FIRST_DATA_ROW + i, column=idx["report_id"]).value = rid
+                    for code, v in zip(codes, vals):
+                        ws.cell(row=ce.FIRST_DATA_ROW + i, column=idx[code]).value = v
+                p = os.path.join(tmp, name)
+                wb.save(p)
+                paths.append(p)
+            rep = os.path.join(tmp, "cmp.xlsx")
+            self.assertEqual(ce.main([paths[0], paths[1], "-o", rep, "--sheets", "RoB"]), 0)
+            wb = load_workbook(rep)
+            dis = sorted((tuple(c.value for c in row)[1:3]) for row in wb["Disagreements"].iter_rows(min_row=2))
+            self.assertEqual(dis, [("WS0002", "q_outcome"), ("WS0005", "q_reporting")])
+            kap = {r[1]: r for r in (tuple(c.value for c in row) for row in wb["Kappa"].iter_rows(min_row=2))}
+            ade = next(v for k, v in kap.items() if "adequate_primary" in k)
+            # adequate: pairs (Y,Y) (Y,N) (N,N) (N,N) (N,Y) (Y,Y) -> po 4/6; both raters Yes x3, No x3 -> pe 0.5 -> kappa 1/3
+            self.assertEqual(ade[2], 6)
+            self.assertAlmostEqual(ade[3], 4 / 6)
+            self.assertAlmostEqual(ade[4], (4 / 6 - 0.5) / 0.5)
+
+
+def _have_calc():
+    import shutil
+    return shutil.which("soffice") is not None
+
+
+def _lo_sheet_csv(xlsx, sheet_no, outdir):
+    """Open a workbook in LibreOffice Calc (a spreadsheet engine independent of both Python and `formulas`) and export
+    one sheet (1-based number) as CSV; formulas are evaluated by Calc on load."""
+    import csv
+    os.makedirs(outdir, exist_ok=True)
+    opt = f"csv:Text - txt - csv (StarCalc):44,34,76,1,,0,false,true,false,false,false,{sheet_no}"
+    subprocess.run(["soffice", "--headless", "--convert-to", opt, "--outdir", outdir, xlsx],
+                   capture_output=True, text=True, timeout=240)
+    files = [f for f in os.listdir(outdir) if f.endswith(".csv")]
+    assert files, "LibreOffice produced no CSV"
+    with open(os.path.join(outdir, files[0]), encoding="utf-8", newline="") as fh:
+        return list(csv.reader(fh))
+
+
+@unittest.skipUnless(_have_calc(), "LibreOffice (soffice) not installed")
+class LibreOfficeCalcTests(unittest.TestCase):
+    """The workbooks open in a real spreadsheet engine, its results equal the Python rules, drop-downs survive.
+    This is LibreOffice Calc, not Excel or WPS: it shows the files load and the formulas mean what they should,
+    not that Excel's rendering is fine."""
+
+    CASES = [  # (idx_dur_days, idx_dur_cat_imprecise, viability, procedure, platelets, report_id)
+        (0.5, None, "Non-viable", "Total splenectomy", 451, "WS0001"), (2, None, "Viable", "Splenopexy", 450, "OWN"),
+        (2.5, None, "Partially non-viable", "Partial splenectomy +/- splenopexy", "NR", "WS0003"),
+        (7, None, "Partially non-viable", "Splenopexy", 100, "WS0004"), (7.5, None, "NR", "Total splenectomy", None, "WS0005"),
+        (30, None, "NR", "Detorsion only", 300, "WS0006"), (31, None, "Not applicable", "No operation", 300, "WS0007"),
+        ("NR", "3-7 d", "Viable", "Total splenectomy", "NR", "WS0008"), ("NR", None, "Viable", "Autotransplantation", 500, "WS0009"),
+        (None, None, None, None, None, "WS0010"),
+    ]
+
+    def test_extraction_workbook_formulas_in_calc(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            tpl = os.path.join(tmp, "ext.xlsx")
+            build_template(tpl)
+            wb = load_workbook(tpl)
+            ws = wb["Patients"]
+            idx = col_index(ws)
+            for i, (d, imp, v, p, plt, rid) in enumerate(self.CASES):
+                for code, val in (("patient_id", f"{rid}_P{i}"), ("report_id", rid), ("idx_dur_days", d),
+                                  ("idx_dur_cat_imprecise", imp), ("viability", v), ("procedure", p), ("platelets", plt)):
+                    ws.cell(row=ce.FIRST_DATA_ROW + i, column=idx[code]).value = val
+            filled = os.path.join(tmp, "ext_filled.xlsx")
+            wb.save(filled)
+            rows = _lo_sheet_csv(filled, wb.sheetnames.index("Patients") + 1, os.path.join(tmp, "out"))
+            hdr = rows[0]
+            self.assertEqual(len(hdr), len(idx))
+            for i, (d, imp, v, p, plt, rid) in enumerate(self.CASES):
+                r = rows[ce.FIRST_DATA_ROW - 1 + i]
+                got = {c: (r[hdr.index(c)] or None) for c in ("idx_dur_category", "primary_outcome", "thrombocytosis", "own_patient")}
+                exp = {"idx_dur_category": ce.derive_category(ce.clean(d), imp), "primary_outcome": ce.derive_outcome(v, p),
+                       "thrombocytosis": ce.derive_thrombocytosis(ce.clean(plt)), "own_patient": "Yes" if rid == "OWN" else "No"}
+                self.assertEqual(got, exp, f"case {i}")
+            blank = rows[ce.FIRST_DATA_ROW - 1 + len(self.CASES) + 2]   # a row nobody filled stays empty
+            self.assertEqual([blank[hdr.index(c)] for c in ("own_patient", "idx_dur_category", "thrombocytosis", "primary_outcome")],
+                             ["", "", "", ""])
+
+    def test_rob_workbook_formula_in_calc(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            tpl = os.path.join(tmp, "rob.xlsx")
+            build_template(tpl, ROB_BUILDER)
+            wb = load_workbook(tpl)
+            ws = wb["RoB"]
+            idx = col_index(ws)
+            for i, (e, o, p) in enumerate(RoBTests.COMBOS):
+                for code, val in (("report_id", f"WS{i:04d}"), ("q_exposure", e), ("q_outcome", o), ("q_reporting", p)):
+                    ws.cell(row=ce.FIRST_DATA_ROW + i, column=idx[code]).value = val
+            filled = os.path.join(tmp, "rob_filled.xlsx")
+            wb.save(filled)
+            rows = _lo_sheet_csv(filled, wb.sheetnames.index("RoB") + 1, os.path.join(tmp, "out"))
+            col = rows[0].index("adequate_primary")
+            for i, combo in enumerate(RoBTests.COMBOS):
+                self.assertEqual(rows[ce.FIRST_DATA_ROW - 1 + i][col] or None, ce.derive_adequate(*combo), f"combo {combo}")
+
+    def test_dropdown_validations_survive_a_calc_round_trip(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            for name, builder in (("ext", BUILDER), ("rob", ROB_BUILDER)):
+                src = os.path.join(tmp, f"{name}.xlsx")
+                build_template(src, builder)
+                outdir = os.path.join(tmp, f"{name}_out")
+                os.makedirs(outdir)
+                subprocess.run(["soffice", "--headless", "--convert-to", "xlsx", "--outdir", outdir, src],
+                               capture_output=True, text=True, timeout=240)
+                a, b = load_workbook(src), load_workbook(os.path.join(outdir, f"{name}.xlsx"))
+                for ws in a.worksheets:
+                    n_a = sum(1 for d in ws.data_validations.dataValidation if d.type == "list")
+                    n_b = sum(1 for d in b[ws.title].data_validations.dataValidation if d.type == "list")
+                    self.assertEqual(n_a, n_b, f"{name}/{ws.title}: list validations lost in Calc")
 
 
 if __name__ == "__main__":
