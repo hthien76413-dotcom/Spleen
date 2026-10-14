@@ -1,0 +1,171 @@
+log user 1 -> reviewer 俊 ; decisions matching the export: 2548 of 2548
+log user 2 -> reviewer Fei ; decisions matching the export: 2548 of 2548
+
+AI-prescreen events 358 Counter({('R2', '1'): 179, ('R2', 'deleted'): 179})
+first/last 2026-10-10 16:45:15.349000 2026-10-11 01:26:57.198000
+[(('R2', '10-10 16'), 12), (('R2', '10-11 00'), 167), (('R2', '10-11 01'), 179)]
+distinct articles with AI-prescreen set: 179
+decisions on those articles (R1,R2): [(('Exclude', 'Exclude'), 73), (('Exclude', 'Maybe'), 48), (('Include', 'Include'), 27), (('Maybe', 'Maybe'), 22), (('Exclude', 'Include'), 4), (('Include', 'Maybe'), 2), (('Maybe', 'Include'), 2), (('Maybe', 'Exclude'), 1)]
+716322115 [('10-10 08:17:27', 'R1', 'included', '-1'), ('10-10 15:00:13', 'R1', '"__EXR__E3 adults only"', '1'), ('10-10 15:00:13', 'R1', 'included', '-1'), ('10-11 00:07:33', 'R2', 'included', '-1'), ('10-11 00:08:39', 'R2', '"AI-prescreen"', '1'), ('10-11 00:08:41', 'R2', '"__EXR__E3 adults only"', '1'), ('10-11 00:08:41', 'R2', 'included', '-1'), ('10-11 01:22:08', 'R2', '"AI-prescreen"', 'deleted')]
+716322042 [('10-10 08:15:42', 'R1', '"__EXR__E3 adults only"', '1'), ('10-10 08:15:42', 'R1', 'included', '-1'), ('10-11 00:06:03', 'R2', 'included', '-1'), ('10-11 00:06:37', 'R2', '"AI-prescreen"', '1'), ('10-11 00:06:39', 'R2', '"__EXR__E3 adults only"', '1'), ('10-11 00:06:39', 'R2', 'included', '-1'), ('10-11 01:20:46', 'R2', '"AI-prescreen"', 'deleted')]
+716321977 [('10-10 05:13:09', 'R1', '"__EXR__E3 adults only"', '1'), ('10-10 05:13:09', 'R1', 'included', '-1'), ('10-10 16:45:01', 'R2', 'included', '0'), ('10-10 16:45:15', 'R2', '"AI-prescreen"', '1'), ('10-11 01:18:59', 'R2', '"AI-prescreen"', 'deleted')]
+
+===== bulk operations (>=5 decision events in the same second, same user) =====
+number of such seconds 61
+('R2', '2026-10-11T08:17:56') 50 Counter({'-1': 50}) WS range 135 1104
+('R2', '2026-10-11T08:17:57') 50 Counter({'-1': 50}) WS range 1139 1855
+('R2', '2026-10-11T08:17:59') 50 Counter({'-1': 50}) WS range 1857 2169
+('R2', '2026-10-11T13:22:19') 50 Counter({'-1': 50}) WS range 1863 2149
+('R2', '2026-10-11T13:22:22') 50 Counter({'-1': 50}) WS range 2155 2285
+('R2', '2026-10-11T04:46:46') 46 Counter({'-1': 46}) WS range 2462 2511
+('R2', '2026-10-11T04:41:34') 36 Counter({'-1': 36}) WS range 2376 2411
+('R2', '2026-10-11T08:21:00') 33 Counter({'-1': 33}) WS range 1884 2517
+('R2', '2026-10-11T04:01:15') 27 Counter({'-1': 27}) WS range 1362 1409
+('R2', '2026-10-11T04:45:01') 24 Counter({'-1': 24}) WS range 2417 2460
+('R2', '2026-10-11T08:18:01') 21 Counter({'-1': 21}) WS range 2189 2544
+('R2', '2026-10-11T08:04:24') 19 Counter({'-1': 19}) WS range 194 2225
+('R2', '2026-10-11T03:58:19') 18 Counter({'-1': 18}) WS range 1264 1309
+('R2', '2026-10-11T03:24:56') 17 Counter({'-1': 17}) WS range 366 402
+('R2', '2026-10-11T04:48:01') 17 Counter({'-1': 17}) WS range 2513 2545
+decision events inside such bulk seconds: 954
+
+===== per-reviewer timeline =====
+R1 decision events 2784 first 2026-10-07 13:20:56.028000 last 2026-10-12 12:13:52.818000
+  first decisions per UTC day [('10-07', 10), ('10-10', 1264), ('10-11', 468), ('10-12', 806)]
+  distinct articles 2548  articles with >1 decision event 
+R2 decision events 4101 first 2026-10-07 14:06:49.290000 last 2026-10-11 14:05:12.247000
+  first decisions per UTC day [('10-07', 4), ('10-10', 189), ('10-11', 2355)]
+  distinct articles 2548  articles with >1 decision event 
+
+===== bulk vs individual: how was each reviewer's FINAL decision set =====
+R1 {('single', 'Excluded'): 1716, ('single', 'Included'): 320, ('single', 'Maybe'): 512}
+R2 {('single', 'Excluded'): 244, ('single', 'Included'): 273, ('single', 'Maybe'): 1089, ('bulk', 'Excluded'): 942}
+
+===== the 642 conflicts: how R2 / R1 final decision was set =====
+544 ('Exclude', 'Maybe', 'R1single', 'R2single')
+42 ('Exclude', 'Include', 'R1single', 'R2single')
+27 ('Maybe', 'Exclude', 'R1single', 'R2single')
+21 ('Maybe', 'Exclude', 'R1single', 'R2bulk')
+6 ('Include', 'Exclude', 'R1single', 'R2single')
+2 ('Include', 'Exclude', 'R1single', 'R2bulk')
+
+===== R1 Excludes without reason =====
+310
+[('2026-10-10T07:26', 1), ('2026-10-10T07:30', 1), ('2026-10-10T07:35', 1), ('2026-10-10T07:46', 3), ('2026-10-10T07:47', 3), ('2026-10-10T07:48', 2), ('2026-10-10T07:49', 2), ('2026-10-10T07:50', 3), ('2026-10-10T07:51', 2), ('2026-10-10T07:52', 3), ('2026-10-10T07:53', 2), ('2026-10-10T07:54', 3), ('2026-10-10T07:55', 2), ('2026-10-10T07:56', 3), ('2026-10-10T07:57', 3), ('2026-10-10T07:58', 3), ('2026-10-10T07:59', 2), ('2026-10-10T08:01', 1), ('2026-10-10T08:02', 4), ('2026-10-10T08:03', 2), ('2026-10-10T08:04', 2), ('2026-10-10T08:05', 4), ('2026-10-10T08:06', 1), ('2026-10-10T08:07', 4), ('2026-10-10T08:08', 2), ('2026-10-10T08:09', 2), ('2026-10-10T08:10', 4), ('2026-10-10T08:11', 3), ('2026-10-10T08:12', 1), ('2026-10-10T08:19', 1), ('2026-10-10T08:24', 2), ('2026-10-10T08:26', 3), ('2026-10-10T08:27', 4), ('2026-10-10T08:28', 4), ('2026-10-10T08:29', 5), ('2026-10-10T08:30', 3), ('2026-10-10T08:31', 4), ('2026-10-10T08:32', 2), ('2026-10-10T08:33', 5), ('2026-10-10T08:34', 3)]
+bulk? Counter({False: 310})
+WS range 1 1638
+R1 decision by type for these: Counter({'JOUR': 305, 'CHAP': 4, 'CONF': 1})
+R2 decisions on these 310: Counter({'Exclude': 181, 'Maybe': 119, 'Include': 10})
+
+===== R2 activity 2026-10-10 16:40 - 2026-10-11 01:30 UTC, per minute (key:count) =====
+2026-10-10T16:44 {'included=-1': 2, 'included=0': 3}
+2026-10-10T16:45 {'included=0': 3, 'included=-1': 6, 'included=1': 2, 'AI-prescreen': 12, 'R:E3 adults only': 4}
+2026-10-11T00:04 {'included=0': 7, 'included=-1': 3, 'included=1': 3}
+2026-10-11T00:05 {'included=0': 9, 'included=-1': 9, 'included=1': 5}
+2026-10-11T00:06 {'included=0': 5, 'included=-1': 22, 'included=1': 10, 'AI-prescreen': 50, 'R:E3 adults only': 11, 'R:E1 non-human': 4, 'R:E2 not wandering spleen': 1}
+2026-10-11T00:07 {'included=0': 11, 'included=-1': 8, 'included=1': 7}
+2026-10-11T00:08 {'included=-1': 26, 'included=0': 9, 'included=1': 5, 'AI-prescreen': 50, 'R:E3 adults only': 12, 'R:E1 non-human': 3, 'R:E2 not wandering spleen': 2}
+2026-10-11T00:09 {'included=0': 11, 'included=1': 6, 'included=-1': 12}
+2026-10-11T00:10 {'included=0': 13, 'included=1': 6, 'included=-1': 19, 'AI-prescreen': 50, 'R:E2 not wandering spleen': 3, 'R:E3 adults only': 13}
+2026-10-11T00:11 {'included=-1': 9, 'included=0': 4, 'included=1': 2, 'AI-prescreen': 17, 'R:E3 adults only': 4, 'R:E2 not wandering spleen': 1}
+2026-10-11T00:57 {'R:E5 not a formal article': 1, 'included=-1': 1}
+2026-10-11T01:16 {'AI-prescreen=deleted': 3}
+2026-10-11T01:18 {'AI-prescreen=deleted': 5}
+2026-10-11T01:19 {'AI-prescreen=deleted': 25}
+2026-10-11T01:20 {'AI-prescreen=deleted': 21}
+2026-10-11T01:21 {'AI-prescreen=deleted': 24}
+2026-10-11T01:22 {'AI-prescreen=deleted': 21}
+2026-10-11T01:23 {'AI-prescreen=deleted': 16}
+2026-10-11T01:24 {'AI-prescreen=deleted': 21}
+2026-10-11T01:25 {'AI-prescreen=deleted': 24}
+2026-10-11T01:26 {'AI-prescreen=deleted': 19}
+
+===== pace: gaps between consecutive FIRST decisions per article (single events only) =====
+R1 n 2548 median gap 9.364 p10 3.664 p90 18.54  gaps<=3s: 161  gaps<=1s: 69
+   active time (gaps<=120s) hours 7.47  wall span days 4.95
+R2 n 2548 median gap 1.857 p10 1.501 p90 3.635  gaps<=3s: 2232  gaps<=1s: 0
+   active time (gaps<=120s) hours 2.1  wall span days 3.61
+
+===== R2 bulk groups: reasons applied in the same second =====
+150 (('E2 not wandering spleen', 50),)
+100 (('E3 adults only', 50),)
+48 (('E3 adults only', 8),)
+46 (('E2 not wandering spleen', 46),)
+45 (('E2 not wandering spleen', 15),)
+39 (('E3 adults only', 13),)
+36 (('E3 adults only', 12),)
+36 (('E5 not a formal article', 36),)
+33 (('E1 non-human', 33),)
+30 (('E2 not wandering spleen', 10),)
+28 (('E3 adults only', 14),)
+28 (('E2 not wandering spleen', 14),)
+R2 bulk seconds time span: 2026-10-11T00:06:39 2026-10-11T13:22:25
+
+===== R2 bulk-excluded articles: R1 decision and language/type =====
+942 Counter({'Exclude': 919, 'Maybe': 21, 'Include': 2})
+[('chi', 473), ('eng', 380), ('fre', 18), ('ger', 15), ('jap', 10), ('por', 9)] Counter({'JOUR': 857, 'PAT': 49, 'GEN': 12, 'THES': 9, 'CONF': 8, 'CHAP': 7})
+
+===== R2 first decisions per UTC hour with median gap to previous first decision =====
+R2
+   10-07 14 n 3 median gap 27.7 
+   10-10 05 n 23 median gap 9.5 
+   10-10 06 n 20 median gap 14.8 
+   10-10 07 n 130 median gap 13.7 
+   10-10 08 n 3 median gap 1135.0 
+   10-10 09 n 1 median gap 1817.6 
+   10-10 16 n 12 median gap 2.0 
+   10-11 00 n 168 median gap 2.2 
+   10-11 03 n 1007 median gap 1.6 
+   10-11 04 n 1180 median gap 2.0 
+R1
+   10-07 13 n 9 median gap 10.1 
+   10-10 04 n 11 median gap 19.8 
+   10-10 05 n 183 median gap 7.1 
+   10-10 07 n 260 median gap 7.2 
+   10-10 08 n 407 median gap 7.0 
+   10-10 09 n 310 median gap 5.5 
+   10-10 10 n 92 median gap 5.3 
+   10-10 14 n 1 median gap 14605.2 
+   10-11 00 n 1 median gap 38167.1 
+   10-11 01 n 122 median gap 10.1 
+   10-11 05 n 125 median gap 9.7 
+   10-11 06 n 91 median gap 10.4 
+   10-11 13 n 60 median gap 10.4 
+   10-11 14 n 69 median gap 11.0 
+   10-12 01 n 9 median gap 11.0 
+   10-12 02 n 183 median gap 10.9 
+   10-12 03 n 66 median gap 10.5 
+   10-12 04 n 199 median gap 10.7 
+   10-12 10 n 121 median gap 10.0 
+   10-12 11 n 173 median gap 11.0 
+   10-12 12 n 55 median gap 13.4 
+
+===== R2 pace by decision type (gap before first decision) =====
+Excluded 832 median 2.0
+Included 273 median 1.9
+Maybe 1442 median 1.8
+
+===== is R2 working in list order? (WS number of consecutive first decisions) =====
+consecutive +1 steps 2523 of 2547
+
+===== agreement by phase (R2 careful phase = first 180 list positions vs the rest) =====
+WS0001-0180 180 3-cat agree 0.711 kappa 0.481 | advance-vs-exclude agree 0.744 kappa 0.467 | R1 adv share 0.37 R2 adv share 0.42
+WS0181-2548 2368 3-cat agree 0.696 kappa 0.482 | advance-vs-exclude agree 0.748 kappa 0.511 | R1 adv share 0.32 R2 adv share 0.54
+
+===== default reasons / labels / E5 =====
+default reason "__EXR__background article" R1 2026-10-10T07:53:30.975Z WS0584 Spleen and gastrosplenic ligament preserving distal pancreatectomy und | R1: Exclude R2: Maybe
+default reason "__EXR__background article" R1 2026-10-10T07:54:14.672Z WS0609 Image of the month. Ectopic spleen in the pancreatic tail. | R1: Exclude R2: Maybe
+default reason "__EXR__wrong publication type" R1 2026-10-10T09:04:55.016Z WS0801 Tc-99m phytate images in a patient with a wandering spleen | R1: Exclude R2: Include
+('R1', '"E1 non-human"', '1') 2
+('R1', '"E1 non-human"', 'deleted') 2
+('R1', '"review-for-refs"', '1') 117
+('R2', '"AI-prescreen"', '1') 179
+('R2', '"AI-prescreen"', 'deleted') 179
+('R2', '"review-for-refs"', '1') 25
+E5 first use R1 2026-10-10T02:33:09.492Z WS0001  uses by Counter({'R1': 61, 'R2': 55})
+[(('R1', 'E1 non-human'), 230), (('R1', 'E1 non-human; E2 not wandering spleen'), 4), (('R1', 'E1 non-human; E3 adults only'), 4), (('R1', 'E1 non-human; E4 no original patient data'), 2), (('R1', 'E2 not wandering spleen'), 693), (('R1', 'E2 not wandering spleen; E3 adults only'), 13), (('R1', 'E2 not wandering spleen; E3 adults only; E4 no original patient data'), 1), (('R1', 'E2 not wandering spleen; E4 no original patient data'), 6), (('R1', 'E3 adults only'), 305), (('R1', 'E3 adults only; E4 no original patient data'), 6), (('R1', 'E4 no original patient data'), 105), (('R1', 'E5 not a formal article'), 60), (('R1', 'background article'), 2), (('R1', 'wrong publication type'), 1), (('R2', 'E1 non-human'), 178), (('R2', 'E2 not wandering spleen'), 502), (('R2', 'E3 adults only'), 419), (('R2', 'E4 no original patient data'), 32), (('R2', 'E5 not a formal article'), 55)]
+
+first formal decision per reviewer (UTC):
+R1 2026-10-07T13:20:56.028Z last 2026-10-12T12:13:52.818Z
+R2 2026-10-07T14:06:49.290Z last 2026-10-11T14:05:12.247Z
+wrote de-identified log rows 10109

@@ -1,0 +1,11 @@
+records in export: 2548; decided by both reviewers: 2548
+R1_JunShu undecided: 0; R2_FeiPeng undecided: 0
+matching to WS ids: {'doi': 1601, 'url': 801, 'title+year+author': 145, 'title+year+vol+page': 1}
+R1_JunShu: {'Exclude': 1716, 'Include': 320, 'Maybe': 512}
+R2_FeiPeng: {'Exclude': 1186, 'Include': 273, 'Maybe': 1089}
+3-category agreement 0.697, kappa 0.483; advance-vs-exclude agreement 0.748, kappa 0.508
+categories: {'agree-exclude': 1130, 'CONFLICT advance-vs-exclude': 642, 'agree-include': 206, 'agree-maybe': 439, 'include-vs-maybe (both advance)': 131}
+conflicts to adjudicate (advance-vs-exclude): 642
+Exclude decisions WITHOUT an exclusion reason: R1_JunShu 310, R2_FeiPeng 0 (the guide requires a reason)
+records where the event log and the export disagree: 0
+UNMATCHED to a WS id: 0
