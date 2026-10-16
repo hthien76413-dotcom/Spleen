@@ -1,0 +1,14 @@
+Blind third-reviewer sheet, built 14 Oct 2026 by tools/make_blind_adjudication_sheet.py (random seed 20261014).
+Records in the sheet: 873
+  conflict (advance vs exclude)                         642
+  targeted: both excluded, word-flagged                 117   (wandering/torsion word AND child word in title/abstract)
+  targeted: both excluded, no abstract, not flagged     54
+  random QC sample of the other both-excluded records   60   (from 800 records)
+Both-excluded records in total: 1130; left out as clear by type (both reviewers gave E1, or both gave E5): 159.
+
+Pre-specified triggers (fixed before the third reviewer starts):
+  1. If the third reviewer advances (Include or Maybe) more than 10% of the targeted records (171), or
+  2. advances 2 or more of the 60 random QC records,
+  then he also judges ALL remaining both-excluded records with reason E2 or E3 from either reviewer (list written by tools/blind_adjudication_analysis.py).
+Final list for full text = records both reviewers advanced + conflicts the third reviewer advanced + QC records the third reviewer advanced.
+The key file (blind_adjudication_key.csv) must not be given to the third reviewer.
