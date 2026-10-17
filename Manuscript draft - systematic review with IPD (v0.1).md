@@ -117,15 +117,61 @@ The study was approved by the ethics committee of Wuhan Children's Hospital (202
 
 ## Results
 
-**[PENDING: the whole Results section requires the screening, extraction and analysis. The structure below follows the protocol.]**
+**[PENDING: most of this section needs the screening, full-text assessment, extraction and analysis. Where the text below contains a bracketed field such as [n], no result exists yet and nothing may be filled in until the analysis script is fixed and the dataset is locked. The sentences are worded neutrally on purpose: the primary result is reported as it is, whatever its direction, including a null or non-linear result.]**
 
 ### Study selection
 
-A total of 4906 records were identified from six databases; 2358 duplicates were removed, and 2548 records were screened. **[PENDING: records excluded at title and abstract; full texts sought, not retrieved and assessed; reports excluded with reasons; reports and children included; reports in other languages (listed, not extracted). Figure 1: PRISMA 2020 flow diagram.]**
+The searches identified 4906 records in six databases (Table 1), and 2358 duplicates were removed, which left 2548 records for screening. Each database contributed records that were found in no other database: 163 from PubMed, 80 from Web of Science, 353 from Scopus, 139 from CNKI, 102 from Wanfang Data and 121 from CBM. In all, 958 records were found in one database only, 852 in two, 727 in three, 10 in four and 1 in five. By the language recorded in the databases, 1446 records were in English, 727 in Chinese and 375 in other languages (8 of them undetermined).
+
+**[PENDING: title and abstract screening: records excluded and records advanced, with the as-run process described under Selection of reports. Full texts: [n] sought, [n] not retrieved, [n] assessed. [n] reports excluded, with the reasons and the number for each (language not extracted, no full text, aggregate data only, age not confirmed under 18 years, not wandering spleen, no original patient data, other). [n] reports describing [n] children included from the literature, plus the five children of the institutional series. [n] reports in other languages listed and counted, not extracted. [n] requests for individual data sent, [n] answered, [n] reports with data supplied. Figure 1: PRISMA 2020 flow diagram, drawn as a vector graphic.]**
 
 ### Characteristics of the included reports and patients
 
-**[PENDING: Table 2: reports by language, period and design; Table 3: patient characteristics (age, sex, presentation, associated conditions, imaging, operation, fixation technique, viability, follow-up).]**
+**[PENDING: the paragraph below is a template.]** The **[n]** included reports were published between **[year]** and **[year]**; **[n]** were in English and **[n]** in Chinese. They comprised **[n]** case reports, **[n]** case series, **[n]** cohort studies and **[n]** letters, and **[n]** supplied individual data on request (Table 2). Together with the institutional series they described **[n]** children, after the removal of **[n]** duplicate reports of the same patients. **[n]** (**[%]**) were girls, and the median age at operation was **[x]** years (range **[x]** to **[x]**). The presenting symptom was **[...]** in **[n]** children. Wandering spleen was found with gastric volvulus or gastric outlet obstruction in **[n]**, with an associated diaphragmatic anomaly in **[n]** and after a previous operation (acquired form) in **[n]**. Torsion of the pedicle was found at operation in **[n]**. The operation was total splenectomy in **[n]**, partial splenectomy in **[n]** and splenopexy in **[n]**, by mesh, pouch, suture or another technique (Table 3). Follow-up was reported for **[n]** children, with a median of **[x]** months (range **[x]** to **[x]**).
+
+**Table 2. Included reports.**
+
+| Characteristic | Reports, n (%) |
+|---|---|
+| Language: English | [n] |
+| Language: Chinese | [n] |
+| Year of publication: before 2000 | [n] |
+| Year of publication: 2000 to 2014 | [n] |
+| Year of publication: 2015 onward | [n] |
+| Design: case report | [n] |
+| Design: case series | [n] |
+| Design: cohort study | [n] |
+| Design: letter | [n] |
+| Individual data: published | [n] |
+| Individual data: supplied by the authors | [n] |
+
+Footnote. Percentages are of all included reports. The institutional series is not counted among the reports.
+
+**Table 3. Characteristics of the children.**
+
+| Characteristic | Children, n (%) or median (range) |
+|---|---|
+| Age at operation, years | [x] |
+| Girls | [n] |
+| Presenting symptom: acute abdominal pain | [n] |
+| Presenting symptom: recurrent abdominal pain | [n] |
+| Presenting symptom: abdominal mass | [n] |
+| Presenting symptom: no symptoms | [n] |
+| Gastric volvulus or gastric outlet obstruction | [n] |
+| Pancreatic tail involved | [n] |
+| Diaphragmatic anomaly | [n] |
+| Acquired form | [n] |
+| Pedicle torsion at operation | [n] |
+| Spleen at operation: viable | [n] |
+| Spleen at operation: partly non-viable | [n] |
+| Spleen at operation: non-viable | [n] |
+| Operation: total splenectomy | [n] |
+| Operation: partial splenectomy | [n] |
+| Operation: splenopexy | [n] |
+| Operation: detorsion only | [n] |
+| Follow-up, months | [x] |
+
+Footnote. Includes the five children of the institutional series. Presenting symptoms and associated conditions are not mutually exclusive.
 
 ### Institutional series
 
@@ -155,19 +201,51 @@ Footnotes. ᵃ Duration at presentation; no time to operation added (rule 9). �
 
 ### Risk of bias
 
-**[PENDING.]**
+**[PENDING: the paragraph below is a template.]** Of the **[n]** included reports, **[n]** were judged adequate for the primary question, that is, the items on ascertainment of exposure, ascertainment of outcome and sufficiency of reporting were all satisfied. The items most often not satisfied were **[...]**. The two reviewers agreed on **[n]** of **[n]** reports (kappa **[x]**). Item-level judgements for every report are given in Additional file **[n]**.
 
 ### Duration of the index episode and splenic viability
 
-**[PENDING: number of patients with a reported duration; primary analysis (odds ratio per doubling with 95% confidence interval); duration in four categories; spline if allowed; comparison of patients with and without a reported duration; bounding analyses.]**
+**[PENDING: the paragraphs below are templates for the primary analysis.]** The duration of the index episode was available for **[n]** of **[N]** children (**[%]**), and **[n]** of them had a non-viable spleen at operation. The median duration was **[x]** days (interquartile range **[x]** to **[x]**) in children with a non-viable spleen and **[x]** days (**[x]** to **[x]**) in children with a viable spleen. Children with a reported duration and those without differed in **[...]**.
+
+In the primary model, adjusted for age and period of publication, the odds ratio of a non-viable spleen per doubling of the duration of the index episode was **[x]** (95% confidence interval **[x]** to **[x]**; **[n]** children, **[n]** events, **[n]** reports). **[Non-linearity was examined with a spline because there were at least 10 events per degree of freedom / was not examined because there were fewer than 10 events per degree of freedom.]** By category, the proportion with a non-viable spleen was **[x/n]** for 2 days or less, **[x/n]** for 3 to 7 days, **[x/n]** for 8 to 30 days and **[x/n]** for more than 30 days, with exact confidence intervals in Table 5 and a test for trend of **[p]** (Figure 3). When the missing durations were all assigned to the shortest category the odds ratio was **[x]**, and when they were all assigned to the longest it was **[x]**.
+
+**Table 5. Non-viable spleen at operation by duration of the index episode.**
+
+| Duration of the index episode | Children, n | Non-viable spleen, n (%) | Exact 95% confidence interval |
+|---|---|---|---|
+| 2 days or less | [n] | [n] | [x to x] |
+| 3 to 7 days | [n] | [n] | [x to x] |
+| 8 to 30 days | [n] | [n] | [x to x] |
+| More than 30 days | [n] | [n] | [x to x] |
+| Duration not reported | [n] | [n] | [x to x] |
+
+Footnote. Boundary values fall in the lower category. Durations coded as lower bounds are listed in Additional file **[n]**.
 
 ### Secondary analyses, subgroups and sensitivity analyses
 
-**[PENDING.]**
+**[PENDING: the paragraphs below are templates.]** The odds ratio of a non-viable spleen per doubling of the total symptom history was **[x]** (95% confidence interval **[x]** to **[x]**; **[n]** children). A missed diagnosis at an earlier healthcare contact was recorded in **[n]** children, and the odds ratio of a non-viable spleen was **[x]** (**[x]** to **[x]**). A known diagnosis with deferred surgery was recorded in **[n]** children, with an odds ratio of **[x]** (**[x]** to **[x]**). A raised preoperative platelet count (above 450 × 10⁹/L) was recorded in **[n]** of **[n]** children with a count, and the odds ratio was **[x]** (**[x]** to **[x]**).
+
+In the pre-specified subgroups the odds ratio per doubling of duration was **[x]** for presentation with gastric volvulus or gastric outlet obstruction (**[n]** children), **[x]** and **[x]** for the congenital and acquired forms, and **[x]** with an associated diaphragmatic anomaly (**[n]** children). The eight sensitivity analyses (omitting the institutional series; pedicle torsion confirmed at operation only; partial splenectomy for partial infarction coded as salvage; alternative coding of intermittent or worsening episodes; reports judged adequate only; omitting Chinese-language reports; omitting reports before 2000; mixed-effects model with a random intercept for each report) gave odds ratios of **[x]** to **[x]** (Table 6), and **[state whether any changed the conclusion of the primary analysis]**.
+
+**Table 6. Primary analysis and sensitivity analyses.**
+
+| Analysis | Children, n | Events, n | Odds ratio per doubling (95% confidence interval) |
+|---|---|---|---|
+| Primary | [n] | [n] | [x (x to x)] |
+| 1. Without the institutional series | [n] | [n] | [x (x to x)] |
+| 2. Pedicle torsion confirmed at operation | [n] | [n] | [x (x to x)] |
+| 3. Partial splenectomy for partial infarction as salvage | [n] | [n] | [x (x to x)] |
+| 4. Alternative coding of intermittent or worsening episodes | [n] | [n] | [x (x to x)] |
+| 5. Reports judged adequate | [n] | [n] | [x (x to x)] |
+| 6. Without Chinese-language reports | [n] | [n] | [x (x to x)] |
+| 7. Without reports before 2000 | [n] | [n] | [x (x to x)] |
+| 8. Mixed-effects model, random intercept for each report | [n] | [n] | [x (x to x)] |
+
+Footnote. All models were adjusted for age and period of publication.
 
 ### Additional outcomes
 
-**[PENDING: viable spleen removed; failure after splenopexy by technique; torsion while awaiting surgery; follow-up; platelet count; associated organ involvement.]**
+**[PENDING: the paragraph below is a template.]** A viable spleen was removed at the index operation in **[n]** children, for the reasons **[...]**. Failure after splenopexy was recorded in **[n]** of **[n]** children who had a splenopexy, by technique **[...]**. Torsion while awaiting surgery after a known diagnosis occurred in **[n]** of **[n]** children (**[%]**; exact 95% confidence interval **[x]** to **[x]**). Splenic status at the last follow-up was preserved in **[n]**, partly preserved in **[n]** and lost in **[n]** children. The platelet count was reported before operation in **[n]** children and **[n]** had thrombocytosis. Reported complications after splenectomy were **[...]**.
 
 ## Discussion
 
