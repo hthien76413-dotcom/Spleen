@@ -1,0 +1,19 @@
+Full-text calibration set: 20 reports (guide section 12, decision D5)
+Seed: 20261018 | population: 540 records (retrieval_class = retrieve) of search/screening/rescreen/fulltext_retrieval_list.csv
+Ranking within each stratum: sha256(SEED|stratum|ws_id); final order: sha256(SEED|order|ws_id). Rerun: python3 -I tools/draw_ft_calibration.py
+
+Strata (keyword proxies made by the script; the reviewers judge every report on its full text):
+  chinese: language group Chinese
+  review:  title contains review / 综述 / 进展 / overview and none of case / report / series / 例 (a report of a case plus a literature review is NOT in this stratum)
+  series:  English title with series / cohort / retrospective / multicentre / experience / cases; Chinese title with N例 (N >= 10 or 三 to 十) / 回顾 / 病例分析
+  d1:      title or abstract has a torsion or volvulus word, a child cue, and no wandering / ectopic / floating / migrating / mobile / movable / pelvic-spleen / ptosis word (the guide's D1 situation)
+
+Pool sizes: d1 23, review 5, chinese 101, series 26
+Minimum required: d1 3, review 2, chinese 3, series 3 (drawn in this order; a record already drawn counts toward every stratum it belongs to); the remaining places are random.
+Drawn (20): 8 by stratum, 12 random
+In the 20 (a record can belong to several strata): chinese 8, review 2, series 3, d1 5
+With an abstract in the database record: 16 of 20; English 12, Chinese 8
+Records of the 53-paper pilot set among the 20: 1
+
+Give the reviewers only calibration_20_list.csv. The key file holds the strata flags; keep it closed until both have finished.
+The retrieval list's 'source' column (how a record reached the full-text stage) is deliberately left out of the list.

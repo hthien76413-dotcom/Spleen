@@ -1,0 +1,22 @@
+﻿"NOT FOR THE REVIEWERS - keyword proxies, not judgements"
+position,ws_id,drawn_as,chinese,review_proxy,series_proxy,d1_proxy,in_pilot_set
+1,WS0492,random,0,0,0,0,0
+2,WS2314,random,1,0,0,0,0
+3,WS0018,stratum review,0,1,0,0,0
+4,WS2116,random,1,0,0,0,0
+5,WS0049,stratum d1,1,0,0,1,0
+6,WS1388,stratum d1,0,0,0,1,0
+7,WS0731,random,0,0,0,0,0
+8,WS1908,stratum d1,1,0,0,1,0
+9,WS0444,random,0,0,0,0,0
+10,WS1339,random,0,0,0,0,0
+11,WS1367,stratum series,0,0,1,0,0
+12,WS0699,random,0,0,0,0,0
+13,WS0780,random,0,0,0,0,0
+14,WS2085,random,1,0,0,0,0
+15,WS2145,stratum series,1,0,1,0,1
+16,WS0120,random,0,0,0,0,0
+17,WS0283,random,0,0,0,0,0
+18,WS0709,random,0,0,0,1,0
+19,WS2031,stratum review,1,1,0,0,0
+20,WS1859,stratum series,1,0,1,1,0
