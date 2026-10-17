@@ -206,7 +206,7 @@ FT_COLS = [
     ("ws_id", "WS ID", "WS 编号", "text", 10, "id"),
     ("citation", "First author, year", "便于核对，如 Smith 2015", "text", 20, "ft"),
     ("language", "Language", "English / Chinese / Other（Other 单独计数，不提取）", ("list", "ft_lang"), 10, "ft"),
-    ("reviewer", "Reviewer", "R1 = 舒俊，R2 = 彭飞，Consensus", ("list", "ft_reviewer"), 10, "id"),
+    ("reviewer", "Reviewer", "R1 = 舒俊，R2 = 卞宏强（全文阶段），Consensus", ("list", "ft_reviewer"), 10, "id"),
     ("date", "Date", "yyyy-mm-dd", "date", 12, "id"),
     ("fulltext_obtained", "Full text obtained", "Yes / No", ("list", "yn"), 9, "ft"),
     ("route", "Route", "最终取得或最后尝试的途径", ("list", "route"), 26, "ft"),
