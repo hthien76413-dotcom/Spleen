@@ -1,0 +1,4 @@
+Expansion sheet: 616 records; usable judgements 616; problems 0
+Third reviewer decisions: {'Exclude': 604, 'Maybe': 12}
+Advanced to full text: 12 of 616 (1.9%); already on the list: 0; added: 12
+Final full-text list: 1064 records (before the list after the first adjudication: 1052)
