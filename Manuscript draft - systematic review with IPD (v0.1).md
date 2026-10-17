@@ -2,7 +2,7 @@
 
 **Draft v0.1, 17 October 2026. Working draft for the authors; not for submission.**
 
-**How to read this draft.** Text that is already supported by the registered protocol (PROSPERO CRD420261520329, version 1.4) or by the search and screening logs is written out. Everything that depends on screening decisions, full-text assessment, data extraction or analysis is marked **[PENDING: …]** and contains no numbers or findings. Citations are limited to the 13 references listed in the registered protocol; their bibliographic details have not all been re-checked since and must be verified before submission. Places where the authors need to add a reference are marked **[REF]**. The target journal is Orphanet Journal of Rare Diseases. Its general submission guidelines (23-page PDF supplied by the authors on 17 October 2026) have been read and are summarised in the project notes; numbers are therefore written without thousands separators (journal rule for tables and values), and tables and figures must later be rebuilt without colour or shading, with titles of at most 15 words and legends of at most 300 words, double line spacing, and line and page numbers. **The PDF did not contain the pages for the Review and Research article types, so the abstract structure, word limits, section headings and the list of required declarations are still unknown; the structure below is the generic BMC layout and is provisional until those pages are read.** The journal accepts reviews on specific rare diseases but not case reports that only present phenotype information; the paper is therefore framed as a systematic review, and the five institutional patients are one data source within it.
+**How to read this draft.** Text that is already supported by the registered protocol (PROSPERO CRD420261520329, version 1.4) or by the search and screening logs is written out. Everything that depends on screening decisions, full-text assessment, data extraction or analysis is marked **[PENDING: …]** and contains no numbers or findings. Citations are limited to the 13 references listed in the registered protocol; their bibliographic details have not all been re-checked since and must be verified before submission. Places where the authors need to add a reference are marked **[REF]**. The target journal is Orphanet Journal of Rare Diseases. The general submission guidelines and the journal's pages for the Research and Review article types (three PDFs supplied by the authors on 17 October 2026) have been read, and the layout below follows them: the abstract has at most 350 words and no references, the main text runs Background, Methods, Results, Discussion, Conclusions, List of abbreviations and Declarations, and the Declarations carry the journal's seven compulsory headings. Numbers are written without thousands separators (journal rule for tables and values). Tables and figures must later be rebuilt without colour or shading, with titles of at most 15 words and legends of at most 300 words, and the submission file needs double line spacing, line numbers and page numbers. **Article type (recommendation, to be decided by the authors; the editor has the final say):** Research rather than Review, because the paper is a pre-registered analysis of pooled individual patient data with its own Methods and Results, whereas the journal describes a Review as a comprehensive, authoritative description of a subject. **Not stated on the pages read:** any word limit for the main text, and any limit on the number of tables and figures. The journal accepts reviews on specific rare diseases but not case reports that only present phenotype information; the paper is therefore framed as a systematic review, and the five institutional patients are one data source within it.
 
 Authors (order and contributions to be confirmed): Jun Shu, Jun Yang (corresponding author), Hongqiang Bian, Fei Peng, Ji Wang.
 
@@ -48,7 +48,7 @@ Eligible designs were case reports, case series, cohort studies, letters and rev
 
 ### Information sources and search
 
-We searched MEDLINE via PubMed, Web of Science Core Collection, Scopus, China National Knowledge Infrastructure (CNKI), Wanfang Data and the China Biology Medicine database (CBM, via SinoMed). Strategies combined controlled vocabulary, where it exists, with free-text synonyms for wandering spleen, splenic torsion and splenopexy, with no limits on language, date, age or study design, and were reviewed by a medical librarian before the searches were run. The searches were run by one author (JS) on 28 and 29 September 2026 (Table 1). The full strategies and the search log follow PRISMA-S [12] and are given in Supplementary File 1.
+We searched MEDLINE via PubMed, Web of Science Core Collection, Scopus, China National Knowledge Infrastructure (CNKI), Wanfang Data and the China Biology Medicine database (CBM, via SinoMed). Strategies combined controlled vocabulary, where it exists, with free-text synonyms for wandering spleen, splenic torsion and splenopexy, with no limits on language, date, age or study design, and were reviewed by a medical librarian before the searches were run. The searches were run by one author (JS) on 28 and 29 September 2026 (Table 1). The full strategies and the search log follow PRISMA-S [12] and are given in Additional file 1.
 
 **Table 1. Databases searched.**
 
@@ -76,11 +76,11 @@ Screening was done in Rayyan with blind mode on and author and journal details h
 
 ### Data collection
 
-Two reviewers were to extract data independently for every included patient with a pre-specified form (Supplementary File 2) after calibration on 10 reports, and agreement on the primary exposure and the primary outcome was to be reported as Cohen's kappa. Where a report described patients only in aggregate, the corresponding author was to be emailed twice, four weeks apart, to request individual data; otherwise the report would be described narratively. Duplicate reports of the same patients were identified by matching institution, study period, age, sex and clinical details, and the most complete report was used. **[PENDING: actual extraction process, calibration result, kappa, and responses to requests.]**
+Two reviewers were to extract data independently for every included patient with a pre-specified form (Additional file 2) after calibration on 10 reports, and agreement on the primary exposure and the primary outcome was to be reported as Cohen's kappa. Where a report described patients only in aggregate, the corresponding author was to be emailed twice, four weeks apart, to request individual data; otherwise the report would be described narratively. Duplicate reports of the same patients were identified by matching institution, study period, age, sex and clinical details, and the most complete report was used. **[PENDING: actual extraction process, calibration result, kappa, and responses to requests.]**
 
 ### Variables
 
-The **primary exposure** was the duration of the index symptomatic episode: the time from the onset of the symptoms of the presentation that led to operation until the operation, in days. Time in hospital before operation during the same admission counted; a planned interval between discharge and a scheduled elective operation did not and was recorded separately as a waiting interval. Rules for converting reported durations are given in Supplementary File 2.
+The **primary exposure** was the duration of the index symptomatic episode: the time from the onset of the symptoms of the presentation that led to operation until the operation, in days. Time in hospital before operation during the same admission counted; a planned interval between discharge and a scheduled elective operation did not and was recorded separately as a waiting interval. Rules for converting reported durations are given in Additional file 2.
 
 **Secondary exposures** were the total symptom history from the first symptom attributed to wandering spleen; a missed diagnosis, defined as at least one documented earlier healthcare contact at which wandering spleen was not diagnosed or an alternative diagnosis was made, including misread imaging; and a known diagnosis with deferred surgery.
 
@@ -106,6 +106,10 @@ Missing durations were handled by complete-case analysis, a comparison of patien
 - Google Scholar was not searched, because Google blocked the search as unusual traffic.
 - Citation searching was not completed: the lists of reports citing Ganarin and colleagues in Web of Science and Scopus were viewed (13 documents each) but not exported or screened, and the reference lists of earlier reviews were not checked. **[PENDING: whether the reference lists of included reports were checked.]**
 - **[PENDING: any deviation in the screening procedure, see the note under Selection of reports.]**
+
+### Use of artificial intelligence tools
+
+**[PENDING: the journal requires that any use of a large language model be documented in the Methods. The authors must state which tools were used, for what, and by whom. Facts recorded in the project log that the statement has to cover: (1) in the first round of title and abstract screening on 10 and 11 October 2026, the second reviewer's account made most of its decisions with an AI coding agent (Codex), contrary to the written screening guide; those decisions were kept as a separate dataset and not used; (2) Claude Code (Anthropic) was used to write and run the scripts for deduplication, screening comparison and process checks, to prepare the extraction workbook and the screening guides, and to draft this manuscript from the protocol and the project logs. Whether and how the authors checked the AI-assisted work, and the wording of the statement, are for the authors to decide.]**
 
 ## Results
 
@@ -154,35 +158,49 @@ A total of 4906 records were identified from six databases; 2358 duplicates were
 
 **[PENDING.]**
 
+## List of abbreviations
+
+CBM: China Biology Medicine database; CNKI: China National Knowledge Infrastructure; GRADE: Grading of Recommendations Assessment, Development and Evaluation; IPD: individual patient data; PRISMA: Preferred Reporting Items for Systematic Reviews and Meta-Analyses; PRISMA-IPD: PRISMA extension for individual participant data; PRISMA-S: PRISMA extension for literature searches; PROSPERO: International Prospective Register of Systematic Reviews. **[PENDING: revise when the text is final.]**
+
 ## Declarations
 
-- **Ethics approval and consent to participate.** Wuhan Children's Hospital ethics committee, approval 2025R156-E01, supplemented to cover the fifth patient. **[PENDING: confirm.]**
-- **Consent for publication.** **[PENDING: written consent from the parents of all five children for clinical details and images.]**
-- **Availability of data and materials.** The full individual patient dataset extracted from the included reports, the extraction form, the search strategies and the search log will be provided as supplementary files. No patient-identifying information is included. **[PENDING: confirm.]**
-- **Competing interests.** None known.
-- **Funding.** None.
-- **Authors' contributions.** **[PENDING: to be written by the authors.]**
-- **Acknowledgements.** The medical librarian who reviewed the search strategies. **[PENDING: name and permission.]**
+**Ethics approval and consent to participate.** The systematic review used data from published reports only. The institutional series was approved by the ethics committee of Wuhan Children's Hospital (reference 2025R156-E01), with a supplementary approval covering the fifth patient. **[PENDING: confirm the name of the committee as it must appear, whether the supplementary approval carries its own reference number, and the wording on consent to participate.]**
+
+**Consent for publication.** **[PENDING: written consent for publication of clinical details and images from the parents or legal guardians of all five children. The journal asks that consent forms are not sent at submission but may be requested at any stage.]**
+
+**Availability of data and materials.** **[PENDING: choose the route. The journal's wording for a repository is "The datasets generated and/or analysed during the current study are available in the [NAME] repository, [PERSISTENT WEB LINK TO DATASETS]"; for data inside the article and its additional files, "All data generated or analysed during this study are included in this published article [and its supplementary information files]"; where privacy could be compromised, the reason and the conditions of access must be stated. The journal's additional-file rules say that no individual participant details may be included, and it is not established whether a de-identified patient-level table counts as such; ask the editorial office before deciding between a public repository and an additional file. The journal also encourages depositing the search strings on searchRxiv and citing the dataset in the reference list with a persistent identifier.]**
+
+**Competing interests.** The authors declare that they have no competing interests. **[PENDING: confirm with all authors.]**
+
+**Funding.** None. **[PENDING: confirm with all authors.]**
+
+**Authors' contributions.** **[PENDING: to be written by the authors, referring to each author by initials, ending with "All authors read and approved the final manuscript." Contributions of the second reviewer of the title and abstract stage and of any author added since registration must be included.]**
+
+**Acknowledgements.** The medical librarian who reviewed the search strategies. **[PENDING: name, and permission of the person named, which the journal requires.]**
+
+**Authors' information.** Not applicable. **[Optional section.]**
 
 ## References
 
 1. Ganarin A, Fascetti Leon F, La Pergola E, Gamba P. Surgical approach of wandering spleen in infants and children: a systematic review. J Laparoendosc Adv Surg Tech A. 2021. doi:10.1089/lap.2020.0759
-2. Allen KB, Andrews G. Pediatric wandering spleen—the case for splenopexy: review of 35 reported cases in the literature. J Pediatr Surg. 1989;24:432–5.
-3. Brown CVR, Virgilio GR, Vazquez WD. Wandering spleen and its complications in children: a case series and review of the literature. J Pediatr Surg. 2003;38:1676–9.
-4. Soleimani M, Mehrabi A, Kashfi A, et al. Surgical treatment of patients with wandering spleen: report of six cases with a review of the literature. Surg Today. 2007;37:261–9.
-5. Fiquet-Francois C, Belouadah M, Ludot H, et al. Wandering spleen in children: multicenter retrospective study. J Pediatr Surg. 2010;45:1519–24.
+2. Allen KB, Andrews G. Pediatric wandering spleen—the case for splenopexy: review of 35 reported cases in the literature. J Pediatr Surg. 1989;24:432-5.
+3. Brown CVR, Virgilio GR, Vazquez WD. Wandering spleen and its complications in children: a case series and review of the literature. J Pediatr Surg. 2003;38:1676-9.
+4. Soleimani M, Mehrabi A, Kashfi A, et al. Surgical treatment of patients with wandering spleen: report of six cases with a review of the literature. Surg Today. 2007;37:261-9.
+5. Fiquet-Francois C, Belouadah M, Ludot H, et al. Wandering spleen in children: multicenter retrospective study. J Pediatr Surg. 2010;45:1519-24.
 6. Lombardi R, Menchini L, Corneli T, et al. Wandering spleen in children: a report of 3 cases and a brief literature review underlining the importance of diagnostic imaging. Pediatr Radiol. 2014. doi:10.1007/s00247-013-2851-6
-7. Alqadi GO, Saxena AK. Is laparoscopic approach for wandering spleen in children an option? J Minim Access Surg. 2019;15:93–7.
-8. Barabino M, Luigiano C, Pellicano R, et al. "Wandering spleen" as a rare cause of recurrent abdominal pain: a systematic review. Minerva Chir. 2019;74:359–63.
-9. Moore E, O'Brien JW, Merali N, et al. Gastric outlet obstruction secondary to a wandering spleen: systematic review and surgical management of a case. Ann R Coll Surg Engl. 2023;105:501–6.
+7. Alqadi GO, Saxena AK. Is laparoscopic approach for wandering spleen in children an option? J Minim Access Surg. 2019;15:93-7.
+8. Barabino M, Luigiano C, Pellicano R, et al. "Wandering spleen" as a rare cause of recurrent abdominal pain: a systematic review. Minerva Chir. 2019;74:359-63.
+9. Moore E, O'Brien JW, Merali N, et al. Gastric outlet obstruction secondary to a wandering spleen: systematic review and surgical management of a case. Ann R Coll Surg Engl. 2023;105:501-6.
 10. Page MJ, McKenzie JE, Bossuyt PM, et al. The PRISMA 2020 statement: an updated guideline for reporting systematic reviews. BMJ. 2021;372:n71.
-11. Stewart LA, Clarke M, Rovers M, et al. Preferred reporting items for a systematic review and meta-analysis of individual participant data: the PRISMA-IPD statement. JAMA. 2015;313:1657–65.
+11. Stewart LA, Clarke M, Rovers M, et al. Preferred reporting items for a systematic review and meta-analysis of individual participant data: the PRISMA-IPD statement. JAMA. 2015;313:1657-65.
 12. Rethlefsen ML, Kirtley S, Waffenschmidt S, et al. PRISMA-S: an extension to the PRISMA Statement for Reporting Literature Searches in Systematic Reviews. Syst Rev. 2021;10:39.
-13. Murad MH, Sultan S, Haffar S, Bazerbachi F. Methodological quality and synthesis of case series and case reports. BMJ Evid Based Med. 2018;23:60–3.
+13. Murad MH, Sultan S, Haffar S, Bazerbachi F. Methodological quality and synthesis of case series and case reports. BMJ Evid Based Med. 2018;23:60-3.
 
-## Supplementary files (planned)
+## Additional files (planned)
 
-- Supplementary File 1: search strategies for each database and the search log (PRISMA-S).
-- Supplementary File 2: data-extraction form and coding rules, including the duration-conversion rules.
-- Supplementary File 3: the individual patient dataset.
-- Supplementary File 4: PRISMA 2020 and PRISMA-IPD checklists.
+The journal asks for each additional file to be named "Additional file 1" and so on, cited in sequence in the text, and listed with file name, format, title and description; files may not exceed 20 MB each and may not contain individual participant details.
+
+- Additional file 1 (format to be decided): search strategies for each database and the search log (PRISMA-S).
+- Additional file 2 (.xlsx): data-extraction form and coding rules, including the duration-conversion rules.
+- Additional file 3: the individual patient dataset (route and format pending, see Availability of data and materials).
+- Additional file 4 (format to be decided): PRISMA 2020 and PRISMA-IPD checklists.
