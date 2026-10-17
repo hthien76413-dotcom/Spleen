@@ -1,0 +1,617 @@
+﻿blind_id,ws_id,R1_decision,R1_reason,R2_decision,R2_reason
+X0001,WS0414,Exclude,E2 not wandering spleen; E3 adults only,Exclude,E3 adults only
+X0002,WS0993,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen
+X0003,WS0370,Exclude,E2 not wandering spleen; E3 adults only,Exclude,E2 not wandering spleen
+X0004,WS0116,Exclude,E3 adults only,Exclude,E3 adults only
+X0005,WS0231,Exclude,E3 adults only,Exclude,E3 adults only
+X0006,WS1743,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0007,WS0238,Exclude,E3 adults only,Exclude,E3 adults only
+X0008,WS1857,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0009,WS1917,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0010,WS2008,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0011,WS2490,Exclude,E1 non-human,Exclude,E2 not wandering spleen
+X0012,WS1971,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0013,WS2094,Exclude,E2 not wandering spleen,Exclude,E3 adults only
+X0014,WS1983,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0015,WS1678,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0016,WS0369,Exclude,E3 adults only,Exclude,E3 adults only
+X0017,WS0070,Exclude,E3 adults only,Exclude,E3 adults only
+X0018,WS2522,Exclude,E1 non-human,Exclude,E2 not wandering spleen
+X0019,WS1458,Exclude,E1 non-human,Exclude,E2 not wandering spleen
+X0020,WS0298,Exclude,E2 not wandering spleen; E3 adults only,Exclude,E3 adults only
+X0021,WS1968,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0022,WS2415,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0023,WS0090,Exclude,E3 adults only,Exclude,E3 adults only
+X0024,WS0024,Exclude,E3 adults only,Exclude,E3 adults only
+X0025,WS0373,Exclude,E2 not wandering spleen; E3 adults only,Exclude,E3 adults only
+X0026,WS1951,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0027,WS0516,Exclude,E3 adults only,Exclude,E3 adults only
+X0028,WS0125,Exclude,E3 adults only,Exclude,E3 adults only
+X0029,WS1907,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0030,WS1763,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen
+X0031,WS0437,Exclude,E3 adults only,Exclude,E3 adults only
+X0032,WS2283,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0033,WS0391,Exclude,E1 non-human; E3 adults only,Exclude,E3 adults only
+X0034,WS2155,Exclude,E3 adults only,Exclude,E3 adults only
+X0035,WS1540,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0036,WS1474,Exclude,E1 non-human,Exclude,E2 not wandering spleen
+X0037,WS1515,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0038,WS1927,Exclude,E3 adults only,Exclude,E3 adults only
+X0039,WS2161,Exclude,E2 not wandering spleen,Exclude,E3 adults only
+X0040,WS2159,Exclude,E3 adults only,Exclude,E2 not wandering spleen
+X0041,WS1615,Exclude,E3 adults only,Exclude,E3 adults only
+X0042,WS0398,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0043,WS2248,Exclude,E1 non-human,Exclude,E2 not wandering spleen
+X0044,WS0041,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0045,WS0106,Exclude,E3 adults only,Exclude,E3 adults only
+X0046,WS2179,Exclude,E2 not wandering spleen,Exclude,E3 adults only
+X0047,WS1881,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0048,WS2187,Exclude,E2 not wandering spleen,Exclude,E3 adults only
+X0049,WS2036,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0050,WS0242,Exclude,E3 adults only,Exclude,E3 adults only
+X0051,WS0275,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0052,WS2446,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0053,WS1563,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0054,WS0126,Exclude,E3 adults only,Exclude,E3 adults only
+X0055,WS0387,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0056,WS1853,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0057,WS2164,Exclude,E2 not wandering spleen,Exclude,E3 adults only
+X0058,WS1665,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0059,WS1642,Exclude,E3 adults only,Exclude,E3 adults only
+X0060,WS1539,Exclude,E2 not wandering spleen,Exclude,E3 adults only
+X0061,WS0463,Exclude,E2 not wandering spleen; E3 adults only,Exclude,E2 not wandering spleen
+X0062,WS0059,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0063,WS2488,Exclude,E1 non-human,Exclude,E2 not wandering spleen
+X0064,WS1489,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0065,WS2271,Exclude,E2 not wandering spleen,Exclude,E3 adults only
+X0066,WS0597,Exclude,E3 adults only,Exclude,E3 adults only
+X0067,WS0406,Exclude,E1 non-human,Exclude,E2 not wandering spleen
+X0068,WS0051,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0069,WS1608,Exclude,E3 adults only,Exclude,E3 adults only
+X0070,WS0730,Exclude,E3 adults only,Exclude,E2 not wandering spleen
+X0071,WS0209,Exclude,E3 adults only,Exclude,E3 adults only
+X0072,WS1960,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0073,WS1989,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0074,WS2507,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0075,WS1765,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0076,WS0450,Exclude,E3 adults only,Exclude,E3 adults only
+X0077,WS1840,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0078,WS1607,Exclude,E1 non-human,Exclude,E3 adults only
+X0079,WS2274,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0080,WS1915,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0081,WS2228,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0082,WS0246,Exclude,E3 adults only,Exclude,E3 adults only
+X0083,WS0454,Exclude,E1 non-human,Exclude,E2 not wandering spleen
+X0084,WS0876,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0085,WS2462,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0086,WS0495,Exclude,E3 adults only,Exclude,E2 not wandering spleen
+X0087,WS1782,Exclude,E3 adults only,Exclude,E3 adults only
+X0088,WS0473,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0089,WS0255,Exclude,E3 adults only,Exclude,E3 adults only
+X0090,WS1921,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0091,WS1993,Exclude,E3 adults only,Exclude,E3 adults only
+X0092,WS1871,Exclude,E2 not wandering spleen,Exclude,E3 adults only
+X0093,WS1562,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen
+X0094,WS1733,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0095,WS0006,Exclude,E3 adults only,Exclude,E3 adults only
+X0096,WS2206,Exclude,E2 not wandering spleen,Exclude,E3 adults only
+X0097,WS1751,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0098,WS0325,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0099,WS1932,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0100,WS2133,Exclude,E3 adults only,Exclude,E3 adults only
+X0101,WS0076,Exclude,E3 adults only,Exclude,E3 adults only
+X0102,WS0304,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0103,WS0166,Exclude,E3 adults only,Exclude,E3 adults only
+X0104,WS1896,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0105,WS2457,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen
+X0106,WS0005,Exclude,E3 adults only,Exclude,E3 adults only
+X0107,WS2320,Exclude,E4 no original patient data,Exclude,E3 adults only
+X0108,WS1974,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0109,WS0203,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0110,WS0196,Exclude,E3 adults only,Exclude,E3 adults only
+X0111,WS2037,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0112,WS1087,Exclude,E3 adults only,Exclude,E3 adults only
+X0113,WS1847,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0114,WS2459,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0115,WS0007,Exclude,E3 adults only,Exclude,E3 adults only
+X0116,WS2329,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0117,WS1509,Exclude,E2 not wandering spleen,Exclude,E3 adults only
+X0118,WS2160,Exclude,E3 adults only,Exclude,E3 adults only
+X0119,WS0138,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0120,WS1930,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0121,WS2455,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0122,WS1748,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0123,WS2451,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0124,WS2434,Exclude,E2 not wandering spleen,Exclude,E3 adults only
+X0125,WS0395,Exclude,E3 adults only,Exclude,E3 adults only
+X0126,WS0219,Exclude,E3 adults only,Exclude,E3 adults only
+X0127,WS2467,Exclude,E1 non-human,Exclude,E2 not wandering spleen
+X0128,WS1047,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0129,WS2496,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen
+X0130,WS2470,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0131,WS1758,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0132,WS2468,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0133,WS1861,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0134,WS2529,Exclude,E2 not wandering spleen,Exclude,E3 adults only
+X0135,WS1511,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0136,WS2012,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0137,WS0284,Exclude,E3 adults only,Exclude,E3 adults only
+X0138,WS1514,Exclude,E3 adults only,Exclude,E3 adults only
+X0139,WS0615,Exclude,E3 adults only,Exclude,E3 adults only
+X0140,WS1891,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0141,WS1920,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0142,WS0386,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0143,WS2173,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0144,WS2199,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen
+X0145,WS0063,Exclude,E3 adults only,Exclude,E3 adults only
+X0146,WS2004,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0147,WS0099,Exclude,E3 adults only,Exclude,E3 adults only
+X0148,WS0030,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen
+X0149,WS2481,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0150,WS1875,Exclude,E1 non-human,Exclude,E2 not wandering spleen
+X0151,WS0082,Exclude,E3 adults only,Exclude,E3 adults only
+X0152,WS2485,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0153,WS2464,Exclude,E1 non-human,Exclude,E2 not wandering spleen
+X0154,WS1611,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0155,WS1481,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0156,WS1535,Exclude,E3 adults only,Exclude,E3 adults only
+X0157,WS1664,Exclude,E3 adults only,Exclude,E3 adults only
+X0158,WS0019,Exclude,E3 adults only; E4 no original patient data,Exclude,E3 adults only
+X0159,WS1048,Exclude,E3 adults only,Exclude,E3 adults only
+X0160,WS1854,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0161,WS2072,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0162,WS1878,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0163,WS0443,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0164,WS1376,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0165,WS0870,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0166,WS0213,Exclude,E3 adults only,Exclude,E3 adults only
+X0167,WS1820,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0168,WS1443,Exclude,E1 non-human,Exclude,E2 not wandering spleen
+X0169,WS1737,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0170,WS2215,Exclude,E3 adults only,Exclude,E3 adults only
+X0171,WS2334,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0172,WS2277,Exclude,E3 adults only,Exclude,E3 adults only
+X0173,WS0459,Exclude,E1 non-human; E2 not wandering spleen,Exclude,E1 non-human
+X0174,WS0226,Exclude,E3 adults only,Exclude,E3 adults only
+X0175,WS1849,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0176,WS0528,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0177,WS1810,Exclude,E3 adults only,Exclude,E3 adults only
+X0178,WS2066,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0179,WS2010,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0180,WS0621,Exclude,E2 not wandering spleen,Exclude,E3 adults only
+X0181,WS0062,Exclude,E2 not wandering spleen; E4 no original patient data,Exclude,E2 not wandering spleen
+X0182,WS1695,Exclude,E3 adults only,Exclude,E3 adults only
+X0183,WS1970,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0184,WS1541,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0185,WS2492,Exclude,E1 non-human,Exclude,E2 not wandering spleen
+X0186,WS2121,Exclude,E3 adults only,Exclude,E3 adults only
+X0187,WS1547,Exclude,E2 not wandering spleen,Exclude,E1 non-human
+X0188,WS0227,Exclude,E3 adults only,Exclude,E3 adults only
+X0189,WS0672,Exclude,E2 not wandering spleen,Exclude,E1 non-human
+X0190,WS0144,Exclude,E3 adults only,Exclude,E2 not wandering spleen
+X0191,WS1617,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0192,WS2061,Exclude,E3 adults only,Exclude,E3 adults only
+X0193,WS1682,Exclude,E3 adults only,Exclude,E3 adults only
+X0194,WS1812,Exclude,E1 non-human,Exclude,E2 not wandering spleen
+X0195,WS1442,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0196,WS1018,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0197,WS2518,Exclude,E1 non-human,Exclude,E2 not wandering spleen
+X0198,WS1954,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0199,WS0436,Exclude,E3 adults only,Exclude,E3 adults only
+X0200,WS1671,Exclude,E3 adults only,Exclude,E3 adults only
+X0201,WS1943,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0202,WS0080,Exclude,E3 adults only,Exclude,E3 adults only
+X0203,WS1502,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen
+X0204,WS1919,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0205,WS2363,Exclude,E1 non-human,Exclude,E2 not wandering spleen
+X0206,WS2450,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0207,WS2053,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen
+X0208,WS2444,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0209,WS2115,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0210,WS0095,Exclude,E3 adults only,Exclude,E3 adults only
+X0211,WS0109,Exclude,E3 adults only,Exclude,E3 adults only
+X0212,WS2042,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0213,WS2048,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0214,WS2324,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0215,WS2016,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0216,WS0258,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0217,WS0178,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0218,WS2340,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0219,WS1976,Exclude,E2 not wandering spleen,Exclude,E3 adults only
+X0220,WS0775,Exclude,E1 non-human,Exclude,E2 not wandering spleen
+X0221,WS0445,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0222,WS2494,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0223,WS1773,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0224,WS2212,Exclude,E3 adults only,Exclude,E3 adults only
+X0225,WS2524,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0226,WS0200,Exclude,E3 adults only,Exclude,E3 adults only
+X0227,WS0316,Exclude,E2 not wandering spleen; E3 adults only; E4 no original patient data,Exclude,E3 adults only
+X0228,WS2438,Exclude,E1 non-human,Exclude,E2 not wandering spleen
+X0229,WS1882,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0230,WS0003,Exclude,E3 adults only,Exclude,E3 adults only
+X0231,WS1616,Exclude,E3 adults only,Exclude,E3 adults only
+X0232,WS0073,Exclude,E3 adults only,Exclude,E3 adults only
+X0233,WS0046,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0234,WS0103,Exclude,E3 adults only,Exclude,E3 adults only
+X0235,WS1956,Exclude,E2 not wandering spleen,Exclude,E3 adults only
+X0236,WS2368,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0237,WS2493,Exclude,E1 non-human,Exclude,E2 not wandering spleen
+X0238,WS2075,Exclude,E2 not wandering spleen,Exclude,E3 adults only
+X0239,WS0599,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0240,WS2327,Exclude,E2 not wandering spleen,Exclude,E3 adults only
+X0241,WS0317,Exclude,E3 adults only,Exclude,E3 adults only
+X0242,WS0848,Exclude,E3 adults only,Exclude,E2 not wandering spleen
+X0243,WS1876,Exclude,E2 not wandering spleen,Exclude,E3 adults only
+X0244,WS0115,Exclude,E3 adults only,Exclude,E3 adults only
+X0245,WS2505,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0246,WS0282,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0247,WS1581,Exclude,E3 adults only,Exclude,E3 adults only
+X0248,WS2516,Exclude,E1 non-human,Exclude,E2 not wandering spleen
+X0249,WS0310,Exclude,E2 not wandering spleen; E3 adults only,Exclude,E3 adults only
+X0250,WS0296,Exclude,E2 not wandering spleen,Exclude,E3 adults only
+X0251,WS2437,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0252,WS0323,Exclude,E3 adults only,Exclude,E3 adults only
+X0253,WS0149,Exclude,E3 adults only,Exclude,E3 adults only
+X0254,WS0153,Exclude,E3 adults only,Exclude,E2 not wandering spleen
+X0255,WS1967,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0256,WS0128,Exclude,E3 adults only,Exclude,E3 adults only
+X0257,WS1265,Exclude,E3 adults only,Exclude,E3 adults only
+X0258,WS1694,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0259,WS0089,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen
+X0260,WS1652,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen
+X0261,WS0413,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0262,WS2475,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0263,WS0458,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0264,WS2473,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0265,WS0327,Exclude,E3 adults only,Exclude,E2 not wandering spleen
+X0266,WS1923,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0267,WS0556,Exclude,E3 adults only,Exclude,E3 adults only
+X0268,WS2439,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0269,WS1753,Exclude,E3 adults only,Exclude,E3 adults only
+X0270,WS0201,Exclude,E3 adults only; E4 no original patient data,Exclude,E4 no original patient data
+X0271,WS0139,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0272,WS2052,Exclude,E1 non-human,Exclude,E2 not wandering spleen
+X0273,WS2073,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0274,WS0184,Exclude,E3 adults only,Exclude,E3 adults only
+X0275,WS0309,Exclude,E2 not wandering spleen,Exclude,E3 adults only
+X0276,WS2259,Exclude,E3 adults only,Exclude,E3 adults only
+X0277,WS0341,Exclude,E1 non-human; E2 not wandering spleen,Exclude,E1 non-human
+X0278,WS1076,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0279,WS2442,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0280,WS1412,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0281,WS2086,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0282,WS1980,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen
+X0283,WS0050,Exclude,E3 adults only,Exclude,E3 adults only
+X0284,WS1958,Exclude,E2 not wandering spleen,Exclude,E3 adults only
+X0285,WS2180,Exclude,E2 not wandering spleen,Exclude,E3 adults only
+X0286,WS0425,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0287,WS1933,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0288,WS1444,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0289,WS0326,Exclude,E2 not wandering spleen; E3 adults only,Exclude,E3 adults only
+X0290,WS1680,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0291,WS2319,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0292,WS1883,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0293,WS1381,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0294,WS0485,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen
+X0295,WS1357,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0296,WS1556,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen
+X0297,WS0280,Exclude,E1 non-human; E2 not wandering spleen,Exclude,E1 non-human
+X0298,WS1724,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0299,WS1408,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0300,WS0644,Exclude,E2 not wandering spleen,Exclude,E1 non-human
+X0301,WS1779,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0302,WS0383,Exclude,E2 not wandering spleen; E3 adults only,Exclude,E3 adults only
+X0303,WS0262,Exclude,E3 adults only,Exclude,E3 adults only
+X0304,WS0136,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0305,WS1493,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0306,WS2181,Exclude,E2 not wandering spleen,Exclude,E3 adults only
+X0307,WS2318,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0308,WS1978,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0309,WS1912,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0310,WS2502,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0311,WS2253,Exclude,E3 adults only,Exclude,E3 adults only
+X0312,WS2050,Exclude,E3 adults only,Exclude,E3 adults only
+X0313,WS0374,Exclude,E3 adults only,Exclude,E3 adults only
+X0314,WS1508,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0315,WS2452,Exclude,E1 non-human,Exclude,E2 not wandering spleen
+X0316,WS1404,Exclude,E1 non-human,Exclude,E2 not wandering spleen
+X0317,WS1363,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen
+X0318,WS1937,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0319,WS0906,Exclude,E1 non-human,Exclude,E2 not wandering spleen
+X0320,WS0058,Exclude,E3 adults only,Exclude,E3 adults only
+X0321,WS1800,Exclude,E2 not wandering spleen,Exclude,E3 adults only
+X0322,WS0081,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0323,WS1470,Exclude,E1 non-human,Exclude,E2 not wandering spleen
+X0324,WS2537,Exclude,E1 non-human,Exclude,E2 not wandering spleen
+X0325,WS2465,Exclude,E1 non-human,Exclude,E2 not wandering spleen
+X0326,WS0365,Exclude,E1 non-human; E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0327,WS2051,Exclude,E3 adults only,Exclude,E3 adults only
+X0328,WS1873,Exclude,E2 not wandering spleen,Exclude,E3 adults only
+X0329,WS0913,Exclude,E4 no original patient data,Exclude,E3 adults only
+X0330,WS0922,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen
+X0331,WS1561,Exclude,E3 adults only,Exclude,E3 adults only
+X0332,WS2056,Exclude,E3 adults only,Exclude,E3 adults only
+X0333,WS1399,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0334,WS0094,Exclude,E3 adults only,Exclude,E3 adults only
+X0335,WS1663,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0336,WS1963,Exclude,E2 not wandering spleen,Exclude,E3 adults only
+X0337,WS1335,Exclude,E2 not wandering spleen,Exclude,E1 non-human
+X0338,WS0547,Exclude,E2 not wandering spleen,Exclude,E3 adults only
+X0339,WS1517,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0340,WS0863,Exclude,E3 adults only,Exclude,E2 not wandering spleen
+X0341,WS1845,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0342,WS0379,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0343,WS1852,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0344,WS1080,Exclude,E3 adults only,Exclude,E3 adults only
+X0345,WS1036,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen
+X0346,WS2499,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen
+X0347,WS2520,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0348,WS1756,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0349,WS2515,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0350,WS2205,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0351,WS2134,Exclude,E3 adults only,Exclude,E3 adults only
+X0352,WS2540,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen
+X0353,WS2109,Exclude,E3 adults only,Exclude,E3 adults only
+X0354,WS1400,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen
+X0355,WS2067,Exclude,E3 adults only,Exclude,E3 adults only
+X0356,WS1850,Exclude,E2 not wandering spleen,Exclude,E3 adults only
+X0357,WS2333,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0358,WS0598,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0359,WS0194,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen
+X0360,WS0353,Exclude,E3 adults only,Exclude,E3 adults only
+X0361,WS1879,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0362,WS0271,Exclude,E3 adults only,Exclude,E3 adults only
+X0363,WS1365,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0364,WS0415,Exclude,E3 adults only,Exclude,E3 adults only
+X0365,WS1422,Exclude,E1 non-human,Exclude,E2 not wandering spleen
+X0366,WS1625,Exclude,E3 adults only,Exclude,E3 adults only
+X0367,WS0996,Exclude,E3 adults only,Exclude,E3 adults only
+X0368,WS0959,Exclude,E2 not wandering spleen,Exclude,E3 adults only
+X0369,WS1322,Exclude,E1 non-human,Exclude,E3 adults only
+X0370,WS1790,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0371,WS1406,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0372,WS2156,Exclude,E3 adults only,Exclude,E3 adults only
+X0373,WS2090,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0374,WS1516,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0375,WS2525,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen
+X0376,WS1403,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen
+X0377,WS0102,Exclude,E3 adults only,Exclude,E3 adults only
+X0378,WS0402,Exclude,E3 adults only,Exclude,E3 adults only
+X0379,WS1401,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0380,WS0295,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0381,WS0666,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0382,WS2260,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0383,WS1354,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0384,WS1949,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0385,WS2472,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0386,WS0177,Exclude,E2 not wandering spleen,Exclude,E3 adults only
+X0387,WS2204,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0388,WS2431,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0389,WS0297,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0390,WS0208,Exclude,E4 no original patient data,Exclude,E3 adults only
+X0391,WS0185,Exclude,E3 adults only,Exclude,E3 adults only
+X0392,WS2497,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0393,WS1436,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0394,WS1863,Exclude,E2 not wandering spleen,Exclude,E3 adults only
+X0395,WS0874,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0396,WS1580,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0397,WS0925,Exclude,E3 adults only,Exclude,E3 adults only
+X0398,WS1505,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0399,WS1375,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0400,WS2196,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen
+X0401,WS1874,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0402,WS2019,Exclude,E2 not wandering spleen,Exclude,E3 adults only
+X0403,WS0448,Exclude,E3 adults only,Exclude,E3 adults only
+X0404,WS1995,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0405,WS1449,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0406,WS1955,Exclude,E2 not wandering spleen,Exclude,E3 adults only
+X0407,WS1914,Exclude,E2 not wandering spleen,Exclude,E3 adults only
+X0408,WS1582,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0409,WS2185,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0410,WS0118,Exclude,E3 adults only,Exclude,E3 adults only
+X0411,WS1703,Exclude,E3 adults only,Exclude,E3 adults only
+X0412,WS2098,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0413,WS1485,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0414,WS2262,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen
+X0415,WS2486,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0416,WS1991,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0417,WS1389,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0418,WS2024,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0419,WS1506,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0420,WS2330,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0421,WS2226,Exclude,E3 adults only,Exclude,E3 adults only
+X0422,WS0198,Exclude,E3 adults only,Exclude,E3 adults only
+X0423,WS1629,Exclude,E3 adults only,Exclude,E3 adults only
+X0424,WS1973,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0425,WS1411,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0426,WS1670,Exclude,E3 adults only,Exclude,E3 adults only
+X0427,WS1440,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0428,WS1424,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0429,WS0806,Exclude,E3 adults only,Exclude,E3 adults only
+X0430,WS1332,Exclude,E1 non-human,Exclude,E3 adults only
+X0431,WS2229,Exclude,E2 not wandering spleen,Exclude,E3 adults only
+X0432,WS2350,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0433,WS1192,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0434,WS0793,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen
+X0435,WS1503,Exclude,E3 adults only,Exclude,E3 adults only
+X0436,WS1986,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0437,WS0755,Exclude,E2 not wandering spleen,Exclude,E3 adults only
+X0438,WS2332,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0439,WS0163,Exclude,E3 adults only,Exclude,E3 adults only
+X0440,WS1504,Exclude,E1 non-human,Exclude,E2 not wandering spleen
+X0441,WS2017,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0442,WS0301,Exclude,E2 not wandering spleen,Exclude,E3 adults only
+X0443,WS1588,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0444,WS0367,Exclude,E2 not wandering spleen; E3 adults only,Exclude,E3 adults only
+X0445,WS2009,Exclude,E2 not wandering spleen,Exclude,E3 adults only
+X0446,WS1414,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0447,WS0769,Exclude,E3 adults only,Exclude,E3 adults only
+X0448,WS1529,Exclude,E3 adults only,Exclude,E1 non-human
+X0449,WS1676,Exclude,E3 adults only,Exclude,E3 adults only
+X0450,WS0878,Exclude,E3 adults only,Exclude,E3 adults only
+X0451,WS0083,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0452,WS2124,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0453,WS2447,Exclude,E1 non-human,Exclude,E2 not wandering spleen
+X0454,WS2482,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0455,WS1941,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0456,WS1017,Exclude,E2 not wandering spleen,Exclude,E1 non-human
+X0457,WS2436,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0458,WS1877,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0459,WS0451,Exclude,E3 adults only,Exclude,E2 not wandering spleen
+X0460,WS0036,Exclude,E3 adults only,Exclude,E3 adults only
+X0461,WS2182,Exclude,E2 not wandering spleen,Exclude,E3 adults only
+X0462,WS2474,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0463,WS1536,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen
+X0464,WS1643,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0465,WS2140,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0466,WS2295,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0467,WS2105,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen
+X0468,WS0060,Exclude,E4 no original patient data,Exclude,E3 adults only
+X0469,WS0074,Exclude,E3 adults only,Exclude,E3 adults only
+X0470,WS1609,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen
+X0471,WS0026,Exclude,E3 adults only,Exclude,E3 adults only
+X0472,WS0447,Exclude,E3 adults only,Exclude,E3 adults only
+X0473,WS1898,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0474,WS1719,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0475,WS1392,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0476,WS0305,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0477,WS1543,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen
+X0478,WS1594,Exclude,E1 non-human,Exclude,E3 adults only
+X0479,WS2454,Exclude,E1 non-human,Exclude,E2 not wandering spleen
+X0480,WS2289,Exclude,E3 adults only,Exclude,E3 adults only
+X0481,WS0351,Exclude,E2 not wandering spleen; E3 adults only,Exclude,E3 adults only
+X0482,WS1802,Exclude,E3 adults only,Exclude,E3 adults only
+X0483,WS1447,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0484,WS1521,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0485,WS2258,Exclude,E1 non-human,Exclude,E2 not wandering spleen
+X0486,WS2325,Exclude,E2 not wandering spleen,Exclude,E3 adults only
+X0487,WS1746,Exclude,E2 not wandering spleen,Exclude,E3 adults only
+X0488,WS0462,Exclude,E3 adults only,Exclude,E3 adults only
+X0489,WS2261,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0490,WS1059,Exclude,E3 adults only,Exclude,E2 not wandering spleen
+X0491,WS0816,Exclude,E3 adults only,Exclude,E2 not wandering spleen
+X0492,WS1413,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen
+X0493,WS1807,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0494,WS1372,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0495,WS2247,Exclude,E4 no original patient data,Exclude,E3 adults only
+X0496,WS0974,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0497,WS1935,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0498,WS2531,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0499,WS1451,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0500,WS0693,Exclude,E2 not wandering spleen,Exclude,E3 adults only
+X0501,WS1483,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0502,WS0366,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0503,WS0476,Exclude,E3 adults only,Exclude,E3 adults only
+X0504,WS1402,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0505,WS1377,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0506,WS2120,Exclude,E3 adults only,Exclude,E3 adults only
+X0507,WS2070,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0508,WS1476,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0509,WS0189,Exclude,E3 adults only,Exclude,E3 adults only
+X0510,WS2055,Exclude,E1 non-human,Exclude,E2 not wandering spleen
+X0511,WS2445,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0512,WS0028,Exclude,E3 adults only,Exclude,E3 adults only
+X0513,WS0302,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0514,WS1310,Exclude,E3 adults only,Exclude,E3 adults only
+X0515,WS0315,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen
+X0516,WS0023,Exclude,E3 adults only,Exclude,E3 adults only
+X0517,WS2538,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0518,WS2252,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0519,WS1613,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0520,WS1380,Exclude,E2 not wandering spleen,Exclude,E3 adults only
+X0521,WS0347,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen
+X0522,WS0236,Exclude,E2 not wandering spleen,Exclude,E3 adults only
+X0523,WS2273,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0524,WS2506,Exclude,E1 non-human,Exclude,E2 not wandering spleen
+X0525,WS2068,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0526,WS2483,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0527,WS0230,Exclude,E3 adults only,Exclude,E3 adults only
+X0528,WS0225,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0529,WS1888,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0530,WS0135,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0531,WS0469,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0532,WS2227,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0533,WS0946,Exclude,E4 no original patient data,Exclude,E3 adults only
+X0534,WS0181,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0535,WS0464,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0536,WS2203,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0537,WS0288,Exclude,E3 adults only,Exclude,E3 adults only
+X0538,WS1780,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0539,WS2509,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0540,WS1910,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0541,WS0385,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0542,WS0273,Exclude,E3 adults only,Exclude,E3 adults only
+X0543,WS0389,Exclude,E3 adults only,Exclude,E3 adults only
+X0544,WS2460,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0545,WS2361,Exclude,E4 no original patient data,Exclude,E3 adults only
+X0546,WS2211,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0547,WS1591,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0548,WS0015,Exclude,E3 adults only,Exclude,E3 adults only
+X0549,WS1977,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0550,WS0466,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen
+X0551,WS0250,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0552,WS2112,Exclude,E3 adults only,Exclude,E2 not wandering spleen
+X0553,WS2002,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0554,WS1646,Exclude,E2 not wandering spleen,Exclude,E3 adults only
+X0555,WS0504,Exclude,E1 non-human,Exclude,E2 not wandering spleen
+X0556,WS1655,Exclude,E3 adults only,Exclude,E3 adults only
+X0557,WS1610,Exclude,E2 not wandering spleen,Exclude,E3 adults only
+X0558,WS1590,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0559,WS0104,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0560,WS1889,Exclude,E2 not wandering spleen,Exclude,E3 adults only
+X0561,WS1975,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0562,WS1843,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0563,WS0685,Exclude,E3 adults only,Exclude,E3 adults only
+X0564,WS0434,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0565,WS0214,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0566,WS1872,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0567,WS1636,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0568,WS2007,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0569,WS1697,Exclude,E2 not wandering spleen,Exclude,E3 adults only
+X0570,WS1942,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0571,WS1844,Exclude,E3 adults only,Exclude,E3 adults only
+X0572,WS1707,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0573,WS1660,Exclude,E1 non-human,Exclude,E2 not wandering spleen
+X0574,WS1434,Exclude,E1 non-human,Exclude,E2 not wandering spleen
+X0575,WS0596,Exclude,E3 adults only,Exclude,E3 adults only
+X0576,WS1894,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen
+X0577,WS2217,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0578,WS1781,Exclude,E3 adults only,Exclude,E3 adults only
+X0579,WS2263,Exclude,E2 not wandering spleen,Exclude,E3 adults only
+X0580,WS1897,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0581,WS1713,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0582,WS1855,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0583,WS0260,Exclude,E3 adults only,Exclude,E3 adults only
+X0584,WS2519,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0585,WS0033,Exclude,E3 adults only,Exclude,E3 adults only
+X0586,WS2498,Exclude,E1 non-human,Exclude,E2 not wandering spleen
+X0587,WS1727,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0588,WS0014,Exclude,E2 not wandering spleen; E4 no original patient data,Exclude,E2 not wandering spleen
+X0589,WS0419,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0590,WS2471,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen
+X0591,WS2063,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0592,WS1677,Exclude,E2 not wandering spleen,Exclude,E3 adults only
+X0593,WS1475,Exclude,E1 non-human,Exclude,E2 not wandering spleen
+X0594,WS0592,Exclude,E3 adults only,Exclude,E3 adults only
+X0595,WS0820,Exclude,E2 not wandering spleen,Exclude,E1 non-human
+X0596,WS0763,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen
+X0597,WS0266,Exclude,E1 non-human; E3 adults only,Exclude,E3 adults only
+X0598,WS2469,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0599,WS2453,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen
+X0600,WS1934,Exclude,E3 adults only,Exclude,E3 adults only
+X0601,WS2280,Exclude,E3 adults only,Exclude,E3 adults only
+X0602,WS2177,Exclude,E3 adults only,Exclude,E3 adults only
+X0603,WS0738,Exclude,E3 adults only,Exclude,E3 adults only
+X0604,WS2508,Exclude,E1 non-human,Exclude,E2 not wandering spleen
+X0605,WS1742,Exclude,E1 non-human,Exclude,E2 not wandering spleen
+X0606,WS2456,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen
+X0607,WS2458,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0608,WS2326,Exclude,E2 not wandering spleen,Exclude,E3 adults only
+X0609,WS2341,Exclude,E1 non-human,Exclude,E3 adults only
+X0610,WS2328,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0611,WS2193,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0612,WS0375,Exclude,E1 non-human; E3 adults only,Exclude,E1 non-human
+X0613,WS0808,Exclude,E3 adults only,Exclude,E3 adults only
+X0614,WS2035,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+X0615,WS0086,Exclude,E3 adults only,Exclude,E3 adults only
+X0616,WS1557,Exclude,E3 adults only,Exclude,E3 adults only

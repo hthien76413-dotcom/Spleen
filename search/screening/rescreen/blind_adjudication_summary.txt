@@ -1,0 +1,24 @@
+Third-reviewer judgements: 986 of 986 sheet records usable; problems: 0
+
+Conflicts judged: 734
+  R1 excl / R2 adv   -> JY advance  146
+  R1 excl / R2 adv   -> JY exclude  208
+  R2 excl / R1 adv   -> JY advance  102
+  R2 excl / R1 adv   -> JY exclude  278
+  Third reviewer agrees with R1 (Jun Shu) in 310 (42.2%; 95% CI 38.7%-45.8%), with R2 (Fei Peng) in 424 (57.8%; CI 54.2%-61.3%); sign test p < 0.001
+  False exclusions (an eligible-looking record excluded): R1 146, R2 102.  Over-inclusions: R1 278, R2 208.
+  Third-reviewer decisions on conflicts: {'Maybe': 213, 'Exclude': 486, 'Include': 35}
+
+Both-excluded records, targeted (word-flagged + no-abstract): 192 judged, third reviewer advances 42 (21.9%; Wilson 95% CI 16.6%-28.2%)
+
+Both-excluded records,   of which word-flagged: 93 judged, third reviewer advances 3 (3.2%; Wilson 95% CI 1.1%-9.1%)
+
+Both-excluded records,   of which no abstract: 99 judged, third reviewer advances 39 (39.4%; Wilson 95% CI 30.3%-49.2%)
+
+Both-excluded records, random QC sample: 60 judged, third reviewer advances 0 (0.0%; Wilson 95% CI -0.0%-6.0%)
+  Random QC: one-sided 95% upper bound for the share of eligible-looking records among the unflagged both-excluded records: 4.9%
+
+Pre-specified trigger 1 (targeted advanced > 10%): FIRED (42/192).  Trigger 2 (>=2 of the random QC advanced): not fired (0/60).
+  -> 616 further both-excluded records with E2 or E3 are written to expansion_ws_ids.csv for a second blind sheet.
+
+Records advancing to full text so far: 1052 ({'both advanced': 762, 'conflict, third reviewer advanced': 248, 'both excluded, third reviewer advanced': 42}); excluded at title/abstract so far: 1496 of 2548
