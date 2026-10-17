@@ -14,10 +14,10 @@ from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
 from openpyxl.utils import get_column_letter
 from openpyxl.worksheet.datavalidation import DataValidation
 
-VERSION = "v2026-10-11a"
+VERSION = "v2026-10-17a"
 OUT = sys.argv[1] if len(sys.argv) > 1 else "Extraction workbook - template (draft).xlsx"
 
-N_PAT, N_REP, N_FT, N_IPD = 1500, 800, 2000, 300  # pre-formatted rows
+N_PAT, N_REP, N_FT, N_IPD, N_TIME = 1500, 800, 2000, 300, 300  # pre-formatted rows
 FIRST = 4  # first data row on the data sheets (rows 1-3 = header block)
 
 # ----------------------------------------------------------------------------- lists
@@ -215,9 +215,18 @@ FT_COLS = [
     ("reason", "Reason", "Exclude 必选；Pending IPD 选 A；Include 留空", ("list", "ft_reason"), 28, "ft"),
     ("n_children_individual", "Children with individual data", "整数", "int", 10, "ft"),
     ("n_children_aggregate", "Children aggregate-only", "整数", "int", 10, "ft"),
-    ("ws_basis", "Basis for wandering spleen", "仅 Include 时填（待确认，见指南 D1）", ("list", "ws_basis"), 24, "ft"),
+    ("ws_basis", "Basis for wandering spleen", "仅 Include 时填（指南 D1 已决定：宽松加标记）", ("list", "ws_basis"), 24, "ft"),
     ("duplicate_of", "Duplicate of (WS ID)", "与哪篇重复患者；仍是 Include，只是链接", "text", 12, "ft"),
     ("note", "Note", "E6 的具体说明、争议点", "text", 36, "source"),
+]
+
+FT_TIME_COLS = [
+    ("date", "Date", "yyyy-mm-dd", "date", 12, "id"),
+    ("reviewer", "Reviewer", "R1 = 舒俊，R2 = 卞宏强（全文阶段）", ("list", "ft_reviewer"), 10, "id"),
+    ("start", "Session start", "开始时间 hh:mm（本地时间）", "text", 12, "ft"),
+    ("end", "Session end", "结束时间 hh:mm", "text", 12, "ft"),
+    ("n_reports", "Reports handled", "这一段时间处理了多少篇（整数）", "int", 12, "ft"),
+    ("note", "Note", "例如中断原因、遇到的疑问", "text", 40, "source"),
 ]
 
 IPD_COLS = [
@@ -374,7 +383,8 @@ README_LINES = [
     ("b", "校准：正式提取前，两位提取员先各自提取同样的 10 篇报告，比较，讨论分歧，必要时改这份表和规则（协议第 14 节）。10 篇建议涵盖中英文、个案和系列、时间写法各异的报告，在全文名单确定后再选。"),
     ("b", "两人完成后比较、做共识：Claude 可以另写比较脚本（出分歧清单和 Cohen's kappa）；协议只说'报告主要暴露和主要结局的 kappa'，没有规定连续变量怎么算——建议对时间类别（四类加缺失）和脾脏存活各算一个 kappa，天数另报一致范围（待确认）。"),
     ("h", "2. 各表"),
-    ("b", "FT_log：全文筛选记录（如果不用 Rayyan 的全文筛选功能，就用这张表；用了也可作备份）。详细规则见《全文筛选指南》。"),
+    ("b", "FT_log：全文筛选的正式记录（指南 D4，2026 年 10 月 17 日决定：全文阶段不用 Rayyan）。每位筛选员用自己的一份副本，两人都完成之前互不查看。详细规则见《全文筛选指南》。"),
+    ("b", "FT_time_log：全文筛选的时间记录。每次开始和结束都写一行（日期、起止时间、处理的篇数），用来代替 Rayyan 的时间戳日志。"),
     ("b", "Reports、Patients：数据提取。"),
     ("b", "IPD_requests：向只有汇总数据的报告的作者索取个体数据的登记（协议第 14 节：两封邮件，间隔 4 周）。"),
     ("b", "Rules：时间换算 9 条规则、衍生变量定义、主要暴露和结局的协议原文。"),
@@ -528,6 +538,7 @@ def main():
     ws_readme = wb.active
     ws_readme.title = "README"
     ws_ft = wb.create_sheet("FT_log")
+    ws_time = wb.create_sheet("FT_time_log")
     ws_rep = wb.create_sheet("Reports")
     ws_pat = wb.create_sheet("Patients")
     ws_ipd = wb.create_sheet("IPD_requests")
@@ -539,12 +550,12 @@ def main():
     put_rules(ws_rules)
     put_duration_calc(ws_calc)
 
-    for ws, cols, n in ((ws_ft, FT_COLS, N_FT), (ws_rep, REPORT_COLS, N_REP), (ws_pat, PATIENT_COLS, N_PAT), (ws_ipd, IPD_COLS, N_IPD)):
+    for ws, cols, n in ((ws_ft, FT_COLS, N_FT), (ws_time, FT_TIME_COLS, N_TIME), (ws_rep, REPORT_COLS, N_REP), (ws_pat, PATIENT_COLS, N_PAT), (ws_ipd, IPD_COLS, N_IPD)):
         build_header(ws, cols)
         add_validations(ws, cols, n, FORMULAS)
 
     # sheet tab colours
-    for ws, col in ((ws_readme, "7F7F7F"), (ws_ft, "2F75B5"), (ws_rep, "2F75B5"), (ws_pat, "2F75B5"),
+    for ws, col in ((ws_readme, "7F7F7F"), (ws_ft, "2F75B5"), (ws_time, "2F75B5"), (ws_rep, "2F75B5"), (ws_pat, "2F75B5"),
                     (ws_ipd, "548235"), (ws_rules, "7F7F7F"), (ws_calc, "7F7F7F")):
         ws.sheet_properties.tabColor = col
     wb["Lists"].sheet_properties.tabColor = "BBBBBB"
