@@ -1,0 +1,987 @@
+﻿blind_id,ws_id,stratum,R1_decision,R1_reason,R2_decision,R2_reason
+B0001,WS2003,conflict,Maybe,,Exclude,E3 adults only
+B0002,WS2029,conflict,Exclude,E3 adults only,Maybe,
+B0003,WS1321,conflict,Maybe,,Exclude,E1 non-human
+B0004,WS1480,targeted_flag,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0005,WS1348,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0006,WS1769,targeted_flag,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0007,WS1350,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0008,WS0661,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0009,WS1246,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0010,WS0071,conflict,Exclude,E3 adults only,Maybe,
+B0011,WS1606,targeted_flag,Exclude,E3 adults only,Exclude,E3 adults only
+B0012,WS2301,conflict,Exclude,E3 adults only,Maybe,
+B0013,WS0636,conflict,Maybe,,Exclude,E3 adults only
+B0014,WS0097,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0015,WS0511,conflict,Maybe,,Exclude,E3 adults only
+B0016,WS1761,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0017,WS1462,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0018,WS0492,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0019,WS2189,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0020,WS1635,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0021,WS0318,conflict,Maybe,,Exclude,E3 adults only
+B0022,WS1383,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0023,WS2123,conflict,Maybe,,Exclude,E3 adults only
+B0024,WS0833,random_qc,Exclude,E1 non-human,Exclude,E3 adults only
+B0025,WS0864,conflict,Maybe,,Exclude,E1 non-human
+B0026,WS1730,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0027,WS0085,targeted_flag,Exclude,E3 adults only,Exclude,E3 adults only
+B0028,WS2275,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0029,WS1479,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0030,WS0652,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0031,WS0798,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0032,WS1328,conflict,Maybe,,Exclude,E1 non-human
+B0033,WS1892,conflict,Include,,Exclude,E2 not wandering spleen
+B0034,WS1324,targeted_flag,Exclude,E3 adults only,Exclude,E1 non-human
+B0035,WS0729,conflict,Maybe,,Exclude,E3 adults only
+B0036,WS2149,random_qc,Exclude,E3 adults only,Exclude,E3 adults only
+B0037,WS1478,random_qc,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0038,WS0671,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0039,WS1848,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0040,WS2265,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0041,WS2335,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0042,WS1139,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0043,WS0388,conflict,Exclude,E3 adults only,Maybe,
+B0044,WS0559,conflict,Maybe,,Exclude,E3 adults only
+B0045,WS0377,random_qc,Exclude,E2 not wandering spleen; E3 adults only,Exclude,E3 adults only
+B0046,WS1839,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0047,WS1290,conflict,Maybe,,Exclude,E1 non-human
+B0048,WS0654,conflict,Maybe,,Exclude,E1 non-human
+B0049,WS0819,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0050,WS0642,conflict,Exclude,E4 no original patient data,Maybe,
+B0051,WS0801,conflict,Exclude,wrong publication type,Include,
+B0052,WS0543,targeted_noabstract,Exclude,E3 adults only,Exclude,E2 not wandering spleen
+B0053,WS1429,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0054,WS1599,random_qc,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0055,WS0401,random_qc,Exclude,E3 adults only,Exclude,E3 adults only
+B0056,WS0812,conflict,Exclude,E3 adults only,Maybe,
+B0057,WS1566,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0058,WS1633,targeted_flag,Exclude,E4 no original patient data,Exclude,E1 non-human
+B0059,WS0017,targeted_flag,Exclude,E3 adults only,Exclude,E3 adults only
+B0060,WS2345,conflict,Exclude,E5 not a formal article,Maybe,
+B0061,WS1004,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0062,WS1998,targeted_noabstract,Exclude,E1 non-human,Exclude,E5 not a formal article
+B0063,WS1433,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0064,WS2281,targeted_flag,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen
+B0065,WS0669,conflict,Maybe,,Exclude,E3 adults only
+B0066,WS2102,random_qc,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0067,WS0981,conflict,Exclude,E4 no original patient data,Maybe,
+B0068,WS1382,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0069,WS0431,conflict,Exclude,E3 adults only; E4 no original patient data,Maybe,
+B0070,WS0641,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0071,WS0673,conflict,Maybe,,Exclude,E3 adults only
+B0072,WS1545,conflict,Exclude,E1 non-human,Maybe,
+B0073,WS1427,conflict,Maybe,,Exclude,E1 non-human
+B0074,WS0972,conflict,Maybe,,Exclude,E3 adults only
+B0075,WS0754,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0076,WS0600,conflict,Maybe,,Exclude,E3 adults only
+B0077,WS1786,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0078,WS1461,conflict,Maybe,,Exclude,E1 non-human
+B0079,WS2346,conflict,Exclude,E5 not a formal article,Maybe,
+B0080,WS2343,conflict,Exclude,E5 not a formal article,Maybe,
+B0081,WS0228,conflict,Include,,Exclude,E4 no original patient data
+B0082,WS0456,targeted_flag,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0083,WS2417,conflict,Exclude,E5 not a formal article,Maybe,
+B0084,WS0736,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0085,WS0899,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0086,WS0935,conflict,Exclude,E3 adults only,Maybe,
+B0087,WS1667,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0088,WS1419,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0089,WS2198,conflict,Exclude,E3 adults only,Maybe,
+B0090,WS2038,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0091,WS1728,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0092,WS1520,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0093,WS1602,conflict,Exclude,E4 no original patient data,Maybe,
+B0094,WS1168,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0095,WS0360,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0096,WS0768,conflict,Maybe,,Exclude,E3 adults only
+B0097,WS0655,targeted_flag,Exclude,E1 non-human,Exclude,E2 not wandering spleen
+B0098,WS0446,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0099,WS0841,conflict,Include,,Exclude,E3 adults only
+B0100,WS1010,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0101,WS2213,conflict,Exclude,E4 no original patient data,Maybe,
+B0102,WS0278,conflict,Exclude,E3 adults only,Maybe,
+B0103,WS2336,random_qc,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0104,WS2192,targeted_flag,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0105,WS1497,targeted_noabstract,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen
+B0106,WS1272,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0107,WS2176,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0108,WS0025,random_qc,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0109,WS0157,targeted_flag,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0110,WS2356,conflict,Exclude,E3 adults only,Maybe,
+B0111,WS1177,targeted_noabstract,Exclude,E3 adults only,Exclude,E3 adults only
+B0112,WS1865,targeted_flag,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0113,WS1794,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0114,WS1379,targeted_flag,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0115,WS1269,conflict,Exclude,E1 non-human,Maybe,
+B0116,WS0728,conflict,Maybe,,Exclude,E3 adults only
+B0117,WS1554,conflict,Maybe,,Exclude,E3 adults only
+B0118,WS1996,targeted_noabstract,Exclude,E1 non-human,Exclude,E5 not a formal article
+B0119,WS1336,conflict,Maybe,,Exclude,E3 adults only
+B0120,WS0055,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0121,WS0931,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0122,WS1689,targeted_flag,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0123,WS0283,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0124,WS2157,conflict,Exclude,E3 adults only,Maybe,
+B0125,WS1081,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0126,WS0274,random_qc,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0127,WS1836,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0128,WS0994,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0129,WS1477,conflict,Exclude,E4 no original patient data,Maybe,
+B0130,WS0195,targeted_flag,Exclude,E2 not wandering spleen; E4 no original patient data,Exclude,E2 not wandering spleen
+B0131,WS1029,conflict,Exclude,E1 non-human,Maybe,
+B0132,WS1702,conflict,Exclude,E4 no original patient data,Maybe,
+B0133,WS0639,conflict,Maybe,,Exclude,E1 non-human
+B0134,WS0821,conflict,Maybe,,Exclude,E3 adults only
+B0135,WS2194,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0136,WS2210,conflict,Exclude,E3 adults only,Maybe,
+B0137,WS2282,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0138,WS1229,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0139,WS0610,conflict,Maybe,,Exclude,E1 non-human
+B0140,WS2279,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0141,WS2207,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0142,WS1191,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0143,WS1196,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0144,WS2433,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0145,WS1100,conflict,Maybe,,Exclude,E1 non-human
+B0146,WS2304,conflict,Exclude,E3 adults only,Maybe,
+B0147,WS0690,conflict,Exclude,E4 no original patient data,Maybe,
+B0148,WS0781,conflict,Maybe,,Exclude,E1 non-human
+B0149,WS0613,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0150,WS0647,conflict,Maybe,,Exclude,E3 adults only
+B0151,WS0822,conflict,Exclude,E3 adults only,Include,
+B0152,WS2079,conflict,Exclude,E4 no original patient data,Maybe,
+B0153,WS1864,random_qc,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0154,WS1312,conflict,Exclude,E1 non-human,Maybe,
+B0155,WS1964,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0156,WS1681,conflict,Exclude,E4 no original patient data,Maybe,
+B0157,WS0618,conflict,Exclude,E3 adults only,Maybe,
+B0158,WS1305,conflict,Maybe,,Exclude,E3 adults only
+B0159,WS0494,conflict,Maybe,,Exclude,E3 adults only
+B0160,WS0206,targeted_flag,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0161,WS1731,conflict,Exclude,E2 not wandering spleen,Include,
+B0162,WS1706,conflict,Exclude,E4 no original patient data,Maybe,
+B0163,WS0113,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0164,WS1740,random_qc,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0165,WS0098,targeted_flag,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0166,WS2532,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0167,WS1041,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0168,WS1500,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0169,WS1083,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0170,WS1735,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0171,WS0131,targeted_flag,Exclude,E3 adults only,Exclude,E3 adults only
+B0172,WS0465,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0173,WS2224,targeted_flag,Exclude,E3 adults only,Exclude,E2 not wandering spleen
+B0174,WS1690,conflict,Include,,Exclude,E3 adults only
+B0175,WS0515,conflict,Maybe,,Exclude,E3 adults only
+B0176,WS0217,targeted_flag,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0177,WS1206,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0178,WS1829,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0179,WS1644,random_qc,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0180,WS0477,conflict,Exclude,E3 adults only,Maybe,
+B0181,WS1360,conflict,Maybe,,Exclude,E3 adults only
+B0182,WS1571,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0183,WS1725,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0184,WS0207,random_qc,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0185,WS2172,conflict,Exclude,E3 adults only,Maybe,
+B0186,WS1352,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0187,WS0760,conflict,Maybe,,Exclude,E4 no original patient data
+B0188,WS0224,conflict,Exclude,E2 not wandering spleen; E4 no original patient data,Maybe,
+B0189,WS1559,targeted_flag,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0190,WS0752,conflict,Maybe,,Exclude,E3 adults only
+B0191,WS2162,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0192,WS1922,random_qc,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0193,WS0616,conflict,Include,,Exclude,E2 not wandering spleen
+B0194,WS1337,conflict,Exclude,E3 adults only,Maybe,
+B0195,WS0158,random_qc,Exclude,E3 adults only,Exclude,E3 adults only
+B0196,WS0903,conflict,Maybe,,Exclude,E3 adults only
+B0197,WS1827,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0198,WS1327,conflict,Maybe,,Exclude,E1 non-human
+B0199,WS0186,conflict,Exclude,E3 adults only,Include,
+B0200,WS0956,conflict,Include,,Exclude,E2 not wandering spleen
+B0201,WS2030,conflict,Exclude,E3 adults only,Maybe,
+B0202,WS1918,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0203,WS1463,conflict,Maybe,,Exclude,E3 adults only
+B0204,WS1386,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0205,WS1405,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0206,WS0405,conflict,Include,,Exclude,E2 not wandering spleen
+B0207,WS0846,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0208,WS1841,targeted_noabstract,Exclude,E3 adults only,Exclude,E2 not wandering spleen
+B0209,WS2027,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0210,WS0561,conflict,Maybe,,Exclude,E3 adults only
+B0211,WS1705,conflict,Maybe,,Exclude,E3 adults only
+B0212,WS0487,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0213,WS2146,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0214,WS2267,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0215,WS0734,conflict,Exclude,E3 adults only,Maybe,
+B0216,WS1570,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0217,WS1397,targeted_flag,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0218,WS0725,conflict,Maybe,,Exclude,E3 adults only
+B0219,WS1501,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0220,WS1893,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0221,WS0440,conflict,Exclude,E1 non-human; E3 adults only,Maybe,
+B0222,WS1455,random_qc,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0223,WS1579,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0224,WS2430,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0225,WS1637,conflict,Exclude,E1 non-human,Maybe,
+B0226,WS1043,conflict,Exclude,E4 no original patient data,Maybe,
+B0227,WS0689,conflict,Exclude,E3 adults only,Maybe,
+B0228,WS2249,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0229,WS1567,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0230,WS0785,conflict,Maybe,,Exclude,E3 adults only
+B0231,WS1364,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0232,WS1259,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0233,WS1450,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0234,WS0307,random_qc,Exclude,E3 adults only,Exclude,E3 adults only
+B0235,WS2049,conflict,Exclude,E3 adults only,Maybe,
+B0236,WS1304,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0237,WS2034,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0238,WS0888,conflict,Exclude,E1 non-human,Maybe,
+B0239,WS1760,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0240,WS0759,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0241,WS2023,conflict,Exclude,E4 no original patient data,Maybe,
+B0242,WS0100,conflict,Exclude,E3 adults only; E4 no original patient data,Maybe,
+B0243,WS1555,conflict,Exclude,E3 adults only,Maybe,
+B0244,WS1127,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0245,WS0625,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0246,WS1124,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0247,WS2354,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0248,WS1691,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0249,WS0107,targeted_flag,Exclude,E3 adults only,Exclude,E3 adults only
+B0250,WS0629,conflict,Exclude,E3 adults only,Maybe,
+B0251,WS2080,targeted_noabstract,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen
+B0252,WS1818,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0253,WS0890,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0254,WS0836,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0255,WS1939,random_qc,Exclude,E3 adults only,Exclude,E3 adults only
+B0256,WS0867,random_qc,Exclude,E2 not wandering spleen,Exclude,E1 non-human
+B0257,WS0512,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0258,WS1791,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0259,WS2088,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0260,WS1597,conflict,Exclude,E3 adults only,Maybe,
+B0261,WS1473,conflict,Maybe,,Exclude,E1 non-human
+B0262,WS2026,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0263,WS0039,targeted_flag,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0264,WS1928,random_qc,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0265,WS1584,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0266,WS1598,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0267,WS2512,targeted_noabstract,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen
+B0268,WS1772,random_qc,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0269,WS0513,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0270,WS1712,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0271,WS2240,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0272,WS0844,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0273,WS1518,conflict,Exclude,E1 non-human,Maybe,
+B0274,WS2221,conflict,Exclude,E4 no original patient data,Maybe,
+B0275,WS0537,conflict,Exclude,E2 not wandering spleen,Include,
+B0276,WS1421,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0277,WS0934,conflict,Maybe,,Exclude,E3 adults only
+B0278,WS0591,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0279,WS1172,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0280,WS2536,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0281,WS1548,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0282,WS0376,targeted_flag,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0283,WS1416,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0284,WS2152,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0285,WS0154,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0286,WS0905,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0287,WS0715,conflict,Include,,Exclude,E2 not wandering spleen
+B0288,WS0617,conflict,Maybe,,Exclude,E3 adults only
+B0289,WS0882,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0290,WS1093,conflict,Exclude,E3 adults only,Maybe,
+B0291,WS1186,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0292,WS1370,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0293,WS1858,targeted_flag,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0294,WS1519,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0295,WS1639,conflict,Exclude,E3 adults only,Include,
+B0296,WS0410,conflict,Exclude,E3 adults only; E4 no original patient data,Maybe,
+B0297,WS0895,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0298,WS1720,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0299,WS0029,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0300,WS2020,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0301,WS2201,conflict,Exclude,E3 adults only,Maybe,
+B0302,WS1307,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0303,WS1752,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0304,WS2234,conflict,Exclude,E3 adults only,Maybe,
+B0305,WS1627,targeted_flag,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0306,WS0356,targeted_flag,Exclude,E3 adults only,Exclude,E3 adults only
+B0307,WS0491,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0308,WS2031,conflict,Exclude,E4 no original patient data,Maybe,
+B0309,WS0714,conflict,Exclude,E4 no original patient data,Maybe,
+B0310,WS1870,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0311,WS0795,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0312,WS0634,conflict,Maybe,,Exclude,E3 adults only
+B0313,WS2440,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0314,WS1972,conflict,Exclude,E2 not wandering spleen,Include,
+B0315,WS0482,conflict,Include,,Exclude,E3 adults only
+B0316,WS0628,conflict,Maybe,,Exclude,E3 adults only
+B0317,WS2245,conflict,Exclude,E3 adults only,Maybe,
+B0318,WS1944,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0319,WS0330,conflict,Include,,Exclude,E2 not wandering spleen
+B0320,WS0854,conflict,Exclude,E3 adults only,Maybe,
+B0321,WS1674,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0322,WS0263,conflict,Exclude,E3 adults only,Maybe,
+B0323,WS1744,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0324,WS2514,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0325,WS1085,targeted_noabstract,Exclude,E1 non-human,Exclude,E2 not wandering spleen
+B0326,WS0324,conflict,Exclude,E3 adults only; E4 no original patient data,Include,
+B0327,WS2200,conflict,Maybe,,Exclude,E3 adults only
+B0328,WS1162,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0329,WS0533,random_qc,Exclude,E3 adults only,Exclude,E3 adults only
+B0330,WS0563,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0331,WS0422,random_qc,Exclude,E2 not wandering spleen,Exclude,E3 adults only
+B0332,WS1188,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0333,WS1176,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0334,WS2028,conflict,Exclude,E3 adults only,Maybe,
+B0335,WS0084,conflict,Exclude,E3 adults only,Maybe,
+B0336,WS0321,conflict,Exclude,E4 no original patient data,Maybe,
+B0337,WS0408,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0338,WS1647,conflict,Exclude,E3 adults only,Maybe,
+B0339,WS1711,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0340,WS1809,conflict,Exclude,E4 no original patient data,Maybe,
+B0341,WS1795,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0342,WS0779,conflict,Maybe,,Exclude,E3 adults only
+B0343,WS1754,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0344,WS1159,conflict,Maybe,,Exclude,E3 adults only
+B0345,WS0187,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0346,WS1576,random_qc,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0347,WS1407,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0348,WS0847,conflict,Maybe,,Exclude,E3 adults only
+B0349,WS1931,conflict,Maybe,,Exclude,E3 adults only
+B0350,WS0584,conflict,Exclude,background article,Maybe,
+B0351,WS0811,conflict,Maybe,,Exclude,E3 adults only
+B0352,WS2110,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0353,WS1299,conflict,Exclude,E5 not a formal article,Maybe,
+B0354,WS1120,conflict,Exclude,E1 non-human,Maybe,
+B0355,WS1466,conflict,Maybe,,Exclude,E1 non-human
+B0356,WS1767,conflict,Exclude,E4 no original patient data,Maybe,
+B0357,WS1038,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0358,WS1768,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0359,WS0564,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0360,WS2297,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0361,WS1418,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0362,WS0894,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0363,WS2544,targeted_noabstract,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen
+B0364,WS2064,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0365,WS1669,conflict,Exclude,E4 no original patient data,Maybe,
+B0366,WS0835,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0367,WS0572,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0368,WS1586,random_qc,Exclude,E1 non-human,Exclude,E3 adults only
+B0369,WS0622,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0370,WS1287,conflict,Maybe,,Exclude,E1 non-human
+B0371,WS0018,conflict,Maybe,,Exclude,E4 no original patient data
+B0372,WS0784,conflict,Exclude,E3 adults only,Maybe,
+B0373,WS2084,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0374,WS0951,conflict,Maybe,,Exclude,E1 non-human
+B0375,WS1936,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0376,WS2331,conflict,Exclude,E4 no original patient data,Maybe,
+B0377,WS0420,conflict,Maybe,E2 not wandering spleen,Exclude,E3 adults only
+B0378,WS0733,conflict,Maybe,,Exclude,E3 adults only
+B0379,WS1822,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0380,WS0980,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0381,WS0893,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0382,WS1217,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0383,WS0620,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0384,WS1715,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0385,WS0501,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0386,WS0662,conflict,Exclude,E4 no original patient data,Maybe,
+B0387,WS0502,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0388,WS0421,conflict,Maybe,,Exclude,E3 adults only
+B0389,WS2254,random_qc,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0390,WS1039,conflict,Include,,Exclude,E2 not wandering spleen
+B0391,WS1718,conflict,Exclude,E1 non-human,Maybe,
+B0392,WS1084,conflict,Exclude,E4 no original patient data,Maybe,
+B0393,WS1755,random_qc,Exclude,E1 non-human,Exclude,E2 not wandering spleen
+B0394,WS1796,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0395,WS1583,random_qc,Exclude,E3 adults only,Exclude,E2 not wandering spleen
+B0396,WS0723,conflict,Maybe,,Exclude,E1 non-human
+B0397,WS2165,random_qc,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0398,WS1115,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0399,WS2000,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0400,WS0872,conflict,Maybe,,Exclude,E3 adults only
+B0401,WS2278,conflict,Exclude,E3 adults only,Maybe,
+B0402,WS0825,conflict,Maybe,,Exclude,E3 adults only
+B0403,WS0609,conflict,Exclude,background article,Maybe,
+B0404,WS0658,conflict,Exclude,E2 not wandering spleen,Include,
+B0405,WS0688,conflict,Maybe,,Exclude,E3 adults only
+B0406,WS0943,targeted_flag,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0407,WS0348,conflict,Exclude,E4 no original patient data,Maybe,
+B0408,WS0606,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0409,WS0657,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0410,WS1283,targeted_flag,Exclude,E3 adults only,Exclude,E2 not wandering spleen
+B0411,WS2342,conflict,Exclude,E4 no original patient data,Maybe,
+B0412,WS1104,targeted_flag,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0413,WS1911,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0414,WS0002,conflict,Exclude,E3 adults only,Include,
+B0415,WS0660,conflict,Exclude,E2 not wandering spleen,Include,
+B0416,WS0362,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0417,WS1235,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0418,WS2461,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0419,WS1498,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0420,WS1195,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0421,WS2232,conflict,Exclude,E3 adults only,Maybe,
+B0422,WS0944,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0423,WS0549,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0424,WS1640,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0425,WS1116,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0426,WS2441,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0427,WS1148,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0428,WS2219,random_qc,Exclude,E1 non-human,Exclude,E2 not wandering spleen
+B0429,WS0372,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0430,WS0223,conflict,Maybe,,Exclude,E3 adults only
+B0431,WS1102,conflict,Maybe,,Exclude,E1 non-human
+B0432,WS1546,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0433,WS2428,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0434,WS1777,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0435,WS1692,targeted_flag,Exclude,E3 adults only,Exclude,E3 adults only
+B0436,WS1454,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0437,WS0884,conflict,Maybe,,Exclude,E1 non-human
+B0438,WS1460,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0439,WS2099,conflict,Exclude,E3 adults only,Maybe,
+B0440,WS1441,random_qc,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0441,WS0532,conflict,Maybe,,Exclude,E3 adults only
+B0442,WS1108,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0443,WS1491,conflict,Maybe,,Exclude,E1 non-human
+B0444,WS2039,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0445,WS0817,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0446,WS2085,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0447,WS2366,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0448,WS1492,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0449,WS2220,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0450,WS0573,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0451,WS1496,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0452,WS1387,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0453,WS1394,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0454,WS0560,conflict,Maybe,,Exclude,E3 adults only
+B0455,WS1534,random_qc,Exclude,E3 adults only,Exclude,E3 adults only
+B0456,WS2043,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0457,WS0328,targeted_flag,Exclude,E3 adults only,Exclude,E3 adults only
+B0458,WS1173,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0459,WS0790,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0460,WS0721,conflict,Exclude,E1 non-human,Maybe,
+B0461,WS0807,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0462,WS2547,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0463,WS1900,targeted_flag,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0464,WS0569,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0465,WS1909,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0466,WS2129,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0467,WS0254,random_qc,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0468,WS1683,targeted_noabstract,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen
+B0469,WS1522,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0470,WS2148,targeted_noabstract,Exclude,E1 non-human,Exclude,E2 not wandering spleen
+B0471,WS2298,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0472,WS0334,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0473,WS1150,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0474,WS2250,conflict,Exclude,E3 adults only,Maybe,
+B0475,WS1596,conflict,Maybe,,Exclude,E3 adults only
+B0476,WS1622,conflict,Maybe,,Exclude,E1 non-human
+B0477,WS1577,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0478,WS1135,conflict,Exclude,E3 adults only,Maybe,
+B0479,WS1558,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0480,WS0852,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0481,WS2202,conflict,Exclude,E3 adults only,Maybe,
+B0482,WS2374,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0483,WS0646,conflict,Maybe,,Exclude,E3 adults only
+B0484,WS0276,targeted_flag,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0485,WS0838,conflict,Include,,Exclude,E2 not wandering spleen
+B0486,WS1808,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0487,WS0382,random_qc,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0488,WS0546,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0489,WS1251,conflict,Exclude,E3 adults only,Maybe,
+B0490,WS0577,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0491,WS0921,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0492,WS0794,conflict,Maybe,,Exclude,E3 adults only
+B0493,WS2166,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0494,WS0834,conflict,Maybe,,Exclude,E1 non-human
+B0495,WS1618,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0496,WS0257,conflict,Exclude,E4 no original patient data,Maybe,
+B0497,WS2290,conflict,Exclude,E4 no original patient data,Maybe,
+B0498,WS0261,targeted_flag,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0499,WS2292,random_qc,Exclude,E2 not wandering spleen,Exclude,E3 adults only
+B0500,WS0291,conflict,Exclude,E3 adults only,Maybe,
+B0501,WS0403,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0502,WS1323,conflict,Maybe,,Exclude,E3 adults only
+B0503,WS1285,conflict,Maybe,,Exclude,E1 non-human
+B0504,WS2268,conflict,Exclude,E1 non-human,Maybe,
+B0505,WS0363,conflict,Include,,Exclude,E3 adults only
+B0506,WS1430,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0507,WS1778,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0508,WS2209,conflict,Exclude,E3 adults only,Maybe,
+B0509,WS0859,conflict,Exclude,E3 adults only,Maybe,
+B0510,WS1722,random_qc,Exclude,E1 non-human,Exclude,E2 not wandering spleen
+B0511,WS0429,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0512,WS1153,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0513,WS1435,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0514,WS0726,conflict,Maybe,,Exclude,E3 adults only
+B0515,WS0681,conflict,Exclude,E1 non-human,Include,
+B0516,WS1146,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0517,WS1351,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0518,WS0430,random_qc,Exclude,E3 adults only,Exclude,E3 adults only
+B0519,WS0856,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0520,WS1415,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0521,WS2163,conflict,Exclude,E3 adults only,Maybe,
+B0522,WS0558,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0523,WS1154,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0524,WS0948,conflict,Include,,Exclude,E4 no original patient data
+B0525,WS2071,conflict,Exclude,E3 adults only,Maybe,
+B0526,WS0739,conflict,Maybe,,Exclude,E3 adults only
+B0527,WS1885,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0528,WS0121,random_qc,Exclude,E3 adults only,Exclude,E3 adults only
+B0529,WS2214,conflict,Maybe,,Exclude,E3 adults only
+B0530,WS0182,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0531,WS0583,conflict,Maybe,,Exclude,E1 non-human
+B0532,WS0857,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0533,WS0992,random_qc,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0534,WS1090,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0535,WS1125,conflict,Maybe,,Exclude,E3 adults only
+B0536,WS1008,conflict,Maybe,,Exclude,E3 adults only
+B0537,WS1331,conflict,Maybe,,Exclude,E1 non-human
+B0538,WS2312,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0539,WS0088,targeted_flag,Exclude,E3 adults only,Exclude,E3 adults only
+B0540,WS0150,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0541,WS1362,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0542,WS0204,targeted_flag,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0543,WS0233,targeted_flag,Exclude,E3 adults only,Exclude,E3 adults only
+B0544,WS1325,conflict,Maybe,,Exclude,E1 non-human
+B0545,WS0087,targeted_flag,Exclude,E3 adults only,Exclude,E3 adults only
+B0546,WS2074,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0547,WS1603,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0548,WS0127,targeted_flag,Exclude,E3 adults only,Exclude,E3 adults only
+B0549,WS2241,conflict,Exclude,E3 adults only,Maybe,
+B0550,WS0866,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0551,WS0975,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0552,WS0881,conflict,Exclude,E4 no original patient data,Maybe,
+B0553,WS2108,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0554,WS1573,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0555,WS1457,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0556,WS1797,targeted_noabstract,Exclude,E1 non-human,Exclude,E2 not wandering spleen
+B0557,WS0232,conflict,Exclude,E3 adults only,Maybe,
+B0558,WS0190,conflict,Exclude,E2 not wandering spleen; E3 adults only,Maybe,
+B0559,WS0588,conflict,Exclude,E3 adults only,Maybe,
+B0560,WS2188,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0561,WS1741,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0562,WS1276,targeted_flag,Exclude,E2 not wandering spleen,Exclude,E1 non-human
+B0563,WS0148,conflict,Exclude,E1 non-human; E4 no original patient data,Maybe,
+B0564,WS1040,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0565,WS2100,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0566,WS0862,conflict,Maybe,,Exclude,E3 adults only
+B0567,WS0607,conflict,Exclude,E1 non-human,Maybe,
+B0568,WS1499,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0569,WS0670,conflict,Maybe,,Exclude,E3 adults only
+B0570,WS0724,conflict,Exclude,E1 non-human,Include,
+B0571,WS1673,conflict,Exclude,E4 no original patient data,Maybe,
+B0572,WS1472,conflict,Maybe,,Exclude,E1 non-human
+B0573,WS0614,conflict,Maybe,,Exclude,E3 adults only
+B0574,WS0526,targeted_flag,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0575,WS1346,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0576,WS1277,conflict,Maybe,,Exclude,E3 adults only
+B0577,WS1950,random_qc,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0578,WS1819,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0579,WS1342,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0580,WS2047,targeted_flag,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0581,WS0780,conflict,Exclude,E3 adults only,Maybe,
+B0582,WS0753,conflict,Exclude,E4 no original patient data,Maybe,
+B0583,WS0152,targeted_flag,Exclude,E3 adults only,Exclude,E3 adults only
+B0584,WS0337,targeted_flag,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0585,WS1241,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0586,WS2169,targeted_flag,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0587,WS0766,conflict,Maybe,,Exclude,E1 non-human
+B0588,WS2237,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0589,WS0727,conflict,Maybe,,Exclude,E3 adults only
+B0590,WS2122,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0591,WS1623,targeted_noabstract,Exclude,E1 non-human,Exclude,E2 not wandering spleen
+B0592,WS0130,targeted_flag,Exclude,E3 adults only,Exclude,E3 adults only
+B0593,WS0034,conflict,Maybe,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0594,WS1905,random_qc,Exclude,E3 adults only,Exclude,E3 adults only
+B0595,WS1926,random_qc,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0596,WS1632,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0597,WS1747,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0598,WS0518,conflict,Maybe,,Exclude,E3 adults only
+B0599,WS1028,conflict,Maybe,,Exclude,E1 non-human
+B0600,WS0409,targeted_flag,Exclude,E3 adults only,Exclude,E3 adults only
+B0601,WS1284,conflict,Maybe,,Exclude,E1 non-human
+B0602,WS2143,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0603,WS0832,conflict,Maybe,,Exclude,E1 non-human
+B0604,WS2022,random_qc,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0605,WS1710,random_qc,Exclude,E3 adults only,Exclude,E3 adults only
+B0606,WS0740,conflict,Exclude,E3 adults only,Maybe,
+B0607,WS0457,conflict,Exclude,E2 not wandering spleen; E3 adults only,Maybe,
+B0608,WS2371,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0609,WS1553,targeted_noabstract,Exclude,E1 non-human,Exclude,E2 not wandering spleen
+B0610,WS1161,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0611,WS1280,conflict,Maybe,,Exclude,E1 non-human
+B0612,WS2300,conflict,Exclude,E3 adults only,Maybe,
+B0613,WS0604,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0614,WS1113,conflict,Exclude,E3 adults only,Maybe,
+B0615,WS0567,conflict,Maybe,,Exclude,E3 adults only
+B0616,WS0480,conflict,Exclude,E3 adults only,Maybe,
+B0617,WS1075,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0618,WS1428,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0619,WS0503,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0620,WS2303,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0621,WS1140,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E3 adults only
+B0622,WS1651,targeted_noabstract,Exclude,E3 adults only,Exclude,E3 adults only
+B0623,WS1859,conflict,Include,,Exclude,E2 not wandering spleen
+B0624,WS1227,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0625,WS2208,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0626,WS0441,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0627,WS1228,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0628,WS0928,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0629,WS1378,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0630,WS1082,conflict,Include,,Exclude,E2 not wandering spleen
+B0631,WS0132,conflict,Maybe,,Exclude,E3 adults only
+B0632,WS1940,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0633,WS0269,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0634,WS2287,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0635,WS1439,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0636,WS0631,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0637,WS2251,conflict,Exclude,E3 adults only,Maybe,
+B0638,WS0720,conflict,Maybe,,Exclude,E1 non-human
+B0639,WS0990,conflict,Exclude,E4 no original patient data,Include,
+B0640,WS0608,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0641,WS1803,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0642,WS1308,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0643,WS1281,conflict,Maybe,,Exclude,E1 non-human
+B0644,WS2144,conflict,Exclude,E4 no original patient data,Maybe,
+B0645,WS0146,conflict,Exclude,E3 adults only,Include,
+B0646,WS0294,targeted_flag,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0647,WS0897,conflict,Maybe,,Exclude,E1 non-human
+B0648,WS1390,targeted_flag,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0649,WS0605,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0650,WS1530,conflict,Maybe,,Exclude,E3 adults only
+B0651,WS0053,conflict,Exclude,E4 no original patient data,Maybe,
+B0652,WS0555,conflict,Maybe,,Exclude,E3 adults only
+B0653,WS0915,conflict,Maybe,,Exclude,E3 adults only
+B0654,WS0013,random_qc,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen
+B0655,WS1171,targeted_noabstract,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen
+B0656,WS0329,conflict,Exclude,E4 no original patient data,Maybe,
+B0657,WS2103,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0658,WS1242,conflict,Exclude,E4 no original patient data,Maybe,
+B0659,WS0984,targeted_flag,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0660,WS0868,conflict,Maybe,,Exclude,E1 non-human
+B0661,WS0991,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0662,WS2153,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0663,WS0247,conflict,Exclude,E1 non-human,Maybe,
+B0664,WS1158,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0665,WS2270,conflict,Exclude,E3 adults only,Maybe,
+B0666,WS1524,conflict,Exclude,E4 no original patient data,Maybe,
+B0667,WS1886,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0668,WS2349,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0669,WS2429,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0670,WS1549,targeted_flag,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen
+B0671,WS1292,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0672,WS1417,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0673,WS1199,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0674,WS1901,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0675,WS0394,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0676,WS0484,targeted_flag,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0677,WS0510,conflict,Maybe,,Exclude,E3 adults only
+B0678,WS1544,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0679,WS2294,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0680,WS0649,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0681,WS1238,conflict,Exclude,E3 adults only,Maybe,
+B0682,WS0311,targeted_noabstract,Exclude,E3 adults only,Exclude,E3 adults only
+B0683,WS1236,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0684,WS0380,conflict,Exclude,E2 not wandering spleen; E4 no original patient data,Maybe,
+B0685,WS0418,conflict,Maybe,E1 non-human,Exclude,E2 not wandering spleen
+B0686,WS1448,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0687,WS0885,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0688,WS0692,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0689,WS0684,conflict,Maybe,,Exclude,E3 adults only
+B0690,WS0703,conflict,Maybe,,Exclude,E3 adults only
+B0691,WS0828,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0692,WS0022,random_qc,Exclude,E3 adults only,Exclude,E3 adults only
+B0693,WS0566,conflict,Exclude,E4 no original patient data,Maybe,
+B0694,WS0303,targeted_flag,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0695,WS2013,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0696,WS0578,conflict,Maybe,,Exclude,E1 non-human
+B0697,WS1237,conflict,Maybe,,Exclude,E3 adults only
+B0698,WS1371,random_qc,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0699,WS2365,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0700,WS0601,conflict,Exclude,E1 non-human,Maybe,
+B0701,WS0748,conflict,Maybe,,Exclude,E3 adults only
+B0702,WS0508,targeted_flag,Exclude,E3 adults only,Exclude,E3 adults only
+B0703,WS1200,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0704,WS1634,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0705,WS0837,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0706,WS0627,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0707,WS0932,conflict,Maybe,,Exclude,E3 adults only
+B0708,WS1423,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0709,WS1438,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0710,WS2255,conflict,Exclude,E1 non-human,Maybe,
+B0711,WS1226,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0712,WS0199,conflict,Exclude,E3 adults only,Maybe,
+B0713,WS0442,targeted_flag,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0714,WS0831,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0715,WS0143,targeted_flag,Exclude,E3 adults only,Exclude,E3 adults only
+B0716,WS0497,conflict,Maybe,,Exclude,E3 adults only
+B0717,WS1657,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0718,WS1723,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0719,WS2291,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0720,WS1367,conflict,Include,,Exclude,E3 adults only
+B0721,WS2242,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0722,WS1114,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0723,WS2364,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0724,WS1094,conflict,Include,,Exclude,E2 not wandering spleen
+B0725,WS0710,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0726,WS0764,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0727,WS2136,conflict,Exclude,E3 adults only,Maybe,
+B0728,WS0021,conflict,Exclude,E3 adults only,Maybe,
+B0729,WS2006,conflict,Exclude,E5 not a formal article,Maybe,
+B0730,WS2530,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0731,WS0352,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0732,WS2284,conflict,Exclude,E3 adults only,Maybe,
+B0733,WS0390,conflict,Exclude,E1 non-human,Maybe,
+B0734,WS1551,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0735,WS1099,conflict,Maybe,,Exclude,E3 adults only
+B0736,WS1291,conflict,Maybe,,Exclude,E1 non-human
+B0737,WS1471,conflict,Maybe,,Exclude,E1 non-human
+B0738,WS1151,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0739,WS1619,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0740,WS2293,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0741,WS2111,conflict,Include,,Exclude,E2 not wandering spleen
+B0742,WS0140,targeted_flag,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0743,WS1990,conflict,Exclude,E3 adults only,Maybe,
+B0744,WS0412,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0745,WS0548,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0746,WS1938,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0747,WS1575,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0748,WS0354,conflict,Exclude,E3 adults only,Maybe,
+B0749,WS1638,conflict,Maybe,,Exclude,E3 adults only
+B0750,WS0804,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0751,WS1054,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0752,WS1482,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0753,WS0883,conflict,Exclude,E1 non-human,Maybe,
+B0754,WS0986,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0755,WS1662,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0756,WS1425,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0757,WS0840,conflict,Exclude,E2 not wandering spleen,Include,
+B0758,WS1999,targeted_flag,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0759,WS1465,random_qc,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0760,WS1294,conflict,Exclude,E1 non-human,Maybe,
+B0761,WS1887,targeted_flag,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0762,WS1585,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0763,WS2339,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0764,WS2238,targeted_flag,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0765,WS0498,conflict,Exclude,E1 non-human,Maybe,
+B0766,WS0695,conflict,Exclude,E3 adults only,Maybe,
+B0767,WS2286,conflict,Exclude,E3 adults only,Maybe,
+B0768,WS1484,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0769,WS1198,conflict,Include,,Exclude,E2 not wandering spleen
+B0770,WS1604,targeted_flag,Exclude,E1 non-human,Exclude,E2 not wandering spleen
+B0771,WS2489,random_qc,Exclude,E1 non-human,Exclude,E2 not wandering spleen
+B0772,WS1409,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0773,WS0587,conflict,Maybe,,Exclude,E1 non-human
+B0774,WS0312,conflict,Exclude,E3 adults only,Maybe,
+B0775,WS1296,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0776,WS1792,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0777,WS0665,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0778,WS0490,targeted_flag,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0779,WS0439,targeted_flag,Exclude,E1 non-human,Exclude,E2 not wandering spleen
+B0780,WS1959,targeted_flag,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0781,WS1851,targeted_flag,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0782,WS1256,targeted_noabstract,Exclude,E3 adults only,Exclude,E2 not wandering spleen
+B0783,WS0340,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0784,WS0965,conflict,Maybe,,Exclude,E3 adults only
+B0785,WS1366,conflict,Maybe,,Exclude,E4 no original patient data
+B0786,WS0539,conflict,Maybe,,Exclude,E3 adults only
+B0787,WS0064,targeted_flag,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0788,WS1716,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0789,WS1042,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0790,WS1391,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0791,WS0650,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0792,WS0300,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0793,WS0568,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0794,WS0849,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0795,WS2128,conflict,Exclude,E3 adults only,Maybe,
+B0796,WS0745,conflict,Maybe,,Exclude,E3 adults only
+B0797,WS1326,conflict,Maybe,,Exclude,E1 non-human
+B0798,WS2154,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0799,WS0651,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0800,WS1298,targeted_noabstract,Exclude,E3 adults only,Exclude,E3 adults only
+B0801,WS0680,conflict,Exclude,E3 adults only,Maybe,
+B0802,WS1464,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0803,WS1828,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0804,WS1624,conflict,Maybe,,Exclude,E3 adults only
+B0805,WS1131,conflict,Include,,Exclude,E2 not wandering spleen
+B0806,WS2432,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0807,WS0525,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0808,WS0256,targeted_flag,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0809,WS2233,conflict,Exclude,E3 adults only,Maybe,
+B0810,WS2015,conflict,Exclude,E3 adults only,Maybe,
+B0811,WS1261,targeted_noabstract,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen
+B0812,WS1459,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0813,WS0746,conflict,Exclude,E3 adults only,Maybe,
+B0814,WS1533,targeted_noabstract,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen
+B0815,WS0215,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0816,WS1701,targeted_flag,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0817,WS2106,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0818,WS1906,targeted_flag,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0819,WS1538,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0820,WS1654,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0821,WS1846,random_qc,Exclude,E3 adults only,Exclude,E3 adults only
+B0822,WS0322,targeted_noabstract,Exclude,E1 non-human; E4 no original patient data,Exclude,E2 not wandering spleen
+B0823,WS0737,conflict,Maybe,,Exclude,E3 adults only
+B0824,WS1816,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0825,WS1957,conflict,Exclude,E5 not a formal article,Maybe,
+B0826,WS2141,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0827,WS0468,conflict,Exclude,E3 adults only,Maybe,
+B0828,WS0722,conflict,Maybe,,Exclude,E3 adults only
+B0829,WS1211,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0830,WS2367,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0831,WS0830,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0832,WS0941,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0833,WS0540,conflict,Exclude,E3 adults only,Maybe,
+B0834,WS2435,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0835,WS1426,conflict,Maybe,,Exclude,E1 non-human
+B0836,WS1065,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0837,WS2285,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0838,WS0789,conflict,Exclude,E3 adults only,Include,
+B0839,WS0027,targeted_flag,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0840,WS0969,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0841,WS0999,conflict,Exclude,E3 adults only,Maybe,
+B0842,WS1341,conflict,Maybe,,Exclude,E3 adults only
+B0843,WS0677,conflict,Exclude,E4 no original patient data,Maybe,
+B0844,WS0632,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0845,WS2427,random_qc,Exclude,E1 non-human,Exclude,E2 not wandering spleen
+B0846,WS2478,random_qc,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0847,WS0350,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0848,WS1593,conflict,Maybe,,Exclude,E1 non-human
+B0849,WS1243,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0850,WS0576,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0851,WS1775,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0852,WS1106,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0853,WS0467,conflict,Exclude,E2 not wandering spleen; E4 no original patient data,Maybe,
+B0854,WS1234,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0855,WS1630,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0856,WS0289,targeted_flag,Exclude,E3 adults only,Exclude,E3 adults only
+B0857,WS0818,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0858,WS1693,targeted_noabstract,Exclude,E3 adults only,Exclude,E3 adults only
+B0859,WS0891,conflict,Exclude,E2 not wandering spleen,Include,
+B0860,WS1058,conflict,Maybe,,Exclude,E3 adults only
+B0861,WS1155,conflict,Exclude,E4 no original patient data,Maybe,
+B0862,WS0643,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0863,WS0346,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0864,WS1244,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0865,WS0762,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0866,WS1395,targeted_flag,Exclude,E1 non-human,Exclude,E2 not wandering spleen
+B0867,WS0679,conflict,Maybe,,Exclude,E3 adults only
+B0868,WS2168,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0869,WS1149,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0870,WS2269,conflict,Exclude,E5 not a formal article,Maybe,
+B0871,WS1947,conflict,Exclude,E4 no original patient data,Maybe,
+B0872,WS2542,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0873,WS0791,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0874,WS1091,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E3 adults only
+B0875,WS0557,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0876,WS1542,targeted_noabstract,Exclude,E3 adults only,Exclude,E2 not wandering spleen
+B0877,WS1268,conflict,Exclude,E1 non-human,Maybe,
+B0878,WS1133,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0879,WS1003,conflict,Maybe,,Exclude,E3 adults only
+B0880,WS1385,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0881,WS1225,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0882,WS0815,conflict,Maybe,,Exclude,E3 adults only
+B0883,WS2370,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0884,WS1774,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0885,WS1523,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0886,WS0145,random_qc,Exclude,E3 adults only,Exclude,E3 adults only
+B0887,WS0912,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0888,WS1531,conflict,Maybe,,Exclude,E1 non-human
+B0889,WS1330,conflict,Maybe,,Exclude,E1 non-human
+B0890,WS1355,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0891,WS1626,random_qc,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0892,WS1994,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0893,WS1985,targeted_flag,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0894,WS1204,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0895,WS2479,random_qc,Exclude,E1 non-human,Exclude,E2 not wandering spleen
+B0896,WS1528,conflict,Maybe,,Exclude,E3 adults only
+B0897,WS1282,conflict,Maybe,,Exclude,E3 adults only
+B0898,WS1757,targeted_flag,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0899,WS2126,targeted_flag,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0900,WS0481,conflict,Maybe,,Exclude,E3 adults only
+B0901,WS0919,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0902,WS2218,targeted_flag,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0903,WS1568,targeted_flag,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0904,WS1271,targeted_noabstract,Exclude,E3 adults only,Exclude,E2 not wandering spleen
+B0905,WS0786,conflict,Exclude,E3 adults only,Maybe,
+B0906,WS0865,conflict,Exclude,E1 non-human,Maybe,
+B0907,WS0952,conflict,Exclude,E1 non-human,Maybe,
+B0908,WS1899,targeted_flag,Exclude,E2 not wandering spleen,Exclude,E3 adults only
+B0909,WS1453,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0910,WS0129,targeted_flag,Exclude,E3 adults only,Exclude,E3 adults only
+B0911,WS1771,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0912,WS1468,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0913,WS0054,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0914,WS1097,targeted_noabstract,Exclude,E1 non-human,Exclude,E2 not wandering spleen
+B0915,WS2362,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0916,WS2235,targeted_flag,Exclude,E4 no original patient data,Exclude,E3 adults only
+B0917,WS2266,conflict,Exclude,E1 non-human,Maybe,
+B0918,WS1456,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0919,WS2078,conflict,Exclude,E3 adults only,Maybe,
+B0920,WS1467,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0921,WS1469,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0922,WS1631,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0923,WS1992,conflict,Exclude,E5 not a formal article,Maybe,
+B0924,WS0331,targeted_noabstract,Exclude,E3 adults only,Exclude,E2 not wandering spleen
+B0925,WS1437,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0926,WS0162,conflict,Exclude,E3 adults only,Maybe,
+B0927,WS0173,conflict,Include,,Exclude,E2 not wandering spleen
+B0928,WS0626,conflict,Exclude,E4 no original patient data,Maybe,
+B0929,WS0783,conflict,Maybe,,Exclude,E3 adults only
+B0930,WS2033,conflict,Exclude,E2 not wandering spleen,Include,
+B0931,WS1700,targeted_flag,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0932,WS1965,targeted_flag,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0933,WS0638,conflict,Include,,Exclude,E2 not wandering spleen
+B0934,WS1605,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0935,WS0858,conflict,Maybe,,Exclude,E3 adults only
+B0936,WS1717,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0937,WS1675,conflict,Include,,Exclude,E2 not wandering spleen
+B0938,WS1194,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0939,WS0772,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0940,WS2528,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0941,WS0524,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0942,WS0826,conflict,Exclude,E3 adults only,Maybe,
+B0943,WS2077,random_qc,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0944,WS1982,conflict,Exclude,E3 adults only,Maybe,
+B0945,WS1946,conflict,Exclude,E1 non-human,Maybe,
+B0946,WS0112,targeted_flag,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0947,WS0530,conflict,Maybe,,Exclude,E3 adults only
+B0948,WS0635,conflict,Exclude,E4 no original patient data,Maybe,
+B0949,WS1798,random_qc,Exclude,E1 non-human,Exclude,E3 adults only
+B0950,WS0343,random_qc,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0951,WS0900,conflict,Exclude,E4 no original patient data,Maybe,
+B0952,WS1212,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0953,WS0472,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0954,WS0796,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0955,WS2322,conflict,Exclude,E1 non-human,Maybe,
+B0956,WS1031,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0957,WS1788,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0958,WS0774,conflict,Maybe,,Exclude,E1 non-human
+B0959,WS0668,conflict,Exclude,E3 adults only,Include,
+B0960,WS0285,targeted_flag,Exclude,E3 adults only,Exclude,E3 adults only
+B0961,WS0004,random_qc,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0962,WS0069,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0963,WS0773,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0964,WS0133,conflict,Exclude,E3 adults only,Maybe,
+B0965,WS2317,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0966,WS1495,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0967,WS1929,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0968,WS0611,targeted_flag,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0969,WS0565,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0970,WS0001,conflict,Maybe,,Exclude,E3 adults only
+B0971,WS0861,conflict,Exclude,E1 non-human,Maybe,
+B0972,WS0037,conflict,Exclude,E2 not wandering spleen,Maybe,
+B0973,WS1174,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0974,WS2081,targeted_flag,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0975,WS0536,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0976,WS0211,targeted_flag,Exclude,E3 adults only,Exclude,E3 adults only
+B0977,WS1525,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0978,WS0319,targeted_flag,Exclude,E3 adults only,Exclude,E4 no original patient data
+B0979,WS1532,targeted_flag,Exclude,E1 non-human,Exclude,E2 not wandering spleen
+B0980,WS0012,targeted_flag,Exclude,E3 adults only,Exclude,E3 adults only
+B0981,WS1714,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0982,WS1203,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0983,WS0507,conflict,Maybe,,Exclude,E2 not wandering spleen
+B0984,WS1745,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen
+B0985,WS0875,conflict,Exclude,E4 no original patient data,Maybe,
+B0986,WS1187,targeted_noabstract,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen

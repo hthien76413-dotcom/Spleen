@@ -19,7 +19,7 @@ Writes search/screening/formal/blind_adjudication_sheet.xlsx   (for the third re
        search/screening/formal/blind_adjudication_design.txt   (sizes, seed, pre-specified triggers)
 Needs openpyxl.
 """
-import csv, random, re, collections, sys
+import csv, random, re, collections, sys, datetime
 from openpyxl import Workbook
 from openpyxl.styles import Alignment, Font, PatternFill
 from openpyxl.worksheet.datavalidation import DataValidation
@@ -142,7 +142,7 @@ wb.save(F + 'blind_adjudication_sheet.xlsx')
 # ------------------------------------------------------------------ design note
 cnt = collections.Counter(s for _, s in rows)
 with open(F + 'blind_adjudication_design.txt', 'w', encoding='utf-8') as f:
-    f.write(f'''Blind third-reviewer sheet, built 14 Oct 2026 by tools/make_blind_adjudication_sheet.py (random seed {SEED}).
+    f.write(f'''Blind third-reviewer sheet, built {datetime.date.today().isoformat()} by tools/make_blind_adjudication_sheet.py (random seed {SEED}).
 Records in the sheet: {n}
   conflict (advance vs exclude)                         {cnt['conflict']}
   targeted: both excluded, word-flagged                 {cnt['targeted_flag']}   (wandering/torsion word AND child word in title/abstract)
