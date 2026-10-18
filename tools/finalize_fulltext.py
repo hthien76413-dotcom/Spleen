@@ -35,6 +35,7 @@ import importlib.util
 import os
 import sys
 
+sys.dont_write_bytecode = True  # do not leave a __pycache__ folder in tools/
 HERE = os.path.dirname(os.path.abspath(__file__))
 _spec = importlib.util.spec_from_file_location("cft", os.path.join(HERE, "compare_fulltext_logs.py"))
 cft = importlib.util.module_from_spec(_spec)
