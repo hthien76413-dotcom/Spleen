@@ -90,7 +90,7 @@
 | 综述里有新患者 | 只提取作者自己的新患者；综述表格里别人的病例**不提取**（全文指南 D8） |
 | 同一患者在两篇报告里 | 两篇都录一行，较不完整的那一行在 `same_patient_as` 里填较完整那篇里的 patient_id；协议规定用最完整的一篇、其余链接到它（见 5.1） |
 | 没有手术的儿童 | 提取（描述性汇总用）：`procedure` = No operation，`viability`、`viab_basis`、`approach` = Not applicable。年龄填诊断时的年龄 |
-| 本机构 5 例 | `report_id` = OWN，patient_id = OWN_P1–OWN_P5；先在 Reports 表加一行 OWN。**只录不可识别的信息，不写姓名、住院号、出生日期、具体日期**。已有一份由稿件预填的草稿 `Extraction draft - own series OWN (from manuscript, not chart-checked).xlsx`（生成脚本 `tools/make_own_series_draft.py`）：它**不是**独立提取，只用于两人从病历提取并做完共识**之后**的比对；开始前不看，除非三位事先决定改为从草稿出发核对（那样这 5 例就不是独立双人提取，要在 Methods 里说明）。核对清单在该文件的 Chart_check 表 |
+| 本机构 5 例 | `report_id` = OWN，patient_id = OWN_P1–OWN_P5；先在 Reports 表加一行 OWN。**只录不可识别的信息，不写姓名、住院号、出生日期、具体日期**。已有一份由稿件预填的草稿 `Extraction draft - own series OWN (from manuscript, not chart-checked).xlsx`（生成脚本 `tools/make_own_series_draft.py`）：它**不是**独立提取，只用于两人从病历提取并做完共识**之后**的比对。**作者 2026 年 10 月 18 日决定：两位提取员先从病历独立提取**，用空白起始文件 `search/extraction/own_series/extraction_E1_OWN_starter.xlsx` 和 `…E2_OWN_starter.xlsx`；开始前不看草稿（若改为从草稿出发核对，这 5 例就不是独立双人提取，要在 Methods 里说明）。核对清单在草稿文件的 Chart_check 表 |
 
 ## 4. Reports 表：一份报告一行
 

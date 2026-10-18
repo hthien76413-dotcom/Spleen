@@ -10,8 +10,12 @@ The file is a reference for checking the manuscript against the records. It is n
 to be copied into the extractors' files before they have finished their own (see the README sheet of the output).
 
 Usage:  python3 -I tools/make_own_series_draft.py "<output>.xlsx"
+        python3 -I tools/make_own_series_draft.py "<output>.xlsx" --starter E1     (or E2)
+The second form writes a BLANK starter file for one extractor: only report_id, patient_id (OWN_P1-OWN_P5) and the extractor
+code are filled; nothing from the manuscript is copied in. The extractors fill it from the hospital records.
 Needs openpyxl; builds the template with tools/build_extraction_workbook.py first and then fills it in.
 """
+import argparse
 import os
 import subprocess
 import sys
@@ -23,7 +27,11 @@ from openpyxl.styles import Alignment, Font, PatternFill
 from openpyxl.utils import get_column_letter
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-OUT = sys.argv[1] if len(sys.argv) > 1 else "Extraction draft - own series OWN (from manuscript, not chart-checked).xlsx"
+_ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+_ap.add_argument("out", nargs="?", default="Extraction draft - own series OWN (from manuscript, not chart-checked).xlsx")
+_ap.add_argument("--starter", choices=["E1", "E2"], help="write a blank starter file for this extractor instead of the manuscript-derived draft")
+ARGS = _ap.parse_args()
+OUT = ARGS.out
 FIRST = 4
 MS = "Manuscript Table 1 / Table 4 / Results"
 
@@ -196,7 +204,7 @@ README = [
     ("h", "怎么用（建议）"),
     ("b", "提取员（E1 舒俊、E2 卞红强）各自从病历提取这 5 名儿童，填进自己的提取表（OWN_P1–OWN_P5），在两人都完成之前不看这份草稿，也不看对方的文件。这样本院 5 例和已发表的报告一样是独立双人提取。"),
     ("b", "两人完成并做完共识以后，把共识的 OWN 行和这份草稿对照：不一致之处说明稿件和病历不一样，要查原因，必要时改稿件（例如第 3 例从首次就诊到第一次脾手术的间隔是 62 个月，而第二次到第三次就诊之间的 36 个月曾被误当作这个间隔，后来才改正）。"),
-    ("b", "如果两位提取员宁可从这份草稿出发，逐格核对病历：可以，但这 5 例就不再是独立双人提取（先看到草稿会影响自己的判断），要在 Methods 里说明。这一点请三位在开始前定下，不要事后再改。"),
+    ("b", "2026 年 10 月 18 日作者决定：按上面的建议，两位提取员先从病历独立提取，空白起始文件在 `search/extraction/own_series/`（`extraction_E1_OWN_starter.xlsx`、`extraction_E2_OWN_starter.xlsx`）。卞红强是否已知道这一决定没有确认。若改为从草稿出发逐格核对，这 5 例就不再是独立双人提取，要在 Methods 里说明，且应事先由三位定下。"),
     ("b", "核对清单见 Chart_check 表（每个病例要在病历里查什么）。"),
     ("h", "草稿里的编码规则"),
     ("b", "主要暴露、主要结局的编码与稿件 Table 4 一致：指数发作 1 天、1 天、9 天（间歇性，规则 6）、0.1 天、0.9 天；脾脏在指数手术时无活力：病例 1、2、5，以及（协议主要定义下，因梗死做部分脾切除）病例 3；病例 4 有活力。"),
@@ -210,7 +218,76 @@ README = [
 ]
 
 
+STARTER_NAME = {"E1": "舒俊", "E2": "卞红强"}
+STARTER_README = [
+    ("title", "本院 5 例（OWN）的提取表：空白起始文件，从病历提取"),
+    ("warn", "这份文件里只有编号和提取员代码，没有任何数据。请只根据住院病历填写，不要参照稿件、不要打开那份由稿件预填的草稿，也不要打开对方的文件。"),
+    ("h", "要做什么"),
+    ("b", "提取员：E1 = 舒俊，E2 = 卞红强（Reports 和 Patients 表的 extractor 列已填好）。一人一份，另存为自己的副本（建议 `extraction_E1_OWN.xlsx` 或 `extraction_E2_OWN.xlsx`），每次用完另存带日期的副本，不覆盖旧的。"),
+    ("b", "Patients 表里的 OWN_P1–OWN_P5 对应稿件 Table 1 的 Case 1–5。病历和编号的对应表由舒俊保管，放在仓库之外，不要写进这份文件。"),
+    ("b", "逐项怎么填、9 条时间换算规则、疑难情形，见《提取操作说明》（`Extraction guide - how to fill the extraction workbook (draft)`）。其中几条对本院病例特别要紧：指数手术 = 结束这次指数发作的第一次为游走脾做的手术（第 5.6 节）；之后的手术写进 further_surgery 和 recurrence_details，不改 viability 和 procedure；空白 = 还没提取，NR = 病历里没有这项信息（第 2.3 节）。"),
+    ("b", "每名儿童可能有多次就诊。主要暴露只看导致指数手术的那一次发作；更早的发作写进 n_earlier_episodes、总病程和等待间隔（第 5.3、5.4 节）。"),
+    ("b", "Reports 表的 OWN 行请自己填完整（first_author 可写 Own institutional series，year、institution、study_period、n_children_individual 等照提取说明第 4 节）。year 对本院病例适用什么，由统计分析负责人决定；填你认为合适的值并在 notes 里写明。"),
+    ("b", "只录不可识别的信息：不写姓名、住院号、出生日期、具体日期。用日期算出的间隔，只写间隔本身（如'症状开始 18 小时后入院，入院 2.5 小时后手术'），把天数换算写进 idx_dur_verbatim 或 notes，不写日历日期。"),
+    ("b", "病历里没有或看不清的项目，不要凭印象或稿件补：写 NR，并在 notes 里说明。拿不准的写在 notes，留待共识讨论。"),
+    ("b", "开始和结束时间写进 EX_time_log（日期、起止时间、处理的报告数和录入的患者数）。"),
+    ("h", "做完以后"),
+    ("b", "运行 `python3 -I tools/compare_extraction.py check 你的文件.xlsx`，把格式错误改掉。"),
+    ("b", "把自己的文件交杨俊保管（提取说明第 2.1 节）；两人都交了以后才运行 `compare`，再讨论分歧、建共识文件。"),
+    ("b", "共识之后，才把共识的 OWN 行和由稿件预填的草稿对照（`python3 -I tools/compare_extraction.py compare 共识文件.xlsx 草稿.xlsx --out 文件夹`；输出里的 E1 指共识文件，E2 指草稿，草稿的 extractor 列是空的，会有警告），用来发现稿件和病历不一致的地方。"),
+    ("h", "没有验证的事"),
+    ("b", "这份文件没有在 Excel 或 WPS 里打开过；下拉列表和版面实际是否正常没有验证。"),
+]
+
+
+def put_readme(ws, lines):
+    ws.delete_rows(1, ws.max_row + 5)
+    ws.column_dimensions["A"].width = 150
+    r = 1
+    for kind, text in lines:
+        c = ws.cell(row=r, column=1, value=("• " + text) if kind == "b" else text)
+        c.alignment = Alignment(wrap_text=True, vertical="top")
+        if kind == "title":
+            c.font = Font(bold=True, size=14)
+        elif kind == "warn":
+            c.font = Font(bold=True, color="C00000")
+            c.fill = PatternFill("solid", fgColor="FDE9D9")
+        elif kind == "h":
+            c.font = Font(bold=True, size=12, color="FFFFFF")
+            c.fill = PatternFill("solid", fgColor="2F75B5")
+        ws.row_dimensions[r].height = max(18, 16 * (-(-len(text) // 70)))
+        r += 1
+
+
+def main_starter():
+    tmp = tempfile.mkdtemp(prefix="ownsrc_")
+    tpl = os.path.join(tmp, "template.xlsx")
+    subprocess.run([sys.executable, "-I", os.path.join(HERE, "build_extraction_workbook.py"), tpl], check=True, stdout=subprocess.DEVNULL)
+    wb = load_workbook(tpl)
+    for name in ("FT_log", "FT_time_log", "IPD_requests"):
+        del wb[name]
+
+    def fill(ws, rows):
+        codes = {ws.cell(row=1, column=c).value: c for c in range(1, ws.max_column + 1) if ws.cell(row=1, column=c).value}
+        for i, rec in enumerate(rows):
+            for k, v in rec.items():
+                ws.cell(row=FIRST + i, column=codes[k], value=v)
+
+    fill(wb["Reports"], [{"report_id": "OWN", "extractor": ARGS.starter}])
+    fill(wb["Patients"], [{"patient_id": p["patient_id"], "report_id": "OWN", "extractor": ARGS.starter} for p in PATIENTS])
+    put_readme(wb["README"], STARTER_README)
+    wb["Reports"].sheet_properties.tabColor = "C00000"
+    wb["Patients"].sheet_properties.tabColor = "C00000"
+    wb.active = 0
+    wb.properties.title = "Extraction OWN starter %s (blank)" % ARGS.starter
+    wb.properties.creator = "Wandering spleen SR team"
+    wb.save(OUT)
+    print("saved", OUT, "| starter for", ARGS.starter, "(" + STARTER_NAME[ARGS.starter] + ") | patient rows", len(PATIENTS))
+
+
 def main():
+    if ARGS.starter:
+        return main_starter()
     tmp = tempfile.mkdtemp(prefix="ownsrc_")
     tpl = os.path.join(tmp, "template.xlsx")
     subprocess.run([sys.executable, "-I", os.path.join(HERE, "build_extraction_workbook.py"), tpl], check=True, stdout=subprocess.DEVNULL)
