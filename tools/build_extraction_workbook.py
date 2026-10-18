@@ -30,7 +30,7 @@ _ap.add_argument("--rows", type=int, default=40, help="with --ft-only: pre-forma
 ARGS = _ap.parse_args()
 OUT = ARGS.out
 RIS = "search/dedup/records_deduplicated.ris"
-REVIEWER_NAME = {"R1": "舒俊", "R2": "卞宏强"}
+REVIEWER_NAME = {"R1": "舒俊", "R2": "卞红强"}
 
 N_PAT, N_REP, N_FT, N_IPD, N_TIME = 1500, 800, 2000, 300, 300  # pre-formatted rows
 FIRST = 4  # first data row on the data sheets (rows 1-3 = header block)
@@ -221,7 +221,7 @@ FT_COLS = [
     ("ws_id", "WS ID", "WS 编号", "text", 10, "id"),
     ("citation", "First author, year", "便于核对，如 Smith 2015", "text", 20, "ft"),
     ("language", "Language", "English / Chinese / Other（Other 单独计数，不提取）", ("list", "ft_lang"), 10, "ft"),
-    ("reviewer", "Reviewer", "R1 = 舒俊，R2 = 卞宏强（全文阶段），Consensus", ("list", "ft_reviewer"), 10, "id"),
+    ("reviewer", "Reviewer", "R1 = 舒俊，R2 = 卞红强（全文阶段），Consensus", ("list", "ft_reviewer"), 10, "id"),
     ("date", "Date", "yyyy-mm-dd", "date", 12, "id"),
     ("fulltext_obtained", "Full text obtained", "Yes / No", ("list", "yn"), 9, "ft"),
     ("route", "Route", "最终取得或最后尝试的途径", ("list", "route"), 26, "ft"),
@@ -237,7 +237,7 @@ FT_COLS = [
 
 FT_TIME_COLS = [
     ("date", "Date", "yyyy-mm-dd", "date", 12, "id"),
-    ("reviewer", "Reviewer", "R1 = 舒俊，R2 = 卞宏强（全文阶段）", ("list", "ft_reviewer"), 10, "id"),
+    ("reviewer", "Reviewer", "R1 = 舒俊，R2 = 卞红强（全文阶段）", ("list", "ft_reviewer"), 10, "id"),
     ("start", "Session start", "开始时间 hh:mm（本地时间）", "text", 12, "ft"),
     ("end", "Session end", "结束时间 hh:mm", "text", 12, "ft"),
     ("n_reports", "Reports handled", "这一段时间处理了多少篇（整数）", "int", 12, "ft"),
@@ -556,7 +556,6 @@ FT_ONLY_README = [
     ("b", "Calibration_list 表里有 20 篇的标题、年份、DOI 和链接，用它们去找全文。找全文的途径和记录方法见指南第 4 节。"),
     ("b", "FT_log 每篇一行：按指南第 6 节的顺序回答问题，填 decision（Include / Exclude / Pending IPD）和 reason（用下拉列表，名称一字不差）；Include 要填 ws_basis 和儿童数。发表早于 2000 年的报告不在这 20 篇里。"),
     ("b", "FT_time_log 表：每次开始和结束都写一行（日期、开始和结束时间、这一段处理了几篇）。"),
-    ("b", "每一篇都由你本人阅读全文后判断，不用任何 AI 工具、宏、脚本或自动点击（沿用标题摘要指南第 3、12 节的规定）。"),
     ("b", "两人都完成之前，不看对方的文件，不讨论具体的篇目。完成后另存为 FT_cal_{rev}.xlsx，交给杨俊保管；两人都完成后再比对。"),
     ("b", "不要改表头、列的顺序和下拉列表（Lists 表）。不要删除 FT_log 里已填好的行；多出来的行留空即可。"),
     ("h", "2. 说明"),
