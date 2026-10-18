@@ -398,6 +398,7 @@ README_LINES = [
     ("p", "依据：协议 v1.5（`Systematic review protocol - PROSPERO draft.docx`）附录 C 的提取表和编码规则，以及第 8、12、13、14、16 节。本工作簿只是把协议落成可填写的表，不改变协议。凡超出附录 C 的地方都列在下面'与附录 C 的差异'里，是 Claude 的操作化建议，三位确认后才生效。"),
     ("h", "1. 怎么用"),
     ("b", "提取员：E1 = 舒俊，E2 = 卞红强，分歧由杨俊仲裁；Ji Wang 核查两份提取表但不提取（作者 2026 年 10 月 18 日决定，已写入协议 v1.5）。每位提取员各用自己的一份副本（文件名建议 extraction_E1.xlsx、extraction_E2.xlsx，共识文件 extraction_consensus.xlsx）。独立提取完成之前，不看对方的文件。"),
+    ("b", "逐项怎么填、9 条时间换算规则的虚构例子、疑难情形和校准的做法，见《提取操作说明》（`Extraction guide - how to fill the extraction workbook (draft)`）。"),
     ("b", "表头三行：第 1 行是字段代码（分析时用），第 2 行是协议附录 C 的项目名称，第 3 行是填写说明和允许值。数据从第 4 行开始，请不要在表头上方或表头里插行。"),
     ("b", "Reports 表一行一篇报告；Patients 表一行一名患者，用 report_id 对应。report_id 就是 records_deduplicated.ris 里的 WS 编号；本机构 5 例用 OWN（先在 Reports 表里加一行 OWN），患者编号 OWN_P1–OWN_P5。"),
     ("b", "**空白和 NR 的区别：** 空白 = 还没提取；NR = 报告里没有这项信息（协议：'Record NR when an item is not reported'）。不要用空白表示没报告。"),
