@@ -22,7 +22,7 @@
 
 ## 2. 需要作者决定的事项
 
-- **O1　个体数据怎么用、公不公开。** 协议"传播计划"写的是：论文发表时把提取到的全部个体患者数据作为补充材料一并发表。但 Orphanet J Rare Dis 的附加文件要求写着"不要包含任何个体参与者的详细信息"，**去标识的个体数据表算不算，还没有弄清楚**。作者提供的数据又是别人的数据。所以邮件正文**按保守的写法**：只用于本综述的合并分析，不单独公开，不转给第三方；若要以个体水平公开，会先取得对方的书面同意。这和协议的传播计划不完全一致，若采用，要在方法部分和 PROSPERO 修订里写明"作者提供的数据不以个体水平公开"。如果您想沿用协议原来的做法（公开去标识的个体数据表），邮件里这一句要换成备选句（见 3.1 和 4.1 的方框后面）。
+- **O1　个体数据怎么用、公不公开——已决定（2026 年 10 月 18 日，分层）：** 从已发表文章提取的去标识逐例数据，向期刊编辑部问清后放公共库或附加文件；**作者提供的个体数据不逐例公开，只用于合并分析，经原作者书面同意才给他人**；本院 5 例按家属同意的范围。邮件正文的写法与此一致，不用再改；协议"传播计划"已按此改写（协议 v1.5）。
 - **O2　对作者的回报。** 邮件里写了"在致谢中列出您的姓名（经您同意）"，**没有承诺署名**。是否给署名要按期刊的作者资格标准和四位作者共同决定；不确定的话，这一句也可以删掉。
 - **O3　发件人、抄送、回复地址。** 见第 1 节。
 - **O4　是否承诺把稿子发给对方看。** 邮件里放了一个可选句（方括号），不想承诺就删。
@@ -70,7 +70,6 @@ E-mail: [address]
 
 On behalf of the review team: Jun Shu, Jun Yang, Hongqiang Bian, Fei Peng, Ji Wang
 
-**If you prefer to follow the registered plan (O1), replace the sentence "We will not pass …" with:** "With your agreement, a de-identified child-level table may be published as supplementary material or deposited in a public repository; if you prefer that your data are used only in the pooled analysis, please tell us and we will respect that."
 
 ### 3.2 Second email (four weeks after the first)
 
@@ -141,7 +140,6 @@ With kind regards,
 
 代表研究团队：舒俊、杨俊、卞红强、彭飞、Ji Wang
 
-**如果想沿用协议原来的做法（O1），请把"未经您的书面同意……"这一句换成：**"经您同意，去标识的逐例数据表可能作为补充材料发表或存入公共数据库；如果您希望数据只用于合并分析，请告诉我们，我们会尊重您的意见。"
 
 ### 4.2 第二封（第一封后 4 周）
 
@@ -193,5 +191,4 @@ With kind regards,
 - 没有试发给任何作者，回复率和对方的反应都不知道，不能预设。
 - 没有核实 PROSPERO 的网址格式，也没有核实两份中文邮件是否合乎对方的习惯（由 Claude 起草，未经母语审校）。
 - 单位的中文全称、发件人的职称和邮箱，都要您填。
-- O1 没有决定之前，邮件里"不公开"的写法是 Claude 选的保守写法，与协议传播计划的字面不完全一致。
 - Word 文件的版面没有在 Word 里看过。

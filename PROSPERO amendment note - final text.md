@@ -4,22 +4,24 @@
 文中的每个数字都来自项目日志、`search/` 下的检索导出和 `search/screening/` 下的筛选文件（`rescreen/` 里的汇总文件和 `fulltext_retrieval_summary.txt`）。PROSPERO 的网页读不到（crd.york.ac.uk 在这里被屏蔽），所以各字段的名称和字数限制要在页面上核对，超限就用短版，长版靠上传的 PDF。
 **要上传的文件：** 协议 v1.5，由 `Systematic review protocol - PROSPERO draft.docx` 导出 PDF（Word：文件 → 另存为 → PDF）。
 
-## 提交之前，只有团队能决定的几件事
+## 提交之前的六件事：五件已定，一件等回复（2026 年 10 月 18 日）
 
-1. **标题摘要阶段的实际做法写不写进登记。** 协议 v1.5 第 14 节如实写了：第二位评审员 10–11 日的第一轮决定是用 AI 编程助手（Codex）做的，违反了书面规则，没有使用；17 日的重筛录入速度（中位间隔 0.45 秒）与逐条阅读后录入不相容，所以不当作第二次独立阅读；最终名单靠仲裁人对所有分歧和部分一致排除记录的盲评。**这和您 10 月 17 日"不写进论文"的决定不是一回事：那条说的是论文，而这里是登记。我的建议是保留：** 登记是公开的、有日期的记录，原计划写的是"两位评审员独立筛选"，如果不说明实际做法，这句话就不再属实；Rayyan 的日志在，期刊或审稿人要求时可以调取。论文的方法部分可以比登记写得短，但不能写成"两位评审员独立阅读了每条记录"。如果您决定不保留，要删的是协议第 14 节的两段（"Title and abstract screening as carried out" 和 "How the list for full-text assessment was made"）以及本说明的第 5 节，并且同时把协议里"两位评审员独立筛选"的句子改成与实际相符的写法，否则登记与事实不符。这是您的决定，我不替您做。
-2. **数据共享（邮件草稿里的 O1）。** 协议"传播计划"（第 19 节）我**没有改**，仍是"论文发表时附全部提取的个体患者数据"。但给作者的邮件按保守写法（不以逐例形式公开作者提供的数据）。这两者要统一：若采用保守写法，要在提交前把第 19 节的传播计划和第 14 节相应处改掉，并在方法部分写明。
-3. **分析计划的三处改动需要统计分析负责人 Ji Wang 确认**（协议第 16、18 节）：发表年份协变量由三档改为两档（2000–2014、2015 年起）；敏感性分析 7（排除 2000 年以前的报告）因日期规则不再适用；新增一项不在注册里的附加分析（去掉"只写脾扭转、没写脾脏位置"而被纳入的病例）。这是日期规则和 D1 决定的直接后果，不是新的选择，但统计分析由 Ji Wang 负责，应当由 Ji Wang 看过。
-4. **提取阶段的评审员已经定了（作者 2026 年 10 月 18 日决定）：** 舒俊和卞红强独立提取，杨俊仲裁分歧，Ji Wang 核查两份提取表（超范围值、单位错误、重复患者）但不提取。协议 v1.5 已写入，所以这次修订里不需要再等；**卞红强和杨俊是否已知道并同意提取阶段的分工，我没有收到确认**，提交前请确认。协议 v1.5 还写明了一条局限：舒俊参加过预试验的提取（主要暴露就是从那批结果得来的），所以提取对假设不是盲的，正式提取时不看预试验表。
-5. **更换全文阶段第二评审员的理由。** 协议只写了"团队于 10 月 18 日决定"，没有写理由（您没有给过理由，我不替您编）。PROSPERO 的修订框可能要求写理由；如果要写，请您给一句话。
-6. **更新检索。** 协议第 5 节写的是"若距检索超过六个月，在最终分析前重新检索"（约 2027 年 3 月底到期，计划完成日 2027 年 6 月 28 日）。这一版没有改，也没有决定。
+1. **标题摘要阶段的实际做法写进登记——决定：保留，原样写入**（协议第 14 节两段和本说明第 5 节）。这是登记，不是论文：论文方法部分可以比登记写得短，但不能写成两位评审员独立阅读了每条记录。
+2. **数据共享——决定：分层。** 从已发表文章提取的去标识逐例数据，向期刊编辑部问清后放公共库或附加文件，来源报告要标明；作者提供的个体数据不逐例公开，只用于合并分析，经原作者书面同意才给他人；本院 5 例按家属同意的范围。已写入协议"传播计划"（本说明第 7A 节）；IPD 邮件草稿的保守写法与此一致（O1 关闭）。论文的"数据可用性"声明还要等期刊对"去标识逐例表算不算个体参与者详细信息"的答复。
+3. **分析计划的三处改动（协议第 16、18 节）——决定：先请 Ji Wang 看。** 给 Ji Wang 的说明已写好（`Note for Ji Wang - analysis plan changes (draft).docx`）。**这是提交前唯一还没完成的事：等 Ji Wang 的回复。** 若有异议，先改本说明第 7 节和协议第 16、18 节，再提交。
+4. **提取阶段的分工和本院 5 例先从病历独立提取——作者报告（2026 年 10 月 18 日）：卞红强和杨俊都已知道并同意。** 方式和日期没有说明；协议第 14 节已写入。
+5. **更换全文阶段第二评审员的理由——决定：只写事实，不写理由**（"全文阶段由舒俊和卞红强评审，杨俊仲裁，团队于 2026 年 10 月 18 日决定"）。如果页面强制要求写理由，由作者给一句真实的话，我不替作者编。
+6. **更新检索——决定：保持注册计划不变**（协议第 5 节：距检索超过六个月，在最终分析前重新检索，约 2027 年 3 月底到期），这次修订不动；具体时间 2027 年 2 月前再定（六个库；按 2025–2026 年记录数粗估半年新增约 40–50 条）。Embase 和 Google Scholar 仍不搜，作为局限。
+
+**什么时候可以提交：** 只等 Ji Wang 的回复。PROSPERO 可以多次修订，所以不必为了其他还没定的事（更新检索的具体时间、论文的数据可用性声明）推迟。
 
 ---
 
 ## 1. Short reason for the change（"brief details of the changes made" 框）
 
-Search strategies were finalised after review by a medical librarian and run on 28–29 September 2026; the as-run searches, deduplication and screening procedure were added. Three planned sources could not be completed (Embase, Google Scholar, citation searching). The title and abstract stage is complete, and the protocol now describes how it was carried out, including where it departed from the plan; the full-text stage is described, with changes decided before any full text was sought (reports published before 2000 are not sought; second full-text reviewer; decision rules). The analysis plan is adjusted accordingly. The review question, the other eligibility criteria, exposures and outcomes are unchanged. The stage of review is updated.
+Search strategies were finalised after review by a medical librarian and run on 28–29 September 2026; the as-run searches, deduplication and screening procedure were added. Three planned sources could not be completed (Embase, Google Scholar, citation searching). The title and abstract stage is complete, and the protocol now describes how it was carried out, including where it departed from the plan; the full-text stage is described, with changes decided before any full text was sought (reports published before 2000 are not sought; second full-text reviewer; decision rules). The analysis plan is adjusted accordingly, and the plan for sharing individual patient data is made more specific. The review question, the other eligibility criteria, exposures and outcomes are unchanged. The stage of review is updated.
 
-（≈150 words。若框很短：）"Searches run and reported (six databases, 4,906 records); title and abstract screening complete, with departures from the plan described; full-text rules set before any full text was sought, including a date limit (no reports before 2000) and a different second full-text reviewer; analysis plan adjusted for the date limit. Question, other eligibility criteria, exposures and outcomes unchanged."
+（≈150 words。若框很短：）"Searches run and reported (six databases, 4,906 records); title and abstract screening complete, with departures from the plan described; full-text rules set before any full text was sought, including a date limit (no reports before 2000) and a different second full-text reviewer; analysis plan adjusted for the date limit; data-sharing plan made more specific. Question, other eligibility criteria, exposures and outcomes unchanged."
 
 ## 2. Searches（检索字段；与 v1.4 说明相同，没有变化）
 
@@ -73,6 +75,10 @@ Team members are unchanged (Jun Shu, Jun Yang, Hongqiang Bian, Fei Peng, Ji Wang
 
 (a) The period-of-publication covariate in the primary model has two levels (2000–2014, 2015 onward) instead of three, because reports before 2000 are not sought. (b) Sensitivity analysis 7 ("excluding reports published before 2000") no longer applies. (c) One additional analysis, not in the registered plan and reported as such: omitting patients included on the basis of splenic pedicle torsion without a stated position of the spleen. The primary analysis, the exposures and the outcomes are unchanged. **（提交前请 Ji Wang 确认，见上面第 3 条。）**
 
+## 7A. Dissemination plans（传播计划字段，新增；协议"Dissemination plans"）
+
+Publication in a peer-reviewed journal. De-identified child-level data extracted from published reports will be made available, with the source report identified, as supplementary material or in a public repository according to the journal's data policy. Individual patient data supplied by report authors will be used only for the pooled analysis, will not be published at child level, and will be shared with others only with the written permission of the authors who supplied them. Data on the five children treated at our institution will be shared only within the limits of the consent given for publication. (Changed in version 1.5; the registered plan was to publish the full extracted individual patient dataset as supplementary material.)
+
 ## 8. Stage of review（勾选项，截至 2026 年 10 月 18 日）
 
 | Stage | Started | Completed |
@@ -88,7 +94,7 @@ Team members are unchanged (Jun Shu, Jun Yang, Hongqiang Bian, Fei Peng, Ji Wang
 
 ## 9. 没有改变的
 
-综述问题、主要暴露（索引发作的症状持续时间）、次要暴露、主要结局、提取表、偏倚风险方法、合成方法（除第 7 节三处）、传播计划（见上面第 2 条，待决定）、时间表（开始 2026 年 9 月 28 日，计划完成 2027 年 6 月 28 日）。
+综述问题、主要暴露（索引发作的症状持续时间）、次要暴露、主要结局、提取表、偏倚风险方法、合成方法（除第 7 节三处）、时间表（开始 2026 年 9 月 28 日，计划完成 2027 年 6 月 28 日）。传播计划已按第 7A 节改写，不在"没有改变"之列。
 
 ## 10. 舒俊在网站上的步骤
 
@@ -103,7 +109,7 @@ Team members are unchanged (Jun Shu, Jun Yang, Hongqiang Bian, Fei Peng, Ji Wang
 
 - [ ] 用拥有 CRD420261520329 的账号登录（舒俊，关联 ORCID）。
 - [ ] 打开记录 → 编辑，选 Major revision。
-- [ ] 检索字段用第 2 节；eligibility 字段加第 3 节的句子；additional information 用第 4 节；研究选择字段用第 5 节；团队角色用第 6 节；数据综合字段用第 7 节；阶段勾选用第 8 节。上传 v1.5 的 PDF，替换旧的。
+- [ ] 检索字段用第 2 节；eligibility 字段加第 3 节的句子；additional information 用第 4 节；研究选择字段用第 5 节；团队角色用第 6 节；数据综合字段用第 7 节；传播计划字段用第 7A 节；阶段勾选用第 8 节。上传 v1.5 的 PDF，替换旧的。
 - [ ] 不要改研究问题、主要暴露、主要结局和日期。
 - [ ] 把第 1 节贴进修订原因框，提交。
 - [ ] 如果 PROSPERO 给其他团队成员发审批邮件，请他们点链接。
