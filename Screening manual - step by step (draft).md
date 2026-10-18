@@ -2,10 +2,10 @@
 一步一步完成标题摘要筛选、分歧处理和全文筛选
 
 <!-- kv; widths: 17,83 -->
-| 版本 | 操作手册 v2026-10-10b（草稿）。标 **【建议】** 的内容需要三位确认后才算生效 |
-| 项目 | 儿童游走脾系统综述（含个体患者数据）和单中心病例系列；PROSPERO CRD420261520329；协议 v1.3 |
+| 版本 | 操作手册 v2026-10-18a（草稿）。标 **【建议】** 的内容需要三位确认后才算生效 |
+| 项目 | 儿童游走脾系统综述（含个体患者数据）和单中心病例系列；PROSPERO CRD420261520329；协议 v1.5 |
 | 适用对象 | 舒俊（筛选员 1，Rayyan 项目所有者）、彭飞（筛选员 2）、杨俊（仲裁）。Claude 负责整理数据、运行脚本和起草文件，不对任何一条记录做筛选决定 |
-| 配套文件 | 《筛选指南》v2026-10-10b：判断规则以它为准。分歧清单脚本：`tools/screening_conflicts.py` |
+| 配套文件 | 《筛选指南》v2026-10-18a：判断规则以它为准。分歧清单脚本：`tools/screening_conflicts.py` |
 | 要筛的记录 | 2,548 条（编号 WS0001–WS2548）；628 条没有摘要；716 条是中文记录 |
 | Rayyan 项目 | 正式项目 **Wandering spleen SR - screening 2548 (CRD420261520329)**。另有一个 calibration 50 项目，已经用完，不要再在里面筛 |
 
@@ -91,7 +91,7 @@ Include 和 Maybe 都进入全文，所以两人一个选 Include、一个选 Ma
 
 ### 2.5 为什么是两个人、为什么要盲法
 - 协议第 14 节规定：两位筛选员独立筛选标题和摘要，再独立筛选全文；分歧由讨论解决，必要时由第三位（杨俊）决定。
-- 协议 v1.3 写明：Rayyan 的盲法在两人都筛完一个阶段之前保持开启，作者和期刊信息隐藏。这样"独立"才真正做得到、也能被证明：盲法开着，两人在筛完之前看不到对方的决定，方法部分才能写"独立筛选"。
+- 协议 v1.5 写明：Rayyan 的盲法在两人都筛完一个阶段之前保持开启，作者和期刊信息隐藏。这样"独立"才真正做得到、也能被证明：盲法开着，两人在筛完之前看不到对方的决定，方法部分才能写"独立筛选"。
 - 标题摘要阶段的一致性（Cohen's kappa）会在论文里报告。校准的 50 条：一致 45/50（90.0%），kappa 0.83。
 
 ## 3. 开始前的准备清单
@@ -124,8 +124,8 @@ Include 和 Maybe 都进入全文，所以两人一个选 Include、一个选 Ma
 | Blind Mode 开关 | 只有项目所有者在两人都筛完、都记完数之后才关。误关会让你看到对方的决定，独立性就没了 |
 | Show（作者和期刊） | 校准时作者和期刊对两人都曾可见，已经是方法部分要写的局限。正式筛选不要再出现这种情况 |
 | Review data 标签 | 列表直接显示作者和年份，不受"隐藏"设置约束。筛选时不要打开，只在导出时用 |
-| AI Reviewer、Analyze、Chat with ResearchPilot | 协议 v1.3 写明不使用 Rayyan 的人工智能功能、自动查重和自动处理重复；要用必须先改协议并在方法里说明 |
-| Ratings、按 Rating 排序 | 据 Claude 所知，Rayyan 会根据你已有的决定给其余记录打相关性预测分。这很可能属于协议 v1.3 所说的"人工智能功能"（协议没有单独点名 Ratings）；顺序不影响结果，保持默认顺序即可 **【建议】** |
+| AI Reviewer、Analyze、Chat with ResearchPilot | 协议 v1.5 写明不使用 Rayyan 的人工智能功能、自动查重和自动处理重复；要用必须先改协议并在方法里说明 |
+| Ratings、按 Rating 排序 | 据 Claude 所知，Rayyan 会根据你已有的决定给其余记录打相关性预测分。这很可能属于协议 v1.5 所说的"人工智能功能"（协议没有单独点名 Ratings）；顺序不影响结果，保持默认顺序即可 **【建议】** |
 | PICO、Samples | 和这次筛选无关 |
 | Select all 和多选批量操作 | 一次误点会把成批记录改成同一个决定 |
 | Detect duplicates、Auto resolve | 去重已经由脚本和 EndNote 做完。Rayyan 的查重会把标题通用的记录（如 "Wandering spleen."）误判为重复 |
@@ -356,7 +356,7 @@ E6 还要在 Add note 里写一句具体说明。
 
 ### 8.2 常见问题
 - **可以只用一位筛选员吗？** 不建议。协议规定两人独立筛选；改成一人要修改协议并在方法部分说明，单人筛选也更容易漏掉相关文献。
-- **Blind Mode 必须开吗？** 必须。协议 v1.3 写明盲法在两人都筛完一个阶段之前保持开启；它也是让"独立"做得到、说得清的办法。
+- **Blind Mode 必须开吗？** 必须。协议 v1.5 写明盲法在两人都筛完一个阶段之前保持开启；它也是让"独立"做得到、说得清的办法。
 - **Exclude 可以不选理由吗？** 不可以。说不出理由就选 Maybe。
 - **一条记录符合两个理由选哪个？** 任何一个适用的都可以。标题摘要阶段的理由不进 PRISMA 图，不影响谁进入全文。
 - **Maybe 太多了怎么办？** Maybe 多是正常的，全文阶段会处理。不要为了少一点 Maybe 而随手 Exclude。
@@ -441,6 +441,8 @@ Claude 用 `tools/screening_conflicts.py` 处理这两个文件和 `records_dedu
 填好的分歧清单（不含邮箱）放到 `search/screening/formal/`，由 Claude 提交并推送。PRISMA 的数字从这些文件计算。
 
 ## 11. 全文筛选
+
+**本章已被《全文筛选指南》（`Full-text screening guide (draft)`，v2026-10-18d）取代，以那份指南为准。** 主要差别：全文阶段不用 Rayyan，用提取工作簿里的 FT_log 表记录；2000 年以前发表的不取全文（理由 Y）；其余语种非英文、非中文的不取全文（理由 L）；理由选择有固定顺序；只写“扭转”的儿童报告、疝入胸腔的脾、取不到全文（D）都有专门的规则；只有汇总数据的报告批量索取个体数据；分歧清单由 `tools/compare_fulltext_logs.py` 生成，最终名单由 `tools/finalize_fulltext.py` 汇总。以下 11.1–11.3 保留了 10 月 10 日的原稿，仅供对照。
 
 ### 11.1 总体
 - 对象：10.8 得到的清单里的记录。仍然是**两人独立**，再解决分歧（先讨论，讨论不了的交杨俊）。
@@ -661,8 +663,8 @@ python3 -I tools/screening_conflicts.py articles.csv customizations_log.csv \
 
 ## 附录 G　依据
 
-- 协议 v1.3（`Systematic review protocol - PROSPERO draft.docx`）：第 7、14 节和附录 A–C。
-- 《筛选指南》v2026-10-10b（`Screening guide - title and abstract (draft).docx`）。本手册里的速查表（6.5）直接取自指南 4.3 节。
+- 协议 v1.5（`Systematic review protocol - PROSPERO draft.docx`）：第 7、14 节和附录 A–C。
+- 《筛选指南》v2026-10-18a（`Screening guide - title and abstract (draft).docx`）。本手册里的速查表（6.5）直接取自指南 4.3 节。
 - 校准结果：`search/screening/calibration_results_filled.csv`、`calibration_decisions_log_deidentified.csv`、`tools/calib_analysis.py`。
 - 分歧清单脚本：`tools/screening_conflicts.py`。
 - 去重和检索记录：`search/dedup/`、`search/<数据库>/`。项目日志：`CLAUDE.md`。
