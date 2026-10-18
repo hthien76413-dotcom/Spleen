@@ -20,7 +20,7 @@ from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
 from openpyxl.utils import get_column_letter
 from openpyxl.worksheet.datavalidation import DataValidation
 
-VERSION = "v2026-10-17a"
+VERSION = "v2026-10-18a"
 _ap = argparse.ArgumentParser(description="Build the extraction / full-text workbook (see the module docstring).")
 _ap.add_argument("out", nargs="?", default="Extraction workbook - template (draft).xlsx")
 _ap.add_argument("--ft-only", action="store_true", help="only README, FT_log, FT_time_log, Calibration_list and Lists, with the WS ids of --prefill filled in")
@@ -118,7 +118,7 @@ def hdr_fill(sec):
 PATIENT_COLS = [
     ("patient_id", "Patient ID", "报告编号_P序号，如 WS0123_P1；本机构为 OWN_P1–OWN_P5", "text", 14, "id"),
     ("report_id", "Report ID", "WS 编号（Reports 表里要有同一编号）；本机构病例用 OWN", "text", 11, "id"),
-    ("extractor", "Extractor", "E1 = 提取员 1，E2 = 提取员 2，Consensus = 共识", ("list", "extractor"), 11, "id"),
+    ("extractor", "Extractor", "E1 = 舒俊，E2 = 卞红强，Consensus = 共识", ("list", "extractor"), 11, "id"),
     ("date_extracted", "Date extracted", "yyyy-mm-dd", "date", 12, "id"),
     ("own_patient", "Own patient (derived)", "公式，勿改：report_id 为 OWN 时为 Yes（敏感性分析 1）", ("formula", "own"), 10, "id"),
     ("same_patient_as", "Same patient as", "与另一报告重复时，填更完整那篇里的 patient_id；否则留空", "text", 14, "id"),
@@ -212,7 +212,7 @@ REPORT_COLS = [
     ("n_children_individual", "Children with individual data", "整数", "int", 11, "report"),
     ("n_children_aggregate", "Children aggregate-only", "整数；>0 时去 IPD_requests 表登记", "int", 11, "report"),
     ("pub_period", "Period of publication (derived)", "公式，勿改：before 2000 / 2000-2014 / 2015 onward（第 16 节）", ("formula", "period"), 14, "report"),
-    ("extractor", "Extractor", "E1 / E2 / Consensus", ("list", "extractor"), 11, "id"),
+    ("extractor", "Extractor", "E1 = 舒俊，E2 = 卞红强，Consensus", ("list", "extractor"), 11, "id"),
     ("date_extracted", "Date extracted", "yyyy-mm-dd", "date", 12, "id"),
     ("notes", "Notes", "", "text", 30, "source"),
 ]
@@ -241,6 +241,16 @@ FT_TIME_COLS = [
     ("start", "Session start", "开始时间 hh:mm（本地时间）", "text", 12, "ft"),
     ("end", "Session end", "结束时间 hh:mm", "text", 12, "ft"),
     ("n_reports", "Reports handled", "这一段时间处理了多少篇（整数）", "int", 12, "ft"),
+    ("note", "Note", "例如中断原因、遇到的疑问", "text", 40, "source"),
+]
+
+EX_TIME_COLS = [
+    ("date", "Date", "yyyy-mm-dd", "date", 12, "id"),
+    ("extractor", "Extractor", "E1 = 舒俊，E2 = 卞红强", ("list", "extractor"), 10, "id"),
+    ("start", "Session start", "开始时间 hh:mm（本地时间）", "text", 12, "ft"),
+    ("end", "Session end", "结束时间 hh:mm", "text", 12, "ft"),
+    ("n_reports", "Reports worked on", "这一段时间处理了多少篇报告（整数）", "int", 12, "ft"),
+    ("n_patients", "Patients entered", "这一段时间录入了多少名患者（整数）", "int", 12, "ft"),
     ("note", "Note", "例如中断原因、遇到的疑问", "text", 40, "source"),
 ]
 
@@ -385,9 +395,9 @@ FORMULAS = {"own": f_own, "cat": f_cat, "plt": f_plt, "outcome": f_outcome, "per
 # ----------------------------------------------------------------------------- README / Rules content
 README_LINES = [
     ("title", f"数据提取工作簿（模板，草稿）{VERSION} — 儿童游走脾系统综述（PROSPERO CRD420261520329）"),
-    ("p", "依据：协议 v1.4（`Systematic review protocol - PROSPERO draft.docx`）附录 C 的提取表和编码规则，以及第 8、12、13、14、16 节。本工作簿只是把协议落成可填写的表，不改变协议。凡超出附录 C 的地方都列在下面'与附录 C 的差异'里，是 Claude 的操作化建议，三位确认后才生效。"),
+    ("p", "依据：协议 v1.5（`Systematic review protocol - PROSPERO draft.docx`）附录 C 的提取表和编码规则，以及第 8、12、13、14、16 节。本工作簿只是把协议落成可填写的表，不改变协议。凡超出附录 C 的地方都列在下面'与附录 C 的差异'里，是 Claude 的操作化建议，三位确认后才生效。"),
     ("h", "1. 怎么用"),
-    ("b", "每位提取员各用自己的一份副本（文件名建议 extraction_E1.xlsx、extraction_E2.xlsx，共识文件 extraction_consensus.xlsx）。独立提取完成之前，不看对方的文件。"),
+    ("b", "提取员：E1 = 舒俊，E2 = 卞红强，分歧由杨俊仲裁；Ji Wang 核查两份提取表但不提取（作者 2026 年 10 月 18 日决定，已写入协议 v1.5）。每位提取员各用自己的一份副本（文件名建议 extraction_E1.xlsx、extraction_E2.xlsx，共识文件 extraction_consensus.xlsx）。独立提取完成之前，不看对方的文件。"),
     ("b", "表头三行：第 1 行是字段代码（分析时用），第 2 行是协议附录 C 的项目名称，第 3 行是填写说明和允许值。数据从第 4 行开始，请不要在表头上方或表头里插行。"),
     ("b", "Reports 表一行一篇报告；Patients 表一行一名患者，用 report_id 对应。report_id 就是 records_deduplicated.ris 里的 WS 编号；本机构 5 例用 OWN（先在 Reports 表里加一行 OWN），患者编号 OWN_P1–OWN_P5。"),
     ("b", "**空白和 NR 的区别：** 空白 = 还没提取；NR = 报告里没有这项信息（协议：'Record NR when an item is not reported'）。不要用空白表示没报告。"),
@@ -396,11 +406,12 @@ README_LINES = [
     ("b", "时间换算按 Rules 表的 9 条规则；Duration_calc 表只是计算器，处理不了含糊说法和规则 6–9 的判断，最终以人工判断为准。"),
     ("b", "本机构病例只录不可识别的信息：不要写姓名、住院号、出生日期、具体日期。已发表报告的患者也不要抄原文里的姓名缩写。"),
     ("b", "校准：正式提取前，两位提取员先各自提取同样的 10 篇报告，比较，讨论分歧，必要时改这份表和规则（协议第 14 节）。10 篇建议涵盖中英文、个案和系列、时间写法各异的报告，在全文名单确定后再选。"),
-    ("b", "两人完成后比较、做共识：Claude 可以另写比较脚本（出分歧清单和 Cohen's kappa）；协议只说'报告主要暴露和主要结局的 kappa'，没有规定连续变量怎么算——建议对时间类别（四类加缺失）和脾脏存活各算一个 kappa，天数另报一致范围（待确认）。"),
+    ("b", "两人完成后比较、做共识：用 `tools/compare_extraction.py`（`check` 查一份文件的格式和进度，`compare` 比两份文件并出分歧清单）。协议只说'报告主要暴露和主要结局的 kappa'，没有规定连续变量怎么算——脚本对时间类别（四类加缺失）和脾脏存活各算一个 kappa，天数另报一致范围（这是 Claude 的读法，待确认）。"),
     ("h", "2. 各表"),
     ("b", "FT_log：全文筛选的正式记录（指南 D4，2026 年 10 月 17 日决定：全文阶段不用 Rayyan）。每位筛选员用自己的一份副本，两人都完成之前互不查看。详细规则见《全文筛选指南》。"),
     ("b", "FT_time_log：全文筛选的时间记录。每次开始和结束都写一行（日期、起止时间、处理的篇数），用来代替 Rayyan 的时间戳日志。"),
     ("b", "Reports、Patients：数据提取。"),
+    ("b", "EX_time_log：数据提取的时间记录，和 FT_time_log 一样，每次开始和结束都写一行（日期、起止时间、处理的报告数和录入的患者数）。这是 Claude 的建议，待确认；没有它，电子表格里看不出每份记录是怎么做出来的。"),
     ("b", "IPD_requests：向只有汇总数据的报告的作者索取个体数据的登记（协议第 14 节：两封邮件，间隔 4 周）。"),
     ("b", "Rules：时间换算 9 条规则、衍生变量定义、主要暴露和结局的协议原文。"),
     ("b", "Duration_calc：时间换算计算器。Lists：下拉列表（请勿改动，改了会影响所有表）。"),
@@ -634,6 +645,7 @@ def main():
     ws_time = wb.create_sheet("FT_time_log")
     ws_rep = wb.create_sheet("Reports")
     ws_pat = wb.create_sheet("Patients")
+    ws_extime = wb.create_sheet("EX_time_log")
     ws_ipd = wb.create_sheet("IPD_requests")
     ws_rules = wb.create_sheet("Rules")
     ws_calc = wb.create_sheet("Duration_calc")
@@ -643,12 +655,12 @@ def main():
     put_rules(ws_rules)
     put_duration_calc(ws_calc)
 
-    for ws, cols, n in ((ws_ft, FT_COLS, N_FT), (ws_time, FT_TIME_COLS, N_TIME), (ws_rep, REPORT_COLS, N_REP), (ws_pat, PATIENT_COLS, N_PAT), (ws_ipd, IPD_COLS, N_IPD)):
+    for ws, cols, n in ((ws_ft, FT_COLS, N_FT), (ws_time, FT_TIME_COLS, N_TIME), (ws_rep, REPORT_COLS, N_REP), (ws_pat, PATIENT_COLS, N_PAT), (ws_extime, EX_TIME_COLS, N_TIME), (ws_ipd, IPD_COLS, N_IPD)):
         build_header(ws, cols)
         add_validations(ws, cols, n, FORMULAS)
 
     # sheet tab colours
-    for ws, col in ((ws_readme, "7F7F7F"), (ws_ft, "2F75B5"), (ws_time, "2F75B5"), (ws_rep, "2F75B5"), (ws_pat, "2F75B5"),
+    for ws, col in ((ws_readme, "7F7F7F"), (ws_ft, "2F75B5"), (ws_time, "2F75B5"), (ws_rep, "2F75B5"), (ws_pat, "2F75B5"), (ws_extime, "2F75B5"),
                     (ws_ipd, "548235"), (ws_rules, "7F7F7F"), (ws_calc, "7F7F7F")):
         ws.sheet_properties.tabColor = col
     wb["Lists"].sheet_properties.tabColor = "BBBBBB"

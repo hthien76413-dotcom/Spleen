@@ -360,7 +360,7 @@ def kappa(pairs, cats):
         return {"po": po, "kappa": None, "lo": None, "hi": None}
     k = (po - pe) / (1 - pe)
     se = math.sqrt(po * (1 - po) / (n * (1 - pe) ** 2))  # rough standard error, as used for the calibration
-    return {"po": po, "kappa": k, "lo": k - 1.96 * se, "hi": k + 1.96 * se}
+    return {"po": po, "kappa": k, "lo": max(-1.0, k - 1.96 * se), "hi": min(1.0, k + 1.96 * se)}  # rough interval, kept inside [-1, 1]
 
 
 def fmt_k(k):

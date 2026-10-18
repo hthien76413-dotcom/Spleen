@@ -9,7 +9,7 @@
 1. **标题摘要阶段的实际做法写不写进登记。** 协议 v1.5 第 14 节如实写了：第二位评审员 10–11 日的第一轮决定是用 AI 编程助手（Codex）做的，违反了书面规则，没有使用；17 日的重筛录入速度（中位间隔 0.45 秒）与逐条阅读后录入不相容，所以不当作第二次独立阅读；最终名单靠仲裁人对所有分歧和部分一致排除记录的盲评。**这和您 10 月 17 日"不写进论文"的决定不是一回事：那条说的是论文，而这里是登记。我的建议是保留：** 登记是公开的、有日期的记录，原计划写的是"两位评审员独立筛选"，如果不说明实际做法，这句话就不再属实；Rayyan 的日志在，期刊或审稿人要求时可以调取。论文的方法部分可以比登记写得短，但不能写成"两位评审员独立阅读了每条记录"。如果您决定不保留，要删的是协议第 14 节的两段（"Title and abstract screening as carried out" 和 "How the list for full-text assessment was made"）以及本说明的第 5 节，并且同时把协议里"两位评审员独立筛选"的句子改成与实际相符的写法，否则登记与事实不符。这是您的决定，我不替您做。
 2. **数据共享（邮件草稿里的 O1）。** 协议"传播计划"（第 19 节）我**没有改**，仍是"论文发表时附全部提取的个体患者数据"。但给作者的邮件按保守写法（不以逐例形式公开作者提供的数据）。这两者要统一：若采用保守写法，要在提交前把第 19 节的传播计划和第 14 节相应处改掉，并在方法部分写明。
 3. **分析计划的三处改动需要统计分析负责人 Ji Wang 确认**（协议第 16、18 节）：发表年份协变量由三档改为两档（2000–2014、2015 年起）；敏感性分析 7（排除 2000 年以前的报告）因日期规则不再适用；新增一项不在注册里的附加分析（去掉"只写脾扭转、没写脾脏位置"而被纳入的病例）。这是日期规则和 D1 决定的直接后果，不是新的选择，但统计分析由 Ji Wang 负责，应当由 Ji Wang 看过。
-4. **提取阶段的两位评审员还没定。** 协议 v1.5 写的是"提取开始前在 PROSPERO 记录里公布"。定了以后要再改一次记录。
+4. **提取阶段的评审员已经定了（作者 2026 年 10 月 18 日决定）：** 舒俊和卞红强独立提取，杨俊仲裁分歧，Ji Wang 核查两份提取表（超范围值、单位错误、重复患者）但不提取。协议 v1.5 已写入，所以这次修订里不需要再等；**卞红强和杨俊是否已知道并同意提取阶段的分工，我没有收到确认**，提交前请确认。协议 v1.5 还写明了一条局限：舒俊参加过预试验的提取（主要暴露就是从那批结果得来的），所以提取对假设不是盲的，正式提取时不看预试验表。
 5. **更换全文阶段第二评审员的理由。** 协议只写了"团队于 10 月 18 日决定"，没有写理由（您没有给过理由，我不替您编）。PROSPERO 的修订框可能要求写理由；如果要写，请您给一句话。
 6. **更新检索。** 协议第 5 节写的是"若距检索超过六个月，在最终分析前重新检索"（约 2027 年 3 月底到期，计划完成日 2027 年 6 月 28 日）。这一版没有改，也没有决定。
 
@@ -48,7 +48,7 @@ Add to the existing text: "Reports published before 2000 are listed and counted 
 4. **Date limit.** Reports published before 2000 are not sought in full text. The registered criteria had no date limit. The reason is feasibility: 296 of the 485 affected records have no abstract, and such reports are expected to be difficult to retrieve. It was decided on 17–18 October 2026, before any full text was sought and before any data were extracted. One of the 45 piloted reports with individual patient data (1998; one child) falls under it. The effect on the results is unknown.
 5. **Title and abstract screening was not carried out as planned** (details in section 5 below).
 6. **Records assessed in full text beyond the adjudicator's decisions.** 27 records that the adjudicator excluded as "no original patient data" but the second reviewer had advanced are assessed in full text, because a judgement about study design made on an abstract can hide a case series.
-7. **Second full-text reviewer.** Full-text assessment is done by Jun Shu and Hongqiang Bian, with Jun Yang as adjudicator, instead of Jun Shu and Fei Peng. The two reviewers for data extraction have not yet been chosen and will be named in the record before extraction starts.
+7. **Second full-text reviewer.** Full-text assessment is done by Jun Shu and Hongqiang Bian, with Jun Yang as adjudicator, instead of Jun Shu and Fei Peng. Data extraction will be done independently by Jun Shu and Hongqiang Bian, with Jun Yang settling disagreements and Ji Wang checking the extraction files without extracting data.
 8. **Full-text records kept in a spreadsheet, not in Rayyan.** Each full-text reviewer keeps a separate spreadsheet log and a log of working times; neither sees the other's file until both have finished; each gives the adjudicator the file after the first 50 reports. A calibration on 20 reports (drawn at random, seed 20261018) comes first.
 9. **Decision rules for full text** (protocol Section 14): fixed order of exclusion reasons; two Exclude decisions with different reasons are not a disagreement, but Include against Pending IPD is; a full text is declared unobtainable only if both reviewers tried all routes and both failed; a report with the spleen only herniated into the chest or displaced by a mass, without a diagnosis of wandering spleen, is excluded; splenic pedicle torsion in a child without a stated position of the spleen is included and flagged; patients described only as children are taken to be younger than 18 years, those described only as adolescents are not.
 10. **Requests for individual data**: sent on one day for all reports with aggregate data only, repeated after four weeks, with a final status at most eight weeks after the first email.
@@ -67,7 +67,7 @@ The title and abstract stage of the 2,548 deduplicated records was completed on 
 
 ## 6. Review team and roles（团队字段）
 
-Team members are unchanged (Jun Shu, Jun Yang, Hongqiang Bian, Fei Peng, Ji Wang). Roles: title and abstract stage, reviewers Jun Shu and Fei Peng, adjudicator Jun Yang; full-text stage, reviewers Jun Shu and Hongqiang Bian, adjudicator Jun Yang; data extraction, reviewers to be named before extraction starts; statistical analysis, Ji Wang.
+Team members are unchanged (Jun Shu, Jun Yang, Hongqiang Bian, Fei Peng, Ji Wang). Roles: title and abstract stage, reviewers Jun Shu and Fei Peng, adjudicator Jun Yang; full-text stage, reviewers Jun Shu and Hongqiang Bian, adjudicator Jun Yang; data extraction, reviewers Jun Shu and Hongqiang Bian, adjudicator Jun Yang, extraction files checked by Ji Wang (who does not extract); statistical analysis, Ji Wang.
 
 ## 7. Analysis plan（数据综合字段，三处改动）
 
