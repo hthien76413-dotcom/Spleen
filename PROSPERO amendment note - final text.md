@@ -7,13 +7,13 @@
 ## 提交之前的六件事：五件已定，一件等回复（2026 年 10 月 18 日）
 
 1. **标题摘要阶段的实际做法写进登记——决定：保留，原样写入**（协议第 14 节两段和本说明第 5 节）。这是登记，不是论文：论文方法部分可以比登记写得短，但不能写成两位评审员独立阅读了每条记录。
-2. **数据共享——决定：分层。** 从已发表文章提取的去标识逐例数据，向期刊编辑部问清后放公共库或附加文件，来源报告要标明；作者提供的个体数据不逐例公开，只用于合并分析，经原作者书面同意才给他人；本院 5 例按家属同意的范围。已写入协议"传播计划"（本说明第 7A 节）；IPD 邮件草稿的保守写法与此一致（O1 关闭）。论文的"数据可用性"声明还要等期刊对"去标识逐例表算不算个体参与者详细信息"的答复。
-3. **分析计划的三处改动（协议第 16、18 节）——决定：先请 Ji Wang 看。** 给 Ji Wang 的说明已写好（`Note for Ji Wang - analysis plan changes (draft).docx`）。**这是提交前唯一还没完成的事：等 Ji Wang 的回复。** 若有异议，先改本说明第 7 节和协议第 16、18 节，再提交。
+2. **数据共享——决定：分层。** 从已发表文章提取的去标识逐例数据，标明来源报告，放公共数据库；**作者报告（2026 年 10 月 18 日）：去标识的逐例表算期刊所说的"个体参与者详细信息"，所以不放附加文件**（消息来源没有说明，没有书面材料）；作者提供的个体数据不逐例公开，只用于合并分析，经原作者书面同意才给他人；本院 5 例按家属同意的范围。协议"传播计划"本来写的是"补充材料或公共数据库，按期刊的数据政策"，所以不用再改（本说明第 7A 节）；IPD 邮件草稿的保守写法与此一致（O1 关闭）。
+3. **分析计划的三处改动（协议第 16、18 节）——Ji Wang 已回复，同意三处改动**（作者转告 2026 年 10 月 18 日；回复方式没有说明，没有书面材料）。我给他的另外两个问题（本院 5 例在聚类稳健标准误里算几个聚类、发表时期怎么算；非整数天怎么归类）这次转告里没有提到，还没有回答，**不影响这次提交**，留在论文草稿的待定项里。
 4. **提取阶段的分工和本院 5 例先从病历独立提取——作者报告（2026 年 10 月 18 日）：卞红强和杨俊都已知道并同意。** 方式和日期没有说明；协议第 14 节已写入。
 5. **更换全文阶段第二评审员的理由——决定：只写事实，不写理由**（"全文阶段由舒俊和卞红强评审，杨俊仲裁，团队于 2026 年 10 月 18 日决定"）。如果页面强制要求写理由，由作者给一句真实的话，我不替作者编。
 6. **更新检索——决定：保持注册计划不变**（协议第 5 节：距检索超过六个月，在最终分析前重新检索，约 2027 年 3 月底到期），这次修订不动；具体时间 2027 年 2 月前再定（六个库；按 2025–2026 年记录数粗估半年新增约 40–50 条）。Embase 和 Google Scholar 仍不搜，作为局限。
 
-**什么时候可以提交：** 只等 Ji Wang 的回复。PROSPERO 可以多次修订，所以不必为了其他还没定的事（更新检索的具体时间、论文的数据可用性声明）推迟。
+**现在可以提交。** 六件事都已定；Ji Wang 已同意三处改动。PROSPERO 可以多次修订，所以不必为了其他还没定的事（更新检索的具体时间、论文的数据可用性声明里的仓库名称）推迟。
 
 ---
 
@@ -73,7 +73,7 @@ Team members are unchanged (Jun Shu, Jun Yang, Hongqiang Bian, Fei Peng, Ji Wang
 
 ## 7. Analysis plan（数据综合字段，三处改动）
 
-(a) The period-of-publication covariate in the primary model has two levels (2000–2014, 2015 onward) instead of three, because reports before 2000 are not sought. (b) Sensitivity analysis 7 ("excluding reports published before 2000") no longer applies. (c) One additional analysis, not in the registered plan and reported as such: omitting patients included on the basis of splenic pedicle torsion without a stated position of the spleen. The primary analysis, the exposures and the outcomes are unchanged. **（提交前请 Ji Wang 确认，见上面第 3 条。）**
+(a) The period-of-publication covariate in the primary model has two levels (2000–2014, 2015 onward) instead of three, because reports before 2000 are not sought. (b) Sensitivity analysis 7 ("excluding reports published before 2000") no longer applies. (c) One additional analysis, not in the registered plan and reported as such: omitting patients included on the basis of splenic pedicle torsion without a stated position of the spleen. The primary analysis, the exposures and the outcomes are unchanged. **（Ji Wang 已同意，见上面第 3 条。）**
 
 ## 7A. Dissemination plans（传播计划字段，新增；协议"Dissemination plans"）
 
@@ -90,7 +90,7 @@ Publication in a peer-reviewed journal. De-identified child-level data extracted
 | Risk of bias (quality) assessment | No | No |
 | Data analysis | No | No |
 
-标题摘要阶段已完成，全文阶段尚未开始（20 篇校准已准备、尚未做），所以"正式筛选"勾 Started / Not completed。提交那天如果有别的阶段已经开始，按实际勾。
+标题摘要阶段已完成，全文阶段尚未开始（20 篇校准已准备、尚未做），所以"正式筛选"勾 Started / Not completed。提交那天如果有别的阶段已经开始，按实际勾。 **如果本院 5 例从病历的提取在提交前已经开始，"Data extraction"勾 Started / Not completed。**
 
 ## 9. 没有改变的
 

@@ -224,7 +224,7 @@ In the primary model, adjusted for age and period of publication, the odds ratio
 | More than 30 days | [n] | [n] | [x to x] |
 | Duration not reported | [n] | [n] | [x to x] |
 
-Footnote. Boundary values fall in the lower category. Durations coded as lower bounds are listed in Additional file **[n]**.
+Footnote. Boundary values fall in the lower category. Durations coded as lower bounds are flagged in the child-level dataset in the repository (see Availability of data and materials).
 
 ### Secondary analyses, subgroups and sensitivity analyses
 
@@ -278,7 +278,7 @@ CBM: China Biology Medicine database; CNKI: China National Knowledge Infrastruct
 
 **Consent for publication.** **[PENDING: written consent for publication of clinical details and images from the parents or legal guardians of all five children. The journal asks that consent forms are not sent at submission but may be requested at any stage.]**
 
-**Availability of data and materials.** The child-level data extracted from published reports are de-identified and are given with the source report identified **[PENDING: repository or additional file. The journal's additional-file rules say that no individual participant details may be included, and it is not established whether a de-identified patient-level table counts as such; ask the editorial office before deciding between a public repository and an additional file. The journal's wording for a repository is "The datasets generated and/or analysed during the current study are available in the [NAME] repository, [PERSISTENT WEB LINK TO DATASETS]"; for data inside the article and its additional files, "All data generated or analysed during this study are included in this published article [and its supplementary information files]". The journal also encourages depositing the search strings on searchRxiv and citing the dataset in the reference list with a persistent identifier.]** Individual patient data supplied by the authors of reports were used only for the pooled analysis. They belong to the authors who supplied them, are not published at child level, and are not publicly available; they can be shared with others only with the written permission of those authors. **[PENDING: whether any author-supplied data were received.]** Data on the five children treated at our institution are shared only within the limits of the consent given for publication **[PENDING: consent from the five families]**.
+**Availability of data and materials.** The de-identified child-level data extracted from published reports, with the source report identified, are available in the **[PENDING: NAME]** repository, **[PENDING: PERSISTENT WEB LINK]**. They are not provided as an additional file, because the journal does not allow individual participant details in additional files and a de-identified patient-level table counts as such. **[PENDING: check that the family-level consent for publication covers the five children's data in a public repository, and that the repository deposit is acceptable to the journal. The journal also encourages depositing the search strings on searchRxiv and citing the dataset in the reference list with a persistent identifier.]** Individual patient data supplied by the authors of reports were used only for the pooled analysis. They belong to the authors who supplied them, are not published at child level, and are not publicly available; they can be shared with others only with the written permission of those authors. **[PENDING: whether any author-supplied data were received.]** Data on the five children treated at our institution are shared only within the limits of the consent given for publication **[PENDING: consent from the five families]**.
 
 **Competing interests.** The authors declare that they have no competing interests. **[PENDING: confirm with all authors.]**
 
@@ -312,5 +312,6 @@ The journal asks for each additional file to be named "Additional file 1" and so
 
 - Additional file 1 (format to be decided): search strategies for each database and the search log (PRISMA-S).
 - Additional file 2 (.xlsx): data-extraction form and coding rules, including the duration-conversion rules.
-- Additional file 3: the de-identified child-level data extracted from published reports (route and format pending, see Availability of data and materials).
-- Additional file 4 (format to be decided): PRISMA 2020 and PRISMA-IPD checklists.
+- Additional file 3 (format to be decided): PRISMA 2020 and PRISMA-IPD checklists.
+
+The child-level data are not an additional file; they are deposited in a repository (see Availability of data and materials).
