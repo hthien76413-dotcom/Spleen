@@ -6,8 +6,14 @@ Everything that goes beyond Appendix C is listed on the README sheet under "Diff
 Claude's operationalisation, awaiting the three reviewers' approval.
 
 Usage:  python3 -I tools/build_extraction_workbook.py "<output>.xlsx"
+Full-text calibration workbook (FT_log + FT_time_log + the list of reports only, WS ids pre-filled; guide section 12):
+        python3 -I tools/build_extraction_workbook.py "<output>.xlsx" --ft-only --reviewer R1 \
+            --prefill search/screening/fulltext/calibration_20_list.csv
 Requires openpyxl.
 """
+import argparse
+import csv
+import re
 import sys
 from openpyxl import Workbook
 from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
@@ -15,7 +21,16 @@ from openpyxl.utils import get_column_letter
 from openpyxl.worksheet.datavalidation import DataValidation
 
 VERSION = "v2026-10-17a"
-OUT = sys.argv[1] if len(sys.argv) > 1 else "Extraction workbook - template (draft).xlsx"
+_ap = argparse.ArgumentParser(description="Build the extraction / full-text workbook (see the module docstring).")
+_ap.add_argument("out", nargs="?", default="Extraction workbook - template (draft).xlsx")
+_ap.add_argument("--ft-only", action="store_true", help="only README, FT_log, FT_time_log, Calibration_list and Lists, with the WS ids of --prefill filled in")
+_ap.add_argument("--reviewer", choices=["R1", "R2"], help="with --ft-only: value of the reviewer column")
+_ap.add_argument("--prefill", help="with --ft-only: CSV with the columns position, ws_id, year, language, has_abstract, title, doi, url")
+_ap.add_argument("--rows", type=int, default=40, help="with --ft-only: pre-formatted FT_log and FT_time_log rows (default 40)")
+ARGS = _ap.parse_args()
+OUT = ARGS.out
+RIS = "search/dedup/records_deduplicated.ris"
+REVIEWER_NAME = {"R1": "舒俊", "R2": "卞宏强"}
 
 N_PAT, N_REP, N_FT, N_IPD, N_TIME = 1500, 800, 2000, 300, 300  # pre-formatted rows
 FIRST = 4  # first data row on the data sheets (rows 1-3 = header block)
@@ -533,7 +548,86 @@ def put_duration_calc(ws):
     ws.freeze_panes = "A3"
 
 
+FT_ONLY_README = [
+    ("title", "全文筛选校准用工作簿（20 篇）— 筛选员 {rev}（{name}）{ver}"),
+    ("p", "这是《全文筛选指南》第 12 节的 20 篇校准。FT_log 里已经填好 WS 编号、第一作者和年份、语种和筛选员代号（灰色列，不要改）；其余列由你自己填。"),
+    ("h", "1. 怎么用"),
+    ("b", "你的代号是 {rev}，reviewer 列已填好。"),
+    ("b", "Calibration_list 表里有 20 篇的标题、年份、DOI 和链接，用它们去找全文。找全文的途径和记录方法见指南第 4 节。"),
+    ("b", "FT_log 每篇一行：按指南第 6 节的顺序回答问题，填 decision（Include / Exclude / Pending IPD）和 reason（用下拉列表，名称一字不差）；Include 要填 ws_basis 和儿童数。发表早于 2000 年的报告不在这 20 篇里。"),
+    ("b", "FT_time_log 表：每次开始和结束都写一行（日期、开始和结束时间、这一段处理了几篇）。"),
+    ("b", "每一篇都由你本人阅读全文后判断，不用任何 AI 工具、宏、脚本或自动点击（沿用标题摘要指南第 3、12 节的规定）。"),
+    ("b", "两人都完成之前，不看对方的文件，不讨论具体的篇目。完成后另存为 FT_cal_{rev}.xlsx，交给杨俊保管；两人都完成后再比对。"),
+    ("b", "不要改表头、列的顺序和下拉列表（Lists 表）。不要删除 FT_log 里已填好的行；多出来的行留空即可。"),
+    ("h", "2. 说明"),
+    ("b", "这 20 篇在正式的全文筛选里还会再处理一遍。校准只记一致率，kappa 在 20 篇上没有意义（指南 D5）。"),
+    ("b", "指南没写清楚的情形，请记下 WS 编号和你的做法，在讨论时提出。"),
+    ("b", "这个文件没有在 Excel 或 WPS 里打开测试过：下拉列表和灰色列的显示如有问题，请告诉舒俊。"),
+]
+
+
+def first_authors(ids):
+    """First author's surname (or the whole name for Chinese authors) for each WS id, from the deduplicated RIS."""
+    want, out = set(ids), {}
+    for blk in open(RIS, encoding="utf-8-sig").read().split("\nER  -"):
+        m = re.search(r"^ID  - (.*)$", blk, re.M)
+        if m and m.group(1) in want:
+            a = re.search(r"^AU  - (.*)$", blk, re.M)
+            out[m.group(1)] = a.group(1).split(",")[0].strip() if a else ""
+    return out
+
+
+def main_ft_only():
+    if not (ARGS.reviewer and ARGS.prefill):
+        raise SystemExit("--ft-only needs --reviewer and --prefill")
+    rows = list(csv.DictReader(open(ARGS.prefill, encoding="utf-8-sig")))
+    authors = first_authors([r["ws_id"] for r in rows])
+    n_rows = max(ARGS.rows, len(rows) + 10)
+    wb = Workbook()
+    ws_readme = wb.active
+    ws_readme.title = "README"
+    ws_ft = wb.create_sheet("FT_log")
+    ws_time = wb.create_sheet("FT_time_log")
+    ws_list = wb.create_sheet("Calibration_list")
+    put_lists(wb)
+    global README_LINES
+    README_LINES = [(k, v.format(rev=ARGS.reviewer, name=REVIEWER_NAME[ARGS.reviewer], ver=VERSION)) for k, v in FT_ONLY_README]
+    put_readme(ws_readme)
+    for ws, cols in ((ws_ft, FT_COLS), (ws_time, FT_TIME_COLS)):
+        build_header(ws, cols)
+        add_validations(ws, cols, n_rows, FORMULAS)
+    letters = column_letters(FT_COLS)
+    for k, r in enumerate(rows):
+        row = FIRST + k
+        cit = ("%s %s" % (authors.get(r["ws_id"], ""), r["year"])).strip() if authors.get(r["ws_id"]) else "(no author) %s" % r["year"]
+        for code, val in (("ws_id", r["ws_id"]), ("citation", cit), ("language", r["language"]), ("reviewer", ARGS.reviewer)):
+            c = ws_ft["%s%d" % (letters[code], row)]
+            c.value = val
+            c.fill = GREY
+    heads = ["position", "ws_id", "year", "language", "has_abstract", "title", "doi", "url"]
+    widths = [9, 9, 7, 10, 12, 80, 28, 50]
+    for ci, (h, w) in enumerate(zip(heads, widths), start=1):
+        c = ws_list.cell(row=1, column=ci, value=h)
+        c.font = HDR_FONT
+        c.fill = hdr_fill("id")
+        ws_list.column_dimensions[get_column_letter(ci)].width = w
+    for ri, r in enumerate(rows, start=2):
+        for ci, h in enumerate(heads, start=1):
+            c = ws_list.cell(row=ri, column=ci, value=r[h])
+            c.alignment = WRAP
+    ws_list.freeze_panes = "A2"
+    for ws, col in ((ws_readme, "7F7F7F"), (ws_ft, "2F75B5"), (ws_time, "2F75B5"), (ws_list, "548235")):
+        ws.sheet_properties.tabColor = col
+    wb["Lists"].sheet_properties.tabColor = "BBBBBB"
+    wb.properties.title = "Full-text calibration workbook %s %s" % (ARGS.reviewer, VERSION)
+    wb.properties.creator = "Wandering spleen SR team"
+    wb.save(OUT)
+    print("saved", OUT, "reviewer", ARGS.reviewer, "prefilled rows", len(rows), "FT_log rows formatted", n_rows)
+
+
 def main():
+    if ARGS.ft_only:
+        return main_ft_only()
     wb = Workbook()
     ws_readme = wb.active
     ws_readme.title = "README"

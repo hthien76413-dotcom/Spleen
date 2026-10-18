@@ -53,6 +53,7 @@ ORDER = ["L", "D", "E5", "E4", "E1", "E2", "E3", "A", "N", "E6"]  # guide sectio
 REASON_BY_CODE = {r.split()[0]: r for r in REASONS}
 DEFAULT_LIST = "search/screening/rescreen/fulltext_retrieval_list.csv"
 WS_RE = re.compile(r"^WS\d{4}$")
+PREFILLED = ("ws_id", "citation", "language", "reviewer")  # columns that a pre-filled workbook already carries
 FT_COLS = ["ws_id", "citation", "language", "reviewer", "date", "fulltext_obtained", "route", "routes_tried", "decision",
            "reason", "n_children_individual", "n_children_aggregate", "ws_basis", "duplicate_of", "note"]
 
@@ -142,6 +143,7 @@ class Issues:
 
     def __init__(self):
         self.items = []  # (severity, row, ws_id, message, kind)
+        self.pending = 0  # pre-filled rows (WS id, citation, language, reviewer only) that have not been handled yet
 
     def add(self, sev, row, ws, msg, kind=None):
         self.items.append((sev, row, ws, msg, kind))
@@ -176,6 +178,9 @@ def load_log(path, expected_reviewer, retrieval, issues):
         n = r["_row"]
         if not WS_RE.match(ws):
             issues.add("ERROR", n, ws or "-", "ws_id missing or not of the form WS0123")
+            continue
+        if all(txt(r[c]) == "" for c in FT_COLS if c not in PREFILLED):
+            issues.pending += 1  # a pre-filled row that the reviewer has not touched yet: not a record, not an error
             continue
         if ws in by_id:
             prev = by_id[ws]
@@ -331,6 +336,8 @@ def run_check(args):
     by_id, wb = load_log(args.file, args.reviewer, retrieval, issues)
     lines.insert(0, "File: %s (%d records in FT_log)" % (os.path.basename(args.file), len(by_id)))
     summarise_log(by_id, retrieval, lines)
+    if issues.pending:
+        lines.append("Pre-filled rows not handled yet: %d (not counted as records)" % issues.pending)
     pace_check(wb, by_id, args.max_per_hour, issues, lines)
     lines.append("Format check: %d ERROR(S), %d WARNING(S)" % (issues.count("ERROR"), issues.count("WARN")))
     lines.extend(issues.lines())
@@ -380,8 +387,9 @@ def run_compare(args):
     r1, wb1 = load_log(args.file1, "R1", retrieval, iss1)
     r2, wb2 = load_log(args.file2, "R2", retrieval, iss2)
     for name, iss in (("R1", iss1), ("R2", iss2)):
-        lines.append("Format check %s: %d error(s), %d warning(s)%s" % (
-            name, iss.count("ERROR"), iss.count("WARN"), "  -> run the 'check' command on this file" if iss.items else ""))
+        lines.append("Format check %s: %d error(s), %d warning(s)%s%s" % (
+            name, iss.count("ERROR"), iss.count("WARN"), "  -> run the 'check' command on this file" if iss.items else "",
+            "; %d pre-filled rows not handled yet" % iss.pending if iss.pending else ""))
     ids = sorted(set(r1) | set(r2))
     both = [w for w in ids if w in r1 and w in r2]
     only1 = [w for w in ids if w in r1 and w not in r2]
