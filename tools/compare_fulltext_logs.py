@@ -24,6 +24,9 @@ Rules applied (from the guide)
     and Pending IPD vs Exclude explicitly.
   * Both Exclude with different reasons is NOT a conflict (D3): the proposed reason is the first applicable one in the order
     L, D, E5, E4, E1, E2, E3, A, N, E6 (Y is never entered in FT_log; it is counted from the retrieval list).
+    Exception (author's decision 18 Oct 2026: reason D needs the other screener to try as well): if exactly one of the two
+    reasons is D, the pair is a conflict ('D not confirmed by both'); one screener got the full text, so it is settled in the
+    discussion after both have finished. Both D = confirmed. The decisions still count as agreeing for kappa.
   * Both Include but different ws_basis / n_children / duplicate_of: listed as detail differences, settled when the
     extraction consensus is made.
   * Pace: sessions with more than --max-per-hour reports per hour are listed as 'to ask about' (a flag, not a finding;
@@ -410,6 +413,9 @@ def run_compare(args):
         d1, d2 = a["decision_c"], b["decision_c"]
         if d1 is None or d2 is None:
             cat = "invalid decision in one file"
+        elif d1 == d2 == "Exclude" and (a["reason_c"] == "D") != (b["reason_c"] == "D"):
+            cat = "conflict: D not confirmed by both"
+            pairs.append((d1, d2))
         elif d1 == d2:
             cat = "agree " + d1
             pairs.append((d1, d2))
