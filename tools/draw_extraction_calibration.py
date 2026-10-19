@@ -9,7 +9,8 @@ exists, is the procedure and the seed, so the draw cannot be steered by the outc
 Population: rows of fulltext_included.csv with decision = Include and no ipd_outcome (reports whose individual data are published;
 reports whose individual data arrive by e-mail come later and are not used for calibration). Reports of the 53-paper pilot set are
 left out by default (Jun Shu extracted them before the protocol, so he would not be calibrating on an unseen report); --keep-pilot
-puts them back. Both are Claude's choices, to be confirmed by the extractors.
+puts them back. Leaving the pilot papers out: Claude's choice, agreed by Jun Shu (E1) on 19 Oct 2026; Hongqiang Bian's (E2) agreement
+was not stated. The rule 'published individual data only' is Claude's choice, not yet confirmed.
 
 Strata (the extraction guide asks for at least: Chinese 3, series 3, durations written in different ways - hours, weeks, a range,
 a vague phrase - at least 1 each, 'torsion only' 1, a child who was not operated on or whose spleen was not removed 1). They are
