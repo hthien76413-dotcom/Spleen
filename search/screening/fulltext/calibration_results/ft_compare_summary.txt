@@ -2,7 +2,7 @@ FULL-TEXT SCREENING: COMPARISON OF THE TWO FT_log FILES
 R1 file: 0d0df49a-FT_cal_R1.xlsx | R2 file: 3628b51c-FT_cal_R2.xlsx | made 2026-10-19
 Contains both reviewers' record-level decisions: give it to the adjudicator only after both have finished.
 Format check R1: 0 error(s), 0 warning(s)
-Format check R2: 0 error(s), 0 warning(s)
+Format check R2: 0 error(s), 13 warning(s)  -> run the 'check' command on this file
 
 Records: 20 in R1, 20 in R2, 20 in both, 0 only in R1, 0 only in R2
 Retrieval list: 540 to retrieve; handled by both 20, by one only 0, by neither 520
@@ -18,7 +18,8 @@ Contingency (rows R1, columns R2; Include / Exclude / Pending IPD):
   Pending IPD     0     0     0
 Both Exclude: 5; same reason 4 (80.0%), different reason 1
   different reasons (R1 / R2): E3/E4 1
-Detail differences (both Include / both Pending IPD / both Exclude): 19
+Detail differences (both Include / both Pending IPD / both Exclude): 6
+  n_children_aggregate: a blank counted as 0 on 13 both-Include record(s), so blank vs 0 is not listed as a difference
 R1: Include 15, Exclude 5, Pending IPD 0 | Exclude reasons: E4 1, E2 1, E3 3
 R2: Include 13, Exclude 5, Pending IPD 2 | Exclude reasons: E4 2, E2 1, E3 2
 
@@ -37,4 +38,5 @@ FORMAT ISSUES (R2)
   WARN row - -: FT_log has 20 decisions but FT_time_log adds up to 16 reports
   WARN row - -: 2026-10-19: 20 decisions but only 16 reports in FT_time_log
   WARN row 45 -: FT_time_log: 16 reports in 35 min (27 per hour, above 15)
+  WARN Include without n_children_aggregate (write 0 if there are none) (13 rows: 5, 7, 9, 10, 11, 12, 13, 14, 15, 16, 18, 19, ...)
   WARN FT_time_log row: date, start, end (hh:mm) or n_reports missing or unreadable (1 row: 44)

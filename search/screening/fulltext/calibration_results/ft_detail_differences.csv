@@ -1,20 +1,7 @@
 ﻿ws_id,year,title,type,R1,R2
 WS0018,2026,"Splenic pathologies: A pictorial review of common, wandering, twisting and rare presentations.","both Exclude, different reason (proposed: first applicable in the D3 order)",E3 adults only,E4 no original patient data
-WS0120,2025,Totally laparoscopic partial splenectomy and gastropexy for a splenic cyst in a wandering spleen.,"both Include, different n_children_aggregate",0,
-WS0444,2014,Wandering spleen: 'presentation in adolescent with high thrombotic risk'.,"both Include, different n_children_aggregate",0,
-WS0699,2004,Torsion of a wandering spleen presenting with acute abdomen: a case report.,"both Include, different n_children_aggregate",0,
 WS0709,2004,Acute torsion of the spleen: diagnosis and management.,"both Include, different ws_basis",Imaging and operation,"Torsion only, position not stated"
-WS0709,2004,Acute torsion of the spleen: diagnosis and management.,"both Include, different n_children_aggregate",0,
-WS0731,2003,Avulsion of wandering spleen after traumatic torsion.,"both Include, different n_children_aggregate",0,
 WS0780,2000,Intrauterine torsion of a wandering spleen presenting as an abdominal cystic swelling.,"both Include, different ws_basis",Imaging and operation,"Named wandering spleen, no detail"
-WS0780,2000,Intrauterine torsion of a wandering spleen presenting as an abdominal cystic swelling.,"both Include, different n_children_aggregate",0,
 WS1339,2024,Wandering spleen resulting in gastric volvulus in a child with vanishing gastroschisis: A case report,"both Include, different ws_basis",Imaging and operation,Imaging shows ectopic position or mobility
-WS1339,2024,Wandering spleen resulting in gastric volvulus in a child with vanishing gastroschisis: A case report,"both Include, different n_children_aggregate",0,
-WS1367,2025,Beyond the usual: three unique cases of wandering spleen in Indonesia,"both Include, different n_children_aggregate",0,
-WS1388,2024,Recurrent splenic volvulus after splenopexy in an 11-year-old child: A case report,"both Include, different n_children_aggregate",0,
-WS1908,2019,一例游离脾伴胃扭转的病例汇报,"both Include, different n_children_aggregate",0,
 WS2116,2002,超声诊断游走脾1例,"both Include, different ws_basis",Imaging and operation,Imaging shows ectopic position or mobility
-WS2116,2002,超声诊断游走脾1例,"both Include, different n_children_aggregate",0,
 WS2145,2000,游走脾并发胃扭转三例,"both Include, different ws_basis",Imaging and operation,Operation shows ectopic position or mobility
-WS2145,2000,游走脾并发胃扭转三例,"both Include, different n_children_aggregate",0,
-WS2314,2014,儿童游走脾并蒂扭转、脾坏死1例,"both Include, different n_children_aggregate",0,
