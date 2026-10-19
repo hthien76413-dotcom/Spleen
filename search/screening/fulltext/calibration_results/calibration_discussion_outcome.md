@@ -24,14 +24,14 @@ Principle stated in the report: `Imaging and operation` is chosen only when both
 | WS0709 | Imaging and operation | Torsion only, position not stated | R2 changes to Imaging and operation |
 | WS0780 | Imaging and operation | Named wandering spleen, no detail | R2 changes to Imaging and operation |
 | WS1339 | Imaging and operation | Imaging shows ectopic position or mobility | R2 changes to Imaging and operation |
-| WS2116 | Imaging and operation | Imaging shows ectopic position or mobility | R2 changes to Imaging and operation |
+| WS2116 | Imaging and operation | Imaging shows ectopic position or mobility | R2 changes to Imaging and operation; the question whether the one-sentence operative confirmation is enough was answered later on 19 October: **maintained as Imaging and operation** (author's report) |
 | WS2145 | Imaging and operation | Operation shows ectopic position or mobility | R2 keeps "Operation shows ectopic position or mobility" (series confirmed mainly at operation). **R1 (舒俊) agrees to change to "Operation shows ectopic position or mobility"** (author's report, later on 19 October). All five differences are now settled. |
 | WS1908 | Imaging shows ectopic position or mobility | same | Unchanged (agreed before): the operation was only a therapeutic resection |
 | WS1367 | Imaging shows ectopic position or mobility | same | Unchanged (agreed before): same reason |
 
 Observations (Claude's, from R1's pre-discussion notes in `ft_compare_all.csv`; not decisions):
 - WS2145 (settled): R1's note said that ultrasound was available only for case 3 of the three children; R1 then agreed to the operation-only value. The general question remains open: `ws_basis` has one value per report in FT_log but is per patient in the extraction workbook, so a series with mixed evidence has no rule yet (guide 6.7 says so).
-- WS2116: R1's note says the intraoperative text is a single sentence ("consistent with the ultrasound diagnosis") with no description of ligaments or pedicle. The screeners counted it as operation evidence; guide 6.7 asks for findings that "describe" the position or mobility, which can be read more strictly. Worth one line of agreement between the two.
+- WS2116 (settled): R1's note says the intraoperative text is a single sentence ("consistent with the ultrasound diagnosis") with no description of ligaments or pedicle. The screeners maintained Imaging and operation. Guide 6.7 (v2026-10-19i) now says that an explicit statement that the operative findings agree with the imaging diagnosis counts as operation evidence; that generalisation is Claude's reading and is marked as awaiting confirmation.
 
 ## 3. Unchanged
 
