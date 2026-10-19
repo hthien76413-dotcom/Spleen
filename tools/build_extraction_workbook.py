@@ -9,6 +9,9 @@ Usage:  python3 -I tools/build_extraction_workbook.py "<output>.xlsx"
 Full-text calibration workbook (FT_log + FT_time_log + the list of reports only, WS ids pre-filled; guide section 12):
         python3 -I tools/build_extraction_workbook.py "<output>.xlsx" --ft-only --reviewer R1 \
             --prefill search/screening/fulltext/calibration_20_list.csv
+Formal full-text screening workbook (same sheets; README for the formal stage; the report list is called Report_list):
+        python3 -I tools/build_extraction_workbook.py "<output>.xlsx" --ft-only --formal --reviewer R1 \
+            --prefill search/screening/fulltext/formal_prefill_540.csv
 Requires openpyxl.
 """
 import argparse
@@ -26,6 +29,7 @@ _ap.add_argument("out", nargs="?", default="Extraction workbook - template (draf
 _ap.add_argument("--ft-only", action="store_true", help="only README, FT_log, FT_time_log, Calibration_list and Lists, with the WS ids of --prefill filled in")
 _ap.add_argument("--reviewer", choices=["R1", "R2"], help="with --ft-only: value of the reviewer column")
 _ap.add_argument("--prefill", help="with --ft-only: CSV with the columns position, ws_id, year, language, has_abstract, title, doi, url")
+_ap.add_argument("--formal", action="store_true", help="with --ft-only: README and list sheet for the formal full-text stage instead of the 20-report calibration")
 _ap.add_argument("--rows", type=int, default=40, help="with --ft-only: pre-formatted FT_log and FT_time_log rows (default 40)")
 ARGS = _ap.parse_args()
 OUT = ARGS.out
@@ -577,6 +581,28 @@ FT_ONLY_README = [
 ]
 
 
+FT_FORMAL_README = [
+    ("title", "全文筛选正式记录表（540 篇）— 筛选员 {rev}（{name}）{ver}"),
+    ("p", "这是《全文筛选指南》第 3 节（D4）规定的正式记录表。FT_log 里已经填好 540 篇的 WS 编号、第一作者和年份、语种和筛选员代号（灰色列，不要改）；其余列由你自己填。"),
+    ("h", "1. 开始之前"),
+    ("b", "先做完第 12 节的 20 篇校准（两人都做完、比对、讨论，指南有改动的话改完），再在这份表里记正式的决定。取全文不产生任何决定，可以现在就开始。"),
+    ("b", "你的代号是 {rev}，reviewer 列已填好。文件另存为 FT_{rev}.xlsx，之后只改这一份；每次用完另存一份带日期的副本（如 FT_{rev}_2026-11-03.xlsx），不覆盖旧的。"),
+    ("b", "Report_list 表里有 540 篇的标题、年份、DOI 和链接。Position 与取回清单（retrieval_worklist_540.xlsx）的 No. 一致，可以对照着找全文。"),
+    ("b", "发表早于 2000 年的报告（理由 Y）和非英文非中文的报告（理由 L）不在这 540 篇里，也不进 FT_log。"),
+    ("h", "2. 每一篇怎么记"),
+    ("b", "取全文：填 fulltext_obtained（Yes / No）、route，没取到时填 routes_tried。取全文的途径和 D 的确认方法见指南第 4 节；D 要两个人都试过所有途径、都记 D 才算确认。"),
+    ("b", "读全文，按指南第 6 节的顺序回答问题；decision 填 Include / Exclude / Pending IPD；reason 用下拉列表，名称一字不差；多个理由同时适用时按指南第 5 节的固定顺序选一个。全文阶段没有 Maybe。"),
+    ("b", "Include 要填 ws_basis 和 n_children_individual；只有汇总数据的填 Pending IPD、理由选 A，并填 n_children_aggregate；与别的报告重复患者的，在 duplicate_of 填对方的 WS 编号；E6 要在 note 里写具体说明。"),
+    ("b", "date 每篇填 yyyy-mm-dd。FT_time_log 表：每次开始和结束都写一行（日期、起止时间、这一段处理的篇数）。"),
+    ("h", "3. 说明"),
+    ("b", "两人都完成之前，不看对方的文件，不讨论具体的篇目。每人完成前 50 篇后，把自己的 FT_log 和 FT_time_log 交给杨俊保管（不交给对方），由他决定怎么转交核对格式和进度（指南第 3 节）。"),
+    ("b", "20 篇校准用的报告在这 540 篇里，正式筛选照样再处理一遍。"),
+    ("b", "行的顺序是取回清单的顺序（先是数据库记录里有摘要的 362 篇，再是没有摘要的 178 篇），不要求按这个顺序处理。不要删除或移动预填的行；多出来的行留空即可。不要改表头、列的顺序和下拉列表（Lists 表）。"),
+    ("b", "指南没写清楚的情形，请记下 WS 编号和你的做法，在讨论时提出。"),
+    ("b", "这个文件没有在 Excel 或 WPS 里打开测试过：下拉列表和灰色列的显示如有问题，请告诉舒俊。"),
+]
+
+
 def first_authors(ids):
     """First author's surname (or the whole name for Chinese authors) for each WS id, from the deduplicated RIS."""
     want, out = set(ids), {}
@@ -599,14 +625,15 @@ def main_ft_only():
     ws_readme.title = "README"
     ws_ft = wb.create_sheet("FT_log")
     ws_time = wb.create_sheet("FT_time_log")
-    ws_list = wb.create_sheet("Calibration_list")
+    ws_list = wb.create_sheet("Report_list" if ARGS.formal else "Calibration_list")
     put_lists(wb)
     global README_LINES
-    README_LINES = [(k, v.format(rev=ARGS.reviewer, name=REVIEWER_NAME[ARGS.reviewer], ver=VERSION)) for k, v in FT_ONLY_README]
+    README_LINES = [(k, v.format(rev=ARGS.reviewer, name=REVIEWER_NAME[ARGS.reviewer], ver=VERSION))
+                    for k, v in (FT_FORMAL_README if ARGS.formal else FT_ONLY_README)]
     put_readme(ws_readme)
-    for ws, cols in ((ws_ft, FT_COLS), (ws_time, FT_TIME_COLS)):
+    for ws, cols, n_ws in ((ws_ft, FT_COLS, n_rows), (ws_time, FT_TIME_COLS, N_TIME if ARGS.formal else n_rows)):
         build_header(ws, cols)
-        add_validations(ws, cols, n_rows, FORMULAS)
+        add_validations(ws, cols, n_ws, FORMULAS)
     letters = column_letters(FT_COLS)
     for k, r in enumerate(rows):
         row = FIRST + k
@@ -630,7 +657,7 @@ def main_ft_only():
     for ws, col in ((ws_readme, "7F7F7F"), (ws_ft, "2F75B5"), (ws_time, "2F75B5"), (ws_list, "548235")):
         ws.sheet_properties.tabColor = col
     wb["Lists"].sheet_properties.tabColor = "BBBBBB"
-    wb.properties.title = "Full-text calibration workbook %s %s" % (ARGS.reviewer, VERSION)
+    wb.properties.title = "Full-text %s workbook %s %s" % ("formal screening" if ARGS.formal else "calibration", ARGS.reviewer, VERSION)
     wb.properties.creator = "Wandering spleen SR team"
     wb.save(OUT)
     print("saved", OUT, "reviewer", ARGS.reviewer, "prefilled rows", len(rows), "FT_log rows formatted", n_rows)
