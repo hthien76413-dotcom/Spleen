@@ -10,7 +10,7 @@ state cannot be mistaken for the final one.
 
 Usage (from the repo root; needs openpyxl; the helper functions come from tools/compare_fulltext_logs.py):
   python3 -I tools/finalize_fulltext.py FT_R1.xlsx FT_R2.xlsx --conflicts FILLED_ft_conflicts_for_discussion.csv \
-      [--ipd EXTRACTION.xlsx] [--out DIR] [--list PATH]
+      [--ipd EXTRACTION.xlsx [--today YYYY-MM-DD]] [--out DIR] [--list PATH]
 
 Rules applied
   * Both reviewers gave the same decision -> that decision. Both Exclude with different reasons -> the first applicable reason in
@@ -24,6 +24,8 @@ Rules applied
   * Pending IPD (agreed or resolved): with --ipd, the IPD_requests sheet decides: final_status 'Included with IPD' -> Include,
     'Narrative only' -> Exclude (A); 'Not eligible after check' -> unresolved (the reason has to be settled by the reviewers);
     'Pending' or no row -> stays Pending IPD. Without --ipd every Pending IPD stays pending.
+    With --ipd the counts file also gets the deadline check (--today YYYY-MM-DD, default: today): a request 4 weeks after the first e-mail
+    with no second e-mail and no reply, and a request 8 weeks after the first e-mail whose final status is still Pending, are flagged.
     With --ipd the counts file also gets the contact figures for the Methods (first-e-mail results, routes used besides the address in
     the paper, authors reached / not reached by any route; one author counted once when the name is written identically) and notes on
     entries that contradict each other.
@@ -34,6 +36,7 @@ fulltext_pending_ipd.csv, fulltext_unresolved.csv, fulltext_prisma_counts.txt. T
 import argparse
 import collections
 import csv
+import datetime
 import importlib.util
 import os
 import re
@@ -124,11 +127,52 @@ def read_ipd(path, issues):
         author = " ".join(txt(r.get("corresponding_author")).lower().split())
         out[ws] = {"status": txt(r["final_status"]).lower(), "requested": txt(r["email1_date"]) != "",
                    "replied": txt(r["reply_date"]) != "", "received": txt(r["data_received"]).lower() in ("yes", "partial"),
+                   "email1": cft.to_date(r["email1_date"]), "email2": cft.to_date(r["email2_date"]),
+                   "bad_dates": [n for n in ("email1_date", "email2_date", "reply_date") if txt(r[n]) != "" and cft.to_date(r[n]) is None],
                    "row": r["_row"], "author": author, "delivery": txt(r.get("delivery_result")).lower(),
                    "routes": [t.strip().lower() for t in re.split(r"[;,\uff1b]", txt(r.get("other_routes"))) if t.strip()],
                    "reached": txt(r.get("author_reached")).lower(), "log": txt(r.get("contact_log")) != "",
                    "has_contact": len(have) == len(CONTACT_COLS) + 1}
     return out
+
+
+def deadline_check(ipd, today):
+    """Lines for the counts file and notes about the 4-week and 8-week rules (guide D6, protocol Section 14). Only requests with a
+    readable first-e-mail date are checked. 'Open' = the final status is Pending or blank."""
+    L, notes = [], []
+    if not ipd:
+        return L, notes
+    second_due, overdue, upcoming = [], [], []
+    for w, v in sorted(ipd.items()):
+        tag = "IPD_requests %s (row %s): " % (w, v["row"])
+        for n in v["bad_dates"]:
+            notes.append(tag + "%s is not a readable date (use yyyy-mm-dd); the deadline check skips this entry" % n)
+        if not v["requested"] or v["email1"] is None or v["bad_dates"]:
+            continue
+        days = (today - v["email1"]).days
+        open_ = v["status"] in ("", "pending")
+        if days < 0:
+            notes.append(tag + "the first e-mail date %s is after the run date %s" % (v["email1"], today))
+            continue
+        if v["email2"] is not None and v["email2"] < v["email1"]:
+            notes.append(tag + "the second e-mail date is before the first")
+        if not open_:
+            continue
+        if days >= 28 and v["email2"] is None and not v["replied"] and not v["received"]:
+            second_due.append(w)
+            notes.append(tag + "%d days since the first e-mail (%s): no second e-mail recorded and no reply - send the reminder (week 4)" % (days, v["email1"]))
+        if days >= 56:
+            overdue.append(w)
+            extra = "; 'Author reached' is still %s" % (v["reached"] or "blank") if v["reached"] in ("", "pending") and v["has_contact"] else ""
+            notes.append(tag + "%d days since the first e-mail (%s): the 8 weeks are over and the final status is still Pending - settle it (Included with IPD / Narrative only / Not eligible after check)%s" % (days, v["email1"], extra))
+        else:
+            upcoming.append((v["email1"] + datetime.timedelta(days=56), w))
+    L.append("  Deadlines as of %s: 4 weeks passed, no second e-mail recorded and no reply: %d | 8 weeks passed, final status still Pending: %d" % (
+        today, len(second_due), len(overdue)))
+    if upcoming:
+        d, w = min(upcoming)
+        L.append("  Open requests within their 8 weeks: %d | earliest 8-week deadline: %s (%s)" % (len(upcoming), d, w))
+    return L, notes
 
 
 ROUTE_NAMES = [("institution", "Institution page"), ("journal", "Journal editorial office"), ("editorial", "Journal editorial office"),
@@ -196,6 +240,7 @@ def main():
     ap.add_argument("file2", help="R2 (Hongqiang Bian) FT_log workbook")
     ap.add_argument("--conflicts", help="filled ft_conflicts_for_discussion.csv")
     ap.add_argument("--ipd", help="extraction workbook whose IPD_requests sheet holds the outcomes of the requests")
+    ap.add_argument("--today", help="run date for the deadline check, yyyy-mm-dd (default: today; give it to repeat a run)")
     ap.add_argument("--out", default="search/screening/fulltext/final")
     ap.add_argument("--list", default=cft.DEFAULT_LIST)
     args = ap.parse_args()
@@ -404,6 +449,13 @@ def main():
         L.append("  Requested: %d | replied: %d | individual data received: %d | final Include (IPD received): %d | final Exclude A (not received): %d" % (
             len(req), sum(1 for w in req if ipd[w]["replied"]), sum(1 for w in req if ipd[w]["received"]),
             sum(1 for f in final if f["ipd_outcome"] == "IPD received"), sum(1 for f in final if f["ipd_outcome"].startswith("IPD requested"))))
+        try:
+            today = datetime.date.fromisoformat(args.today) if args.today else datetime.date.today()
+        except ValueError:
+            raise SystemExit("--today must be a date like 2026-11-30")
+        d_lines, d_notes = deadline_check(ipd, today)
+        L.extend(d_lines)
+        notes.extend(d_notes)
         c_lines, c_notes = contact_summary(ipd)
         L.extend(c_lines)
         notes.extend(c_notes)
