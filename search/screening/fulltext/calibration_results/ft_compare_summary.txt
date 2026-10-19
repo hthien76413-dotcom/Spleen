@@ -1,0 +1,40 @@
+FULL-TEXT SCREENING: COMPARISON OF THE TWO FT_log FILES
+R1 file: 0d0df49a-FT_cal_R1.xlsx | R2 file: 3628b51c-FT_cal_R2.xlsx | made 2026-10-19
+Contains both reviewers' record-level decisions: give it to the adjudicator only after both have finished.
+Format check R1: 0 error(s), 0 warning(s)
+Format check R2: 0 error(s), 0 warning(s)
+
+Records: 20 in R1, 20 in R2, 20 in both, 0 only in R1, 0 only in R2
+Retrieval list: 540 to retrieve; handled by both 20, by one only 0, by neither 520
+
+Categories (records in both files): agree Exclude 5, agree Include 13, conflict: Include vs Pending IPD 2
+Conflicts to settle: 2 of 20 (10.0%)
+3 categories (Include / Exclude / Pending IPD): agreement 90.0%; kappa 0.78 (rough 95% CI 0.49 to 1.00)
+2 categories (Exclude vs Include or Pending IPD): agreement 100.0%; kappa 1.00 (rough 95% CI 1.00 to 1.00)
+Note: fewer than 50 records compared; the guide (D5) says to report raw agreement only for the 20-report calibration, kappa is not meaningful at this size.
+Contingency (rows R1, columns R2; Include / Exclude / Pending IPD):
+  Include        13     0     2
+  Exclude         0     5     0
+  Pending IPD     0     0     0
+Both Exclude: 5; same reason 4 (80.0%), different reason 1
+  different reasons (R1 / R2): E3/E4 1
+Detail differences (both Include / both Pending IPD / both Exclude): 19
+R1: Include 15, Exclude 5, Pending IPD 0 | Exclude reasons: E4 1, E2 1, E3 3
+R2: Include 13, Exclude 5, Pending IPD 2 | Exclude reasons: E4 2, E2 1, E3 2
+
+PACE (from FT_time_log)
+R1: FT_time_log: no usable sessions.
+R2: FT_time_log: 1 sessions, 0.6 h in total, 16 reports handled (2.2 min per report overall).
+      reports per hour per session: median 27.4, range 27.4 to 27.4
+      to ask about: 1 session(s) above 15 reports per hour (rows 45)
+      decisions in FT_log: 20; reports in FT_time_log: 16  (differ by 4)
+      2026-10-19: 20 decisions dated that day, 16 reports in the time log
+
+FORMAT ISSUES (R1)
+
+
+FORMAT ISSUES (R2)
+  WARN row - -: FT_log has 20 decisions but FT_time_log adds up to 16 reports
+  WARN row - -: 2026-10-19: 20 decisions but only 16 reports in FT_time_log
+  WARN row 45 -: FT_time_log: 16 reports in 35 min (27 per hour, above 15)
+  WARN FT_time_log row: date, start, end (hh:mm) or n_reports missing or unreadable (1 row: 44)
