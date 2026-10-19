@@ -23,7 +23,7 @@ from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
 from openpyxl.utils import get_column_letter
 from openpyxl.worksheet.datavalidation import DataValidation
 
-VERSION = "v2026-10-19d"
+VERSION = "v2026-10-19e"
 _ap = argparse.ArgumentParser(description="Build the extraction / full-text workbook (see the module docstring).")
 _ap.add_argument("out", nargs="?", default="Extraction workbook - template (draft).xlsx")
 _ap.add_argument("--ft-only", action="store_true", help="only README, FT_log, Calibration_list and Lists, with the WS ids of --prefill filled in")
@@ -236,7 +236,7 @@ FT_COLS = [
     ("reason", "Reason", "Exclude 必选；Pending IPD 选 A；Include 留空", ("list", "ft_reason"), 28, "ft"),
     ("n_children_individual", "Children with individual data", "整数", "int", 10, "ft"),
     ("n_children_aggregate", "Children aggregate-only", "整数；Include 时没有汇总儿童就填 0", "int", 10, "ft"),
-    ("ws_basis", "Basis for wandering spleen", "仅 Include 时填（指南 D1 已决定：宽松加标记）", ("list", "ws_basis"), 24, "ft"),
+    ("ws_basis", "Basis for wandering spleen", "仅 Include 时填；Imaging and operation 只在影像和术中所见都写明脾异位或活动时选（指南 6.7）", ("list", "ws_basis"), 24, "ft"),
     ("duplicate_of", "Duplicate of (WS ID)", "与哪篇重复患者；仍是 Include，只是链接", "text", 12, "ft"),
     ("note", "Note", "E6 的具体说明、争议点", "text", 36, "source"),
 ]
@@ -570,14 +570,14 @@ FT_FORMAL_README = [
     ("title", "全文筛选正式记录表（540 篇）— 筛选员 {rev}（{name}）{ver}"),
     ("p", "这是《全文筛选指南》第 3 节（D4）规定的正式记录表。FT_log 里已经填好 540 篇的 WS 编号、第一作者和年份、语种和筛选员代号（灰色列，不要改）；其余列由你自己填。"),
     ("h", "1. 开始之前"),
-    ("b", "先做完第 12 节的 20 篇校准（两人都做完、比对、讨论，指南有改动的话改完），再在这份表里记正式的决定。取全文不产生任何决定，可以现在就开始。"),
+    ("b", "第 12 节的 20 篇校准已经做完、比对、讨论，指南随之改到 v2026-10-19g（改动见指南开头）；现在可以在这份表里记正式的决定。取全文不产生任何决定。"),
     ("b", "你的代号是 {rev}，reviewer 列已填好。文件另存为 FT_{rev}.xlsx，之后只改这一份；每次用完另存一份带日期的副本（如 FT_{rev}_2026-11-03.xlsx），不覆盖旧的。"),
     ("b", "Report_list 表里有 540 篇的标题、年份、DOI 和链接。Position 与取回清单（retrieval_worklist_540.xlsx）的 No. 一致，可以对照着找全文。"),
     ("b", "发表早于 2000 年的报告（理由 Y）和非英文非中文的报告（理由 L）不在这 540 篇里，也不进 FT_log。"),
     ("h", "2. 每一篇怎么记"),
     ("b", "取全文：填 fulltext_obtained（Yes / No）、route，没取到时填 routes_tried。取全文的途径和 D 的确认方法见指南第 4 节；D 要两个人都试过所有途径、都记 D 才算确认。"),
     ("b", "读全文，按指南第 6 节的顺序回答问题；decision 填 Include / Exclude / Pending IPD；reason 用下拉列表，名称一字不差；多个理由同时适用时按指南第 5 节的固定顺序选一个。全文阶段没有 Maybe。"),
-    ("b", "Include 要填 ws_basis、n_children_individual 和 n_children_aggregate（没有只有汇总的儿童就填 0，不要留空）；只有汇总数据的填 Pending IPD、理由选 A，并填 n_children_aggregate；与别的报告重复患者的，在 duplicate_of 填对方的 WS 编号；E6 要在 note 里写具体说明。"),
+    ("b", "Include 要填 ws_basis（选法见指南 6.7）、n_children_individual 和 n_children_aggregate（没有只有汇总的儿童就填 0，不要留空）；逐例表放在线上附录里也算有个体数据（指南 6.5），附录要一并取到；只有汇总数据的填 Pending IPD、理由选 A，并填 n_children_aggregate；与别的报告重复患者的，在 duplicate_of 填对方的 WS 编号；E6 要在 note 里写具体说明。"),
     ("b", "date 每篇填 yyyy-mm-dd。"),
     ("h", "3. 说明"),
     ("b", "两人都完成之前，不看对方的文件，不讨论具体的篇目。每人完成前 50 篇后，把自己的 FT_log 交给杨俊保管（不交给对方），由他决定怎么转交核对格式（指南第 3 节）。"),

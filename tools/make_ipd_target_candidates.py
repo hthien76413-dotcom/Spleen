@@ -30,6 +30,13 @@ WORK = "search/screening/fulltext/retrieval_worklist_540.csv"
 PILOT = "literature-pilot-extraction-53-papers.csv"
 CHECK = "tools/pilot_reference_check.py"
 
+# Outcomes reported by the author after the 20-report full-text calibration (19 Oct 2026). Both screeners agreed after discussion
+# that these reports contain per-patient data (Include, not Pending IPD), so they are NOT targets. Reported, not checked by Claude.
+SCREENER_OUTCOME = {
+    "WS1859": "19 Oct 2026 calibration: Include - per-patient Table 1 with 19 rows (screeners' report); not an IPD target",
+    "WS0049": "19 Oct 2026 calibration: Include - 6-row per-patient table in online appendix 1 (screeners' report); not an IPD target",
+}
+
 WORDS = {"two": 2, "three": 3, "four": 4, "five": 5, "six": 6, "seven": 7, "eight": 8, "nine": 9, "ten": 10, "eleven": 11,
          "twelve": 12, "thirteen": 13, "fourteen": 14, "fifteen": 15, "sixteen": 16, "seventeen": 17, "eighteen": 18,
          "nineteen": 19, "twenty": 20}
@@ -176,7 +183,7 @@ def main(out_dir):
         w_ = csv.writer(f)
         w_.writerow(cols)
         for r in rows:
-            w_.writerow(list(r.values()) + ["", "", ""])
+            w_.writerow(list(r.values()) + ["", "", SCREENER_OUTCOME.get(r["ws_id"], "")])
 
     wb = Workbook()
     rd = wb.active
@@ -202,6 +209,7 @@ def main(out_dir):
         lines.append("  - %s（%s，预试验第 %s 篇，%s）：全文清单分类 = %s" % (study, ws, paper, case, cls))
     lines += [
         "",
+        "decided_by_screeners 列：已经有两位筛选员全文判断的报告写在这里。2026 年 10 月 19 日 20 篇校准后（作者转告，Claude 没有打开论文核对）：WS1859 有 19 行逐例表，WS0049 的逐例资料在线上附录 1（6 行），两篇都判 Include，不是 IPD 索取对象。它们仍留在表里，只为保留规划时的记录。",
         "邮箱地址不要写进这张表或仓库：只写通讯作者姓名和‘在哪里找到地址’（论文 / 机构网页 / 其他）。",
         "发邮件前仍要先核对全文：确实只有汇总数据、确实是游走脾、确实有儿童（IPD 邮件草稿第 1 节的清单）。",
         "一次性批量发出；第一封后 4 周发第二封；再等 4 周；从第一封起最多 8 周（D6）。IPD_requests 表（提取工作簿）记录进度。",
@@ -224,7 +232,7 @@ def main(out_dir):
     for ci, h in enumerate(cols, 1):
         ws_.column_dimensions[get_column_letter(ci)].width = widths.get(h, 24)
     for ri, r in enumerate(rows, 2):
-        vals = list(r.values()) + ["", "", ""]
+        vals = list(r.values()) + ["", "", SCREENER_OUTCOME.get(r["ws_id"], "")]
         for ci, v in enumerate(vals, 1):
             c = ws_.cell(row=ri, column=ci, value=v)
             c.alignment = Alignment(wrap_text=True, vertical="top")
