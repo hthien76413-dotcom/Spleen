@@ -204,7 +204,7 @@ def main():
             st = ipd.get(w, {}).get("status", "")
             if st == "included with ipd":
                 dec, reason, ipd_note = "Include", "", "IPD received"
-            elif st == "narrative only":
+            elif st.startswith("narrative only"):  # the drop-down value is 'Narrative only (no individual data)'
                 dec, reason, ipd_note = "Exclude", "A aggregate data only", "IPD requested, not received"
             elif st == "not eligible after check":
                 unresolved.append(dict(base, problem="IPD_requests says 'Not eligible after check': the reviewers must settle the reason"))

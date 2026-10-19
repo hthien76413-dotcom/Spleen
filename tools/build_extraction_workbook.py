@@ -23,7 +23,7 @@ from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
 from openpyxl.utils import get_column_letter
 from openpyxl.worksheet.datavalidation import DataValidation
 
-VERSION = "v2026-10-18a"
+VERSION = "v2026-10-19a"
 _ap = argparse.ArgumentParser(description="Build the extraction / full-text workbook (see the module docstring).")
 _ap.add_argument("out", nargs="?", default="Extraction workbook - template (draft).xlsx")
 _ap.add_argument("--ft-only", action="store_true", help="only README, FT_log, FT_time_log, Calibration_list and Lists, with the WS ids of --prefill filled in")
@@ -90,6 +90,8 @@ LISTS = {
     ],
     "ipd_final": ["Pending", "Included with IPD", "Narrative only (no individual data)", "Not eligible after check"],
     "ipd_received": ["No", "Yes", "Partial"],
+    "ipd_delivery": ["Not yet sent", "Sent, no bounce", "Bounced", "No address found"],
+    "ipd_reached": ["Pending", "Yes", "No"],
 }
 LIST_COL = {}  # list name -> column letter on the Lists sheet
 LIST_RANGE = {}  # list name -> absolute range string
@@ -263,10 +265,15 @@ IPD_COLS = [
     ("citation", "First author, year", "", "text", 20, "ipd"),
     ("n_children_aggregate", "Children aggregate-only", "整数", "int", 10, "ipd"),
     ("corresponding_author", "Corresponding author", "姓名（不要在仓库里写邮箱）", "text", 20, "ipd"),
-    ("email_source", "Where the address was found", "论文 / 机构网页 / 其他", "text", 18, "ipd"),
+    ("email_source", "Where the address was found", "论文 / 机构网页 / 其他（不要写邮箱本身）", "text", 18, "ipd"),
     ("email1_date", "First e-mail sent", "yyyy-mm-dd", "date", 12, "ipd"),
+    ("delivery_result", "Result of the first e-mail", "Not yet sent / Sent, no bounce / Bounced / No address found（退信只记日期和原因，退信邮件不放进仓库）", ("list", "ipd_delivery"), 18, "ipd"),
     ("email2_date", "Second e-mail sent", "yyyy-mm-dd（第一封后 4 周）", "date", 12, "ipd"),
     ("reply_date", "Reply received", "yyyy-mm-dd", "date", 12, "ipd"),
+    ("other_routes", "Other routes used", "论文邮箱之外用过的途径，多个用分号：Institution page; Journal editorial office; Colleague; Other（不要写人名）", "text", 26, "ipd"),
+    ("other_route_date", "First use of another route", "yyyy-mm-dd；第一次走论文邮箱之外的途径的日期", "date", 12, "ipd"),
+    ("author_reached", "Author reached?", "Pending / Yes（有回复，或转交方确认已送达）/ No（到期各条途径都试过，既无回复也无送达确认；到期前不填 No）", ("list", "ipd_reached"), 16, "ipd"),
+    ("contact_log", "Contact log", "每次联系写一行：yyyy-mm-dd; 发件人缩写; 途径; 结果。不写邮箱地址。", "text", 50, "ipd"),
     ("data_received", "Individual data received", "Yes / No / Partial", ("list", "ipd_received"), 11, "ipd"),
     ("data_location", "Where the data file is kept", "不要放进仓库；只写位置说明", "text", 24, "ipd"),
     ("final_status", "Final status", "Pending / Included with IPD / Narrative only / Not eligible after check", ("list", "ipd_final"), 24, "ipd"),
@@ -417,7 +424,7 @@ README_LINES = [
     ("b", "FT_time_log：全文筛选的时间记录。每次开始和结束都写一行（日期、起止时间、处理的篇数），用来代替 Rayyan 的时间戳日志。"),
     ("b", "Reports、Patients：数据提取。"),
     ("b", "EX_time_log：数据提取的时间记录，和 FT_time_log 一样，每次开始和结束都写一行（日期、起止时间、处理的报告数和录入的患者数）。这是 Claude 的建议，待确认；没有它，电子表格里看不出每份记录是怎么做出来的。"),
-    ("b", "IPD_requests：向只有汇总数据的报告的作者索取个体数据的登记（协议第 14 节：两封邮件，间隔 4 周）。"),
+    ("b", "IPD_requests：向只有汇总数据的报告的作者索取个体数据的登记（协议第 14 节：两封邮件，间隔 4 周；一报告一行）。联系记录列（2026 年 10 月 19 日加入）：第一封的送达结果、论文邮箱之外用过的途径和日期、是否联系上作者、逐次联系的日志，规则见《IPD 索取邮件》第 1、5 节。邮箱地址和退信邮件都不放进这份表。"),
     ("b", "Rules：时间换算 9 条规则、衍生变量定义、主要暴露和结局的协议原文。"),
     ("b", "Duration_calc：时间换算计算器。Lists：下拉列表（请勿改动，改了会影响所有表）。"),
     ("h", "3. 与附录 C 的差异（Claude 的操作化，待三位确认）"),
