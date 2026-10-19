@@ -30,7 +30,7 @@ Principle stated in the report: `Imaging and operation` is chosen only when both
 | WS1367 | Imaging shows ectopic position or mobility | same | Unchanged (agreed before): same reason |
 
 Observations (Claude's, from R1's pre-discussion notes in `ft_compare_all.csv`; not decisions):
-- WS2145 (settled): R1's note said that ultrasound was available only for case 3 of the three children; R1 then agreed to the operation-only value. The general question remains open: `ws_basis` has one value per report in FT_log but is per patient in the extraction workbook, so a series with mixed evidence has no rule yet (guide 6.7 says so).
+- WS2145 (settled): R1's note said that ultrasound was available only for case 3 of the three children; R1 then agreed to the operation-only value. The general question of a series with mixed evidence was decided by the author on 19 October: FT_log gets the one value that best describes the report, the note says so, and the extraction workbook is filled per patient (guide 6.7, v2026-10-19k).
 - WS2116 (settled): R1's note says the intraoperative text is a single sentence ("consistent with the ultrasound diagnosis") with no description of ligaments or pedicle. The screeners maintained Imaging and operation. Guide 6.7 (v2026-10-19i) now says that an explicit statement that the operative findings agree with the imaging diagnosis counts as operation evidence; the author agreed on 19 October to apply it as a rule (v2026-10-19j).
 
 ## 3. Unchanged
