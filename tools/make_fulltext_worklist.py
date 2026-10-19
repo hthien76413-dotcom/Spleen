@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Retrieval worklist for the full-text stage (reports to retrieve that have an abstract in the database record).
+"""Retrieval worklist for the full-text stage (reports with retrieval class "retrieve").
 
 Inputs (all in the repository):
-  search/screening/rescreen/fulltext_retrieval_list.csv   retrieval_class 'retrieve' and has_abstract 'yes'
+  search/screening/rescreen/fulltext_retrieval_list.csv   retrieval_class 'retrieve' (all 540; --abstract yes|no narrows)
   search/dedup/records_deduplicated.ris                   citation details and links
   search/screening/fulltext/calibration_20_list.csv       only to mark the 20 calibration reports (never the key file)
   search/screening/fulltext/pmc_lookup_2026-10-18.csv     PMID -> PMCID pairs from the PubMed ID converter
@@ -10,7 +10,9 @@ Inputs (all in the repository):
 The worklist carries NO screening decision, no stratum flag and no 'source' column (the source would reveal how a
 record reached the full-text stage, e.g. the E4 safety net). Retrieving a PDF creates no decision.
 
-Usage: python3 -I tools/make_fulltext_worklist.py OUT.xlsx [--csv OUT.csv] [--abstract yes|no|any]
+Usage: python3 -I tools/make_fulltext_worklist.py OUT.xlsx [--csv OUT.csv] [--abstract yes|no|any]   (default any)
+Rows with an abstract in the database record come first, in the same order as the first version of the list
+(18 Oct 2026, 362 rows); records without an abstract follow, so an earlier copy can be continued.
 Requires openpyxl.
 """
 import argparse
@@ -92,7 +94,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("out")
     ap.add_argument("--csv")
-    ap.add_argument("--abstract", default="yes", choices=["yes", "no", "any"])
+    ap.add_argument("--abstract", default="any", choices=["yes", "no", "any"])
     args = ap.parse_args()
 
     recs = read_ris(RIS)
@@ -131,10 +133,10 @@ def main():
             "pubmed_url": pubmed, "pmcid": pmcid,
             "pmc_url": f"https://pmc.ncbi.nlm.nih.gov/articles/{pmcid}/" if pmcid else "",
             "cnki_url": cnki, "wanfang_url": wf, "scopus_url": scopus,
-            "group": grp, "calibration": "Y" if w in cal else "",
+            "group": grp, "calibration": "Y" if w in cal else "", "abstract": r["has_abstract"],
             "target_file": f"{w}.pdf",
         })
-    items.sort(key=lambda d: (d["group"], -int(d["year"] or 0), d["ws_id"]))
+    items.sort(key=lambda d: (d["abstract"] != "yes", d["group"], -int(d["year"] or 0), d["ws_id"]))
     for i, d in enumerate(items, 1):
         d["seq"] = i
 
@@ -152,6 +154,7 @@ def main():
         ("retry_by", "Second try by", 12), ("retry_date", "Second try date", 14), ("retry_obtained", "Second try obtained", 12),
         ("retry_routes_tried", "Second try: routes tried", 34), ("note", "Note", 30),
     ]
+    LAST = [("abstract", "Abstract in database record", 14)]
 
     wb = Workbook()
     ws = wb.active
@@ -160,11 +163,11 @@ def main():
     track_fill = PatternFill("solid", fgColor="FFF2CC")
     thin = Side(style="thin", color="BBBBBB")
     border = Border(left=thin, right=thin, top=thin, bottom=thin)
-    allcols = COLS + TRACK
+    allcols = COLS + TRACK + LAST
     for c, (_, label, width) in enumerate(allcols, 1):
         cell = ws.cell(row=1, column=c, value=label)
         cell.font = Font(bold=True)
-        cell.fill = head_fill if c <= len(COLS) else track_fill
+        cell.fill = track_fill if len(COLS) < c <= len(COLS) + len(TRACK) else head_fill
         cell.alignment = Alignment(wrap_text=True, vertical="center")
         cell.border = border
         ws.column_dimensions[get_column_letter(c)].width = width
@@ -180,8 +183,10 @@ def main():
                 cell.hyperlink = v
                 cell.value = "link"
                 cell.font = Font(color="0563C1", underline="single")
-        for c in range(len(COLS) + 1, len(allcols) + 1):
+        for c in range(len(COLS) + 1, len(COLS) + len(TRACK) + 1):
             ws.cell(row=r, column=c).border = border
+        cell = ws.cell(row=r, column=len(allcols), value=d["abstract"])
+        cell.border = border
     n = len(items)
     last = n + 1
     ws.freeze_panes = "C2"
@@ -207,7 +212,10 @@ def main():
     g = get_column_letter(idx["group"])
     ob = get_column_letter(idx["obtained"])
     rob = get_column_letter(idx["retry_obtained"])
-    lines = [("Reports on the worklist", f"=COUNTA(Worklist!B2:B{last})")]
+    ab = get_column_letter(idx["abstract"])
+    lines = [("Reports on the worklist", f"=COUNTA(Worklist!B2:B{last})"),
+             ("  with abstract in the database record", f'=COUNTIF(Worklist!{ab}2:{ab}{last},"yes")'),
+             ("  without abstract in the database record", f'=COUNTIF(Worklist!{ab}2:{ab}{last},"no")')]
     for k, label in GROUPS.items():
         lines.append((f"Route group {label}", f'=COUNTIF(Worklist!{g}2:{g}{last},"{label}")'))
     lines += [
@@ -224,11 +232,14 @@ def main():
         sm.cell(row=i, column=1, value=a)
         sm.cell(row=i, column=2, value=b)
 
+    n_abs = sum(1 for d in items if d["abstract"] == "yes")
+    n_noabs = n - n_abs
     rd = wb.create_sheet("README", 0)
     text = [
         "全文取回清单 / Full-text retrieval worklist (draft, generated 2026-10-18)",
         "",
-        f"内容：{n} 篇待取全文的报告（retrieval class = retrieve，数据库记录里有摘要）。不含 Y（2000 年以前，不取）和 L（其他语言，不取）。",
+        f"内容：{n} 篇待取全文的报告（retrieval class = retrieve）。不含 Y（2000 年以前，不取）和 L（其他语言，不取）。",
+        f"顺序：第 1–{n_abs} 行是数据库记录里有摘要的（与 18 日第一版的 {n_abs} 篇清单行序相同）；第 {n_abs + 1}–{n} 行是数据库记录里没有摘要的 {n_noabs} 篇，同样按路径分组、年份从新到旧排列。最后一列 'Abstract in database record' 标明 yes/no。",
         "这份清单只用于取全文，不含任何筛选判断，也不含来源列或分层标记。取回 PDF 不产生任何决定。",
         "",
         "怎么用（Claude 的建议，尚未经三人确认）：",
@@ -255,9 +266,9 @@ def main():
     if args.csv:
         with open(args.csv, "w", newline="", encoding="utf-8-sig") as f:
             w = csv.writer(f)
-            w.writerow([lab for _, lab, _ in COLS])
+            w.writerow([lab for _, lab, _ in COLS] + [LAST[0][1]])
             for d in items:
-                w.writerow([GROUPS[d[k]] if k == "group" else d[k] for k, _, _ in COLS])
+                w.writerow([GROUPS[d[k]] if k == "group" else d[k] for k, _, _ in COLS] + [d["abstract"]])
     print(f"{n} reports; groups: {dict(sorted(Counter(d['group'] for d in items).items()))}; "
           f"calibration: {sum(1 for d in items if d['calibration'])}; pmc: {sum(1 for d in items if d['pmcid'])}")
 
