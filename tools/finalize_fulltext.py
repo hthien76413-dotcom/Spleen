@@ -10,7 +10,7 @@ state cannot be mistaken for the final one.
 
 Usage (from the repo root; needs openpyxl; the helper functions come from tools/compare_fulltext_logs.py):
   python3 -I tools/finalize_fulltext.py FT_R1.xlsx FT_R2.xlsx --conflicts FILLED_ft_conflicts_for_discussion.csv \
-      [--ipd EXTRACTION.xlsx [--today YYYY-MM-DD]] [--out DIR] [--list PATH]
+      [--ipd EXTRACTION.xlsx [--today YYYY-MM-DD] [--reminder-days N] [--limit-days N]] [--out DIR] [--list PATH]
 
 Rules applied
   * Both reviewers gave the same decision -> that decision. Both Exclude with different reasons -> the first applicable reason in
@@ -24,8 +24,10 @@ Rules applied
   * Pending IPD (agreed or resolved): with --ipd, the IPD_requests sheet decides: final_status 'Included with IPD' -> Include,
     'Narrative only' -> Exclude (A); 'Not eligible after check' -> unresolved (the reason has to be settled by the reviewers);
     'Pending' or no row -> stays Pending IPD. Without --ipd every Pending IPD stays pending.
-    With --ipd the counts file also gets the deadline check (--today YYYY-MM-DD, default: today): a request 4 weeks after the first e-mail
-    with no second e-mail and no reply, and a request 8 weeks after the first e-mail whose final status is still Pending, are flagged.
+    With --ipd the counts file also gets the deadline check (--today YYYY-MM-DD, default: today): a request that is --reminder-days
+    (default 28 = 4 weeks) after the first e-mail with no second e-mail and no reply, and a request that is --limit-days (default 56 =
+    8 weeks, guide D6) after the first e-mail and whose final status is still Pending, are flagged. The two values used are printed
+    in the counts file.
     With --ipd the counts file also gets the contact figures for the Methods (first-e-mail results, routes used besides the address in
     the paper, authors reached / not reached by any route; one author counted once when the name is written identically) and notes on
     entries that contradict each other.
@@ -136,9 +138,9 @@ def read_ipd(path, issues):
     return out
 
 
-def deadline_check(ipd, today):
+def deadline_check(ipd, today, reminder_days=28, limit_days=56):
     """Lines for the counts file and notes about the 4-week and 8-week rules (guide D6, protocol Section 14). Only requests with a
-    readable first-e-mail date are checked. 'Open' = the final status is Pending or blank."""
+    readable first-e-mail date are checked. 'Open' = the final status is Pending or blank. The two periods are counted in days from the first e-mail."""
     L, notes = [], []
     if not ipd:
         return L, notes
@@ -158,20 +160,20 @@ def deadline_check(ipd, today):
             notes.append(tag + "the second e-mail date is before the first")
         if not open_:
             continue
-        if days >= 28 and v["email2"] is None and not v["replied"] and not v["received"]:
+        if days >= reminder_days and v["email2"] is None and not v["replied"] and not v["received"]:
             second_due.append(w)
-            notes.append(tag + "%d days since the first e-mail (%s): no second e-mail recorded and no reply - send the reminder (week 4)" % (days, v["email1"]))
-        if days >= 56:
+            notes.append(tag + "%d days since the first e-mail (%s): no second e-mail recorded and no reply - send the reminder (the reminder point is day %d)" % (days, v["email1"], reminder_days))
+        if days >= limit_days:
             overdue.append(w)
             extra = "; 'Author reached' is still %s" % (v["reached"] or "blank") if v["reached"] in ("", "pending") and v["has_contact"] else ""
-            notes.append(tag + "%d days since the first e-mail (%s): the 8 weeks are over and the final status is still Pending - settle it (Included with IPD / Narrative only / Not eligible after check)%s" % (days, v["email1"], extra))
+            notes.append(tag + "%d days since the first e-mail (%s): the %d-day limit is over and the final status is still Pending - settle it (Included with IPD / Narrative only / Not eligible after check)%s" % (days, v["email1"], limit_days, extra))
         else:
-            upcoming.append((v["email1"] + datetime.timedelta(days=56), w))
-    L.append("  Deadlines as of %s: 4 weeks passed, no second e-mail recorded and no reply: %d | 8 weeks passed, final status still Pending: %d" % (
-        today, len(second_due), len(overdue)))
+            upcoming.append((v["email1"] + datetime.timedelta(days=limit_days), w))
+    L.append("  Deadlines as of %s (reminder point day %d, limit day %d, both counted from the first e-mail): past the reminder point with no second e-mail and no reply: %d | past the limit with the final status still Pending: %d" % (
+        today, reminder_days, limit_days, len(second_due), len(overdue)))
     if upcoming:
         d, w = min(upcoming)
-        L.append("  Open requests within their 8 weeks: %d | earliest 8-week deadline: %s (%s)" % (len(upcoming), d, w))
+        L.append("  Open requests still within the limit: %d | earliest limit date: %s (%s)" % (len(upcoming), d, w))
     return L, notes
 
 
@@ -241,6 +243,8 @@ def main():
     ap.add_argument("--conflicts", help="filled ft_conflicts_for_discussion.csv")
     ap.add_argument("--ipd", help="extraction workbook whose IPD_requests sheet holds the outcomes of the requests")
     ap.add_argument("--today", help="run date for the deadline check, yyyy-mm-dd (default: today; give it to repeat a run)")
+    ap.add_argument("--reminder-days", type=int, default=28, help="days after the first e-mail at which the second e-mail is due (default 28 = 4 weeks)")
+    ap.add_argument("--limit-days", type=int, default=56, help="days after the first e-mail at which the final status must be settled (default 56 = 8 weeks)")
     ap.add_argument("--out", default="search/screening/fulltext/final")
     ap.add_argument("--list", default=cft.DEFAULT_LIST)
     args = ap.parse_args()
@@ -453,7 +457,9 @@ def main():
             today = datetime.date.fromisoformat(args.today) if args.today else datetime.date.today()
         except ValueError:
             raise SystemExit("--today must be a date like 2026-11-30")
-        d_lines, d_notes = deadline_check(ipd, today)
+        if not (0 < args.reminder_days < args.limit_days):
+            raise SystemExit("--reminder-days must be a positive number smaller than --limit-days (got %d and %d)" % (args.reminder_days, args.limit_days))
+        d_lines, d_notes = deadline_check(ipd, today, args.reminder_days, args.limit_days)
         L.extend(d_lines)
         notes.extend(d_notes)
         c_lines, c_notes = contact_summary(ipd)
