@@ -6,7 +6,7 @@ Everything that goes beyond Appendix C is listed on the README sheet under "Diff
 Claude's operationalisation, awaiting the three reviewers' approval.
 
 Usage:  python3 -I tools/build_extraction_workbook.py "<output>.xlsx"
-Full-text calibration workbook (FT_log + FT_time_log + the list of reports only, WS ids pre-filled; guide section 12):
+Full-text calibration workbook (FT_log + the list of reports only, WS ids pre-filled; guide section 12):
         python3 -I tools/build_extraction_workbook.py "<output>.xlsx" --ft-only --reviewer R1 \
             --prefill search/screening/fulltext/calibration_20_list.csv
 Formal full-text screening workbook (same sheets; README for the formal stage; the report list is called Report_list):
@@ -23,14 +23,14 @@ from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
 from openpyxl.utils import get_column_letter
 from openpyxl.worksheet.datavalidation import DataValidation
 
-VERSION = "v2026-10-19b"
+VERSION = "v2026-10-19c"
 _ap = argparse.ArgumentParser(description="Build the extraction / full-text workbook (see the module docstring).")
 _ap.add_argument("out", nargs="?", default="Extraction workbook - template (draft).xlsx")
-_ap.add_argument("--ft-only", action="store_true", help="only README, FT_log, FT_time_log, Calibration_list and Lists, with the WS ids of --prefill filled in")
+_ap.add_argument("--ft-only", action="store_true", help="only README, FT_log, Calibration_list and Lists, with the WS ids of --prefill filled in")
 _ap.add_argument("--reviewer", choices=["R1", "R2"], help="with --ft-only: value of the reviewer column")
 _ap.add_argument("--prefill", help="with --ft-only: CSV with the columns position, ws_id, year, language, has_abstract, title, doi, url")
 _ap.add_argument("--formal", action="store_true", help="with --ft-only: README and list sheet for the formal full-text stage instead of the 20-report calibration")
-_ap.add_argument("--rows", type=int, default=40, help="with --ft-only: pre-formatted FT_log and FT_time_log rows (default 40)")
+_ap.add_argument("--rows", type=int, default=40, help="with --ft-only: pre-formatted FT_log rows (default 40)")
 ARGS = _ap.parse_args()
 OUT = ARGS.out
 RIS = "search/dedup/records_deduplicated.ris"
@@ -241,15 +241,6 @@ FT_COLS = [
     ("note", "Note", "E6 的具体说明、争议点", "text", 36, "source"),
 ]
 
-FT_TIME_COLS = [
-    ("date", "Date", "yyyy-mm-dd", "date", 12, "id"),
-    ("reviewer", "Reviewer", "R1 = 舒俊，R2 = 卞红强（全文阶段）", ("list", "ft_reviewer"), 10, "id"),
-    ("start", "Session start", "开始时间 hh:mm（本地时间）", "text", 12, "ft"),
-    ("end", "Session end", "结束时间 hh:mm", "text", 12, "ft"),
-    ("n_reports", "Reports handled", "这一段时间处理了多少篇（整数）", "int", 12, "ft"),
-    ("note", "Note", "例如中断原因、遇到的疑问", "text", 40, "source"),
-]
-
 EX_TIME_COLS = [
     ("date", "Date", "yyyy-mm-dd", "date", 12, "id"),
     ("extractor", "Extractor", "E1 = 舒俊，E2 = 卞红强", ("list", "extractor"), 10, "id"),
@@ -421,9 +412,8 @@ README_LINES = [
     ("b", "两人完成后比较、做共识：用 `tools/compare_extraction.py`（`check` 查一份文件的格式和进度，`compare` 比两份文件并出分歧清单）。协议只说'报告主要暴露和主要结局的 kappa'，没有规定连续变量怎么算——脚本对时间类别（四类加缺失）和脾脏存活各算一个 kappa，天数另报一致范围（这是 Claude 的读法，待确认）。"),
     ("h", "2. 各表"),
     ("b", "FT_log：全文筛选的正式记录（指南 D4，2026 年 10 月 17 日决定：全文阶段不用 Rayyan）。每位筛选员用自己的一份副本，两人都完成之前互不查看。详细规则见《全文筛选指南》。"),
-    ("b", "FT_time_log：全文筛选的时间记录。每次开始和结束都写一行（日期、起止时间、处理的篇数），用来代替 Rayyan 的时间戳日志。"),
     ("b", "Reports、Patients：数据提取。"),
-    ("b", "EX_time_log：数据提取的时间记录，和 FT_time_log 一样，每次开始和结束都写一行（日期、起止时间、处理的报告数和录入的患者数）。这是 Claude 的建议，待确认；没有它，电子表格里看不出每份记录是怎么做出来的。"),
+    ("b", "EX_time_log：数据提取的时间记录，每次开始和结束都写一行（日期、起止时间、处理的报告数和录入的患者数）。这是 Claude 的建议，待确认；没有它，电子表格里看不出每份记录是怎么做出来的。"),
     ("b", "IPD_requests：向只有汇总数据的报告的作者索取个体数据的登记（协议第 14 节：两封邮件，间隔 4 周；一报告一行）。联系记录列（2026 年 10 月 19 日加入）：第一封的送达结果、论文邮箱之外用过的途径和日期、是否联系上作者、逐次联系的日志，规则见《IPD 索取邮件》第 1、5 节。邮箱地址和退信邮件都不放进这份表。"),
     ("b", "Rules：时间换算 9 条规则、衍生变量定义、主要暴露和结局的协议原文。"),
     ("b", "Duration_calc：时间换算计算器。Lists：下拉列表（请勿改动，改了会影响所有表）。"),
@@ -578,7 +568,6 @@ FT_ONLY_README = [
     ("b", "你的代号是 {rev}，reviewer 列已填好。"),
     ("b", "Calibration_list 表里有 20 篇的标题、年份、DOI 和链接，用它们去找全文。找全文的途径和记录方法见指南第 4 节。"),
     ("b", "FT_log 每篇一行：按指南第 6 节的顺序回答问题，填 decision（Include / Exclude / Pending IPD）和 reason（用下拉列表，名称一字不差）；Include 要填 ws_basis 和儿童数。发表早于 2000 年的报告不在这 20 篇里。"),
-    ("b", "FT_time_log 表：每次开始和结束都写一行（日期、开始和结束时间、这一段处理了几篇）。"),
     ("b", "两人都完成之前，不看对方的文件，不讨论具体的篇目。完成后另存为 FT_cal_{rev}.xlsx，交给杨俊保管；两人都完成后再比对。"),
     ("b", "不要改表头、列的顺序和下拉列表（Lists 表）。不要删除 FT_log 里已填好的行；多出来的行留空即可。"),
     ("h", "2. 说明"),
@@ -600,9 +589,9 @@ FT_FORMAL_README = [
     ("b", "取全文：填 fulltext_obtained（Yes / No）、route，没取到时填 routes_tried。取全文的途径和 D 的确认方法见指南第 4 节；D 要两个人都试过所有途径、都记 D 才算确认。"),
     ("b", "读全文，按指南第 6 节的顺序回答问题；decision 填 Include / Exclude / Pending IPD；reason 用下拉列表，名称一字不差；多个理由同时适用时按指南第 5 节的固定顺序选一个。全文阶段没有 Maybe。"),
     ("b", "Include 要填 ws_basis、n_children_individual 和 n_children_aggregate（没有只有汇总的儿童就填 0，不要留空）；只有汇总数据的填 Pending IPD、理由选 A，并填 n_children_aggregate；与别的报告重复患者的，在 duplicate_of 填对方的 WS 编号；E6 要在 note 里写具体说明。"),
-    ("b", "date 每篇填 yyyy-mm-dd。FT_time_log 表：每次开始和结束都写一行（日期、起止时间、这一段处理的篇数）。"),
+    ("b", "date 每篇填 yyyy-mm-dd。"),
     ("h", "3. 说明"),
-    ("b", "两人都完成之前，不看对方的文件，不讨论具体的篇目。每人完成前 50 篇后，把自己的 FT_log 和 FT_time_log 交给杨俊保管（不交给对方），由他决定怎么转交核对格式和进度（指南第 3 节）。"),
+    ("b", "两人都完成之前，不看对方的文件，不讨论具体的篇目。每人完成前 50 篇后，把自己的 FT_log 交给杨俊保管（不交给对方），由他决定怎么转交核对格式（指南第 3 节）。"),
     ("b", "20 篇校准用的报告在这 540 篇里，正式筛选照样再处理一遍。"),
     ("b", "行的顺序是取回清单的顺序（先是数据库记录里有摘要的 362 篇，再是没有摘要的 178 篇），不要求按这个顺序处理。不要删除或移动预填的行；多出来的行留空即可。不要改表头、列的顺序和下拉列表（Lists 表）。"),
     ("b", "指南没写清楚的情形，请记下 WS 编号和你的做法，在讨论时提出。"),
@@ -631,14 +620,13 @@ def main_ft_only():
     ws_readme = wb.active
     ws_readme.title = "README"
     ws_ft = wb.create_sheet("FT_log")
-    ws_time = wb.create_sheet("FT_time_log")
     ws_list = wb.create_sheet("Report_list" if ARGS.formal else "Calibration_list")
     put_lists(wb)
     global README_LINES
     README_LINES = [(k, v.format(rev=ARGS.reviewer, name=REVIEWER_NAME[ARGS.reviewer], ver=VERSION))
                     for k, v in (FT_FORMAL_README if ARGS.formal else FT_ONLY_README)]
     put_readme(ws_readme)
-    for ws, cols, n_ws in ((ws_ft, FT_COLS, n_rows), (ws_time, FT_TIME_COLS, N_TIME if ARGS.formal else n_rows)):
+    for ws, cols, n_ws in ((ws_ft, FT_COLS, n_rows),):
         build_header(ws, cols)
         add_validations(ws, cols, n_ws, FORMULAS)
     letters = column_letters(FT_COLS)
@@ -661,7 +649,7 @@ def main_ft_only():
             c = ws_list.cell(row=ri, column=ci, value=r[h])
             c.alignment = WRAP
     ws_list.freeze_panes = "A2"
-    for ws, col in ((ws_readme, "7F7F7F"), (ws_ft, "2F75B5"), (ws_time, "2F75B5"), (ws_list, "548235")):
+    for ws, col in ((ws_readme, "7F7F7F"), (ws_ft, "2F75B5"), (ws_list, "548235")):
         ws.sheet_properties.tabColor = col
     wb["Lists"].sheet_properties.tabColor = "BBBBBB"
     wb.properties.title = "Full-text %s workbook %s %s" % ("formal screening" if ARGS.formal else "calibration", ARGS.reviewer, VERSION)
@@ -677,7 +665,6 @@ def main():
     ws_readme = wb.active
     ws_readme.title = "README"
     ws_ft = wb.create_sheet("FT_log")
-    ws_time = wb.create_sheet("FT_time_log")
     ws_rep = wb.create_sheet("Reports")
     ws_pat = wb.create_sheet("Patients")
     ws_extime = wb.create_sheet("EX_time_log")
@@ -690,12 +677,12 @@ def main():
     put_rules(ws_rules)
     put_duration_calc(ws_calc)
 
-    for ws, cols, n in ((ws_ft, FT_COLS, N_FT), (ws_time, FT_TIME_COLS, N_TIME), (ws_rep, REPORT_COLS, N_REP), (ws_pat, PATIENT_COLS, N_PAT), (ws_extime, EX_TIME_COLS, N_TIME), (ws_ipd, IPD_COLS, N_IPD)):
+    for ws, cols, n in ((ws_ft, FT_COLS, N_FT), (ws_rep, REPORT_COLS, N_REP), (ws_pat, PATIENT_COLS, N_PAT), (ws_extime, EX_TIME_COLS, N_TIME), (ws_ipd, IPD_COLS, N_IPD)):
         build_header(ws, cols)
         add_validations(ws, cols, n, FORMULAS)
 
     # sheet tab colours
-    for ws, col in ((ws_readme, "7F7F7F"), (ws_ft, "2F75B5"), (ws_time, "2F75B5"), (ws_rep, "2F75B5"), (ws_pat, "2F75B5"), (ws_extime, "2F75B5"),
+    for ws, col in ((ws_readme, "7F7F7F"), (ws_ft, "2F75B5"), (ws_rep, "2F75B5"), (ws_pat, "2F75B5"), (ws_extime, "2F75B5"),
                     (ws_ipd, "548235"), (ws_rules, "7F7F7F"), (ws_calc, "7F7F7F")):
         ws.sheet_properties.tabColor = col
     wb["Lists"].sheet_properties.tabColor = "BBBBBB"

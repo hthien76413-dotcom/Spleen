@@ -6,14 +6,14 @@ Each reviewer keeps their own copy of the workbook (FT_R1.xlsx, FT_R2.xlsx); nob
 
 Two commands
   check    one file: format check (decision values, reason names, required fields, duplicate rows, records that should not
-           have been read) and pace check from the FT_time_log sheet. Safe to run on one reviewer's file at the midpoint
+           have been read). Safe to run on one reviewer's file at the midpoint
            (after the first 50 reports) because it shows nothing about the other reviewer.
   compare  two files: agreement and kappa, list of conflicts for discussion/adjudication, differences in details,
            PRISMA-style counts per reviewer. Run it only when both reviewers have finished (or with --aggregate-only,
            which prints counts only: no WS ids, no per-record output files).
 
 Usage (from the repo root; needs openpyxl):
-  python3 -I tools/compare_fulltext_logs.py check FT_R1.xlsx [--reviewer R1] [--list PATH] [--max-per-hour 15]
+  python3 -I tools/compare_fulltext_logs.py check FT_R1.xlsx [--reviewer R1] [--list PATH]
   python3 -I tools/compare_fulltext_logs.py compare FT_R1.xlsx FT_R2.xlsx --out DIR [--list PATH] [--aggregate-only]
 
 Rules applied (from the guide)
@@ -29,8 +29,8 @@ Rules applied (from the guide)
     discussion after both have finished. Both D = confirmed. The decisions still count as agreeing for kappa.
   * Both Include but different ws_basis / n_children / duplicate_of: listed as detail differences, settled when the
     extraction consensus is made.
-  * Pace: sessions with more than --max-per-hour reports per hour are listed as 'to ask about' (a flag, not a finding;
-    the guide's crude assumption is 5-10 minutes per report, i.e. 6-12 per hour).
+  * No pace check: the FT_time_log sheet was dropped on 19 Oct 2026 (author's decision). A file that still has the sheet
+    (the two calibration files do) is read for the FT_log sheet only; the time log is ignored.
 Nothing in the outputs contains personal data; they do contain both reviewers' record-level decisions, so give them to the
 adjudicator only after both have finished.
 """
@@ -260,64 +260,6 @@ def load_log(path, expected_reviewer, retrieval, issues):
     return by_id, wb
 
 
-def pace_check(wb, by_id, max_per_hour, issues, lines):
-    """Pace check from FT_time_log; appends report lines. Returns a dict of figures."""
-    fig = {}
-    if "FT_time_log" not in wb.sheetnames:
-        lines.append("FT_time_log sheet: missing (use the current template).")
-        return fig
-    rows = read_sheet(wb, "FT_time_log", ["date", "reviewer", "start", "end", "n_reports", "note"])
-    sessions = []
-    for r in rows:
-        n = r["_row"]
-        d, s, e = to_date(r["date"]), to_time(r["start"]), to_time(r["end"])
-        k = txt(r["n_reports"])
-        if d is None or s is None or e is None or not re.match(r"^\d+$", k):
-            issues.add("WARN", n, "-", "FT_time_log row: date, start, end (hh:mm) or n_reports missing or unreadable", kind="time-unreadable")
-            continue
-        mins = (datetime.datetime.combine(d, e) - datetime.datetime.combine(d, s)).total_seconds() / 60.0
-        if mins <= 0:
-            issues.add("WARN", n, "-", "FT_time_log row: end is not after start", kind="time-order")
-            continue
-        sessions.append({"row": n, "date": d, "mins": mins, "n": int(k)})
-    if not sessions:
-        lines.append("FT_time_log: no usable sessions.")
-        return fig
-    tot_min = sum(s["mins"] for s in sessions)
-    tot_n = sum(s["n"] for s in sessions)
-    per_hour = [s["n"] / (s["mins"] / 60.0) for s in sessions if s["n"] > 0]
-    fig.update(sessions=len(sessions), hours=tot_min / 60.0, reports=tot_n)
-    lines.append("FT_time_log: %d sessions, %.1f h in total, %d reports handled (%s)." % (
-        len(sessions), tot_min / 60.0, tot_n,
-        "%.1f min per report overall" % (tot_min / tot_n) if tot_n else "no reports"))
-    if per_hour:
-        lines.append("  reports per hour per session: median %.1f, range %.1f to %.1f" % (
-            statistics.median(per_hour), min(per_hour), max(per_hour)))
-    fast = [s for s in sessions if s["n"] > 0 and s["n"] / (s["mins"] / 60.0) > max_per_hour]
-    fig["fast_sessions"] = len(fast)
-    if fast:
-        lines.append("  to ask about: %d session(s) above %.0f reports per hour (rows %s)" % (
-            len(fast), max_per_hour, ", ".join(str(s["row"]) for s in fast[:15])))
-        for s in fast:
-            issues.add("WARN", s["row"], "-", "FT_time_log: %d reports in %.0f min (%.0f per hour, above %.0f)" % (
-                s["n"], s["mins"], s["n"] / (s["mins"] / 60.0), max_per_hour))
-    # time log against the decisions in FT_log
-    n_dec = len(by_id)
-    lines.append("  decisions in FT_log: %d; reports in FT_time_log: %d%s" % (
-        n_dec, tot_n, "" if n_dec == tot_n else "  (differ by %d)" % abs(n_dec - tot_n)))
-    if n_dec != tot_n:
-        issues.add("WARN", 0, "-", "FT_log has %d decisions but FT_time_log adds up to %d reports" % (n_dec, tot_n))
-    log_days = collections.Counter(r["date_c"] for r in by_id.values() if r.get("date_c"))
-    time_days = collections.defaultdict(int)
-    for s in sessions:
-        time_days[s["date"]] += s["n"]
-    for d in sorted(log_days):
-        if log_days[d] > time_days.get(d, 0):
-            lines.append("  %s: %d decisions dated that day, %d reports in the time log" % (d, log_days[d], time_days.get(d, 0)))
-            issues.add("WARN", 0, "-", "%s: %d decisions but only %d reports in FT_time_log" % (d, log_days[d], time_days.get(d, 0)))
-    return fig
-
-
 def summarise_log(by_id, retrieval, lines):
     dec = collections.Counter(r["decision_c"] or "invalid" for r in by_id.values())
     lines.append("Decisions: " + ", ".join("%s %d" % (k, dec[k]) for k in DECISIONS + (["invalid"] if dec.get("invalid") else [])))
@@ -343,7 +285,6 @@ def run_check(args):
     summarise_log(by_id, retrieval, lines)
     if issues.pending:
         lines.append("Pre-filled rows not handled yet: %d (not counted as records)" % issues.pending)
-    pace_check(wb, by_id, args.max_per_hour, issues, lines)
     lines.append("Format check: %d ERROR(S), %d WARNING(S)" % (issues.count("ERROR"), issues.count("WARN")))
     lines.extend(issues.lines())
     print("\n".join(lines))
@@ -482,11 +423,6 @@ def run_compare(args):
             name, ", ".join("%s %d" % (d, dec[d]) for d in DECISIONS),
             ", ".join("%s %d" % (c, rs[c]) for c in ORDER if c in rs) or "none"))
     lines.append("")
-    lines.append("PACE (from FT_time_log)")
-    for name, wb, by, iss in (("R1", wb1, r1, iss1), ("R2", wb2, r2, iss2)):
-        sub = []
-        pace_check(wb, by, args.max_per_hour, iss, sub)
-        lines.append(name + ": " + ("\n    ".join(sub) if sub else "no data"))
 
     text = "\n".join(lines) + "\n"
     print(text)
@@ -545,18 +481,16 @@ def run_compare(args):
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = ap.add_subparsers(dest="cmd", required=True)
-    c = sub.add_parser("check", help="format and pace check of one FT_log file")
+    c = sub.add_parser("check", help="format check of one FT_log file")
     c.add_argument("file")
     c.add_argument("--reviewer", choices=["R1", "R2"], help="expected value of the reviewer column")
     c.add_argument("--list", default=DEFAULT_LIST, help="retrieval list CSV (default %s)" % DEFAULT_LIST)
-    c.add_argument("--max-per-hour", type=float, default=15.0, help="sessions above this many reports per hour are flagged (default 15)")
     c.set_defaults(func=run_check)
     m = sub.add_parser("compare", help="compare the two reviewers' FT_log files")
     m.add_argument("file1", help="R1 (Jun Shu)")
     m.add_argument("file2", help="R2 (Hongqiang Bian)")
     m.add_argument("--out", default="search/screening/fulltext/compare", help="output folder")
     m.add_argument("--list", default=DEFAULT_LIST)
-    m.add_argument("--max-per-hour", type=float, default=15.0)
     m.add_argument("--aggregate-only", action="store_true", help="print counts only; no ws ids, no output files")
     m.set_defaults(func=run_compare)
     args = ap.parse_args()

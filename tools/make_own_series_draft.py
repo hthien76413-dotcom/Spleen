@@ -264,7 +264,7 @@ def main_starter():
     tpl = os.path.join(tmp, "template.xlsx")
     subprocess.run([sys.executable, "-I", os.path.join(HERE, "build_extraction_workbook.py"), tpl], check=True, stdout=subprocess.DEVNULL)
     wb = load_workbook(tpl)
-    for name in ("FT_log", "FT_time_log", "IPD_requests"):
+    for name in ("FT_log", "IPD_requests"):
         del wb[name]
 
     def fill(ws, rows):
@@ -292,7 +292,7 @@ def main():
     tpl = os.path.join(tmp, "template.xlsx")
     subprocess.run([sys.executable, "-I", os.path.join(HERE, "build_extraction_workbook.py"), tpl], check=True, stdout=subprocess.DEVNULL)
     wb = load_workbook(tpl)
-    for name in ("FT_log", "FT_time_log", "IPD_requests"):
+    for name in ("FT_log", "IPD_requests"):
         del wb[name]
 
     def fill(ws, rows):
