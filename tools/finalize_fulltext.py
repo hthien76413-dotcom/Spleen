@@ -24,6 +24,9 @@ Rules applied
   * Pending IPD (agreed or resolved): with --ipd, the IPD_requests sheet decides: final_status 'Included with IPD' -> Include,
     'Narrative only' -> Exclude (A); 'Not eligible after check' -> unresolved (the reason has to be settled by the reviewers);
     'Pending' or no row -> stays Pending IPD. Without --ipd every Pending IPD stays pending.
+    With --ipd the counts file also gets the contact figures for the Methods (first-e-mail results, routes used besides the address in
+    the paper, authors reached / not reached by any route; one author counted once when the name is written identically) and notes on
+    entries that contradict each other.
   * Records of retrieval class Y (published before 2000) are never counted as read; a row for one in an FT_log is reported and ignored.
 Outputs (DIR, default search/screening/fulltext/final): fulltext_final_list.csv (or fulltext_provisional_list.csv), fulltext_included.csv,
 fulltext_pending_ipd.csv, fulltext_unresolved.csv, fulltext_prisma_counts.txt. They contain titles and decisions, no personal data.
@@ -33,6 +36,7 @@ import collections
 import csv
 import importlib.util
 import os
+import re
 import sys
 
 sys.dont_write_bytecode = True  # do not leave a __pycache__ folder in tools/
@@ -90,15 +94,24 @@ def resolve_conflict(row):
     return None, "", "", ""
 
 
+CONTACT_COLS = ["corresponding_author", "delivery_result", "other_routes", "author_reached"]
+
+
 def read_ipd(path, issues):
-    """IPD_requests sheet -> {ws_id: dict(status, requested, replied, received)}."""
+    """IPD_requests sheet -> {ws_id: dict(status, requested, replied, received, author, delivery, routes, reached, contact_log)}.
+    The contact-log columns (template v2026-10-19a) are optional: an older workbook without them still works, and a note says so."""
     if not path:
         return None
     from openpyxl import load_workbook
     wb = load_workbook(path, data_only=True)
     if "IPD_requests" not in wb.sheetnames:
         raise SystemExit("%s has no IPD_requests sheet." % path)
-    codes = ["ws_id", "email1_date", "email2_date", "reply_date", "data_received", "final_status"]
+    header = {txt(c.value) for c in wb["IPD_requests"][1]}
+    have = [c for c in CONTACT_COLS + ["contact_log"] if c in header]
+    if len(have) < len(CONTACT_COLS) + 1:
+        issues.append("the sheet lacks the contact-log column(s) %s (older template): contact figures are not available or incomplete" %
+                      ", ".join(c for c in CONTACT_COLS + ["contact_log"] if c not in header))
+    codes = ["ws_id", "email1_date", "email2_date", "reply_date", "data_received", "final_status"] + have
     rows = cft.read_sheet(wb, "IPD_requests", codes)
     out = {}
     for r in rows:
@@ -106,9 +119,71 @@ def read_ipd(path, issues):
         if not cft.WS_RE.match(ws):
             issues.append("IPD_requests row %s: ws_id missing or not of the form WS0123" % r["_row"])
             continue
+        if ws in out:
+            issues.append("%s appears in more than one row (row %s); the later row is used" % (ws, r["_row"]))
+        author = " ".join(txt(r.get("corresponding_author")).lower().split())
         out[ws] = {"status": txt(r["final_status"]).lower(), "requested": txt(r["email1_date"]) != "",
-                   "replied": txt(r["reply_date"]) != "", "received": txt(r["data_received"]).lower() in ("yes", "partial")}
+                   "replied": txt(r["reply_date"]) != "", "received": txt(r["data_received"]).lower() in ("yes", "partial"),
+                   "row": r["_row"], "author": author, "delivery": txt(r.get("delivery_result")).lower(),
+                   "routes": [t.strip().lower() for t in re.split(r"[;,\uff1b]", txt(r.get("other_routes"))) if t.strip()],
+                   "reached": txt(r.get("author_reached")).lower(), "log": txt(r.get("contact_log")) != "",
+                   "has_contact": len(have) == len(CONTACT_COLS) + 1}
     return out
+
+
+ROUTE_NAMES = [("institution", "Institution page"), ("journal", "Journal editorial office"), ("editorial", "Journal editorial office"),
+               ("colleague", "Colleague")]
+
+
+def contact_summary(ipd):
+    """Lines for the counts file and notes about contradictory entries. Counts are by report; 'authors' counts one name once
+    when it is written identically (case and spacing ignored); a report without an author name counts as its own author."""
+    L, notes = [], []
+    if not ipd or not all(v["has_contact"] for v in ipd.values()):
+        return L, notes
+    req = {w: v for w, v in ipd.items() if v["requested"]}
+    c = collections.Counter(v["delivery"] or "(blank)" for v in req.values())
+    L.append("  First e-mail result (requested reports): sent, no bounce %d | bounced %d | no address found %d | not yet sent %d | blank %d" % (
+        c.get("sent, no bounce", 0), c.get("bounced", 0), c.get("no address found", 0), c.get("not yet sent", 0), c.get("(blank)", 0)))
+    rc = collections.Counter(v["reached"] or "(blank)" for v in req.values())
+    L.append("  Author reached (requested reports): yes %d | no %d | pending %d | blank %d" % (
+        rc.get("yes", 0), rc.get("no", 0), rc.get("pending", 0), rc.get("(blank)", 0)))
+
+    def author_ids(rows):
+        return {v["author"] or "(no name) " + w for w, v in rows.items()}
+    all_a, no_a = author_ids(req), author_ids({w: v for w, v in req.items() if v["reached"] == "no"})
+    L.append("  Authors requested: %d | not reached by any route: %d (%d report(s))" % (
+        len(all_a), len(no_a), sum(1 for v in req.values() if v["reached"] == "no")))
+    nameless = [w for w, v in req.items() if v["reached"] == "no" and not v["author"]]
+    if nameless:
+        notes.append("IPD_requests: %d report(s) with 'Author reached' = No have no corresponding author name, so each counts as a separate author: %s" % (
+            len(nameless), ", ".join(sorted(nameless)[:12])))
+    used = collections.Counter()
+    for v in req.values():
+        seen = set()
+        for t in v["routes"]:
+            name = next((n for k, n in ROUTE_NAMES if t.startswith(k)), "Other")
+            if name not in seen:
+                seen.add(name)
+                used[name] += 1
+    L.append("  Routes used besides the address in the paper (reports): %s" % (
+        " | ".join("%s %d" % (n, used[n]) for n in ("Institution page", "Journal editorial office", "Colleague", "Other") if used.get(n)) or "none recorded"))
+    for w, v in sorted(ipd.items()):
+        tag = "IPD_requests %s (row %s): " % (w, v["row"])
+        if v["reached"] == "no":
+            if not v["requested"]:
+                notes.append(tag + "Author reached = No but no first e-mail date")
+            if v["replied"] or v["received"]:
+                notes.append(tag + "Author reached = No but a reply date or received data is recorded")
+            if not v["routes"]:
+                notes.append(tag + "Author reached = No but no other route is recorded (try the routes in the IPD e-mail draft, section 1, first)")
+            if v["status"] == "pending":
+                notes.append(tag + "Author reached = No but the final status is still Pending (settle it: Narrative only)")
+        elif v["reached"] == "yes" and not v["replied"] and not v["log"]:
+            notes.append(tag + "Author reached = Yes without a reply date or a contact-log entry (the forwarder's confirmation belongs in the log)")
+        if v["delivery"] == "bounced" and not v["routes"] and v["reached"] != "yes":
+            notes.append(tag + "first e-mail bounced and no other route is recorded")
+    return L, notes
 
 
 def pct(a, b):
@@ -329,6 +404,9 @@ def main():
         L.append("  Requested: %d | replied: %d | individual data received: %d | final Include (IPD received): %d | final Exclude A (not received): %d" % (
             len(req), sum(1 for w in req if ipd[w]["replied"]), sum(1 for w in req if ipd[w]["received"]),
             sum(1 for f in final if f["ipd_outcome"] == "IPD received"), sum(1 for f in final if f["ipd_outcome"].startswith("IPD requested"))))
+        c_lines, c_notes = contact_summary(ipd)
+        L.extend(c_lines)
+        notes.extend(c_notes)
         not_pending_rows = [w for w in ipd if w not in by_id and w not in unres_ids]
         if not_pending_rows:
             L.append("  IPD_requests rows for records that have no final decision in the FT logs: %s" % ", ".join(sorted(not_pending_rows)[:12]))
