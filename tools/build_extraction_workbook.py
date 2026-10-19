@@ -23,7 +23,7 @@ from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
 from openpyxl.utils import get_column_letter
 from openpyxl.worksheet.datavalidation import DataValidation
 
-VERSION = "v2026-10-19a"
+VERSION = "v2026-10-19b"
 _ap = argparse.ArgumentParser(description="Build the extraction / full-text workbook (see the module docstring).")
 _ap.add_argument("out", nargs="?", default="Extraction workbook - template (draft).xlsx")
 _ap.add_argument("--ft-only", action="store_true", help="only README, FT_log, FT_time_log, Calibration_list and Lists, with the WS ids of --prefill filled in")
@@ -235,7 +235,7 @@ FT_COLS = [
     ("decision", "Decision", "Include / Exclude / Pending IPD（只有汇总数据，已或将索取）", ("list", "ft_decision"), 12, "ft"),
     ("reason", "Reason", "Exclude 必选；Pending IPD 选 A；Include 留空", ("list", "ft_reason"), 28, "ft"),
     ("n_children_individual", "Children with individual data", "整数", "int", 10, "ft"),
-    ("n_children_aggregate", "Children aggregate-only", "整数", "int", 10, "ft"),
+    ("n_children_aggregate", "Children aggregate-only", "整数；Include 时没有汇总儿童就填 0", "int", 10, "ft"),
     ("ws_basis", "Basis for wandering spleen", "仅 Include 时填（指南 D1 已决定：宽松加标记）", ("list", "ws_basis"), 24, "ft"),
     ("duplicate_of", "Duplicate of (WS ID)", "与哪篇重复患者；仍是 Include，只是链接", "text", 12, "ft"),
     ("note", "Note", "E6 的具体说明、争议点", "text", 36, "source"),
@@ -599,7 +599,7 @@ FT_FORMAL_README = [
     ("h", "2. 每一篇怎么记"),
     ("b", "取全文：填 fulltext_obtained（Yes / No）、route，没取到时填 routes_tried。取全文的途径和 D 的确认方法见指南第 4 节；D 要两个人都试过所有途径、都记 D 才算确认。"),
     ("b", "读全文，按指南第 6 节的顺序回答问题；decision 填 Include / Exclude / Pending IPD；reason 用下拉列表，名称一字不差；多个理由同时适用时按指南第 5 节的固定顺序选一个。全文阶段没有 Maybe。"),
-    ("b", "Include 要填 ws_basis 和 n_children_individual；只有汇总数据的填 Pending IPD、理由选 A，并填 n_children_aggregate；与别的报告重复患者的，在 duplicate_of 填对方的 WS 编号；E6 要在 note 里写具体说明。"),
+    ("b", "Include 要填 ws_basis、n_children_individual 和 n_children_aggregate（没有只有汇总的儿童就填 0，不要留空）；只有汇总数据的填 Pending IPD、理由选 A，并填 n_children_aggregate；与别的报告重复患者的，在 duplicate_of 填对方的 WS 编号；E6 要在 note 里写具体说明。"),
     ("b", "date 每篇填 yyyy-mm-dd。FT_time_log 表：每次开始和结束都写一行（日期、起止时间、这一段处理的篇数）。"),
     ("h", "3. 说明"),
     ("b", "两人都完成之前，不看对方的文件，不讨论具体的篇目。每人完成前 50 篇后，把自己的 FT_log 和 FT_time_log 交给杨俊保管（不交给对方），由他决定怎么转交核对格式和进度（指南第 3 节）。"),

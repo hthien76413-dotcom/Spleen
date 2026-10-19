@@ -234,6 +234,8 @@ def load_log(path, expected_reviewer, retrieval, issues):
                 issues.add("WARN", n, ws, "Include without ws_basis", kind="no-ws-basis")
             if txt(r["n_children_individual"]) == "":
                 issues.add("WARN", n, ws, "Include without n_children_individual", kind="no-n-ind")
+            if txt(r["n_children_aggregate"]) == "":
+                issues.add("WARN", n, ws, "Include without n_children_aggregate (write 0 if there are none)", kind="no-n-agg-inc")
         if dec == "Pending IPD" and txt(r["n_children_aggregate"]) == "":
             issues.add("WARN", n, ws, "Pending IPD without n_children_aggregate", kind="no-n-agg")
         for col in ("n_children_individual", "n_children_aggregate"):
@@ -406,6 +408,7 @@ def run_compare(args):
             sum(1 for w in to_read if (w in r1) != (w in r2)), len(neither)))
 
     rows, pairs, detail = [], [], []
+    agg_blank_as_zero = 0
     cat_count = collections.Counter()
     reason_pairs = collections.Counter()
     for w in both:
@@ -433,7 +436,13 @@ def run_compare(args):
             diffs = []
             for col in (("ws_basis", "n_children_individual", "n_children_aggregate", "duplicate_of") if cat == "agree Include"
                         else ("n_children_aggregate",)):
-                if txt(a[col]).upper() != txt(b[col]).upper():
+                v1, v2 = txt(a[col]).upper(), txt(b[col]).upper()
+                if cat == "agree Include" and col == "n_children_aggregate":
+                    # for an included report a blank count means 'none' (check asks for 0); blank and 0 are the same here
+                    if v1 == "" or v2 == "":
+                        agg_blank_as_zero += 1
+                    v1, v2 = v1 or "0", v2 or "0"
+                if v1 != v2:
                     diffs.append((col, txt(a[col]), txt(b[col])))
             for col, v1, v2 in diffs:
                 detail.append({"ws_id": w, "type": "both " + cat.split()[1] + ", different " + col, "R1": v1, "R2": v2})
@@ -464,6 +473,8 @@ def run_compare(args):
         elif diff_pairs:
             lines.append("  pairs of different reasons: %d kinds" % len(diff_pairs))
     lines.append("Detail differences (both Include / both Pending IPD / both Exclude): %d" % len(detail))
+    if agg_blank_as_zero:
+        lines.append("  n_children_aggregate: a blank counted as 0 on %d both-Include record(s), so blank vs 0 is not listed as a difference" % agg_blank_as_zero)
     for name, by in (("R1", r1), ("R2", r2)):
         dec = collections.Counter(r["decision_c"] or "invalid" for r in by.values())
         rs = collections.Counter(r["reason_c"] for r in by.values() if r["decision_c"] == "Exclude")
