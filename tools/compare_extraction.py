@@ -7,15 +7,15 @@ discussion and, failing agreement, by Jun Yang; Ji Wang (who does not extract) c
 both have finished the calibration set or the whole extraction.
 
 Two commands
-  check    one file: format and completeness check, pace check from the EX_time_log sheet. Safe at a midpoint: it shows nothing of
-           the other extractor's file.
+  check    one file: format and completeness check. Safe at a midpoint: it shows nothing of the other extractor's file.
+           (A file that still has an EX_time_log sheet is read for Reports and Patients only; the sheet is no longer used, 19 Oct 2026.)
   compare  two files: coverage of reports and patients, kappa for the primary exposure (four duration categories plus NR) and the
            primary outcome, agreement for every coded field, and the lists of disagreements for the discussion and the adjudicator.
            Run it only when both extractors have finished the set being compared (or with --aggregate-only: counts only, no WS ids,
            no output files).
 
 Usage (from the repo root; needs openpyxl):
-  python3 -I tools/compare_extraction.py check extraction_E1.xlsx [--extractor E1] [--max-per-hour 8]
+  python3 -I tools/compare_extraction.py check extraction_E1.xlsx [--extractor E1]
   python3 -I tools/compare_extraction.py compare extraction_E1.xlsx extraction_E2.xlsx --out DIR [--aggregate-only]
 
 Claude's readings (the protocol does not say; for the extractors and the adjudicator to confirm)
@@ -149,55 +149,6 @@ class Issues(cft.Issues):
     pass
 
 
-def pace(wb, patients, reports, max_per_hour, issues, lines):
-    if "EX_time_log" not in wb.sheetnames:
-        lines.append("EX_time_log sheet: missing (use the current template, v2026-10-18a or later).")
-        return
-    rows = read_sheet(wb, "EX_time_log", ["date", "extractor", "start", "end", "n_reports", "n_patients", "note"])
-    sessions = []
-    for r in rows:
-        n = r["_row"]
-        d, s, e = to_date(r["date"]), to_time(r["start"]), to_time(r["end"])
-        k, kp = txt(r["n_reports"]), txt(r["n_patients"])
-        if d is None or s is None or e is None or not re.match(r"^\d+$", k) or (kp and not re.match(r"^\d+$", kp)):
-            issues.add("WARN", n, "-", "EX_time_log row: date, start, end (hh:mm), n_reports or n_patients missing or unreadable", kind="time-unreadable")
-            continue
-        mins = (datetime.datetime.combine(d, e) - datetime.datetime.combine(d, s)).total_seconds() / 60.0
-        if mins <= 0:
-            issues.add("WARN", n, "-", "EX_time_log row: end is not after start", kind="time-order")
-            continue
-        sessions.append({"row": n, "date": d, "mins": mins, "n": int(k), "np": int(kp) if kp else 0})
-    if not sessions:
-        lines.append("EX_time_log: no usable sessions.")
-        return
-    tot_min = sum(s["mins"] for s in sessions)
-    tot_n = sum(s["n"] for s in sessions)
-    tot_np = sum(s["np"] for s in sessions)
-    lines.append("EX_time_log: %d sessions, %.1f h, %d reports worked on, %d patients entered%s" % (
-        len(sessions), tot_min / 60.0, tot_n, tot_np, "; %.0f min per report" % (tot_min / tot_n) if tot_n else ""))
-    fast = [s for s in sessions if s["n"] > 0 and s["n"] / (s["mins"] / 60.0) > max_per_hour]
-    if fast:
-        lines.append("  to ask about: %d session(s) above %.0f reports per hour (rows %s)" % (
-            len(fast), max_per_hour, ", ".join(str(s["row"]) for s in fast[:15])))
-        for s in fast:
-            issues.add("WARN", s["row"], "-", "EX_time_log: %d reports in %.0f min (%.0f per hour, above %.0f)" % (
-                s["n"], s["mins"], s["n"] / (s["mins"] / 60.0), max_per_hour))
-    n_rep = len({txt(r["report_id"]) for r in reports if txt(r["report_id"])})
-    lines.append("  reports in the Reports sheet: %d; patient rows: %d%s" % (
-        n_rep, len(patients), "" if (n_rep == tot_n and len(patients) == tot_np) else "  (time log adds up to %d reports and %d patients)" % (tot_n, tot_np)))
-    if n_rep != tot_n:
-        issues.add("WARN", 0, "-", "Reports sheet has %d reports but EX_time_log adds up to %d" % (n_rep, tot_n))
-    if tot_np and len(patients) != tot_np:
-        issues.add("WARN", 0, "-", "Patients sheet has %d rows but EX_time_log adds up to %d patients" % (len(patients), tot_np))
-    days = collections.Counter(to_date(p["date_extracted"]) for p in patients if to_date(p["date_extracted"]))
-    tdays = collections.defaultdict(int)
-    for s in sessions:
-        tdays[s["date"]] += s["np"]
-    for d in sorted(days):
-        if days[d] > tdays.get(d, 0):
-            issues.add("WARN", 0, "-", "%s: %d patient rows dated that day, %d in EX_time_log" % (d, days[d], tdays.get(d, 0)))
-
-
 def run_check(args):
     wb, reports, patients = load(args.file)
     issues = Issues()
@@ -290,7 +241,6 @@ def run_check(args):
     out = collections.Counter(outcome(p) or "blank" for p in patients)
     lines.append("Duration categories (recomputed): " + ", ".join("%s %d" % (k, cat[k]) for k in CATS + ["NR", "blank"] if cat.get(k)))
     lines.append("Primary outcome (recomputed): " + ", ".join("%s %d" % (k, v) for k, v in sorted(out.items())))
-    pace(wb, patients, reports, args.max_per_hour, issues, lines)
     lines.append("Format check: %d ERROR(S), %d WARNING(S)" % (issues.count("ERROR"), issues.count("WARN")))
     lines.extend(issues.lines())
     print("\n".join(lines))
@@ -436,12 +386,6 @@ def run_compare(args):
         lines.append("  fields with the lowest agreement (at least 3 values compared): " + ", ".join(
             "%s %d/%d" % (x[0], x[2], x[1]) for x in worst) if not args.aggregate_only else
             "  fields with differences: %d of %d" % (sum(1 for x in by_field if x[1] and x[2] < x[1]), len(fields)))
-    lines.append("")
-    lines.append("PACE (from EX_time_log)")
-    for name, wb, pats, reps in (("E1", wb1, pat1, rep1), ("E2", wb2, pat2, rep2)):
-        sub, iss = [], Issues()
-        pace(wb, pats, reps, args.max_per_hour, iss, sub)
-        lines.append(name + ": " + ("\n    ".join(sub) if sub else "no data"))
     text = "\n".join(lines) + "\n"
     print(text)
     if args.aggregate_only:
@@ -489,10 +433,9 @@ def run_compare(args):
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = ap.add_subparsers(dest="cmd", required=True)
-    c = sub.add_parser("check", help="format, completeness and pace check of one extraction file")
+    c = sub.add_parser("check", help="format and completeness check of one extraction file")
     c.add_argument("file")
     c.add_argument("--extractor", choices=["E1", "E2"], help="expected value of the extractor column")
-    c.add_argument("--max-per-hour", type=float, default=8.0, help="sessions above this many reports per hour are flagged (default 8)")
     c.set_defaults(func=run_check)
     m = sub.add_parser("compare", help="compare the two extractors' files")
     m.add_argument("file1", help="E1 (Jun Shu)")
@@ -500,7 +443,6 @@ def main():
     m.add_argument("--out", default="search/extraction/compare", help="output folder")
     m.add_argument("--tol-abs", type=float, default=0.5, help="days: absolute tolerance (default 0.5)")
     m.add_argument("--tol-rel", type=float, default=0.10, help="days: relative tolerance (default 0.10)")
-    m.add_argument("--max-per-hour", type=float, default=8.0)
     m.add_argument("--aggregate-only", action="store_true", help="print counts only; no ws ids, no output files")
     m.set_defaults(func=run_compare)
     args = ap.parse_args()

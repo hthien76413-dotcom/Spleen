@@ -23,7 +23,7 @@ from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
 from openpyxl.utils import get_column_letter
 from openpyxl.worksheet.datavalidation import DataValidation
 
-VERSION = "v2026-10-19c"
+VERSION = "v2026-10-19d"
 _ap = argparse.ArgumentParser(description="Build the extraction / full-text workbook (see the module docstring).")
 _ap.add_argument("out", nargs="?", default="Extraction workbook - template (draft).xlsx")
 _ap.add_argument("--ft-only", action="store_true", help="only README, FT_log, Calibration_list and Lists, with the WS ids of --prefill filled in")
@@ -36,7 +36,7 @@ OUT = ARGS.out
 RIS = "search/dedup/records_deduplicated.ris"
 REVIEWER_NAME = {"R1": "舒俊", "R2": "卞红强"}
 
-N_PAT, N_REP, N_FT, N_IPD, N_TIME = 1500, 800, 2000, 300, 300  # pre-formatted rows
+N_PAT, N_REP, N_FT, N_IPD = 1500, 800, 2000, 300  # pre-formatted rows
 FIRST = 4  # first data row on the data sheets (rows 1-3 = header block)
 
 # ----------------------------------------------------------------------------- lists
@@ -241,16 +241,6 @@ FT_COLS = [
     ("note", "Note", "E6 的具体说明、争议点", "text", 36, "source"),
 ]
 
-EX_TIME_COLS = [
-    ("date", "Date", "yyyy-mm-dd", "date", 12, "id"),
-    ("extractor", "Extractor", "E1 = 舒俊，E2 = 卞红强", ("list", "extractor"), 10, "id"),
-    ("start", "Session start", "开始时间 hh:mm（本地时间）", "text", 12, "ft"),
-    ("end", "Session end", "结束时间 hh:mm", "text", 12, "ft"),
-    ("n_reports", "Reports worked on", "这一段时间处理了多少篇报告（整数）", "int", 12, "ft"),
-    ("n_patients", "Patients entered", "这一段时间录入了多少名患者（整数）", "int", 12, "ft"),
-    ("note", "Note", "例如中断原因、遇到的疑问", "text", 40, "source"),
-]
-
 IPD_COLS = [
     ("ws_id", "WS ID", "WS 编号", "text", 10, "id"),
     ("citation", "First author, year", "", "text", 20, "ipd"),
@@ -413,7 +403,6 @@ README_LINES = [
     ("h", "2. 各表"),
     ("b", "FT_log：全文筛选的正式记录（指南 D4，2026 年 10 月 17 日决定：全文阶段不用 Rayyan）。每位筛选员用自己的一份副本，两人都完成之前互不查看。详细规则见《全文筛选指南》。"),
     ("b", "Reports、Patients：数据提取。"),
-    ("b", "EX_time_log：数据提取的时间记录，每次开始和结束都写一行（日期、起止时间、处理的报告数和录入的患者数）。这是 Claude 的建议，待确认；没有它，电子表格里看不出每份记录是怎么做出来的。"),
     ("b", "IPD_requests：向只有汇总数据的报告的作者索取个体数据的登记（协议第 14 节：两封邮件，间隔 4 周；一报告一行）。联系记录列（2026 年 10 月 19 日加入）：第一封的送达结果、论文邮箱之外用过的途径和日期、是否联系上作者、逐次联系的日志，规则见《IPD 索取邮件》第 1、5 节。邮箱地址和退信邮件都不放进这份表。"),
     ("b", "Rules：时间换算 9 条规则、衍生变量定义、主要暴露和结局的协议原文。"),
     ("b", "Duration_calc：时间换算计算器。Lists：下拉列表（请勿改动，改了会影响所有表）。"),
@@ -667,7 +656,6 @@ def main():
     ws_ft = wb.create_sheet("FT_log")
     ws_rep = wb.create_sheet("Reports")
     ws_pat = wb.create_sheet("Patients")
-    ws_extime = wb.create_sheet("EX_time_log")
     ws_ipd = wb.create_sheet("IPD_requests")
     ws_rules = wb.create_sheet("Rules")
     ws_calc = wb.create_sheet("Duration_calc")
@@ -677,12 +665,12 @@ def main():
     put_rules(ws_rules)
     put_duration_calc(ws_calc)
 
-    for ws, cols, n in ((ws_ft, FT_COLS, N_FT), (ws_rep, REPORT_COLS, N_REP), (ws_pat, PATIENT_COLS, N_PAT), (ws_extime, EX_TIME_COLS, N_TIME), (ws_ipd, IPD_COLS, N_IPD)):
+    for ws, cols, n in ((ws_ft, FT_COLS, N_FT), (ws_rep, REPORT_COLS, N_REP), (ws_pat, PATIENT_COLS, N_PAT), (ws_ipd, IPD_COLS, N_IPD)):
         build_header(ws, cols)
         add_validations(ws, cols, n, FORMULAS)
 
     # sheet tab colours
-    for ws, col in ((ws_readme, "7F7F7F"), (ws_ft, "2F75B5"), (ws_rep, "2F75B5"), (ws_pat, "2F75B5"), (ws_extime, "2F75B5"),
+    for ws, col in ((ws_readme, "7F7F7F"), (ws_ft, "2F75B5"), (ws_rep, "2F75B5"), (ws_pat, "2F75B5"),
                     (ws_ipd, "548235"), (ws_rules, "7F7F7F"), (ws_calc, "7F7F7F")):
         ws.sheet_properties.tabColor = col
     wb["Lists"].sheet_properties.tabColor = "BBBBBB"

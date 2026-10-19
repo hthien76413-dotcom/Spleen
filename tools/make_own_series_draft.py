@@ -230,7 +230,6 @@ STARTER_README = [
     ("b", "Reports 表的 OWN 行请自己填完整（first_author 可写 Own institutional series，year、institution、study_period、n_children_individual 等照提取说明第 4 节）。year 对本院病例适用什么，由统计分析负责人决定；填你认为合适的值并在 notes 里写明。"),
     ("b", "只录不可识别的信息：不写姓名、住院号、出生日期、具体日期。用日期算出的间隔，只写间隔本身（如'症状开始 18 小时后入院，入院 2.5 小时后手术'），把天数换算写进 idx_dur_verbatim 或 notes，不写日历日期。"),
     ("b", "病历里没有或看不清的项目，不要凭印象或稿件补：写 NR，并在 notes 里说明。拿不准的写在 notes，留待共识讨论。"),
-    ("b", "开始和结束时间写进 EX_time_log（日期、起止时间、处理的报告数和录入的患者数）。"),
     ("h", "做完以后"),
     ("b", "运行 `python3 -I tools/compare_extraction.py check 你的文件.xlsx`，把格式错误改掉。"),
     ("b", "把自己的文件交杨俊保管（提取说明第 2.1 节）；两人都交了以后才运行 `compare`，再讨论分歧、建共识文件。"),
