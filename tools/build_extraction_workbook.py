@@ -6,18 +6,37 @@ Everything that goes beyond Appendix C is listed on the README sheet under "Diff
 Claude's operationalisation, awaiting the three reviewers' approval.
 
 Usage:  python3 -I tools/build_extraction_workbook.py "<output>.xlsx"
+Full-text calibration workbook (FT_log + FT_time_log + the list of reports only, WS ids pre-filled; guide section 12):
+        python3 -I tools/build_extraction_workbook.py "<output>.xlsx" --ft-only --reviewer R1 \
+            --prefill search/screening/fulltext/calibration_20_list.csv
+Formal full-text screening workbook (same sheets; README for the formal stage; the report list is called Report_list):
+        python3 -I tools/build_extraction_workbook.py "<output>.xlsx" --ft-only --formal --reviewer R1 \
+            --prefill search/screening/fulltext/formal_prefill_540.csv
 Requires openpyxl.
 """
+import argparse
+import csv
+import re
 import sys
 from openpyxl import Workbook
 from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
 from openpyxl.utils import get_column_letter
 from openpyxl.worksheet.datavalidation import DataValidation
 
-VERSION = "v2026-10-14a"
-OUT = sys.argv[1] if len(sys.argv) > 1 else "Extraction workbook - template (draft).xlsx"
+VERSION = "v2026-10-19a"
+_ap = argparse.ArgumentParser(description="Build the extraction / full-text workbook (see the module docstring).")
+_ap.add_argument("out", nargs="?", default="Extraction workbook - template (draft).xlsx")
+_ap.add_argument("--ft-only", action="store_true", help="only README, FT_log, FT_time_log, Calibration_list and Lists, with the WS ids of --prefill filled in")
+_ap.add_argument("--reviewer", choices=["R1", "R2"], help="with --ft-only: value of the reviewer column")
+_ap.add_argument("--prefill", help="with --ft-only: CSV with the columns position, ws_id, year, language, has_abstract, title, doi, url")
+_ap.add_argument("--formal", action="store_true", help="with --ft-only: README and list sheet for the formal full-text stage instead of the 20-report calibration")
+_ap.add_argument("--rows", type=int, default=40, help="with --ft-only: pre-formatted FT_log and FT_time_log rows (default 40)")
+ARGS = _ap.parse_args()
+OUT = ARGS.out
+RIS = "search/dedup/records_deduplicated.ris"
+REVIEWER_NAME = {"R1": "舒俊", "R2": "卞红强"}
 
-N_PAT, N_REP, N_FT, N_IPD = 1500, 800, 2000, 300  # pre-formatted rows
+N_PAT, N_REP, N_FT, N_IPD, N_TIME = 1500, 800, 2000, 300, 300  # pre-formatted rows
 FIRST = 4  # first data row on the data sheets (rows 1-3 = header block)
 
 # ----------------------------------------------------------------------------- lists
@@ -71,6 +90,8 @@ LISTS = {
     ],
     "ipd_final": ["Pending", "Included with IPD", "Narrative only (no individual data)", "Not eligible after check"],
     "ipd_received": ["No", "Yes", "Partial"],
+    "ipd_delivery": ["Not yet sent", "Sent, no bounce", "Bounced", "No address found"],
+    "ipd_reached": ["Pending", "Yes", "No"],
 }
 LIST_COL = {}  # list name -> column letter on the Lists sheet
 LIST_RANGE = {}  # list name -> absolute range string
@@ -103,7 +124,7 @@ def hdr_fill(sec):
 PATIENT_COLS = [
     ("patient_id", "Patient ID", "报告编号_P序号，如 WS0123_P1；本机构为 OWN_P1–OWN_P5", "text", 14, "id"),
     ("report_id", "Report ID", "WS 编号（Reports 表里要有同一编号）；本机构病例用 OWN", "text", 11, "id"),
-    ("extractor", "Extractor", "E1 = 提取员 1，E2 = 提取员 2，Consensus = 共识", ("list", "extractor"), 11, "id"),
+    ("extractor", "Extractor", "E1 = 舒俊，E2 = 卞红强，Consensus = 共识", ("list", "extractor"), 11, "id"),
     ("date_extracted", "Date extracted", "yyyy-mm-dd", "date", 12, "id"),
     ("own_patient", "Own patient (derived)", "公式，勿改：report_id 为 OWN 时为 Yes（敏感性分析 1）", ("formula", "own"), 10, "id"),
     ("same_patient_as", "Same patient as", "与另一报告重复时，填更完整那篇里的 patient_id；否则留空", "text", 14, "id"),
@@ -197,7 +218,7 @@ REPORT_COLS = [
     ("n_children_individual", "Children with individual data", "整数", "int", 11, "report"),
     ("n_children_aggregate", "Children aggregate-only", "整数；>0 时去 IPD_requests 表登记", "int", 11, "report"),
     ("pub_period", "Period of publication (derived)", "公式，勿改：before 2000 / 2000-2014 / 2015 onward（第 16 节）", ("formula", "period"), 14, "report"),
-    ("extractor", "Extractor", "E1 / E2 / Consensus", ("list", "extractor"), 11, "id"),
+    ("extractor", "Extractor", "E1 = 舒俊，E2 = 卞红强，Consensus", ("list", "extractor"), 11, "id"),
     ("date_extracted", "Date extracted", "yyyy-mm-dd", "date", 12, "id"),
     ("notes", "Notes", "", "text", 30, "source"),
 ]
@@ -206,7 +227,7 @@ FT_COLS = [
     ("ws_id", "WS ID", "WS 编号", "text", 10, "id"),
     ("citation", "First author, year", "便于核对，如 Smith 2015", "text", 20, "ft"),
     ("language", "Language", "English / Chinese / Other（Other 单独计数，不提取）", ("list", "ft_lang"), 10, "ft"),
-    ("reviewer", "Reviewer", "R1 = 舒俊，R2 = 彭飞，Consensus", ("list", "ft_reviewer"), 10, "id"),
+    ("reviewer", "Reviewer", "R1 = 舒俊，R2 = 卞红强（全文阶段），Consensus", ("list", "ft_reviewer"), 10, "id"),
     ("date", "Date", "yyyy-mm-dd", "date", 12, "id"),
     ("fulltext_obtained", "Full text obtained", "Yes / No", ("list", "yn"), 9, "ft"),
     ("route", "Route", "最终取得或最后尝试的途径", ("list", "route"), 26, "ft"),
@@ -215,9 +236,28 @@ FT_COLS = [
     ("reason", "Reason", "Exclude 必选；Pending IPD 选 A；Include 留空", ("list", "ft_reason"), 28, "ft"),
     ("n_children_individual", "Children with individual data", "整数", "int", 10, "ft"),
     ("n_children_aggregate", "Children aggregate-only", "整数", "int", 10, "ft"),
-    ("ws_basis", "Basis for wandering spleen", "仅 Include 时填（待确认，见指南 D1）", ("list", "ws_basis"), 24, "ft"),
+    ("ws_basis", "Basis for wandering spleen", "仅 Include 时填（指南 D1 已决定：宽松加标记）", ("list", "ws_basis"), 24, "ft"),
     ("duplicate_of", "Duplicate of (WS ID)", "与哪篇重复患者；仍是 Include，只是链接", "text", 12, "ft"),
     ("note", "Note", "E6 的具体说明、争议点", "text", 36, "source"),
+]
+
+FT_TIME_COLS = [
+    ("date", "Date", "yyyy-mm-dd", "date", 12, "id"),
+    ("reviewer", "Reviewer", "R1 = 舒俊，R2 = 卞红强（全文阶段）", ("list", "ft_reviewer"), 10, "id"),
+    ("start", "Session start", "开始时间 hh:mm（本地时间）", "text", 12, "ft"),
+    ("end", "Session end", "结束时间 hh:mm", "text", 12, "ft"),
+    ("n_reports", "Reports handled", "这一段时间处理了多少篇（整数）", "int", 12, "ft"),
+    ("note", "Note", "例如中断原因、遇到的疑问", "text", 40, "source"),
+]
+
+EX_TIME_COLS = [
+    ("date", "Date", "yyyy-mm-dd", "date", 12, "id"),
+    ("extractor", "Extractor", "E1 = 舒俊，E2 = 卞红强", ("list", "extractor"), 10, "id"),
+    ("start", "Session start", "开始时间 hh:mm（本地时间）", "text", 12, "ft"),
+    ("end", "Session end", "结束时间 hh:mm", "text", 12, "ft"),
+    ("n_reports", "Reports worked on", "这一段时间处理了多少篇报告（整数）", "int", 12, "ft"),
+    ("n_patients", "Patients entered", "这一段时间录入了多少名患者（整数）", "int", 12, "ft"),
+    ("note", "Note", "例如中断原因、遇到的疑问", "text", 40, "source"),
 ]
 
 IPD_COLS = [
@@ -225,10 +265,15 @@ IPD_COLS = [
     ("citation", "First author, year", "", "text", 20, "ipd"),
     ("n_children_aggregate", "Children aggregate-only", "整数", "int", 10, "ipd"),
     ("corresponding_author", "Corresponding author", "姓名（不要在仓库里写邮箱）", "text", 20, "ipd"),
-    ("email_source", "Where the address was found", "论文 / 机构网页 / 其他", "text", 18, "ipd"),
+    ("email_source", "Where the address was found", "论文 / 机构网页 / 其他（不要写邮箱本身）", "text", 18, "ipd"),
     ("email1_date", "First e-mail sent", "yyyy-mm-dd", "date", 12, "ipd"),
+    ("delivery_result", "Result of the first e-mail", "Not yet sent / Sent, no bounce / Bounced / No address found（退信只记日期和原因，退信邮件不放进仓库）", ("list", "ipd_delivery"), 18, "ipd"),
     ("email2_date", "Second e-mail sent", "yyyy-mm-dd（第一封后 4 周）", "date", 12, "ipd"),
     ("reply_date", "Reply received", "yyyy-mm-dd", "date", 12, "ipd"),
+    ("other_routes", "Other routes used", "论文邮箱之外用过的途径，多个用分号：Institution page; Journal editorial office; Colleague; Other（不要写人名）", "text", 26, "ipd"),
+    ("other_route_date", "First use of another route", "yyyy-mm-dd；第一次走论文邮箱之外的途径的日期", "date", 12, "ipd"),
+    ("author_reached", "Author reached?", "Pending / Yes（有回复，或转交方确认已送达）/ No（到期各条途径都试过，既无回复也无送达确认；到期前不填 No）", ("list", "ipd_reached"), 16, "ipd"),
+    ("contact_log", "Contact log", "每次联系写一行：yyyy-mm-dd; 发件人缩写; 途径; 结果。不写邮箱地址。", "text", 50, "ipd"),
     ("data_received", "Individual data received", "Yes / No / Partial", ("list", "ipd_received"), 11, "ipd"),
     ("data_location", "Where the data file is kept", "不要放进仓库；只写位置说明", "text", 24, "ipd"),
     ("final_status", "Final status", "Pending / Included with IPD / Narrative only / Not eligible after check", ("list", "ipd_final"), 24, "ipd"),
@@ -361,9 +406,10 @@ FORMULAS = {"own": f_own, "cat": f_cat, "plt": f_plt, "outcome": f_outcome, "per
 # ----------------------------------------------------------------------------- README / Rules content
 README_LINES = [
     ("title", f"数据提取工作簿（模板，草稿）{VERSION} — 儿童游走脾系统综述（PROSPERO CRD420261520329）"),
-    ("p", "依据：协议 v1.4（`Systematic review protocol - PROSPERO draft.docx`）附录 C 的提取表和编码规则，以及第 8、12、13、14、16 节。本工作簿只是把协议落成可填写的表，不改变协议。凡超出附录 C 的地方都列在下面'与附录 C 的差异'里，是 Claude 的操作化建议，三位确认后才生效。"),
+    ("p", "依据：协议 v1.5（`Systematic review protocol - PROSPERO draft.docx`）附录 C 的提取表和编码规则，以及第 8、12、13、14、16 节。本工作簿只是把协议落成可填写的表，不改变协议。凡超出附录 C 的地方都列在下面'与附录 C 的差异'里，是 Claude 的操作化建议，三位确认后才生效。"),
     ("h", "1. 怎么用"),
-    ("b", "每位提取员各用自己的一份副本（文件名建议 extraction_E1.xlsx、extraction_E2.xlsx，共识文件 extraction_consensus.xlsx）。独立提取完成之前，不看对方的文件。"),
+    ("b", "提取员：E1 = 舒俊，E2 = 卞红强，分歧由杨俊仲裁；Ji Wang 核查两份提取表但不提取（作者 2026 年 10 月 18 日决定，已写入协议 v1.5）。每位提取员各用自己的一份副本（文件名建议 extraction_E1.xlsx、extraction_E2.xlsx，共识文件 extraction_consensus.xlsx）。独立提取完成之前，不看对方的文件。"),
+    ("b", "逐项怎么填、9 条时间换算规则的虚构例子、疑难情形和校准的做法，见《提取操作说明》（`Extraction guide - how to fill the extraction workbook (draft)`）。"),
     ("b", "表头三行：第 1 行是字段代码（分析时用），第 2 行是协议附录 C 的项目名称，第 3 行是填写说明和允许值。数据从第 4 行开始，请不要在表头上方或表头里插行。"),
     ("b", "Reports 表一行一篇报告；Patients 表一行一名患者，用 report_id 对应。report_id 就是 records_deduplicated.ris 里的 WS 编号；本机构 5 例用 OWN（先在 Reports 表里加一行 OWN），患者编号 OWN_P1–OWN_P5。"),
     ("b", "**空白和 NR 的区别：** 空白 = 还没提取；NR = 报告里没有这项信息（协议：'Record NR when an item is not reported'）。不要用空白表示没报告。"),
@@ -372,11 +418,13 @@ README_LINES = [
     ("b", "时间换算按 Rules 表的 9 条规则；Duration_calc 表只是计算器，处理不了含糊说法和规则 6–9 的判断，最终以人工判断为准。"),
     ("b", "本机构病例只录不可识别的信息：不要写姓名、住院号、出生日期、具体日期。已发表报告的患者也不要抄原文里的姓名缩写。"),
     ("b", "校准：正式提取前，两位提取员先各自提取同样的 10 篇报告，比较，讨论分歧，必要时改这份表和规则（协议第 14 节）。10 篇建议涵盖中英文、个案和系列、时间写法各异的报告，在全文名单确定后再选。"),
-    ("b", "两人完成后比较、做共识：Claude 可以另写比较脚本（出分歧清单和 Cohen's kappa）；协议只说'报告主要暴露和主要结局的 kappa'，没有规定连续变量怎么算——建议对时间类别（四类加缺失）和脾脏存活各算一个 kappa，天数另报一致范围（待确认）。"),
+    ("b", "两人完成后比较、做共识：用 `tools/compare_extraction.py`（`check` 查一份文件的格式和进度，`compare` 比两份文件并出分歧清单）。协议只说'报告主要暴露和主要结局的 kappa'，没有规定连续变量怎么算——脚本对时间类别（四类加缺失）和脾脏存活各算一个 kappa，天数另报一致范围（这是 Claude 的读法，待确认）。"),
     ("h", "2. 各表"),
-    ("b", "FT_log：全文筛选记录（如果不用 Rayyan 的全文筛选功能，就用这张表；用了也可作备份）。详细规则见《全文筛选指南》。"),
+    ("b", "FT_log：全文筛选的正式记录（指南 D4，2026 年 10 月 17 日决定：全文阶段不用 Rayyan）。每位筛选员用自己的一份副本，两人都完成之前互不查看。详细规则见《全文筛选指南》。"),
+    ("b", "FT_time_log：全文筛选的时间记录。每次开始和结束都写一行（日期、起止时间、处理的篇数），用来代替 Rayyan 的时间戳日志。"),
     ("b", "Reports、Patients：数据提取。"),
-    ("b", "IPD_requests：向只有汇总数据的报告的作者索取个体数据的登记（协议第 14 节：两封邮件，间隔 4 周）。"),
+    ("b", "EX_time_log：数据提取的时间记录，和 FT_time_log 一样，每次开始和结束都写一行（日期、起止时间、处理的报告数和录入的患者数）。这是 Claude 的建议，待确认；没有它，电子表格里看不出每份记录是怎么做出来的。"),
+    ("b", "IPD_requests：向只有汇总数据的报告的作者索取个体数据的登记（协议第 14 节：两封邮件，间隔 4 周；一报告一行）。联系记录列（2026 年 10 月 19 日加入）：第一封的送达结果、论文邮箱之外用过的途径和日期、是否联系上作者、逐次联系的日志，规则见《IPD 索取邮件》第 1、5 节。邮箱地址和退信邮件都不放进这份表。"),
     ("b", "Rules：时间换算 9 条规则、衍生变量定义、主要暴露和结局的协议原文。"),
     ("b", "Duration_calc：时间换算计算器。Lists：下拉列表（请勿改动，改了会影响所有表）。"),
     ("h", "3. 与附录 C 的差异（Claude 的操作化，待三位确认）"),
@@ -523,13 +571,116 @@ def put_duration_calc(ws):
     ws.freeze_panes = "A3"
 
 
-def main():
+FT_ONLY_README = [
+    ("title", "全文筛选校准用工作簿（20 篇）— 筛选员 {rev}（{name}）{ver}"),
+    ("p", "这是《全文筛选指南》第 12 节的 20 篇校准。FT_log 里已经填好 WS 编号、第一作者和年份、语种和筛选员代号（灰色列，不要改）；其余列由你自己填。"),
+    ("h", "1. 怎么用"),
+    ("b", "你的代号是 {rev}，reviewer 列已填好。"),
+    ("b", "Calibration_list 表里有 20 篇的标题、年份、DOI 和链接，用它们去找全文。找全文的途径和记录方法见指南第 4 节。"),
+    ("b", "FT_log 每篇一行：按指南第 6 节的顺序回答问题，填 decision（Include / Exclude / Pending IPD）和 reason（用下拉列表，名称一字不差）；Include 要填 ws_basis 和儿童数。发表早于 2000 年的报告不在这 20 篇里。"),
+    ("b", "FT_time_log 表：每次开始和结束都写一行（日期、开始和结束时间、这一段处理了几篇）。"),
+    ("b", "两人都完成之前，不看对方的文件，不讨论具体的篇目。完成后另存为 FT_cal_{rev}.xlsx，交给杨俊保管；两人都完成后再比对。"),
+    ("b", "不要改表头、列的顺序和下拉列表（Lists 表）。不要删除 FT_log 里已填好的行；多出来的行留空即可。"),
+    ("h", "2. 说明"),
+    ("b", "这 20 篇在正式的全文筛选里还会再处理一遍。校准只记一致率，kappa 在 20 篇上没有意义（指南 D5）。"),
+    ("b", "指南没写清楚的情形，请记下 WS 编号和你的做法，在讨论时提出。"),
+    ("b", "这个文件没有在 Excel 或 WPS 里打开测试过：下拉列表和灰色列的显示如有问题，请告诉舒俊。"),
+]
+
+
+FT_FORMAL_README = [
+    ("title", "全文筛选正式记录表（540 篇）— 筛选员 {rev}（{name}）{ver}"),
+    ("p", "这是《全文筛选指南》第 3 节（D4）规定的正式记录表。FT_log 里已经填好 540 篇的 WS 编号、第一作者和年份、语种和筛选员代号（灰色列，不要改）；其余列由你自己填。"),
+    ("h", "1. 开始之前"),
+    ("b", "先做完第 12 节的 20 篇校准（两人都做完、比对、讨论，指南有改动的话改完），再在这份表里记正式的决定。取全文不产生任何决定，可以现在就开始。"),
+    ("b", "你的代号是 {rev}，reviewer 列已填好。文件另存为 FT_{rev}.xlsx，之后只改这一份；每次用完另存一份带日期的副本（如 FT_{rev}_2026-11-03.xlsx），不覆盖旧的。"),
+    ("b", "Report_list 表里有 540 篇的标题、年份、DOI 和链接。Position 与取回清单（retrieval_worklist_540.xlsx）的 No. 一致，可以对照着找全文。"),
+    ("b", "发表早于 2000 年的报告（理由 Y）和非英文非中文的报告（理由 L）不在这 540 篇里，也不进 FT_log。"),
+    ("h", "2. 每一篇怎么记"),
+    ("b", "取全文：填 fulltext_obtained（Yes / No）、route，没取到时填 routes_tried。取全文的途径和 D 的确认方法见指南第 4 节；D 要两个人都试过所有途径、都记 D 才算确认。"),
+    ("b", "读全文，按指南第 6 节的顺序回答问题；decision 填 Include / Exclude / Pending IPD；reason 用下拉列表，名称一字不差；多个理由同时适用时按指南第 5 节的固定顺序选一个。全文阶段没有 Maybe。"),
+    ("b", "Include 要填 ws_basis 和 n_children_individual；只有汇总数据的填 Pending IPD、理由选 A，并填 n_children_aggregate；与别的报告重复患者的，在 duplicate_of 填对方的 WS 编号；E6 要在 note 里写具体说明。"),
+    ("b", "date 每篇填 yyyy-mm-dd。FT_time_log 表：每次开始和结束都写一行（日期、起止时间、这一段处理的篇数）。"),
+    ("h", "3. 说明"),
+    ("b", "两人都完成之前，不看对方的文件，不讨论具体的篇目。每人完成前 50 篇后，把自己的 FT_log 和 FT_time_log 交给杨俊保管（不交给对方），由他决定怎么转交核对格式和进度（指南第 3 节）。"),
+    ("b", "20 篇校准用的报告在这 540 篇里，正式筛选照样再处理一遍。"),
+    ("b", "行的顺序是取回清单的顺序（先是数据库记录里有摘要的 362 篇，再是没有摘要的 178 篇），不要求按这个顺序处理。不要删除或移动预填的行；多出来的行留空即可。不要改表头、列的顺序和下拉列表（Lists 表）。"),
+    ("b", "指南没写清楚的情形，请记下 WS 编号和你的做法，在讨论时提出。"),
+    ("b", "这个文件没有在 Excel 或 WPS 里打开测试过：下拉列表和灰色列的显示如有问题，请告诉舒俊。"),
+]
+
+
+def first_authors(ids):
+    """First author's surname (or the whole name for Chinese authors) for each WS id, from the deduplicated RIS."""
+    want, out = set(ids), {}
+    for blk in open(RIS, encoding="utf-8-sig").read().split("\nER  -"):
+        m = re.search(r"^ID  - (.*)$", blk, re.M)
+        if m and m.group(1) in want:
+            a = re.search(r"^AU  - (.*)$", blk, re.M)
+            out[m.group(1)] = a.group(1).split(",")[0].strip() if a else ""
+    return out
+
+
+def main_ft_only():
+    if not (ARGS.reviewer and ARGS.prefill):
+        raise SystemExit("--ft-only needs --reviewer and --prefill")
+    rows = list(csv.DictReader(open(ARGS.prefill, encoding="utf-8-sig")))
+    authors = first_authors([r["ws_id"] for r in rows])
+    n_rows = max(ARGS.rows, len(rows) + 10)
     wb = Workbook()
     ws_readme = wb.active
     ws_readme.title = "README"
     ws_ft = wb.create_sheet("FT_log")
+    ws_time = wb.create_sheet("FT_time_log")
+    ws_list = wb.create_sheet("Report_list" if ARGS.formal else "Calibration_list")
+    put_lists(wb)
+    global README_LINES
+    README_LINES = [(k, v.format(rev=ARGS.reviewer, name=REVIEWER_NAME[ARGS.reviewer], ver=VERSION))
+                    for k, v in (FT_FORMAL_README if ARGS.formal else FT_ONLY_README)]
+    put_readme(ws_readme)
+    for ws, cols, n_ws in ((ws_ft, FT_COLS, n_rows), (ws_time, FT_TIME_COLS, N_TIME if ARGS.formal else n_rows)):
+        build_header(ws, cols)
+        add_validations(ws, cols, n_ws, FORMULAS)
+    letters = column_letters(FT_COLS)
+    for k, r in enumerate(rows):
+        row = FIRST + k
+        cit = ("%s %s" % (authors.get(r["ws_id"], ""), r["year"])).strip() if authors.get(r["ws_id"]) else "(no author) %s" % r["year"]
+        for code, val in (("ws_id", r["ws_id"]), ("citation", cit), ("language", r["language"]), ("reviewer", ARGS.reviewer)):
+            c = ws_ft["%s%d" % (letters[code], row)]
+            c.value = val
+            c.fill = GREY
+    heads = ["position", "ws_id", "year", "language", "has_abstract", "title", "doi", "url"]
+    widths = [9, 9, 7, 10, 12, 80, 28, 50]
+    for ci, (h, w) in enumerate(zip(heads, widths), start=1):
+        c = ws_list.cell(row=1, column=ci, value=h)
+        c.font = HDR_FONT
+        c.fill = hdr_fill("id")
+        ws_list.column_dimensions[get_column_letter(ci)].width = w
+    for ri, r in enumerate(rows, start=2):
+        for ci, h in enumerate(heads, start=1):
+            c = ws_list.cell(row=ri, column=ci, value=r[h])
+            c.alignment = WRAP
+    ws_list.freeze_panes = "A2"
+    for ws, col in ((ws_readme, "7F7F7F"), (ws_ft, "2F75B5"), (ws_time, "2F75B5"), (ws_list, "548235")):
+        ws.sheet_properties.tabColor = col
+    wb["Lists"].sheet_properties.tabColor = "BBBBBB"
+    wb.properties.title = "Full-text %s workbook %s %s" % ("formal screening" if ARGS.formal else "calibration", ARGS.reviewer, VERSION)
+    wb.properties.creator = "Wandering spleen SR team"
+    wb.save(OUT)
+    print("saved", OUT, "reviewer", ARGS.reviewer, "prefilled rows", len(rows), "FT_log rows formatted", n_rows)
+
+
+def main():
+    if ARGS.ft_only:
+        return main_ft_only()
+    wb = Workbook()
+    ws_readme = wb.active
+    ws_readme.title = "README"
+    ws_ft = wb.create_sheet("FT_log")
+    ws_time = wb.create_sheet("FT_time_log")
     ws_rep = wb.create_sheet("Reports")
     ws_pat = wb.create_sheet("Patients")
+    ws_extime = wb.create_sheet("EX_time_log")
     ws_ipd = wb.create_sheet("IPD_requests")
     ws_rules = wb.create_sheet("Rules")
     ws_calc = wb.create_sheet("Duration_calc")
@@ -539,12 +690,12 @@ def main():
     put_rules(ws_rules)
     put_duration_calc(ws_calc)
 
-    for ws, cols, n in ((ws_ft, FT_COLS, N_FT), (ws_rep, REPORT_COLS, N_REP), (ws_pat, PATIENT_COLS, N_PAT), (ws_ipd, IPD_COLS, N_IPD)):
+    for ws, cols, n in ((ws_ft, FT_COLS, N_FT), (ws_time, FT_TIME_COLS, N_TIME), (ws_rep, REPORT_COLS, N_REP), (ws_pat, PATIENT_COLS, N_PAT), (ws_extime, EX_TIME_COLS, N_TIME), (ws_ipd, IPD_COLS, N_IPD)):
         build_header(ws, cols)
         add_validations(ws, cols, n, FORMULAS)
 
     # sheet tab colours
-    for ws, col in ((ws_readme, "7F7F7F"), (ws_ft, "2F75B5"), (ws_rep, "2F75B5"), (ws_pat, "2F75B5"),
+    for ws, col in ((ws_readme, "7F7F7F"), (ws_ft, "2F75B5"), (ws_time, "2F75B5"), (ws_rep, "2F75B5"), (ws_pat, "2F75B5"), (ws_extime, "2F75B5"),
                     (ws_ipd, "548235"), (ws_rules, "7F7F7F"), (ws_calc, "7F7F7F")):
         ws.sheet_properties.tabColor = col
     wb["Lists"].sheet_properties.tabColor = "BBBBBB"

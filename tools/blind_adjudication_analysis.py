@@ -1,7 +1,8 @@
 """Analyse the third reviewer's blind judgements (see tools/make_blind_adjudication_sheet.py).
 
 Usage (from the repo root):
-  python3 -I tools/blind_adjudication_analysis.py FILLED.xlsx OUT_DIR
+  python3 -I tools/blind_adjudication_analysis.py FILLED.xlsx OUT_DIR [FOLDER]
+  FOLDER defaults to search/screening/formal/; after the re-screen use the folder written by tools/compare_rescreen.py
 FILLED.xlsx is the sheet returned by the third reviewer (sheet '判断', columns blind_id, 决定, 理由, 备注). The key is read from
 search/screening/formal/blind_adjudication_key.csv and the full results from search/screening/formal/screening_results_all.csv.
 
@@ -14,7 +15,7 @@ import csv, math, sys, collections
 from openpyxl import load_workbook
 
 filled, outdir = sys.argv[1], sys.argv[2]
-F = 'search/screening/formal/'
+F = sys.argv[3].rstrip('/') + '/' if len(sys.argv) > 3 else 'search/screening/formal/'   # folder with the key and screening_results_all.csv
 ADV = ('Include', 'Maybe')
 
 

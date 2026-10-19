@@ -1,6 +1,9 @@
 # Methods 初稿和 PRISMA-S 检索附录（草稿）— 儿童游走脾系统综述（PROSPERO CRD420261520329，协议 v1.4）
 
-版本 v2026-10-16a（10 月 14 日 v2026-10-14a 之后，又加了第 1 节第 7 条和筛选段落的待确认标记）。**草稿，未经三位评审员和 Jun Yang 审阅。** 英文部分是将来放进论文的 Methods 文字；每个事实都取自协议 v1.4（`Systematic review protocol - PROSPERO draft.docx`）、`search/dedup/dedup_summary.md` 和 `CLAUDE.md` 的日志。**还没有发生的步骤用 `[PENDING: …]` 标出，不要当成已完成**。参考文献编号沿用协议第 20 节的 1–13（协议里已核对过）；Methods 里没有引用协议之外的文献。
+版本 v2026-10-19a（19 日只加了下面的“过期提示”，正文没有改；之前 v2026-10-16a 加了第 1 节第 7 条和筛选段落的待确认标记）。**草稿，未经三位评审员和 Jun Yang 审阅。** 英文部分是将来放进论文的 Methods 文字；每个事实都取自协议 v1.4（`Systematic review protocol - PROSPERO draft.docx`）、`search/dedup/dedup_summary.md` 和 `CLAUDE.md` 的日志。**还没有发生的步骤用 `[PENDING: …]` 标出，不要当成已完成**。参考文献编号沿用协议第 20 节的 1–13（协议里已核对过）；Methods 里没有引用协议之外的文献。
+
+
+> **过期提示（2026-10-19）。** 本文件是按协议 v1.4 和 10 月 16 日的状态写的，之后旧会话（分支 `claude/trusting-davinci-70prup`）已推进到：协议 v1.5 并已作为 PROSPERO 2.0 版发布（10 月 18 日）；标题摘要阶段已完成（第二评审员的 Codex 判断不采用，重筛及 Jun Yang 的两份盲评表之后留下 1,064 条 + 27 条 E4 安全网）；全文阶段的评审员是 Jun Shu 与 Hongqiang Bian（不是 Fei Peng）；提取由 Jun Shu 与 Hongqiang Bian 独立进行，Jun Yang 裁决，Ji Wang 只核对范围和重复；论文正文另有 `Manuscript draft - systematic review with IPD (v0.2)`。**所以：第 1 节第 6、7 条、筛选相关的 `[PENDING]`、“Two reviewers … independently”（筛选、提取、偏倚风险）三处英文句子、以及流程图数字，都已不是现状；不要照用。** 正文里 Methods 的维护版本应是 v0.2 稿；本文件仍可作为检索表（Table S1）、PRISMA-S 对照表和“段落—来源”表的底稿使用，但用之前要对照协议 v1.5 和 CLAUDE.md 顶部的 CURRENT STATUS 逐项核对（我没有做这次核对）。是否把本文件并入 v0.2 或停用，请作者决定。
 
 ## 1. 用之前要知道的
 

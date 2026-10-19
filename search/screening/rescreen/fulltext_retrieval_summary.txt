@@ -1,0 +1,7 @@
+Full-text retrieval list summary (date rule: published before 2000 is not sought)
+Records on the list: 1091 (from the blind adjudication: 1064; E4 safety net added: 27)
+By retrieval class: L other language 66, Y published before 2000 485, retrieve 540
+  L other language: 66 | English 0, Chinese 0, other 66 | with abstract 37, without 29
+  Y published before 2000: 485 | English 256, Chinese 67, other 162 | with abstract 189, without 296
+  retrieve: 540 | English 439, Chinese 101, other 0 | with abstract 362, without 178
+E4 safety-net records: 27, of which to retrieve 21, not sought because of the date rule 6, other language 0

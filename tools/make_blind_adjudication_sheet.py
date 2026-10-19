@@ -11,21 +11,22 @@ decisions and to why a record is in the sheet:
 All records are shuffled into one list with a blind id; the key (blind id -> WS id, stratum, both decisions) is a separate file
 that must not be given to the third reviewer.
 
-Usage (from the repo root): python3 -I tools/make_blind_adjudication_sheet.py
+Usage (from the repo root): python3 -I tools/make_blind_adjudication_sheet.py [FOLDER]
+  FOLDER defaults to search/screening/formal/ (first round); after the re-screen use the folder written by tools/compare_rescreen.py
 Reads  search/screening/formal/screening_results_all.csv and search/dedup/records_deduplicated.ris
 Writes search/screening/formal/blind_adjudication_sheet.xlsx   (for the third reviewer)
        search/screening/formal/blind_adjudication_key.csv      (NOT for the third reviewer)
        search/screening/formal/blind_adjudication_design.txt   (sizes, seed, pre-specified triggers)
 Needs openpyxl.
 """
-import csv, random, re, collections
+import csv, random, re, collections, sys, datetime
 from openpyxl import Workbook
 from openpyxl.styles import Alignment, Font, PatternFill
 from openpyxl.worksheet.datavalidation import DataValidation
 
 SEED = 20261014
 N_RANDOM = 60
-F = 'search/screening/formal/'
+F = sys.argv[1].rstrip('/') + '/' if len(sys.argv) > 1 else 'search/screening/formal/'   # folder with screening_results_all.csv; outputs go there too
 
 res = list(csv.DictReader(open(F + 'screening_results_all.csv', encoding='utf-8-sig')))
 body, title, abstract = {}, {}, {}
@@ -141,7 +142,7 @@ wb.save(F + 'blind_adjudication_sheet.xlsx')
 # ------------------------------------------------------------------ design note
 cnt = collections.Counter(s for _, s in rows)
 with open(F + 'blind_adjudication_design.txt', 'w', encoding='utf-8') as f:
-    f.write(f'''Blind third-reviewer sheet, built 14 Oct 2026 by tools/make_blind_adjudication_sheet.py (random seed {SEED}).
+    f.write(f'''Blind third-reviewer sheet, built {datetime.date.today().isoformat()} by tools/make_blind_adjudication_sheet.py (random seed {SEED}).
 Records in the sheet: {n}
   conflict (advance vs exclude)                         {cnt['conflict']}
   targeted: both excluded, word-flagged                 {cnt['targeted_flag']}   (wandering/torsion word AND child word in title/abstract)

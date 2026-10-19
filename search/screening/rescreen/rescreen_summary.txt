@@ -1,0 +1,50 @@
+records in the old results: 2548; in the new export: 2548; decided in the re-screen: 2548; not matched to a WS id: 0 []
+matching: {'doi': 1601, 'url': 801, 'title+year+author': 145, 'title+year+vol+page': 1}
+deciding user found in the log: yes; other users with >=5 decisions in the new log: 0 (the owner should have none)
+rule applied: 310 reason-less Jun Shu Excludes treated as Maybe; among the decided records 310
+Jun Shu (effective) on decided records: {'Maybe': 822, 'Exclude': 1406, 'Include': 320}
+Fei Peng re-screen: {'Exclude': 1432, 'Include': 224, 'Maybe': 892}
+agreement, Jun Shu EFFECTIVE (rule applied): 3-category 0.659 (kappa 0.398); advance-vs-exclude 0.712 (kappa 0.416)
+   categories: {'CONFLICT advance-vs-exclude': 734, 'agree-exclude': 1052, 'agree-include': 183, 'agree-maybe': 445, 'include-vs-maybe (both advance)': 134}
+agreement, Jun Shu RECORDED (sensitivity): 3-category 0.736 (kappa 0.512); advance-vs-exclude 0.786 (kappa 0.554)
+   categories: {'agree-exclude': 1302, 'CONFLICT advance-vs-exclude': 544, 'agree-include': 183, 'agree-maybe': 391, 'include-vs-maybe (both advance)': 128}
+for information: Codex-assisted decisions (10-11 Oct) vs the re-screen: agreement 0.769, kappa 0.602 (these decisions are not used)
+conflicts to adjudicate (advance-vs-exclude, rule applied): 734; of these caused by the rule (recorded decision was Exclude): 250
+Exclude decisions in the re-screen WITHOUT an exclusion reason: 0
+reasons outside E1-E6 (Rayyan defaults etc.): 0
+Include on a record without abstract: 0
+records where the event log and the export disagree: 0
+
+PROCESS CHECK OF THE RE-SCREEN (pace and bulk actions)
+first decision 2026-10-17 10:00:54.318000 UTC, last 2026-10-17 14:01:36.707000 UTC; records with a decision event: 2548
+gap between consecutive first decisions: median 0.4 s; share <=3 s 90%; share <=1 s 88%; active time (gaps <=120 s) 1.2 h
+seconds with >=5 decision events (bulk): 9; maximum in one second: 7
+labels set in the re-screen: {'review-for-refs': 10, 'lang-other': 86}
+decisions per 100 records (median gap in seconds):
+   records 1-100: median gap 0.4 s, share <=3 s 91%
+   records 101-200: median gap 0.4 s, share <=3 s 97%
+   records 201-300: median gap 0.5 s, share <=3 s 98%
+   records 301-400: median gap 0.4 s, share <=3 s 93%
+   records 401-500: median gap 0.4 s, share <=3 s 97%
+   records 501-600: median gap 0.4 s, share <=3 s 98%
+   records 601-700: median gap 0.3 s, share <=3 s 96%
+   records 701-800: median gap 0.3 s, share <=3 s 94%
+   records 801-900: median gap 0.3 s, share <=3 s 94%
+   records 901-1000: median gap 0.5 s, share <=3 s 95%
+   records 1001-1100: median gap 0.5 s, share <=3 s 95%
+   records 1101-1200: median gap 0.5 s, share <=3 s 99%
+   records 1201-1300: median gap 0.5 s, share <=3 s 87%
+   records 1301-1400: median gap 0.4 s, share <=3 s 92%
+   records 1401-1500: median gap 0.5 s, share <=3 s 84%
+   records 1501-1600: median gap 0.4 s, share <=3 s 94%
+   records 1601-1700: median gap 0.3 s, share <=3 s 94%
+   records 1701-1800: median gap 0.5 s, share <=3 s 95%
+   records 1801-1900: median gap 0.4 s, share <=3 s 80%
+   records 1901-2000: median gap 0.5 s, share <=3 s 80%
+   records 2001-2100: median gap 0.5 s, share <=3 s 84%
+   records 2101-2200: median gap 0.5 s, share <=3 s 73%
+   records 2201-2300: median gap 0.4 s, share <=3 s 93%
+   records 2301-2400: median gap 0.6 s, share <=3 s 55%
+   records 2401-2500: median gap 0.5 s, share <=3 s 83%
+   records 2501-2547: median gap 0.4 s, share <=3 s 100%
+reference: Jun Shu median 9.4 s (7.5 h active for 2,548); the Codex-assisted account 1.9 s with 61 bulk seconds and 358 AI-prescreen events

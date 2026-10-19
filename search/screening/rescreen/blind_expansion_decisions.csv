@@ -1,0 +1,617 @@
+﻿blind_id,ws_id,R1_decision,R1_reason,R2_decision,R2_reason,JY_decision,JY_reason,JY_note
+X0001,WS0414,Exclude,E2 not wandering spleen; E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0002,WS0993,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen,Exclude,E4 no original patient data,
+X0003,WS0370,Exclude,E2 not wandering spleen; E3 adults only,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0004,WS0116,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0005,WS0231,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0006,WS1743,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0007,WS0238,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0008,WS1857,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0009,WS1917,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0010,WS2008,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0011,WS2490,Exclude,E1 non-human,Exclude,E2 not wandering spleen,Exclude,E1 non-human,
+X0012,WS1971,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0013,WS2094,Exclude,E2 not wandering spleen,Exclude,E3 adults only,Exclude,E2 not wandering spleen,
+X0014,WS1983,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0015,WS1678,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0016,WS0369,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0017,WS0070,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0018,WS2522,Exclude,E1 non-human,Exclude,E2 not wandering spleen,Exclude,E1 non-human,
+X0019,WS1458,Exclude,E1 non-human,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0020,WS0298,Exclude,E2 not wandering spleen; E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0021,WS1968,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0022,WS2415,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0023,WS0090,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0024,WS0024,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0025,WS0373,Exclude,E2 not wandering spleen; E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0026,WS1951,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0027,WS0516,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0028,WS0125,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0029,WS1907,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0030,WS1763,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen,Exclude,E4 no original patient data,
+X0031,WS0437,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0032,WS2283,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0033,WS0391,Exclude,E1 non-human; E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0034,WS2155,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0035,WS1540,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E6 other,中医针灸治疗眼睑下垂（脾虚气陷），与脾脏疾病无关
+X0036,WS1474,Exclude,E1 non-human,Exclude,E2 not wandering spleen,Exclude,E1 non-human,
+X0037,WS1515,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0038,WS1927,Exclude,E3 adults only,Exclude,E3 adults only,Maybe,,
+X0039,WS2161,Exclude,E2 not wandering spleen,Exclude,E3 adults only,Exclude,E3 adults only,
+X0040,WS2159,Exclude,E3 adults only,Exclude,E2 not wandering spleen,Exclude,E3 adults only,
+X0041,WS1615,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0042,WS0398,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0043,WS2248,Exclude,E1 non-human,Exclude,E2 not wandering spleen,Exclude,E1 non-human,
+X0044,WS0041,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0045,WS0106,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0046,WS2179,Exclude,E2 not wandering spleen,Exclude,E3 adults only,Exclude,E2 not wandering spleen,
+X0047,WS1881,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0048,WS2187,Exclude,E2 not wandering spleen,Exclude,E3 adults only,Exclude,E2 not wandering spleen,
+X0049,WS2036,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0050,WS0242,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0051,WS0275,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0052,WS2446,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E6 other,心脏起搏器植入并发症研究，与游走脾无关
+X0053,WS1563,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E6 other,眼底脓肿病例报道，与脾脏无关
+X0054,WS0126,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0055,WS0387,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0056,WS1853,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0057,WS2164,Exclude,E2 not wandering spleen,Exclude,E3 adults only,Exclude,E2 not wandering spleen,
+X0058,WS1665,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0059,WS1642,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0060,WS1539,Exclude,E2 not wandering spleen,Exclude,E3 adults only,Exclude,E2 not wandering spleen,
+X0061,WS0463,Exclude,E2 not wandering spleen; E3 adults only,Exclude,E2 not wandering spleen,Exclude,E6 other,巴基斯坦洪水灾害粮食安全调查研究，与脾脏无关
+X0062,WS0059,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0063,WS2488,Exclude,E1 non-human,Exclude,E2 not wandering spleen,Exclude,E1 non-human,
+X0064,WS1489,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0065,WS2271,Exclude,E2 not wandering spleen,Exclude,E3 adults only,Exclude,E2 not wandering spleen,
+X0066,WS0597,Exclude,E3 adults only,Exclude,E3 adults only,Maybe,,
+X0067,WS0406,Exclude,E1 non-human,Exclude,E2 not wandering spleen,Exclude,E1 non-human,
+X0068,WS0051,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0069,WS1608,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0070,WS0730,Exclude,E3 adults only,Exclude,E2 not wandering spleen,Exclude,E1 non-human,
+X0071,WS0209,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0072,WS1960,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0073,WS1989,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0074,WS2507,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0075,WS1765,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0076,WS0450,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0077,WS1840,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0078,WS1607,Exclude,E1 non-human,Exclude,E3 adults only,Exclude,E1 non-human,
+X0079,WS2274,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Maybe,,
+X0080,WS1915,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0081,WS2228,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0082,WS0246,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0083,WS0454,Exclude,E1 non-human,Exclude,E2 not wandering spleen,Exclude,E1 non-human,
+X0084,WS0876,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0085,WS2462,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0086,WS0495,Exclude,E3 adults only,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0087,WS1782,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E2 not wandering spleen,
+X0088,WS0473,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0089,WS0255,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0090,WS1921,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0091,WS1993,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0092,WS1871,Exclude,E2 not wandering spleen,Exclude,E3 adults only,Exclude,E2 not wandering spleen,
+X0093,WS1562,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen,Exclude,E4 no original patient data,
+X0094,WS1733,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0095,WS0006,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0096,WS2206,Exclude,E2 not wandering spleen,Exclude,E3 adults only,Exclude,E2 not wandering spleen,
+X0097,WS1751,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E4 no original patient data,
+X0098,WS0325,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0099,WS1932,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0100,WS2133,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0101,WS0076,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0102,WS0304,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0103,WS0166,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0104,WS1896,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0105,WS2457,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen,Exclude,E4 no original patient data,
+X0106,WS0005,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0107,WS2320,Exclude,E4 no original patient data,Exclude,E3 adults only,Exclude,E4 no original patient data,
+X0108,WS1974,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0109,WS0203,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0110,WS0196,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0111,WS2037,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0112,WS1087,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0113,WS1847,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0114,WS2459,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0115,WS0007,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0116,WS2329,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0117,WS1509,Exclude,E2 not wandering spleen,Exclude,E3 adults only,Exclude,E2 not wandering spleen,
+X0118,WS2160,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0119,WS0138,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0120,WS1930,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0121,WS2455,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E1 non-human,
+X0122,WS1748,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0123,WS2451,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0124,WS2434,Exclude,E2 not wandering spleen,Exclude,E3 adults only,Exclude,E2 not wandering spleen,
+X0125,WS0395,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0126,WS0219,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0127,WS2467,Exclude,E1 non-human,Exclude,E2 not wandering spleen,Exclude,E1 non-human,
+X0128,WS1047,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0129,WS2496,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen,Exclude,E4 no original patient data,
+X0130,WS2470,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0131,WS1758,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0132,WS2468,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0133,WS1861,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0134,WS2529,Exclude,E2 not wandering spleen,Exclude,E3 adults only,Exclude,E2 not wandering spleen,
+X0135,WS1511,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0136,WS2012,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0137,WS0284,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0138,WS1514,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0139,WS0615,Exclude,E3 adults only,Exclude,E3 adults only,Maybe,,
+X0140,WS1891,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0141,WS1920,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0142,WS0386,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0143,WS2173,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0144,WS2199,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen,Exclude,E4 no original patient data,
+X0145,WS0063,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0146,WS2004,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0147,WS0099,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0148,WS0030,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen,Exclude,E4 no original patient data,
+X0149,WS2481,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0150,WS1875,Exclude,E1 non-human,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0151,WS0082,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0152,WS2485,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0153,WS2464,Exclude,E1 non-human,Exclude,E2 not wandering spleen,Exclude,E1 non-human,
+X0154,WS1611,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0155,WS1481,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0156,WS1535,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0157,WS1664,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0158,WS0019,Exclude,E3 adults only; E4 no original patient data,Exclude,E3 adults only,Exclude,E3 adults only,
+X0159,WS1048,Exclude,E3 adults only,Exclude,E3 adults only,Maybe,,
+X0160,WS1854,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0161,WS2072,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E3 adults only,
+X0162,WS1878,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0163,WS0443,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0164,WS1376,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0165,WS0870,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0166,WS0213,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0167,WS1820,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0168,WS1443,Exclude,E1 non-human,Exclude,E2 not wandering spleen,Exclude,E1 non-human,
+X0169,WS1737,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0170,WS2215,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0171,WS2334,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0172,WS2277,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0173,WS0459,Exclude,E1 non-human; E2 not wandering spleen,Exclude,E1 non-human,Exclude,E1 non-human,
+X0174,WS0226,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0175,WS1849,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0176,WS0528,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0177,WS1810,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0178,WS2066,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0179,WS2010,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0180,WS0621,Exclude,E2 not wandering spleen,Exclude,E3 adults only,Exclude,E3 adults only,
+X0181,WS0062,Exclude,E2 not wandering spleen; E4 no original patient data,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0182,WS1695,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0183,WS1970,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0184,WS1541,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0185,WS2492,Exclude,E1 non-human,Exclude,E2 not wandering spleen,Exclude,E1 non-human,
+X0186,WS2121,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0187,WS1547,Exclude,E2 not wandering spleen,Exclude,E1 non-human,Exclude,E1 non-human,
+X0188,WS0227,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0189,WS0672,Exclude,E2 not wandering spleen,Exclude,E1 non-human,Exclude,E1 non-human,
+X0190,WS0144,Exclude,E3 adults only,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0191,WS1617,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E6 other,胰腺细胞病理学分类研究，与游走脾无关
+X0192,WS2061,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0193,WS1682,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0194,WS1812,Exclude,E1 non-human,Exclude,E2 not wandering spleen,Exclude,E1 non-human,
+X0195,WS1442,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0196,WS1018,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0197,WS2518,Exclude,E1 non-human,Exclude,E2 not wandering spleen,Exclude,E1 non-human,
+X0198,WS1954,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0199,WS0436,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0200,WS1671,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0201,WS1943,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0202,WS0080,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0203,WS1502,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen,Exclude,E4 no original patient data,
+X0204,WS1919,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0205,WS2363,Exclude,E1 non-human,Exclude,E2 not wandering spleen,Exclude,E1 non-human,
+X0206,WS2450,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0207,WS2053,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen,Exclude,E4 no original patient data,
+X0208,WS2444,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0209,WS2115,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0210,WS0095,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0211,WS0109,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0212,WS2042,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0213,WS2048,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0214,WS2324,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0215,WS2016,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0216,WS0258,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0217,WS0178,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0218,WS2340,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0219,WS1976,Exclude,E2 not wandering spleen,Exclude,E3 adults only,Exclude,E2 not wandering spleen,
+X0220,WS0775,Exclude,E1 non-human,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0221,WS0445,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0222,WS2494,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E6 other,起搏导线心脏穿孔研究，与游走脾无关
+X0223,WS1773,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0224,WS2212,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0225,WS2524,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0226,WS0200,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0227,WS0316,Exclude,E2 not wandering spleen; E3 adults only; E4 no original patient data,Exclude,E3 adults only,Exclude,E2 not wandering spleen,
+X0228,WS2438,Exclude,E1 non-human,Exclude,E2 not wandering spleen,Exclude,E1 non-human,
+X0229,WS1882,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0230,WS0003,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0231,WS1616,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0232,WS0073,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E2 not wandering spleen,
+X0233,WS0046,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0234,WS0103,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0235,WS1956,Exclude,E2 not wandering spleen,Exclude,E3 adults only,Exclude,E2 not wandering spleen,
+X0236,WS2368,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0237,WS2493,Exclude,E1 non-human,Exclude,E2 not wandering spleen,Exclude,E1 non-human,
+X0238,WS2075,Exclude,E2 not wandering spleen,Exclude,E3 adults only,Exclude,E2 not wandering spleen,
+X0239,WS0599,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0240,WS2327,Exclude,E2 not wandering spleen,Exclude,E3 adults only,Exclude,E2 not wandering spleen,
+X0241,WS0317,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0242,WS0848,Exclude,E3 adults only,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0243,WS1876,Exclude,E2 not wandering spleen,Exclude,E3 adults only,Exclude,E2 not wandering spleen,
+X0244,WS0115,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0245,WS2505,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0246,WS0282,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0247,WS1581,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0248,WS2516,Exclude,E1 non-human,Exclude,E2 not wandering spleen,Exclude,E1 non-human,
+X0249,WS0310,Exclude,E2 not wandering spleen; E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0250,WS0296,Exclude,E2 not wandering spleen,Exclude,E3 adults only,Exclude,E4 no original patient data,
+X0251,WS2437,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E6 other,椎体成形术骨水泥泄漏致心脏穿孔，与游走脾无关
+X0252,WS0323,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0253,WS0149,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0254,WS0153,Exclude,E3 adults only,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0255,WS1967,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0256,WS0128,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0257,WS1265,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0258,WS1694,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0259,WS0089,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen,Exclude,E4 no original patient data,
+X0260,WS1652,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen,Exclude,E4 no original patient data,
+X0261,WS0413,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0262,WS2475,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0263,WS0458,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0264,WS2473,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0265,WS0327,Exclude,E3 adults only,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0266,WS1923,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0267,WS0556,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0268,WS2439,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E6 other,椎体成形术后骨水泥心脏栓塞，与游走脾无关
+X0269,WS1753,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0270,WS0201,Exclude,E3 adults only; E4 no original patient data,Exclude,E4 no original patient data,Exclude,E4 no original patient data,
+X0271,WS0139,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0272,WS2052,Exclude,E1 non-human,Exclude,E2 not wandering spleen,Exclude,E1 non-human,
+X0273,WS2073,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0274,WS0184,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0275,WS0309,Exclude,E2 not wandering spleen,Exclude,E3 adults only,Exclude,E2 not wandering spleen,
+X0276,WS2259,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0277,WS0341,Exclude,E1 non-human; E2 not wandering spleen,Exclude,E1 non-human,Exclude,E1 non-human,
+X0278,WS1076,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Maybe,,
+X0279,WS2442,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E6 other,心脏临时起搏临床分析，与游走脾无关
+X0280,WS1412,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0281,WS2086,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0282,WS1980,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen,Exclude,E4 no original patient data,
+X0283,WS0050,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0284,WS1958,Exclude,E2 not wandering spleen,Exclude,E3 adults only,Exclude,E3 adults only,
+X0285,WS2180,Exclude,E2 not wandering spleen,Exclude,E3 adults only,Exclude,E3 adults only,
+X0286,WS0425,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0287,WS1933,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0288,WS1444,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0289,WS0326,Exclude,E2 not wandering spleen; E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0290,WS1680,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0291,WS2319,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0292,WS1883,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0293,WS1381,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0294,WS0485,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen,Exclude,E4 no original patient data,
+X0295,WS1357,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0296,WS1556,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen,Exclude,E4 no original patient data,
+X0297,WS0280,Exclude,E1 non-human; E2 not wandering spleen,Exclude,E1 non-human,Exclude,E2 not wandering spleen,
+X0298,WS1724,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0299,WS1408,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0300,WS0644,Exclude,E2 not wandering spleen,Exclude,E1 non-human,Exclude,E1 non-human,
+X0301,WS1779,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0302,WS0383,Exclude,E2 not wandering spleen; E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0303,WS0262,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0304,WS0136,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0305,WS1493,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E6 other,早孕药物流产出血休克病例，与游走脾无关
+X0306,WS2181,Exclude,E2 not wandering spleen,Exclude,E3 adults only,Exclude,E3 adults only,
+X0307,WS2318,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0308,WS1978,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0309,WS1912,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0310,WS2502,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0311,WS2253,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0312,WS2050,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0313,WS0374,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0314,WS1508,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0315,WS2452,Exclude,E1 non-human,Exclude,E2 not wandering spleen,Exclude,E1 non-human,
+X0316,WS1404,Exclude,E1 non-human,Exclude,E2 not wandering spleen,Exclude,E1 non-human,
+X0317,WS1363,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen,Exclude,E4 no original patient data,
+X0318,WS1937,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0319,WS0906,Exclude,E1 non-human,Exclude,E2 not wandering spleen,Maybe,,
+X0320,WS0058,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0321,WS1800,Exclude,E2 not wandering spleen,Exclude,E3 adults only,Exclude,E3 adults only,
+X0322,WS0081,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0323,WS1470,Exclude,E1 non-human,Exclude,E2 not wandering spleen,Exclude,E1 non-human,
+X0324,WS2537,Exclude,E1 non-human,Exclude,E2 not wandering spleen,Exclude,E1 non-human,
+X0325,WS2465,Exclude,E1 non-human,Exclude,E2 not wandering spleen,Exclude,E1 non-human,
+X0326,WS0365,Exclude,E1 non-human; E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0327,WS2051,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0328,WS1873,Exclude,E2 not wandering spleen,Exclude,E3 adults only,Exclude,E2 not wandering spleen,
+X0329,WS0913,Exclude,E4 no original patient data,Exclude,E3 adults only,Exclude,E3 adults only,
+X0330,WS0922,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0331,WS1561,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0332,WS2056,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0333,WS1399,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0334,WS0094,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,
+X0335,WS1663,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0336,WS1963,Exclude,E2 not wandering spleen,Exclude,E3 adults only,Exclude,E3 adults only,
+X0337,WS1335,Exclude,E2 not wandering spleen,Exclude,E1 non-human,Exclude,E1 non-human,
+X0338,WS0547,Exclude,E2 not wandering spleen,Exclude,E3 adults only,Exclude,E3 adults only,
+X0339,WS1517,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,
+X0340,WS0863,Exclude,E3 adults only,Exclude,E2 not wandering spleen,Maybe,,
+X0341,WS1845,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,脾组织异位妊娠误诊分析
+X0342,WS0379,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,53岁男性肝脾种植，成人且非游走脾
+X0343,WS1852,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,20岁胸腔脾种植
+X0344,WS1080,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,young multiparous woman 脾扭转
+X0345,WS1036,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen,Maybe,,右髂窝异位脾，摘要无年龄
+X0346,WS2499,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,器官移植学科综述
+X0347,WS2520,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,活体供脾移植5例血友病
+X0348,WS1756,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,33例脾切除后异位脾组织超声
+X0349,WS2515,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,脾移植术后管理5例
+X0350,WS2205,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,同种脾移植5例
+X0351,WS2134,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,33岁男游走脾并腹膜炎
+X0352,WS2540,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen,Exclude,E4 no original patient data,自体脾移植综述
+X0353,WS2109,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,23岁游走脾蒂扭转误诊粘连梗阻
+X0354,WS1400,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen,Exclude,E4 no original patient data,实体脏器扭转影像综述
+X0355,WS2067,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,66岁脾蒂扭转
+X0356,WS1850,Exclude,E2 not wandering spleen,Exclude,E3 adults only,Exclude,E2 not wandering spleen,68岁胸腔异位脾
+X0357,WS2333,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,28岁脾异位妊娠护理
+X0358,WS0598,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,成人短胰环状胰并脾旋转不良
+X0359,WS0194,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen,Exclude,E4 no original patient data,发育性脾异常影像综述
+X0360,WS0353,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,成年女性双叶游走脾扭转
+X0361,WS1879,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,肝脾植入误诊HCC
+X0362,WS0271,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,18岁女游走脾表皮样囊肿
+X0363,WS1365,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,4岁脾性腺融合
+X0364,WS0415,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,老年地中海贫血游走脾慢性扭转
+X0365,WS1422,Exclude,E1 non-human,Exclude,E2 not wandering spleen,Exclude,E4 no original patient data,原发性脾妊娠系统综述60例
+X0366,WS1625,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,young woman 游走脾扭转，科特迪瓦
+X0367,WS0996,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,young woman 游走脾扭转尿潴留
+X0368,WS0959,Exclude,E2 not wandering spleen,Exclude,E3 adults only,Exclude,E3 adults only,妊娠期漂浮脾扭转破裂综述含病例，成人
+X0369,WS1322,Exclude,E1 non-human,Exclude,E3 adults only,Exclude,E3 adults only,18岁Cornelia de Lange女青年游走脾扭转脾固定
+X0370,WS1790,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,78岁右侧异位脾淋巴瘤
+X0371,WS1406,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Maybe,,脾囊肿致脾坠入盆腔，摘要无年龄
+X0372,WS2156,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,30岁脾蒂扭转误诊胃肠炎
+X0373,WS2090,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,64岁左肾脾异位并十二指肠溃疡
+X0374,WS1516,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,新生儿Jarcho-Levin并脾疝出
+X0375,WS2525,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen,Exclude,E4 no original patient data,异种移植GVHD综述
+X0376,WS1403,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen,Exclude,E4 no original patient data,腹盆脏器扭转影像综述
+X0377,WS0102,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,47岁游走脾保守
+X0378,WS0402,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,24岁游走脾射频部分脾切加固定
+X0379,WS1401,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,脾性腺融合合并对侧睾丸缺如
+X0380,WS0295,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,29岁脾肾融合
+X0381,WS0666,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,young patient 副脾扭转
+X0382,WS2260,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,26岁脾性腺融合
+X0383,WS1354,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,胰体尾切除达芬奇对比，平均52.7/68岁
+X0384,WS1949,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,45岁肝异位副脾误诊肾上腺占位
+X0385,WS2472,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,外伤脾破裂41例
+X0386,WS0177,Exclude,E2 not wandering spleen,Exclude,E3 adults only,Exclude,E2 not wandering spleen,31岁回肠扭转累及脾扭转，正常位脾继发于肠扭转
+X0387,WS2204,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,10岁男部分游离脾异位于阴囊
+X0388,WS2431,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,异位脾种植
+X0389,WS0297,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,young female 脾种植蒂扭转
+X0390,WS0208,Exclude,E4 no original patient data,Exclude,E3 adults only,Exclude,E4 no original patient data,游走脾并门脉高压20例综述分析
+X0391,WS0185,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,成人异位脾扭转volvulus
+X0392,WS2497,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,39岁副脾误诊肝肿瘤
+X0393,WS1436,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,29岁副神经节瘤，鉴别含副脾
+X0394,WS1863,Exclude,E2 not wandering spleen,Exclude,E3 adults only,Exclude,E2 not wandering spleen,39岁肝内异位脾
+X0395,WS0874,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,异体全脾移植6例，1例脾蒂扭转，移植脾
+X0396,WS1580,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,2例不同原因异位脾：胰内副脾加脾种植
+X0397,WS0925,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,42岁游走脾
+X0398,WS1505,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E1 non-human,小鼠脾IRF7纳米治疗心梗
+X0399,WS1375,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,20岁脑脾种植
+X0400,WS2196,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen,Exclude,E4 no original patient data,脾脏外科进展综述
+X0401,WS1874,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,肝内种植脾似HCC
+X0402,WS2019,Exclude,E2 not wandering spleen,Exclude,E3 adults only,Exclude,E3 adults only,53岁B超脾异位
+X0403,WS0448,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,36岁游走脾血管瘤
+X0404,WS1995,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,脾破裂后肝内异位脾种植
+X0405,WS1449,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,27岁脾异位妊娠破裂
+X0406,WS1955,Exclude,E2 not wandering spleen,Exclude,E3 adults only,Exclude,E2 not wandering spleen,55岁肝内异位脾误诊
+X0407,WS1914,Exclude,E2 not wandering spleen,Exclude,E3 adults only,Exclude,E2 not wandering spleen,43岁肝内异位脾
+X0408,WS1582,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,阴囊副脾2例
+X0409,WS2185,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,138例自体脾移植
+X0410,WS0118,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,53岁胃扭转并脾胰扭转游走脾
+X0411,WS1703,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,40岁游走脾扭转梗死
+X0412,WS2098,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,27岁脾异位妊娠破裂
+X0413,WS1485,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E4 no original patient data,儿童脾切除技术综述章节
+X0414,WS2262,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,带血管蒂半脾异位移植护理
+X0415,WS2486,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,外伤脾破裂23例
+X0416,WS1991,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,外伤性脾破裂B超误诊15例分析，与游走脾无关
+X0417,WS1389,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,66岁男肾脾种植似肾癌
+X0418,WS2024,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,左侧肾上腺区脾种植1例
+X0419,WS1506,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,51岁女腹部脾种植
+X0420,WS2330,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,脾破裂术后异位种植30例
+X0421,WS2226,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,61岁女游走脾合并脾囊肿
+X0422,WS0198,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,43岁女游走脾梗死并胰扭转
+X0423,WS1629,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,20岁女游走脾扭转
+X0424,WS1973,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,26岁女盆腔脾组织植入
+X0425,WS1411,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,胰内副脾IPAS与pNET鉴别综述
+X0426,WS1670,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,85岁女造口疝内嵌顿游走脾
+X0427,WS1440,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,220例CT副脾流行病学，均大于18岁
+X0428,WS1424,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,29岁女脾种植处脾组织异位妊娠
+X0429,WS0806,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,29岁女游走脾脾功能亢进脾固定
+X0430,WS1332,Exclude,E1 non-human,Exclude,E3 adults only,Exclude,E3 adults only,30岁男游走脾似盆腔肿物
+X0431,WS2229,Exclude,E2 not wandering spleen,Exclude,E3 adults only,Exclude,E6 other,肠旋转不良胃大部切除术后肠袢坏死，与游走脾无关
+X0432,WS2350,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,3例女性盆腔脾种植超声
+X0433,WS1192,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E3 adults only,25岁患者dystopic spleen误诊子宫肿瘤
+X0434,WS0793,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,盆腔游走性副脾超声
+X0435,WS1503,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,29岁女游走脾扭转CT
+X0436,WS1986,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,27岁男盆腔副脾蒂扭转
+X0437,WS0755,Exclude,E2 not wandering spleen,Exclude,E3 adults only,Exclude,E3 adults only,23岁女游走脾慢性扭转呕血
+X0438,WS2332,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,肝脾异位妊娠临床病理2例
+X0439,WS0163,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,18岁男游走脾扭转梗死误诊脏器反位
+X0440,WS1504,Exclude,E1 non-human,Exclude,E2 not wandering spleen,Exclude,E1 non-human,犬脾病急诊章节
+X0441,WS2017,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,34岁女Douglas窝副脾误诊淋巴瘤
+X0442,WS0301,Exclude,E2 not wandering spleen,Exclude,E3 adults only,Exclude,E2 not wandering spleen,21岁女多脾并脾扭转
+X0443,WS1588,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E4 no original patient data,脾脏解剖生理教科书章节
+X0444,WS0367,Exclude,E2 not wandering spleen; E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,18岁男游走脾扭转造影超声
+X0445,WS2009,Exclude,E2 not wandering spleen,Exclude,E3 adults only,Exclude,E3 adults only,35岁男先天性异位脾
+X0446,WS1414,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E6 other,左侧门脉高压恶性肿瘤多脏器切除，与游走脾无关
+X0447,WS0769,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,40岁女妊娠期盆腔游走脾超声监测
+X0448,WS1529,Exclude,E3 adults only,Exclude,E1 non-human,Exclude,E1 non-human,犬腹膜脾种植CT
+X0449,WS1676,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,19岁患者游走脾扭转720度
+X0450,WS0878,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,中年男脾扭转急性腹
+X0451,WS0083,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,副脾扭转致腹腔内出血，成人男
+X0452,WS2124,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,胃内脾种植1例并文献复习
+X0453,WS2447,Exclude,E1 non-human,Exclude,E2 not wandering spleen,Exclude,E1 non-human,小鼠结肠癌PARG基因免疫实验
+X0454,WS2482,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,外伤性脾破裂82例
+X0455,WS1941,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,34岁女脾脏异位妊娠破裂
+X0456,WS1017,Exclude,E2 not wandering spleen,Exclude,E1 non-human,Exclude,E1 non-human,喜马拉雅兔胰内异位脾组织
+X0457,WS2436,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E6 other,起搏电极导线心脏穿孔处理，与游走脾无关
+X0458,WS1877,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,肝内异位脾种植6例并文献复习
+X0459,WS0451,Exclude,E3 adults only,Exclude,E2 not wandering spleen,Maybe,,脾扭转upside down sign影像，摘要未报年龄
+X0460,WS0036,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,78岁男胃扭转食管裂孔疝并游走脾
+X0461,WS2182,Exclude,E2 not wandering spleen,Exclude,E3 adults only,Exclude,E3 adults only,31岁男先天性膈疝左胸异位脾出血
+X0462,WS2474,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E6 other,心导管术心脏压塞，与游走脾无关
+X0463,WS1536,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen,Exclude,E4 no original patient data,腹盆腔脏器扭转综述
+X0464,WS1643,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,20岁男脾种植似消化道大出血
+X0465,WS2140,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,27岁女左下腹副脾蒂扭转
+X0466,WS2295,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,26岁男阴囊内异位脾
+X0467,WS2105,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen,Exclude,E4 no original patient data,异位脾种植综述
+X0468,WS0060,Exclude,E4 no original patient data,Exclude,E3 adults only,Exclude,E4 no original patient data,妊娠期游走脾管理文献综述17篇
+X0469,WS0074,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,产后1月游走脾脾扭转，成人女性
+X0470,WS1609,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen,Exclude,E4 no original patient data,先天性脾异常影像图谱综述
+X0471,WS0026,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,56岁男游走脾致胃底静脉曲张出血
+X0472,WS0447,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,40岁女游走脾扭转急诊手术
+X0473,WS1898,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,小肠内异位脾种植1例
+X0474,WS1719,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E6 other,肾移植患者部分脾栓塞示踪，与游走脾无关
+X0475,WS1392,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E4 no original patient data,脾脏外科治疗综述
+X0476,WS0305,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,44岁男胸腔脾种植似肺占位
+X0477,WS1543,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen,Exclude,E4 no original patient data,女性腹部脏器扭转文献综述
+X0478,WS1594,Exclude,E1 non-human,Exclude,E3 adults only,Exclude,E3 adults only,22岁游走脾扭转腹腔镜保脾固定
+X0479,WS2454,Exclude,E1 non-human,Exclude,E2 not wandering spleen,Exclude,E1 non-human,大鼠肝细胞脾内移植治肝衰实验
+X0480,WS2289,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,27岁女游走脾X线诊断
+X0481,WS0351,Exclude,E2 not wandering spleen; E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,21岁女Wolf-Hirschhorn综合征游走脾脾大单孔脾切
+X0482,WS1802,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,young woman游走脾耻骨上肿物
+X0483,WS1447,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,49岁女胰内副脾IPAS影像
+X0484,WS1521,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,肝内脾组织再植荧光腹腔镜切除并文献复习
+X0485,WS2258,Exclude,E1 non-human,Exclude,E2 not wandering spleen,Exclude,E1 non-human,狗同种脾移植实验
+X0486,WS2325,Exclude,E2 not wandering spleen,Exclude,E3 adults only,Exclude,E2 not wandering spleen,12例保脾胰体尾切除含2例胰内异位脾组织
+X0487,WS1746,Exclude,E2 not wandering spleen,Exclude,E3 adults only,Exclude,E2 not wandering spleen,14月男脾性腺融合似睾丸扭转
+X0488,WS0462,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,产后女性游走脾急性扭转
+X0489,WS2261,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,173例脾脏疾患超声CT诊断回顾，非游走脾专门数据
+X0490,WS1059,Exclude,E3 adults only,Exclude,E2 not wandering spleen,Maybe,,脾扭转致节段性门脉高压，摘要未报年龄
+X0491,WS0816,Exclude,E3 adults only,Exclude,E2 not wandering spleen,Exclude,E6 other,脾动脉迂曲模拟脾动脉瘤，与游走脾无关
+X0492,WS1413,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen,Exclude,E4 no original patient data,部分脾切除2130例系统综述
+X0493,WS1807,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,7月婴儿先天性膈疝脾疝入胸腔
+X0494,WS1372,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,脾梗死病例并文献复习
+X0495,WS2247,Exclude,E4 no original patient data,Exclude,E3 adults only,Exclude,E4 no original patient data,脾脏少见疾病综述章节含异位脾
+X0496,WS0974,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,盆腔副脾似泌尿系占位
+X0497,WS1935,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,膈下异位脾种植误诊肝肿瘤，无实质摘要
+X0498,WS2531,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,3例血友病甲亲属供脾全脾移植
+X0499,WS1451,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,12月女婴腰肋椎综合征并脾疝入腰部疝
+X0500,WS0693,Exclude,E2 not wandering spleen,Exclude,E3 adults only,Exclude,E3 adults only,2例young women游走脾腹腔镜固定
+X0501,WS1483,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,9岁女右位心并内脏反位脾右移
+X0502,WS0366,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,67岁女盆腔带血管副脾
+X0503,WS0476,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,28岁女胃扭转并游走脾并文献复习
+X0504,WS1402,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E4 no original patient data,脾脏猝死病因综述
+X0505,WS1377,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E4 no original patient data,脾异常影像超声CT比较综述
+X0506,WS2120,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,23岁男游走脾并脾蒂扭转误诊粘连性肠梗阻
+X0507,WS2070,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,2例异位脾种植99mTc显像
+X0508,WS1476,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,40岁精索副脾
+X0509,WS0189,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,29岁女游走脾扭转腹腔镜固定
+X0510,WS2055,Exclude,E1 non-human,Exclude,E2 not wandering spleen,Exclude,E1 non-human,大鼠颈部异位脾移植模型
+X0511,WS2445,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E6 other,射频消融并发心脏穿孔护理，与游走脾无关
+X0512,WS0028,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,19岁初孕妇游走脾梗死
+X0513,WS0302,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,45岁女盲肠扭转阑尾穿孔致非外伤性脾破裂
+X0514,WS1310,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,27岁女游走脾扭转急腹症
+X0515,WS0315,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen,Exclude,E4 no original patient data,脾脏数目位置异常影像诊断综述
+X0516,WS0023,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,18岁女内脏反位多脾并游走脾扭转
+X0517,WS2538,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,34例肿瘤病人人胚胸腺脾脏移植
+X0518,WS2252,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,64岁男先天性无脾
+X0519,WS1613,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E6 other,中医相火理论治复发性口疮，与游走脾无关
+X0520,WS1380,Exclude,E2 not wandering spleen,Exclude,E3 adults only,Exclude,E2 not wandering spleen,脾性腺融合似睾丸肿瘤
+X0521,WS0347,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen,Exclude,E4 no original patient data,脾先天变异术语分类胚胎学综述
+X0522,WS0236,Exclude,E2 not wandering spleen,Exclude,E3 adults only,Exclude,E2 not wandering spleen,41岁女胃壁异位脾结节
+X0523,WS2273,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,34岁女副脾扭转
+X0524,WS2506,Exclude,E1 non-human,Exclude,E2 not wandering spleen,Exclude,E1 non-human,大鼠永生化肝细胞脾内移植治肝衰
+X0525,WS2068,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,32例脾损伤保脾治疗
+X0526,WS2483,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,自体半脾腹膜后移植治门脉高压血流动力学
+X0527,WS0230,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,24岁游走脾扭转急腹症
+X0528,WS0225,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,妇科术中偶然发现盆腔脾种植
+X0529,WS1888,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,5例异位脾种植误诊腹膜后肿瘤
+X0530,WS0135,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,27岁男巨大副脾扭转似脾淋巴管瘤
+X0531,WS0469,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,结肠脾曲扭转CT
+X0532,WS2227,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,自体半脾左髂窝移植治门脉高压2例
+X0533,WS0946,Exclude,E4 no original patient data,Exclude,E3 adults only,Exclude,E3 adults only,2例女性ectopic spleen综合征
+X0534,WS0181,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,50岁男纵隔副脾术前栓塞
+X0535,WS0464,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,66岁男副脾反复亚扭转
+X0536,WS2203,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,53岁女肝内脾组织植入似肝肿瘤
+X0537,WS0288,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,28岁女游走脾巨大囊肿致小肠梗阻
+X0538,WS1780,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,10岁男四肢缺损并脾性腺融合
+X0539,WS2509,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,外伤性脾破裂43例
+X0540,WS1910,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,肝内异位脾误诊肝肿瘤1例
+X0541,WS0385,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,49岁女胰内副脾并肝血管瘤似转移
+X0542,WS0273,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,23岁女袖状胃切除术后游走脾
+X0543,WS0389,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,28岁男游走脾扭转急腹症
+X0544,WS2460,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,外伤性脾破裂57例
+X0545,WS2361,Exclude,E4 no original patient data,Exclude,E3 adults only,Exclude,E6 other,急腹症护理技术综述，与游走脾无关
+X0546,WS2211,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,新生儿先天性膈疝脾入胸腔尸解
+X0547,WS1591,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,胸腔脾种植病例并诊断综述
+X0548,WS0015,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,27岁女游走脾扭转影像病例
+X0549,WS1977,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,116例复杂性脾切除安全探讨
+X0550,WS0466,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen,Exclude,E4 no original patient data,脾形态大小位置异常影像图谱综述
+X0551,WS0250,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,34岁男胃壁肌层副脾似间质瘤
+X0552,WS2112,Exclude,E3 adults only,Exclude,E2 not wandering spleen,Exclude,E3 adults only,21岁女游走脾并发扭转坏死
+X0553,WS2002,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,38例少见部位异位妊娠介入含1例脾妊娠
+X0554,WS1646,Exclude,E2 not wandering spleen,Exclude,E3 adults only,Exclude,E3 adults only,29岁孕妇脾扭转
+X0555,WS0504,Exclude,E1 non-human,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,37岁女大副脾扭转
+X0556,WS1655,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,34岁女游走脾扭转
+X0557,WS1610,Exclude,E2 not wandering spleen,Exclude,E3 adults only,Exclude,E3 adults only,19岁女异位脾并血小板减少脾亢
+X0558,WS1590,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,脾性腺融合2例并文献复习
+X0559,WS0104,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E6 other,中性粒细胞破坏B-1a细胞稳态致脓毒症机制，与游走脾无关
+X0560,WS1889,Exclude,E2 not wandering spleen,Exclude,E3 adults only,Exclude,E2 not wandering spleen,68岁女肝内异位脾
+X0561,WS1975,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,26岁女脾脏异位妊娠腹腔镜脾切
+X0562,WS1843,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,29岁男肝内异位脾种植误诊肝癌
+X0563,WS0685,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E1 non-human,羊驼脾扭转
+X0564,WS0434,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,35岁女结肠脾曲扭转体位治疗
+X0565,WS0214,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,45岁女盲肠脾种植似间质瘤
+X0566,WS1872,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,48岁男肝内脾种植
+X0567,WS1636,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,65岁男右侧腹膜后脾种植
+X0568,WS2007,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,53岁男胃底异位脾种植似间质瘤
+X0569,WS1697,Exclude,E2 not wandering spleen,Exclude,E3 adults only,Exclude,E2 not wandering spleen,23岁男不连续型脾性腺融合
+X0570,WS1942,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,39岁女脾切除术后盆腔异位脾种植
+X0571,WS1844,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,29岁女游走脾伴胰腺炎胃扭转结肠梗阻
+X0572,WS1707,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E6 other,66岁男肠系膜共通并回肠腺癌，与游走脾无关
+X0573,WS1660,Exclude,E1 non-human,Exclude,E2 not wandering spleen,Exclude,E6 other,红蟹种群生态学研究，与游走脾无关
+X0574,WS1434,Exclude,E1 non-human,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,32岁女脾异位妊娠栓塞治疗
+X0575,WS0596,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,20岁女游走脾致复发性胰腺炎
+X0576,WS1894,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen,Exclude,E4 no original patient data,小儿腹腔镜脾切除术操作指南2020版
+X0577,WS2217,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,10岁男脾异位于阴囊
+X0578,WS1781,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E4 no original patient data,60岁男尸体解剖发现盆腔异位脾并文献复习
+X0579,WS2263,Exclude,E2 not wandering spleen,Exclude,E3 adults only,Exclude,E2 not wandering spleen,3例自体脾组织移植26至32岁
+X0580,WS1897,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,1岁男连续性脾性腺融合
+X0581,WS1713,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,2例副脾梗死似阑尾炎
+X0582,WS1855,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,2例脾切除术后腹腔异位脾种植
+X0583,WS0260,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,25岁女Axenfeld-Rieger综合征并游走脾扭转
+X0584,WS2519,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,男性患儿尸体脾移植治血友病甲
+X0585,WS0033,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E2 not wandering spleen,30岁女多脾综合征并部分脾扭转
+X0586,WS2498,Exclude,E1 non-human,Exclude,E2 not wandering spleen,Exclude,E1 non-human,裸鼠脾脏移植瘤模型研究
+X0587,WS1727,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,婴儿Beemer-Langer综合征并副脾
+X0588,WS0014,Exclude,E2 not wandering spleen; E4 no original patient data,Exclude,E2 not wandering spleen,Exclude,E4 no original patient data,脾种植与异位脾组织造影超声综述
+X0589,WS0419,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,62岁女脾切除后胰内副脾似内分泌肿瘤
+X0590,WS2471,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen,Exclude,E4 no original patient data,脾脏外科研究热点与难点综述
+X0591,WS2063,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,脾脏异位妊娠破裂1例
+X0592,WS1677,Exclude,E2 not wandering spleen,Exclude,E3 adults only,Exclude,E2 not wandering spleen,44岁男胰内异位脾并紫癜上皮囊肿
+X0593,WS1475,Exclude,E1 non-human,Exclude,E2 not wandering spleen,Exclude,E1 non-human,小鼠MAD1基因敲除造血分化研究
+X0594,WS0592,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,young male脾扭转急性腹
+X0595,WS0820,Exclude,E2 not wandering spleen,Exclude,E1 non-human,Exclude,E1 non-human,15只犬脾扭转超声回顾
+X0596,WS0763,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen,Exclude,E3 adults only,18岁移动脾扭转腹腔镜保守固定
+X0597,WS0266,Exclude,E1 non-human; E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,young nulliparous female游走脾扭转累及胰尾
+X0598,WS2469,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,外伤性脾破裂30例
+X0599,WS2453,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen,Exclude,E4 no original patient data,我国脾脏外科发展路在何方综述
+X0600,WS1934,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,成人膈肌膨升继发胃扭转及脾扭转，题目明确成人
+X0601,WS2280,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,26岁女脾扭转720度坏死
+X0602,WS2177,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,26岁女盆腔游走脾
+X0603,WS0738,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,42岁女左肾上极异位脾似肾肿瘤
+X0604,WS2508,Exclude,E1 non-human,Exclude,E2 not wandering spleen,Exclude,E1 non-human,大鼠肝细胞移植治放射性肝损伤
+X0605,WS1742,Exclude,E1 non-human,Exclude,E2 not wandering spleen,Exclude,E1 non-human,99只大鼠脾异位种植后再生实验
+X0606,WS2456,Exclude,E4 no original patient data,Exclude,E2 not wandering spleen,Exclude,E4 no original patient data,我国脾脏外科未来发展方向综述
+X0607,WS2458,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,保脾手术治疗脾创伤32例
+X0608,WS2326,Exclude,E2 not wandering spleen,Exclude,E3 adults only,Exclude,E3 adults only,75岁女超声检查发现脾异位
+X0609,WS2341,Exclude,E1 non-human,Exclude,E3 adults only,Exclude,E1 non-human,猪胃扭转并脾脏扭转
+X0610,WS2328,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,43岁男胃底副脾似间质瘤
+X0611,WS2193,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,31岁女脾脏异位妊娠破裂
+X0612,WS0375,Exclude,E1 non-human; E3 adults only,Exclude,E1 non-human,Exclude,E1 non-human,102只犬原发性脾扭转回顾
+X0613,WS0808,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,53岁女盆腔脾似卵巢肿瘤
+X0614,WS2035,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,Exclude,E2 not wandering spleen,43岁男副脾扭转
+X0615,WS0086,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,30岁女卵巢纤维瘤并游走脾扭转
+X0616,WS1557,Exclude,E3 adults only,Exclude,E3 adults only,Exclude,E3 adults only,50岁女游走脾并胰尾梗死
