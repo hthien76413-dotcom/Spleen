@@ -1,0 +1,101 @@
+﻿ws_id,year,title,type,R1,R2
+WS0002,2026,The diagnostic challenge of wandering spleen with torsion: a rare cause of acute abdomen in children - a case report.,"both Include, different ws_basis",Imaging and operation,Imaging shows ectopic position or mobility
+WS0008,2026,Splenic Torsion in a 16-Year-Old Female With a Wandering Spleen: A Case Report.,"both Include, different ws_basis",Imaging shows ectopic position or mobility,Imaging and operation
+WS0032,2026,Whirl sign in splenic torsion: an uncommon complication of wandering spleen.,"both Exclude, different reason (proposed: first applicable in the D3 order)",N age not confirmed under 18,E4 no original patient data
+WS0040,2025,Splenic Pedicle Volvulus in a Wandering Spleen: A Rare Pediatric Emergency.,"both Include, different ws_basis",Imaging shows ectopic position or mobility,Imaging and operation
+WS0049,2025,[Ultrasonic manifestations of splenic torsion in children].,"both Include, different n_children_individual",6,4
+WS0049,2025,[Ultrasonic manifestations of splenic torsion in children].,"both Include, different n_children_aggregate",0,2
+WS0068,2025,A painful twist: Wandering spleen with torsion and infarction: A case report.,"both Include, different ws_basis",Operation shows ectopic position or mobility,Imaging and operation
+WS0078,2025,A case of mesenteroaxial gastric volvulus with wandering spleen in a 2-year-old boy.,"both Include, different ws_basis",Imaging and operation,Operation shows ectopic position or mobility
+WS0079,2025,Wandering spleen with torsion in pelvic: A case report and literature review.,"both Include, different ws_basis",Imaging shows ectopic position or mobility,Imaging and operation
+WS0114,2024,Wandering Spleen Torsion: A Diagnostic Challenge.,"both Include, different ws_basis",Imaging shows ectopic position or mobility,Imaging and operation
+WS0159,2022,The Cause of an Unusual Abdominal Pain in Children: Splenic Torsiyon - Three Case Report.,"both Include, different ws_basis",Imaging and operation,Imaging shows ectopic position or mobility
+WS0173,2022,Diagnosis and treatment of splenic torsion in children: preoperative thrombocytosis predicts splenic infarction.,"both Include, different ws_basis",Imaging shows ectopic position or mobility,Imaging and operation
+WS0176,2022,Wandering spleen with torsion: a rare cause of acute abdomen in a 14-year-old girl.,"both Include, different ws_basis",Imaging shows ectopic position or mobility,Imaging and operation
+WS0182,2022,The left gastro-omental vessels are able to maintain the entire spleen blood supply.,"both Include, different duplicate_of",WS0193; WS0205,
+WS0186,2022,Patients with gastric volvulus recurrence have high incidence of wandering spleen requiring laparoscopic gastropexy and splenopexy.,"both Include, different ws_basis",Imaging shows ectopic position or mobility,"Named wandering spleen, no detail"
+WS0193,2022,Dwarfism associated with wandering splenomegaly.,"both Include, different duplicate_of",WS0182; WS0205,WS0205
+WS0199,2021,Successful treatment of floating splenic volvulus: Two case reports and a literature review.,"both Include, different duplicate_of",,WS1902; WS2011
+WS0205,2021,Wandering splenomegaly reduction after splenopexy.,"both Include, different duplicate_of",WS0182; WS0193,WS0193
+WS0215,2021,Splenic Volvulus and 2q37 Deletion Syndrome.,"both Exclude, different reason (proposed: first applicable in the D3 order)",N age not confirmed under 18,E4 no original patient data
+WS0228,2021,Surgical Approach of Wandering Spleen in Infants and Children: A Systematic Review.,"both Include, different ws_basis",Imaging and operation,"Named wandering spleen, no detail"
+WS0239,2020,"Splenoptosis in young female, case report.","both Include, different ws_basis",Imaging and operation,Imaging shows ectopic position or mobility
+WS0264,2020,Acute abdomen due to an infarction of wandering spleen: case report.,"both Include, different ws_basis",Operation shows ectopic position or mobility,Imaging and operation
+WS0277,2020,Torsion of a wandering spleen.,"both Include, different ws_basis",Imaging shows ectopic position or mobility,Imaging and operation
+WS0286,2019,Wandering spleen with splenic torsion in a child with DiGeorge syndrome.,"both Include, different ws_basis",Imaging and operation,Imaging shows ectopic position or mobility
+WS0292,2019,"Concurrent occurrence of a wandering spleen, organoaxial gastric volvulus, pancreatic volvulus, and cholestasis - A rare cause of an acute abdomen.","both Include, different ws_basis",Imaging and operation,Imaging shows ectopic position or mobility
+WS0321,2018,Emergencies in the Treatment of Wandering Spleen,"both Include, different duplicate_of",WS0741,
+WS0329,2018,Splenectomy in Gaucher Disease: A Call for Minimally Invasive Surgery.,"both Exclude, different reason (proposed: first applicable in the D3 order)",N age not confirmed under 18,E3 adults only
+WS0344,2017,Torsion of a wandering spleen in an adolescent with Gaucher disease.,"both Include, different ws_basis",Imaging shows ectopic position or mobility,Imaging and operation
+WS0354,2018,You wander... you lose! Importance of surgical intervention in wandering spleen.,"both Include, different ws_basis",Imaging shows ectopic position or mobility,Imaging and operation
+WS0368,2016,The Great Pretender: Pediatric Wandering Spleen: Two Case Reports and Review of the Literature.,"both Include, different ws_basis",Imaging and operation,Imaging shows ectopic position or mobility
+WS0378,2016,Torsion of wandering spleen.,"both Include, different ws_basis",Imaging shows ectopic position or mobility,Imaging and operation
+WS0380,2016,Imaging findings of splenic emergencies: a pictorial review.,"both Exclude, different reason (proposed: first applicable in the D3 order)",N age not confirmed under 18,E4 no original patient data
+WS0381,2016,A Rare Case of Splenic Torsion with Sigmoid Volvulus in a 14-Year-Old Girl.,"both Include, different ws_basis",Imaging shows ectopic position or mobility,Imaging and operation
+WS0396,2015,Acute torsion of wandering spleen in a 17-year-old girl.,"both Include, different ws_basis",Imaging shows ectopic position or mobility,Imaging and operation
+WS0411,2014,Splenorenal collaterals as hallmark for a twisted wandering spleen in a 14-year-old girl with abdominal pain: a case report.,"both Include, different ws_basis",Imaging shows ectopic position or mobility,Imaging and operation
+WS0412,2014,Single-incision laparoscopic splenectomy and splenic autotransplantation for an enlarged wandering spleen with torsion.,"both Include, different ws_basis",Imaging shows ectopic position or mobility,Operation shows ectopic position or mobility
+WS0449,2014,Wandering spleen in children: a report of 3 cases and a brief literature review underlining the importance of diagnostic imaging.,"both Include, different duplicate_of",WS0580,
+WS0451,2013,Left upper quadrant pain: upside down spleen.,"both Include, different ws_basis",Imaging shows ectopic position or mobility,"Torsion only, position not stated"
+WS0461,2013,Novel no-stop FLNA mutation causes multi-organ involvement in males.,"both Include, different ws_basis",Imaging shows ectopic position or mobility,Imaging and operation
+WS0478,2013,Acute abdominal pain in the pediatric emergency department: a case of right lower quadrant wandering spleen that acutely torsed.,"both Include, different ws_basis",Imaging shows ectopic position or mobility,Imaging and operation
+WS0479,2013,Acute abdomen due to splenic torsion.,"both Include, different ws_basis",Operation shows ectopic position or mobility,"Torsion only, position not stated"
+WS0486,2013,Torsion of wandering spleen as a rare reason for acute abdomen: A presentation of two cases.,"both Include, different ws_basis",Imaging shows ectopic position or mobility,Imaging and operation
+WS0493,2012,Acute splenic torsion in children: which is the best treatment? A case report.,"both Include, different ws_basis",Imaging shows ectopic position or mobility,Operation shows ectopic position or mobility
+WS0499,2012,14 year-old female with splenic torsion.,"both Include, different ws_basis",Imaging shows ectopic position or mobility,Imaging and operation
+WS0513,2012,Ectopic spleen presenting as an abdominal mass in a patient with Crohn's disease.,"both Exclude, different reason (proposed: first applicable in the D3 order)",E3 adults only,E2 not wandering spleen
+WS0526,2010,Paediatric wandering spleens in Malawi.,"both Include, different ws_basis",Operation shows ectopic position or mobility,Imaging shows ectopic position or mobility
+WS0550,2010,Wandering spleen in children: multicenter retrospective study.,"both Include, different ws_basis",Imaging shows ectopic position or mobility,Imaging and operation
+WS0551,2010,Multimodality imaging of a neonatal wandering spleen.,"both Include, different ws_basis",Imaging shows ectopic position or mobility,Imaging and operation
+WS0554,2010,Splenomegaly as presentation of a wandering spleen.,"both Include, different ws_basis",Imaging shows ectopic position or mobility,Imaging and operation
+WS0575,2009,Delayed presentation of congenital diaphragmatic hernia with intrathoracic gastric volvulus.,"both Include, different ws_basis",Operation shows ectopic position or mobility,Imaging and operation
+WS0580,2009,Abdominal pain and wandering spleen in young children: the importance of an early diagnosis.,"both Include, different duplicate_of",WS0449,
+WS0593,2008,Wandering spleen presenting as recurrent abdominal pain in a young female.,"both Include, different ws_basis",Imaging shows ectopic position or mobility,Imaging and operation
+WS0593,2008,Wandering spleen presenting as recurrent abdominal pain in a young female.,"both Include, different duplicate_of",,WS1651
+WS0612,2008,Wandering Spleen: A Rare Diagnosis with Variable Presentation.,"both Include, different ws_basis",Imaging shows ectopic position or mobility,Imaging and operation
+WS0630,2007,Surgical treatment of patients with wandering spleen: report of six cases with a review of the literature.,"both Include, different ws_basis",Imaging shows ectopic position or mobility,Imaging and operation
+WS0658,2006,An unusual case of hemoperitoneum owing to acute splenic torsion in a child with immunoglobulin deficiency.,"both Include, different ws_basis",Operation shows ectopic position or mobility,Imaging and operation
+WS0660,2005,Torsion of a wandering spleen with whorled appearance of the splenic hilum in CT scan.,"both Include, different ws_basis",Imaging shows ectopic position or mobility,Imaging and operation
+WS0667,2005,Weird activity and the wandering spleen.,"both Include, different ws_basis",Imaging shows ectopic position or mobility,Imaging and operation
+WS0678,2005,Laparoscopic pocket splenopexy for wandering spleen: a case report.,"both Include, different ws_basis",Imaging and operation,Operation shows ectopic position or mobility
+WS0686,2005,Autoinfarcted wandering spleen and fatal pneumococcal sepsis in an infant.,"both Include, different ws_basis",Operation shows ectopic position or mobility,"Named wandering spleen, no detail"
+WS0714,2003,Wandering spleen: a rare cause of abdominal pain.,"both Include, different ws_basis",Operation shows ectopic position or mobility,Imaging and operation
+WS0717,2003,Splenic volvulus.,"both Include, different ws_basis",Operation shows ectopic position or mobility,"Torsion only, position not stated"
+WS0724,2003,Mass at the splenic hilum: a clue to torsion of a wandering spleen located in a normal left upper quadrant position.,"both Include, different ws_basis",Operation shows ectopic position or mobility,"Torsion only, position not stated"
+WS0731,2003,Avulsion of wandering spleen after traumatic torsion.,"both Include, different ws_basis",Operation shows ectopic position or mobility,Imaging and operation
+WS0732,2003,Splenic torsion.,"both Include, different ws_basis",Operation shows ectopic position or mobility,"Torsion only, position not stated"
+WS0734,2003,Multidetector-row CT appearance of acute torsion of wandering spleen in a child.,"both Include, different ws_basis",Imaging shows ectopic position or mobility,Imaging and operation
+WS0741,2002,Clinical presentation of wandering spleen.,"both Include, different duplicate_of",WS0321,
+WS0746,2002,Torsion of a wandering spleen.,"both Include, different ws_basis",Imaging shows ectopic position or mobility,Imaging and operation
+WS0750,2002,Ectopic spleen and left-sided vena cava in Beckwith-Wiedemann syndrome.,"both Exclude, different reason (proposed: first applicable in the D3 order)",E3 adults only,E2 not wandering spleen
+WS0751,2002,Nonoperative treatment of splenic rupture in malaria tropica: review of literature and case report.,"both Exclude, different reason (proposed: first applicable in the D3 order)",E3 adults only,E2 not wandering spleen
+WS1283,2026,Splenic torsion of a wandering spleen and polysplenia syndrome in a 10-year-old boy with cyanotic congenital heart disease: A case report,"both Include, different ws_basis",Imaging and operation,Operation shows ectopic position or mobility
+WS1289,2021,Splenic infarction: Torsion of a wandering spleen in a child,"both Include, different ws_basis",Operation shows ectopic position or mobility,Imaging and operation
+WS1311,2024,Splenic infarction following recurrent torsion of a wandering spleen: A case report,"both Include, different ws_basis",Imaging and operation,Operation shows ectopic position or mobility
+WS1359,2022,Wandering Spleen Torsion: A Rare Case of Acute Abdomen,"both Include, different ws_basis",Imaging and operation,Imaging shows ectopic position or mobility
+WS1361,2021,"Torsion of wandering spleen, splenectomy and autotransplantation of splenic slices","both Include, different ws_basis",Imaging shows ectopic position or mobility,Imaging and operation
+WS1373,2020,Wandering spleen in a pediatric patient,"both Include, different ws_basis",Imaging shows ectopic position or mobility,Imaging and operation
+WS1512,2017,Splenic torsion presenting as splenic vein thrombosis,"both Include, different ws_basis",Operation shows ectopic position or mobility,Imaging and operation
+WS1527,2019,Torsion of wandering spleen in an infant associated with hamartomatous vascular malformation,"both Include, different ws_basis",Imaging and operation,Operation shows ectopic position or mobility
+WS1537,2023,Surgical crossroads: Unravelling mesenteroaxial volvulus and diaphragmatic eventration,"both Include, different ws_basis",Operation shows ectopic position or mobility,"Torsion only, position not stated"
+WS1577,2017,Update on a previously reported male with a FLNA missense mutation,"both Include, different ws_basis",Operation shows ectopic position or mobility,"Named wandering spleen, no detail"
+WS1578,2019,Acute presentation of pediatric splenic torsion,"both Include, different ws_basis",Operation shows ectopic position or mobility,Imaging and operation
+WS1584,2024,Unusual gastric distention in a 1-year-old infant,"both Include, different ws_basis",Imaging and operation,Imaging shows ectopic position or mobility
+WS1859,2024,儿童脾扭转诊治的单中心回顾性研究,"both Include, different n_children_individual",19,18
+WS1880,2022,游走脾急腹症1例,"both Include, different ws_basis",Imaging shows ectopic position or mobility,Imaging and operation
+WS1961,2015,游走性脾脏并扭转的手术治疗,"both Pending, different n_children_aggregate",11,
+WS2011,2011,腹腔镜脾部分切除、残余脾腹膜外固定术治疗游走脾并扭转一例,"both Include, different ws_basis",Imaging and operation,Operation shows ectopic position or mobility
+WS2040,2009,脾扭转的CT诊断1例,"both Include, different ws_basis","Torsion only, position not stated",Imaging shows ectopic position or mobility
+WS2046,2009,游走脾扭转,"both Include, different ws_basis",Operation shows ectopic position or mobility,Imaging and operation
+WS2074,2006,超声诊断原发于右髂总动脉异位脾脏1例,"both Exclude, different reason (proposed: first applicable in the D3 order)",E3 adults only,E2 not wandering spleen
+WS2076,2006,儿童脾扭转,"both Exclude, different reason (proposed: first applicable in the D3 order)",E5 not a formal article,E4 no original patient data
+WS2082,2005,病例报道:腹腔镜下游离脾的袋状脾固定术,"both Exclude, different reason (proposed: first applicable in the D3 order)",E5 not a formal article,E4 no original patient data
+WS2085,2005,超声诊断原发于右髂总动脉异位脾脏1例,"both Exclude, different reason (proposed: first applicable in the D3 order)",E3 adults only,E2 not wandering spleen
+WS2087,2005,腹膜后腹腔镜脾固定术治疗小儿游走脾,"both Exclude, different reason (proposed: first applicable in the D3 order)",E5 not a formal article,E4 no original patient data
+WS2088,2005,肠梗阻3例病因分析,"both Exclude, different reason (proposed: first applicable in the D3 order)",E2 not wandering spleen,E3 adults only
+WS2092,2004,游离脾扭转1例,"both Include, different ws_basis",Imaging and operation,Imaging shows ectopic position or mobility
+WS2137,2000,游走脾并蒂扭转1例报告,"both Include, different ws_basis",Imaging shows ectopic position or mobility,Imaging and operation
+WS2145,2000,游走脾并发胃扭转三例,"both Include, different ws_basis",Operation shows ectopic position or mobility,Imaging and operation
+WS2443,2016,15例异位脾脏的诊断和外科治疗,"both Pending, different n_children_aggregate",15,
+WS2461,2012,腹膜后异位脾脏误诊为“盆腔包块”1例,"both Exclude, different reason (proposed: first applicable in the D3 order)",E3 adults only,E2 not wandering spleen
+WS2480,2010,游走脾脏1例,"both Include, different ws_basis",Operation shows ectopic position or mobility,Imaging and operation

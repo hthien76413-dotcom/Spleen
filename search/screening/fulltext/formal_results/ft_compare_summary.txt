@@ -1,0 +1,37 @@
+FULL-TEXT SCREENING: COMPARISON OF THE TWO FT_log FILES
+R1 file: FT_R1.xlsx | R2 file: FT_R2.xlsx | made 2026-10-24
+Contains both reviewers' record-level decisions: give it to the adjudicator only after both have finished.
+Format check R1: 0 error(s), 4 warning(s)  -> run the 'check' command on this file
+Format check R2: 3 error(s), 4 warning(s)  -> run the 'check' command on this file
+
+Records: 540 in R1, 540 in R2, 540 in both, 0 only in R1, 0 only in R2
+Retrieval list: 540 to retrieve; handled by both 540, by one only 0, by neither 0
+
+Categories (records in both files): agree Exclude 250, agree Include 261, agree Pending IPD 3, conflict: D not confirmed by both 11, conflict: Exclude vs Pending IPD 2, conflict: Include vs Exclude 10, conflict: Include vs Pending IPD 3
+Conflicts to settle: 26 of 540 (4.8%)
+3 categories (Include / Exclude / Pending IPD): agreement 97.2%; kappa 0.95 (rough 95% CI 0.92 to 0.97)
+2 categories (Exclude vs Include or Pending IPD): agreement 97.8%; kappa 0.96 (rough 95% CI 0.93 to 0.98)
+Contingency (rows R1, columns R2; Include / Exclude / Pending IPD):
+  Include       261     3     3
+  Exclude         7   261     1
+  Pending IPD     0     1     3
+Both Exclude: 250; same reason 236 (94.4%), different reason 14
+  different reasons (R1 / R2): E2/E3 1, E3/E2 6, E5/E4 3, N/E3 1, N/E4 3
+Detail differences (both Include / both Pending IPD / both Exclude): 100
+R1: Include 267, Exclude 269, Pending IPD 4 | Exclude reasons: D 58, E5 23, E4 18, E1 8, E2 22, E3 129, N 5, E6 6
+R2: Include 268, Exclude 265, Pending IPD 7 | Exclude reasons: L 1, D 65, E5 18, E4 22, E1 8, E2 21, E3 122, N 2, E6 6
+
+
+FORMAT ISSUES (R1)
+  WARN row 47 WS0182: duplicate_of 'WS0193; WS0205' is not another WS id
+  WARN row 50 WS0193: duplicate_of 'WS0182; WS0205' is not another WS id
+  WARN row 54 WS0205: duplicate_of 'WS0182; WS0193' is not another WS id
+  WARN row 184 WS0550: duplicate_of 'WS0585; WS0624' is not another WS id
+
+FORMAT ISSUES (R2)
+  ERROR row 380 WS1299: reason 'E5 not formal article' is not exactly a name in the drop-down list
+  ERROR row 387 WS1279: reason 'E5 not formal article' is not exactly a name in the drop-down list
+  ERROR row 440 WS1374: reason 'E5 not formal article' is not exactly a name in the drop-down list
+  WARN row 53 WS0199: duplicate_of 'WS1902; WS2011' is not another WS id
+  WARN row 184 WS0550: duplicate_of 'WS0585; WS0624' is not another WS id
+  WARN Pending IPD without n_children_aggregate (2 rows: 295, 296)
