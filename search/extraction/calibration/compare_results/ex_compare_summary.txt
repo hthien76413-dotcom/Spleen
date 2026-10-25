@@ -1,0 +1,32 @@
+EXTRACTION: COMPARISON OF THE TWO FILES
+E1 file: extraction_E1.xlsx | E2 file: extraction_E2.xlsx | made 2026-10-25
+Contains both extractors' record-level values: give it to the adjudicator only after both have finished.
+
+COVERAGE
+  Reports: 10 in E1, 10 in E2, 10 in both
+  Patients: 36 in E1, 35 in E2, 35 matched by patient_id, 1 only in E1, 0 only in E2
+  Reports where the child count or the number of patient rows differs: 1
+
+PRIMARY EXPOSURE (index-episode duration, categories recomputed from the days)
+  matched patients 35; compared 35; left out because blank in one or both files 0
+  agreement 91.4%; kappa 0.89 (rough 95% CI 0.77 to 1.00)
+  contingency (rows E1, columns E2; <=2 d / 3-7 d / 8-30 d / >30 d / NR):
+    <=2 d     9     0     0     0     0
+    3-7 d     0    10     0     0     1
+    8-30 d    0     0     2     0     1
+    >30 d     0     0     0     4     1
+    NR        0     0     0     0     7
+  days (idx_dur_days): agree within tolerance (0.5 day or 10%) in 33 of 35 where both gave a value or NR; blank in one file 0
+
+PRIMARY OUTCOME (derived from viability and procedure: Non-viable / Viable / other)
+  compared 35; left out because blank in one or both files 0
+  agreement 42.9%; kappa 0.24 (rough 95% CI 0.02 to 0.46)
+  raw viability field (Viable / Partially non-viable / Non-viable / NR / Not applicable): agreement 40.0%; kappa 0.26 (rough 95% CI 0.06 to 0.46)
+
+ALL CODED FIELDS (56 fields; free text, sources and derived columns not compared)
+  field values compared (cells filled in at least one file): 1636; agree 1142 (69.8%); blank in one file 113; differ 381
+  fields with the lowest agreement (at least 3 values compared): cond_other 0/35, missed_dx_alt 0/5, missed_dx_contact 0/5, known_dx_deferred 0/35, waiting_interval_days 0/35, procedure_other 0/9, recurrence_details 0/3, post_splenectomy_compl 0/35
+
+PATIENTS ONLY IN ONE FILE
+  E1 only: WS1859_P17
+  E2 only: -
