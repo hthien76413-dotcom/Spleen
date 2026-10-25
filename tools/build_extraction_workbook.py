@@ -23,7 +23,7 @@ from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
 from openpyxl.utils import get_column_letter
 from openpyxl.worksheet.datavalidation import DataValidation
 
-VERSION = "v2026-10-19e"
+VERSION = "v2026-10-25a"
 _ap = argparse.ArgumentParser(description="Build the extraction / full-text workbook (see the module docstring).")
 _ap.add_argument("out", nargs="?", default="Extraction workbook - template (draft).xlsx")
 _ap.add_argument("--ft-only", action="store_true", help="only README, FT_log, Calibration_list and Lists, with the WS ids of --prefill filled in")
@@ -56,7 +56,7 @@ LISTS = {
         "Named wandering spleen, no detail",
         "Torsion only, position not stated",
     ],
-    "presentation": ["Acute", "Chronic or intermittent", "Acute on chronic", "Asymptomatic", "Mass only"],
+    "presentation": ["Acute", "Chronic or intermittent", "Acute on chronic", "Asymptomatic", "Mass only", "NR"],
     "deferred_reason": ["Family declined", "Observation advised", "Elective operation scheduled", "Other", "Not applicable"],
     "torsion_awaiting": ["Yes", "No", "Not applicable"],
     "perfusion": ["Normal", "Reduced", "Absent", "NR"],
@@ -147,7 +147,7 @@ PATIENT_COLS = [
     ("aetiology_cause", "Aetiology (cause)", "获得性时写明原因", "text", 14, "patient"),
     ("ws_basis", "Basis for wandering spleen (added)", "报告凭什么说是游走脾（待确认，见 README 差异 A5）", ("list", "ws_basis"), 22, "patient"),
     # C. Timeline
-    ("presentation", "Presentation", "Acute / Chronic or intermittent / Acute on chronic / Asymptomatic / Mass only", ("list", "presentation"), 16, "timeline"),
+    ("presentation", "Presentation", "Acute / Chronic or intermittent / Acute on chronic / Asymptomatic / Mass only；报告没写发作形式填 NR", ("list", "presentation"), 16, "timeline"),
     ("idx_dur_verbatim", "Index-episode duration (verbatim)", "原文写法", "text", 20, "timeline"),
     ("idx_dur_days", "Index-episode duration (days)", "天，按下方 Rules 表规则；含糊或没有填 NR", "num_nr", 10, "timeline"),
     ("idx_dur_rules", "Rule(s) applied", "用了第几条换算规则，如 2;3", "text", 9, "timeline"),

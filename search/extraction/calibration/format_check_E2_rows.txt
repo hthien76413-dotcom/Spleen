@@ -12,3 +12,7 @@ What the guide says: section 5.3 gives five values for `presentation` (Acute / C
 Asymptomatic / Mass only) and no 'NR'. Most other lists in the template do have an 'NR' value, so this may be a gap in the
 template rather than a mistake by the extractor. This is for the extractors and Jun Yang to settle at the calibration
 discussion (guide section 12, item X11); nothing in the file has been changed.
+
+Update 25 Oct 2026: the author agreed to add 'NR' to the list of `presentation` (template v2026-10-25a, extraction guide
+v2026-10-25c, 5.3 and X11). Re-running the same check on the unchanged E2 file with the new allowed values gives 0 errors,
+0 warnings. Nothing in the E2 file was edited. Jun Yang's and Hongqiang Bian's knowledge of the change is not recorded.
