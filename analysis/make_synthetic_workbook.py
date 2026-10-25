@@ -1,11 +1,15 @@
 # SYNTHETIC consensus workbook (invented data; true log-odds 0.4 per doubling) to test analysis_crosscheck.py. Run from the repo root.
 import sys, subprocess, random, math
 from openpyxl import load_workbook
-subprocess.run([sys.executable,"-I","tools/build_extraction_workbook.py","/tmp/an_template.xlsx"],check=True,stdout=subprocess.DEVNULL)
-wb=load_workbook("/tmp/an_template.xlsx"); random.seed(7)
-R=wb["Reports"]; P=wb["Patients"]
-rc={R.cell(1,c).value:c for c in range(1,R.max_column+1) if R.cell(1,c).value}
-pc={P.cell(1,c).value:c for c in range(1,P.max_column+1) if P.cell(1,c).value}
+from openpyxl import Workbook
+from pathlib import Path
+wb=Workbook(); wb.remove(wb.active)
+for name, cols in [('Reports',['report_id', 'year', 'language', 'design', 'extractor', 'linked_duplicates', 'consecutive']),('Patients',['aetiology', 'age_years', 'cond_dh', 'cond_goo', 'cond_gv', 'extractor', 'fixation', 'idx_dur_alt_days', 'idx_dur_days', 'idx_dur_lower_bound', 'known_dx_deferred', 'missed_dx', 'patient_id', 'platelets', 'procedure', 'report_id', 'same_patient_as', 'status_last_fu', 'torsion_at_op', 'torsion_awaiting', 'total_hist_days', 'viability', 'ws_basis'])]:
+    ws=wb.create_sheet(name); ws.append(cols); ws.append(['']*len(cols)); ws.append(['']*len(cols))
+random.seed(7)
+R=wb['Reports']; P=wb['Patients']
+rc={R.cell(1,c).value:c for c in range(1,R.max_column+1)}
+pc={P.cell(1,c).value:c for c in range(1,P.max_column+1)}
 rr=4; pr=4; TRUE=0.4  # log-odds per doubling
 reports=[]
 for i in range(60):
@@ -31,4 +35,4 @@ for i in range(60):
         if v["known_dx_deferred"]=="Yes": v["torsion_awaiting"]=random.choice(["Yes","No"])
         for k,x in v.items(): P.cell(pr,pc[k],x)
         pr+=1
-wb.save("synthetic_consensus.xlsx"); print(rr-4,"reports",pr-4,"patients")
+wb.save(Path(__file__).parent / "synthetic_consensus.xlsx"); print(rr-4,"reports",pr-4,"patients")

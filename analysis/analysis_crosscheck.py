@@ -17,20 +17,19 @@ Data rules (all derived from the raw columns, as in tools/compare_extraction.py)
   * Period of publication: 2000-2014 vs 2015 onward from Reports.year; the own series (report_id OWN) is 2015 onward. Reports
     before 2000 should not exist; they are counted and reported, not silently dropped.
   * Cluster = report_id (the own series is one cluster).
-Choices NOT fixed by the protocol (Claude's readings, for Ji Wang to confirm or change; each is a constant or option below)
+Original proposed choices; decisions and changes are documented in the accompanying review record
   * Trend test over the four duration categories: Cochran-Armitage with scores 1-4.
   * Bounding of missing durations: missing days are set to the smallest (then the largest) observed duration.
   * Spline: restricted cubic spline, 3 knots at the 10th, 50th and 90th percentiles of log2 days (Harrell), nonlinearity tested by a Wald
     test of the nonlinear term; fitted only if events / model degrees of freedom >= 10 (degrees of freedom counted with the spline).
-  * Duplicate-report analysis (d): of two reports linked by Reports.linked_duplicates, the one with the later year is omitted
-    (the one that states the overlap); equal years: the one that carries linked_duplicates.
+  * Duplicate-report analysis (d): of two reports linked by Reports.linked_duplicates, the report carrying linked_duplicates is omitted, regardless of year (protocol v1.8).
   * Mixed-effects model (sensitivity analysis 8) is not implemented here; use analysis_main.R (lme4::glmer).
 Output: results.txt and results.csv in --out.
 """
 import argparse, collections, csv, math, os, sys
 sys.dont_write_bytecode = True
 HERE = os.path.dirname(os.path.abspath(__file__))
-sys.path.insert(0, os.path.join(HERE, "..", "tools"))
+sys.path.insert(0, HERE)
 import numpy as np, pandas as pd
 import statsmodels.api as sm
 from scipy import stats
@@ -74,7 +73,7 @@ def build(path):
             status=ce.txt(p["status_last_fu"])))
     df = pd.DataFrame(rows)
     df = df[~df.duplicate].copy()
-    df["period2015"] = (df.year >= 2015).astype(float)
+    df["period2015"] = np.where(df.year.notna(), (df.year >= 2015).astype(float), np.nan)
     df.loc[df.own, "period2015"] = 1.0
     df["removal"] = df.procedure.isin(["Total splenectomy", "Partial splenectomy +/- splenopexy"])
     df["y"] = df.outcome_raw.map({"Non-viable": 1.0, "Viable": 0.0})
@@ -94,10 +93,7 @@ def omit_overlap_reports(df):
         for other in [x.strip() for x in l.replace(",", ";").split(";") if x.strip()]:
             if other not in yr:
                 continue
-            if yr[rid] > yr[other] or (yr[rid] == yr[other]):
-                omit.add(rid)
-            else:
-                omit.add(other)
+            omit.add(rid)  # Protocol v1.8: omit the report stating overlap
     return omit
 
 
@@ -114,7 +110,7 @@ def fit(df, ycol, xcols, cluster="report_id"):
         return None, d
     X = sm.add_constant(d[xcols].astype(float))
     try:
-        m = sm.Logit(d[ycol].astype(float), X).fit(disp=0, cov_type="cluster", cov_kwds={"groups": pd.factorize(d[cluster])[0]}, maxiter=200)
+        m = sm.Logit(d[ycol].astype(float), X).fit(disp=0, cov_type="cluster", cov_kwds={"groups": pd.factorize(d[cluster])[0], "use_correction": True}, use_t=False, maxiter=200)
     except Exception as e:  # separation, singular matrix
         return ("failed: %s" % e), d
     if not np.all(np.isfinite(m.bse)) or m.mle_retvals.get("converged") is False:
@@ -179,6 +175,9 @@ def main():
 
     m, dd = primary("Primary", df)
     df_cc = dd
+    if m is not None and not isinstance(m,str):
+        b,se=float(m.params['l2']),float(m.bse['l2'])
+        pd.DataFrame([dict(beta=b,se=se,OR=np.exp(b),lo=np.exp(b-1.96*se),hi=np.exp(b+1.96*se))]).to_csv(os.path.join(a.out,'primary_precision.csv'),index=False)
     # spline
     ev = int(dd.y.sum()) if len(dd) else 0
     if isinstance(m, type(None)) or isinstance(m, str) or len(dd) == 0:
@@ -190,6 +189,7 @@ def main():
             d2 = dd.copy(); d2["sp"] = rcs(d2.l2.values, kn)
             m2, _ = fit(d2, "y", X + ["sp"])
             if m2 is not None and not isinstance(m2, str):
+                pd.DataFrame([dict(p=float(m2.pvalues["sp"]))]).to_csv(os.path.join(a.out,"spline_precision.csv"),index=False)
                 P("Spline: Wald p for the nonlinear term = %.3f (knots at log2 days %s)" % (m2.pvalues["sp"], np.round(kn, 2)))
             else:
                 P("Spline could not be fitted.")
@@ -210,18 +210,26 @@ def main():
         rows.append(dict(analysis="Category " + lab, n=nn, events=kk, clusters=s.report_id.nunique(), OR="", lo=round(lo, 3) if nn else "", hi=round(hi, 3) if nn else "", note="proportion"))
     tp = trend_test(k, t)
     P("  Cochran-Armitage trend p (scores 1-4) = %s" % ("NA" if np.isnan(tp) else "<0.001" if tp < 0.001 else "%.3f" % tp))
+    pd.DataFrame([dict(p=tp)]).to_csv(os.path.join(a.out,'trend_precision.csv'),index=False)
     # bounding of missing durations
     if df.days.notna().any():
         lo_d, hi_d = df.days[df.days > 0].min(), df.days.max()
         for lab, val in (("Missing durations set to the shortest observed", lo_d), ("Missing durations set to the longest observed", hi_d)):
             d = df.copy(); d.loc[d.days.isna(), "days"] = val; d["l2"] = np.log2(d.days.where(d.days > 0)); primary(lab, d)
+    for side in ['shortest','longest']:
+        z=df[df.y.notna()].copy(); z['boundcat']=category(z.days).cat.codes+1
+        z.loc[z.days.isna(),'boundcat']=1 if side=='shortest' else 4
+        for j in range(1,5):
+            s=z[z.boundcat==j]; k,n=int(s.y.sum()),len(s); lo,hi=exact_ci(k,n)
+            rows.append(dict(analysis=f'Category bound {side} {j}',n=n,events=k,clusters='',OR='',lo=round(lo,3),hi=round(hi,3),note='proportion'))
     # secondary exposures
     d = df.copy(); d["l2th"] = np.log2(d.total_hist.where(d.total_hist > 0)); primary("Secondary: log2 total history", d, xcols=["l2th", "age", "period2015"], term="l2th")
     d = df.copy(); d["missed"] = d.missed_dx.map({"Yes": 1.0, "No": 0.0}); primary("Secondary: missed diagnosis", d, xcols=["missed", "age", "period2015"], term="missed")
     d = df.copy(); d["defer"] = d.deferred.map({"Yes": 1.0, "No": 0.0}); primary("Secondary: known diagnosis, surgery deferred", d, xcols=["defer", "age", "period2015"], term="defer")
     d = df.copy(); d["thr"] = np.where(d.platelets.notna(), (d.platelets > 450).astype(float), np.nan); primary("Secondary: thrombocytosis", d, xcols=["thr", "age", "period2015"], term="thr")
     # torsion while awaiting
-    w = df[df.deferred == "Yes"]; kk, nn = int((w.torsion_awaiting == "Yes").sum()), len(w); lo, hi = exact_ci(kk, nn)
+    w = df[df.deferred == "Yes"]; known = w[w.torsion_awaiting.isin(["Yes","No"])]; kk, nn = int((known.torsion_awaiting == "Yes").sum()), len(known); lo, hi = exact_ci(kk, nn)
+    P("Torsion while awaiting: unknown outcomes %d of %d deferred patients" % (len(w)-nn,len(w)))
     P("Torsion while awaiting surgery: %d of %d known-diagnosis patients with deferral (exact 95%% CI %.2f to %.2f)" % (kk, nn, lo, hi) if nn else "Torsion while awaiting surgery: no patients with deferral")
     # subgroups
     for lab, mask in (("Subgroup: gastric volvulus or outlet obstruction", (df.gv == "Yes") | (df.goo == "Yes")),
@@ -249,7 +257,9 @@ def main():
     om = omit_overlap_reports(df); P("Reports omitted in analysis A(d): %s" % (sorted(om) or "none"))
     primary("A(d) without the report that states an overlap", df[~df.report_id.isin(om)])
     # reporting bias
-    ser = df[df.y.notna()].copy(); ser["grp"] = np.where(ser.design == "Case report", "single case reports", "series/other")
+    ser = df[df.y.notna()].copy(); sizes=df.groupby('report_id').size()
+    eligible=ser.report_id.map(sizes).ge(3) & ser.consecutive.eq('Yes')
+    ser["grp"] = np.where(ser.design == "Case report", "single case reports", np.where(eligible,"consecutive series >=3","other or consecutiveness NR"))
     for g, s in ser.groupby("grp"):
         P("Non-viable by %s: %d of %d" % (g, int((s.y == 1).sum()), len(s)))
     pd.DataFrame(rows).to_csv(os.path.join(a.out, "results.csv"), index=False)
