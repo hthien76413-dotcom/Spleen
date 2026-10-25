@@ -1,0 +1,42 @@
+FULL-TEXT STAGE: FINAL DECISIONS AND PRISMA COUNTS - FINAL
+R1 file FT_R1.xlsx | R2 file FT_R2.xlsx | conflicts ft_conflicts_adjudicated_2026-10-25.csv | IPD (none given: every Pending IPD stays pending)
+
+FROM THE RETRIEVAL LIST (search/screening/rescreen/fulltext_retrieval_list.csv)
+  Records advanced from title/abstract screening (incl. the E4 safety net): 1091
+  Not sought, published before 2000 (class Y): 485
+  Not sought, other language, published 2000 or later (class L): 66
+  Full text to be sought (class retrieve): 540
+
+FULL-TEXT ASSESSMENT
+  Handled by both reviewers: 540 | one reviewer only: 0 | neither: 0
+  Records with a final decision: 540 (of 540 handled by at least one)
+  Full text not obtained, reason D (confirmed): 54
+  Full texts assessed (final decision, D excluded): 486
+  Excluded after full-text assessment: 212
+    L   other language                   1
+    E5  not a formal article             24
+    E4  no original patient data         19
+    E1  non-human                        8
+    E2  not wandering spleen             27
+    E3  adults only                      125
+    N   age not confirmed under 18       2
+    E6  other                            6
+  Pending IPD (still waiting): 5 records, 6 children aggregate-only
+  Included: 269 reports; children with individual data 328, aggregate-only 11; 2 included report(s) have no agreed child count yet
+  Linked duplicate reports among the included (duplicate_of filled): 20
+  Included via IPD received: 0 report(s); their child counts come from the data, not from this stage
+  Included records whose R1 and R2 details differ (ws_basis / child counts / duplicate link): 82 (settle at the extraction consensus)
+  Included records whose details come from one reviewer only (the other did not include): 8
+
+HOW CONFLICTS WERE SETTLED
+  Conflicts in the current logs: 26 | resolved: 26 | unresolved: 0
+    resolved by final column: 26
+  Both Exclude with different reasons settled by the D3 order: 14
+
+E4 SAFETY-NET RECORDS (27 on the list; those under class Y or L are not read)
+    Exclude E1: 1
+    Exclude E3: 1
+    Exclude E4: 11
+    Exclude E6: 6
+    Include: 2
+    not read (class Y): 6
