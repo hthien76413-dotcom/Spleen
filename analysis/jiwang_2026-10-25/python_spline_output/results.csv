@@ -1,0 +1,39 @@
+analysis,n,events,clusters,OR,lo,hi,note
+Primary,768,326,60,1.593,1.485,1.71,
+Category <=2 d,202,33,55,,0.115,0.222,proportion
+Category >2-7 d,179,51,53,,0.22,0.357,proportion
+Category >7-30 d,203,105,57,,0.446,0.588,proportion
+Category >30 d,184,137,53,,0.675,0.806,proportion
+Missing durations set to the shortest observed,768,326,60,1.593,1.485,1.71,
+Missing durations set to the longest observed,768,326,60,1.593,1.485,1.71,
+Category bound shortest 1,202,33,,,0.115,0.222,proportion
+Category bound shortest 2,179,51,,,0.22,0.357,proportion
+Category bound shortest 3,203,105,,,0.446,0.588,proportion
+Category bound shortest 4,184,137,,,0.675,0.806,proportion
+Category bound longest 1,202,33,,,0.115,0.222,proportion
+Category bound longest 2,179,51,,,0.22,0.357,proportion
+Category bound longest 3,203,105,,,0.446,0.588,proportion
+Category bound longest 4,184,137,,,0.675,0.806,proportion
+Secondary: log2 total history,0,0,0,,,,not estimable (too few patients or one outcome class)
+Secondary: missed diagnosis,540,233,52,1.088,0.766,1.546,
+"Secondary: known diagnosis, surgery deferred",768,326,60,0.983,0.735,1.314,
+Secondary: thrombocytosis,768,326,60,0.81,0.635,1.033,
+Subgroup: gastric volvulus or outlet obstruction,432,185,41,1.765,1.575,1.978,
+Subgroup: no gastric volvulus or outlet obstruction,336,141,35,1.426,1.283,1.584,
+Subgroup: congenital,384,160,38,1.666,1.497,1.853,
+Subgroup: acquired,384,166,36,1.528,1.399,1.669,
+Subgroup: diaphragmatic anomaly,0,0,0,,,,not estimable (too few patients or one outcome class)
+Subgroup: no diaphragmatic anomaly,768,326,60,1.593,1.485,1.71,
+SA1 without own series,738,313,59,1.574,1.472,1.684,
+SA2 pedicle torsion confirmed at operation,342,129,36,1.619,1.446,1.814,
+SA3 partial splenectomy for partial infarction as salvage,768,326,60,1.593,1.485,1.71,
+SA4 alternative coding of intermittent or worsening episodes,768,326,60,1.593,1.485,1.71,
+SA5 reports judged adequate,,,,,,,"not run: no --rob file (report_id, adequate)"
+SA6 without Chinese-language reports,606,255,48,1.57,1.451,1.699,
+SA7 without reports before 2000,,,,,,,not applicable (v1.5)
+SA8 mixed-effects model,,,,,,,not implemented here; see analysis_main.R
+A(a) without torsion-only inclusions,618,266,50,1.61,1.477,1.755,
+A(b) splenectomy with viability NR assigned non-viable (assumption),768,326,60,1.593,1.485,1.71,
+A(b) splenectomy with viability NR assigned viable,768,326,60,1.593,1.485,1.71,
+A(c) without lower-bound durations,768,326,60,1.593,1.485,1.71,
+A(d) without the report that states an overlap,762,323,59,1.601,1.49,1.72,

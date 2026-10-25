@@ -1,0 +1,24 @@
+During startup - Warning messages:
+1: Setting LC_COLLATE=C.UTF-8 failed 
+2: Setting LC_CTYPE=C.UTF-8 failed 
+3: Setting LC_MONETARY=C.UTF-8 failed 
+4: Setting LC_TIME=C.UTF-8 failed 
+Warning messages:
+1: package 'readxl' was built under R version 4.5.3 
+2: package 'sandwich' was built under R version 4.5.3 
+3: package 'lmtest' was built under R version 4.5.3 
+4: package 'zoo' was built under R version 4.5.3 
+Patients after dropping duplicates: 128 in 60 reports; own series 5
+Outcome: non-viable 26, viable 97, missing 5 (splenectomy with viability not reported: 5)
+Spline not examined: 24 events, fewer than 10 per degree of freedom.
+Duration reported for 105 of 123 patients with an outcome
+  <=2 d     26   1  (0.00 to 0.20)
+  >2-7 d    22   1  (0.00 to 0.23)
+  >7-30 d   29   8  (0.13 to 0.47)
+  >30 d     28  14  (0.31 to 0.69)
+  Trend p (scores 1-4) = <0.001
+Torsion while awaiting: unknown outcomes 0 of 70 deferred patients
+Torsion while awaiting surgery: 31 of 70 (exact 95% CI 0.32 to 0.57)
+Reports omitted in analysis A(d): WS0110
+Non-viable by other or consecutiveness NR: 19 of 86
+Non-viable by single case reports: 7 of 37 

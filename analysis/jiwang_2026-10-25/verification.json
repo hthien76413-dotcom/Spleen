@@ -1,0 +1,9 @@
+{
+  "manual_covariance_max_abs_error": 4.551914400963142e-15,
+  "n": 105,
+  "K": 4,
+  "G": 50,
+  "boundary_and_overlap_tests": "passed",
+  "primary_max_abs_difference": 1.800986026978535e-10,
+  "trend_p_max_abs_difference": 3.8490871189129916e-17
+}
