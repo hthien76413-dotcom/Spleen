@@ -1,0 +1,333 @@
+﻿point,patient_id,report_id,field,E1,E2,E1_source,E2_source,E1_notes,E2_notes,discussion_conclusion,adjudicator_ruling,final_reading
+1,WS0551_P1,WS0551,viability,Partially non-viable,Viable,"p.303 (Fig. 2, 3)",p2,"US: abnormally positioned markedly enlarged spleen anterior and inferior to a high-riding left kidney; CT: laceration posteriorly and non-enhancing anterior-superior portion ""consistent with infarct""; at laparotomy old haemorrhage, spleen covered by omentum and not fixed under the left rib cage. Authors do not state viability at laparotomy; entered from imaging (infarct) with the spleen preserved. Platelets 84,000/mm3. Duration counted from presentation (day 1) to operation (day 9).",,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,NR
+1,WS0551_P1,WS0551,viab_basis,NR,Intraoperative,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,NR
+1,WS0551_P1,WS0551,procedure,Splenopexy,Splenopexy,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,Splenopexy
+1,WS0551_P1,WS0551,torsion_at_op,NR,No,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,NR
+1,WS0668_P1,WS0668,viability,NR,Viable,p.434-436,p2-5,"Series of 7 children, mean age 9.7 y (range 4.2-15.3); individual age/sex given only for patients 2, 4, 6, 7. Five of the seven were published previously (probably WS0741); which ones not stated. Diagnosed at the first admission: abdominal pain; mobile mass suspected on examination; US spleen not in the left upper abdomen, low position, normal size. Presentation tempo not stated (Acute entered).",,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,NR
+1,WS0668_P1,WS0668,viab_basis,NR,NR,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,NR
+1,WS0668_P1,WS0668,procedure,Splenopexy,Splenopexy,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,Splenopexy
+1,WS0668_P1,WS0668,torsion_at_op,NR,NR,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,NR
+1,WS0668_P2,WS0668,viability,NR,Viable,p.434-436,p2-5,"Series of 7 children, mean age 9.7 y (range 4.2-15.3); individual age/sex given only for patients 2, 4, 6, 7. Five of the seven were published previously (probably WS0741); which ones not stated. Abdominal pain and mass; US spleen with a large cyst in the left lower abdomen; laparotomy: large splenic pedicle. Diagnosed at first admission. Tempo of presentation not stated (Acute entered).",,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,NR
+1,WS0668_P2,WS0668,viab_basis,NR,NR,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,NR
+1,WS0668_P2,WS0668,procedure,Splenopexy,Splenopexy,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,Splenopexy
+1,WS0668_P2,WS0668,torsion_at_op,NR,NR,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,NR
+1,WS0668_P3,WS0668,viability,NR,Viable,p.434-436,p2-5,"Series of 7 children, mean age 9.7 y (range 4.2-15.3); individual age/sex given only for patients 2, 4, 6, 7. Five of the seven were published previously (probably WS0741); which ones not stated. Abdominal distension and vomiting; US enlarged stomach in the splenic fossa; at surgery spleen anterior to the gastric antrum causing gastric outlet obstruction; normal spleen size. Tempo not stated (Acute entered).",,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,NR
+1,WS0668_P3,WS0668,viab_basis,NR,NR,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,NR
+1,WS0668_P3,WS0668,procedure,Splenopexy,Splenopexy,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,Splenopexy
+1,WS0668_P3,WS0668,torsion_at_op,NR,NR,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,NR
+1,WS0668_P4,WS0668,viability,NR,Viable,p.434-436,p2-5,"Series of 7 children, mean age 9.7 y (range 4.2-15.3); individual age/sex given only for patients 2, 4, 6, 7. Five of the seven were published previously (probably WS0741); which ones not stated. Repeat US after 18 months: spleen in the pelvis above the bladder; at surgery spleen in the pelvis with the pancreatic tail pulled toward the splenic hilum. Interval entered as 1.6 years x 365.",,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,NR
+1,WS0668_P4,WS0668,viab_basis,NR,NR,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,NR
+1,WS0668_P4,WS0668,procedure,Splenopexy,Splenopexy,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,Splenopexy
+1,WS0668_P4,WS0668,torsion_at_op,NR,NR,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,NR
+1,WS0668_P6,WS0668,viability,NR,Non-viable,p.434-436,p2-5,"Series of 7 children, mean age 9.7 y (range 4.2-15.3); individual age/sex given only for patients 2, 4, 6, 7. Five of the seven were published previously (probably WS0741); which ones not stated. Diagnosis on the third admission by contrast CT: enlarged, incompletely opacified spleen in an abnormally low position; splenectomy. Viability and torsion at operation not stated for this patient.",,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,NR
+1,WS0668_P6,WS0668,viab_basis,NR,NR,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,NR
+1,WS0668_P6,WS0668,procedure,Total splenectomy,Total splenectomy,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,Total splenectomy
+1,WS0668_P6,WS0668,torsion_at_op,NR,NR,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,NR
+1,WS1859_P1,WS1859,viability,NR,Non-viable,Table 1 and section 2.4-2.5 (p.371-372),Table 1,"Pancreatic tail displaced downward with slight rotation; torsion ""for several weeks"". Duration is onset-to-consultation; time from admission to operation not given.",,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,NR
+1,WS1859_P1,WS1859,viab_basis,NR,Intraoperative,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,NR
+1,WS1859_P1,WS1859,procedure,Total splenectomy,Total splenectomy,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,Total splenectomy
+1,WS1859_P1,WS1859,torsion_at_op,Yes,Yes,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,Yes
+1,WS1859_P10,WS1859,viability,NR,Non-viable,Table 1 and section 2.4-2.5 (p.371-372),Table 1,Only the gastrosplenic ligament present. Duration is onset-to-consultation; time from admission to operation not given.,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,NR
+1,WS1859_P10,WS1859,viab_basis,NR,Intraoperative,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,NR
+1,WS1859_P10,WS1859,procedure,Total splenectomy,Total splenectomy,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,Total splenectomy
+1,WS1859_P10,WS1859,torsion_at_op,Yes,Yes,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,Yes
+1,WS1859_P11,WS1859,viability,NR,Non-viable,Table 1 and section 2.4-2.5 (p.371-372),Table 1,"Table says 脾无周围韧带缺失 (ligaments not absent?) - wording unclear, other 16 operated cases have absent ligaments. Duration is onset-to-consultation; time from admission to operation not given.",,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,NR
+1,WS1859_P11,WS1859,viab_basis,NR,Intraoperative,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,NR
+1,WS1859_P11,WS1859,procedure,Total splenectomy,Total splenectomy,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,Total splenectomy
+1,WS1859_P11,WS1859,torsion_at_op,Yes,Yes,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,Yes
+1,WS1859_P12,WS1859,viability,NR,Non-viable,Table 1 and section 2.4-2.5 (p.371-372),Table 1,Index operation recorded as detorsion only; viability at the index operation not stated. Duration is onset-to-consultation; time from admission to operation not given.,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,NR
+1,WS1859_P12,WS1859,viab_basis,NR,Intraoperative,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,NR
+1,WS1859_P12,WS1859,procedure,Detorsion only,Total splenectomy,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,Detorsion only
+1,WS1859_P12,WS1859,torsion_at_op,Yes,Yes,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,Yes
+1,WS1859_P13,WS1859,viability,NR,Non-viable,Table 1 and section 2.4-2.5 (p.371-372),Table 1,"Onset 2 months, worsening for 1 day; primary coding = whole period, alternative = 1 day. Duration is onset-to-consultation; time from admission to operation not given.",,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,NR
+1,WS1859_P13,WS1859,viab_basis,NR,Intraoperative,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,NR
+1,WS1859_P13,WS1859,procedure,Autotransplantation,Total splenectomy,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,Autotransplantation
+1,WS1859_P13,WS1859,torsion_at_op,Yes,Yes,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,Yes
+1,WS1859_P14,WS1859,viability,NR,Non-viable,Table 1 and section 2.4-2.5 (p.371-372),Table 1,Duration is onset-to-consultation; time from admission to operation not given.,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,NR
+1,WS1859_P14,WS1859,viab_basis,NR,Intraoperative,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,NR
+1,WS1859_P14,WS1859,procedure,Total splenectomy,Total splenectomy,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,Total splenectomy
+1,WS1859_P14,WS1859,torsion_at_op,Yes,Yes,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,Yes
+1,WS1859_P16,WS1859,viability,Not applicable,Viable,Table 1 and section 2.4-2.5 (p.371-372),Table 1,"Spleen found already spontaneously detorsed at gastrostomy; splenic ligaments absent. Concurrent gastric volvulus and dilatation. Fig. 1 (3 y 2 m girl, ultrasound: spleen in the right mid-abdomen with whirl sign) appears to be this patient.",,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,NR
+1,WS1859_P16,WS1859,viab_basis,Not applicable,Intraoperative,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,NR
+1,WS1859_P16,WS1859,procedure,No operation,NR,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,No operation
+1,WS1859_P16,WS1859,torsion_at_op,No,Yes,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,No
+1,WS1859_P3,WS1859,viability,NR,Non-viable,Table 1 and section 2.4-2.5 (p.371-372),Table 1,Duration is onset-to-consultation; time from admission to operation not given.,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,NR
+1,WS1859_P3,WS1859,viab_basis,NR,Intraoperative,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,NR
+1,WS1859_P3,WS1859,procedure,Total splenectomy,Total splenectomy,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,Total splenectomy
+1,WS1859_P3,WS1859,torsion_at_op,Yes,Yes,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,Yes
+1,WS1859_P4,WS1859,viability,NR,Non-viable,Table 1 and section 2.4-2.5 (p.371-372),Table 1,Duration is onset-to-consultation; time from admission to operation not given.,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,NR
+1,WS1859_P4,WS1859,viab_basis,NR,Intraoperative,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,NR
+1,WS1859_P4,WS1859,procedure,Total splenectomy,Total splenectomy,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,Total splenectomy
+1,WS1859_P4,WS1859,torsion_at_op,Yes,Yes,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,Yes
+1,WS1859_P5,WS1859,viability,NR,Non-viable,Table 1 and section 2.4-2.5 (p.371-372),Table 1,Rotation of the proximal splenic pedicle; degrees not stated. Duration is onset-to-consultation; time from admission to operation not given.,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,NR
+1,WS1859_P5,WS1859,viab_basis,NR,Intraoperative,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,NR
+1,WS1859_P5,WS1859,procedure,Total splenectomy,Total splenectomy,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,Total splenectomy
+1,WS1859_P5,WS1859,torsion_at_op,Yes,Yes,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,Yes
+1,WS1859_P6,WS1859,viability,NR,Non-viable,Table 1 and section 2.4-2.5 (p.371-372),Table 1,Onset 12 months (chronic). Duration is onset-to-consultation; time from admission to operation not given.,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,NR
+1,WS1859_P6,WS1859,viab_basis,NR,Intraoperative,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,NR
+1,WS1859_P6,WS1859,procedure,Total splenectomy,Total splenectomy,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,Total splenectomy
+1,WS1859_P6,WS1859,torsion_at_op,Yes,Yes,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,Yes
+1,WS1859_P7,WS1859,viability,NR,Non-viable,Table 1 and section 2.4-2.5 (p.371-372),Table 1,Duration is onset-to-consultation; time from admission to operation not given.,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,NR
+1,WS1859_P7,WS1859,viab_basis,NR,Intraoperative,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,NR
+1,WS1859_P7,WS1859,procedure,Total splenectomy,Total splenectomy,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,Total splenectomy
+1,WS1859_P7,WS1859,torsion_at_op,Yes,Yes,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,Yes
+1,WS1859_P8,WS1859,viability,NR,Non-viable,Table 1 and section 2.4-2.5 (p.371-372),Table 1,Pancreatic body/tail displaced. Duration is onset-to-consultation; time from admission to operation not given.,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,NR
+1,WS1859_P8,WS1859,viab_basis,NR,Intraoperative,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,NR
+1,WS1859_P8,WS1859,procedure,Total splenectomy,Total splenectomy,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,Total splenectomy
+1,WS1859_P8,WS1859,torsion_at_op,Yes,Yes,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,Yes
+1,WS1859_P9,WS1859,viability,NR,Non-viable,Table 1 and section 2.4-2.5 (p.371-372),Table 1,Duration is onset-to-consultation; time from admission to operation not given.,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,NR
+1,WS1859_P9,WS1859,viab_basis,NR,Intraoperative,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,NR
+1,WS1859_P9,WS1859,procedure,Total splenectomy,Total splenectomy,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,Total splenectomy
+1,WS1859_P9,WS1859,torsion_at_op,Yes,Yes,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,Yes
+1,WS1880_P1,WS1880,viability,Partially non-viable,Non-viable,p.1-2,p1-2,"Operation: free spleen 25 x 12 x 5 cm, long pedicle, part ischaemic necrosis; pathology haemorrhagic splenic infarction. Laparoscopic exploration converted to laparotomy because of the critical condition. CT: spleen absent on the left, giant soft-tissue mass in the right mid-lower abdomen. Platelets 146 (outside hospital) and 154 at admission.",The spleen was in the right mid-lower abdomen and did not enhance on CT.,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,Partially non-viable
+1,WS1880_P1,WS1880,viab_basis,Both,Both,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,Intraoperative
+1,WS1880_P1,WS1880,procedure,Total splenectomy,Total splenectomy,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,Total splenectomy
+1,WS1880_P1,WS1880,torsion_at_op,Yes,Yes,,,,,仅采纳作者对术中脾状态的直接描述；不由术式或影像反推。,按原文裁定，最终值见 final_reading,Yes
+2,WS1859_P1,WS1859,cond_gv,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P10,WS1859,cond_gv,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P11,WS1859,cond_gv,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P12,WS1859,cond_gv,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P13,WS1859,cond_gv,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P14,WS1859,cond_gv,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P15,WS1859,cond_gv,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P18,WS1859,cond_gv,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P19,WS1859,cond_gv,Yes,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,Yes
+2,WS1859_P2,WS1859,cond_gv,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P3,WS1859,cond_gv,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P4,WS1859,cond_gv,Yes,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,Yes
+2,WS1859_P5,WS1859,cond_gv,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P6,WS1859,cond_gv,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P7,WS1859,cond_gv,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P8,WS1859,cond_gv,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P9,WS1859,cond_gv,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS0668_P4,WS0668,cond_panc_tail,Yes,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,Yes
+2,WS1859_P1,WS1859,cond_panc_tail,Yes,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,Yes
+2,WS1859_P10,WS1859,cond_panc_tail,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P11,WS1859,cond_panc_tail,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P12,WS1859,cond_panc_tail,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P13,WS1859,cond_panc_tail,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P14,WS1859,cond_panc_tail,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P15,WS1859,cond_panc_tail,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P16,WS1859,cond_panc_tail,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P18,WS1859,cond_panc_tail,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P19,WS1859,cond_panc_tail,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P2,WS1859,cond_panc_tail,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P3,WS1859,cond_panc_tail,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P4,WS1859,cond_panc_tail,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P5,WS1859,cond_panc_tail,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P6,WS1859,cond_panc_tail,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P7,WS1859,cond_panc_tail,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P8,WS1859,cond_panc_tail,Yes,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,Yes
+2,WS1859_P9,WS1859,cond_panc_tail,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P1,WS1859,cond_dh,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P10,WS1859,cond_dh,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P11,WS1859,cond_dh,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P12,WS1859,cond_dh,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P13,WS1859,cond_dh,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P14,WS1859,cond_dh,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P15,WS1859,cond_dh,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P16,WS1859,cond_dh,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P18,WS1859,cond_dh,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P19,WS1859,cond_dh,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P2,WS1859,cond_dh,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P3,WS1859,cond_dh,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P4,WS1859,cond_dh,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P5,WS1859,cond_dh,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P6,WS1859,cond_dh,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P7,WS1859,cond_dh,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P8,WS1859,cond_dh,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P9,WS1859,cond_dh,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS0159_P1,WS0159,known_dx_deferred,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS0159_P2,WS0159,known_dx_deferred,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS0159_P3,WS0159,known_dx_deferred,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS0551_P1,WS0551,known_dx_deferred,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS0668_P1,WS0668,known_dx_deferred,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS0668_P2,WS0668,known_dx_deferred,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS0668_P3,WS0668,known_dx_deferred,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS0668_P4,WS0668,known_dx_deferred,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS0668_P5,WS0668,known_dx_deferred,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS0668_P6,WS0668,known_dx_deferred,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS0668_P7,WS0668,known_dx_deferred,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS0709_P1,WS0709,known_dx_deferred,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS0732_P1,WS0732,known_dx_deferred,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1367_P2,WS1367,known_dx_deferred,Yes,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,Yes
+2,WS1388_P1,WS1388,known_dx_deferred,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P1,WS1859,known_dx_deferred,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P10,WS1859,known_dx_deferred,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P11,WS1859,known_dx_deferred,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P12,WS1859,known_dx_deferred,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P13,WS1859,known_dx_deferred,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P14,WS1859,known_dx_deferred,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P15,WS1859,known_dx_deferred,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P16,WS1859,known_dx_deferred,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P18,WS1859,known_dx_deferred,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P19,WS1859,known_dx_deferred,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P2,WS1859,known_dx_deferred,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P3,WS1859,known_dx_deferred,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P4,WS1859,known_dx_deferred,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P5,WS1859,known_dx_deferred,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P6,WS1859,known_dx_deferred,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P7,WS1859,known_dx_deferred,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P8,WS1859,known_dx_deferred,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P9,WS1859,known_dx_deferred,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1880_P1,WS1880,known_dx_deferred,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1903_P1,WS1903,known_dx_deferred,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS0159_P1,WS0159,missed_dx,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS0159_P2,WS0159,missed_dx,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS0668_P1,WS0668,missed_dx,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS0668_P2,WS0668,missed_dx,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS0668_P3,WS0668,missed_dx,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS0668_P4,WS0668,missed_dx,Yes,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,Yes
+2,WS0668_P5,WS0668,missed_dx,Yes,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,Yes
+2,WS0668_P6,WS0668,missed_dx,Yes,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,Yes
+2,WS0668_P7,WS0668,missed_dx,Yes,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,Yes
+2,WS0709_P1,WS0709,missed_dx,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1388_P1,WS1388,missed_dx,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1903_P1,WS1903,missed_dx,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P1,WS1859,recurrence,NR,No,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P10,WS1859,recurrence,NR,No,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P11,WS1859,recurrence,NR,No,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P12,WS1859,recurrence,NR,No,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P13,WS1859,recurrence,NR,No,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P14,WS1859,recurrence,NR,No,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P15,WS1859,recurrence,NR,No,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P16,WS1859,recurrence,NR,No,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P18,WS1859,recurrence,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P19,WS1859,recurrence,No,NR,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P2,WS1859,recurrence,NR,No,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P3,WS1859,recurrence,NR,No,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P4,WS1859,recurrence,NR,No,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P5,WS1859,recurrence,NR,No,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P6,WS1859,recurrence,NR,No,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P7,WS1859,recurrence,NR,No,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P8,WS1859,recurrence,NR,No,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P9,WS1859,recurrence,NR,No,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS0551_P1,WS0551,further_surgery,NR,No,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P1,WS1859,further_surgery,NR,No,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P10,WS1859,further_surgery,NR,No,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P11,WS1859,further_surgery,NR,No,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P13,WS1859,further_surgery,NR,No,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P14,WS1859,further_surgery,NR,No,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P15,WS1859,further_surgery,NR,No,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P16,WS1859,further_surgery,NR,No,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P2,WS1859,further_surgery,NR,No,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P3,WS1859,further_surgery,NR,No,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P4,WS1859,further_surgery,NR,No,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P5,WS1859,further_surgery,NR,No,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P6,WS1859,further_surgery,NR,No,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P7,WS1859,further_surgery,NR,No,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P8,WS1859,further_surgery,NR,No,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+2,WS1859_P9,WS1859,further_surgery,NR,No,,,,,未提及填 NR；只有原文明确否定时才填 No。,按原文裁定，最终值见 final_reading,NR
+3,WS0159_P1,WS0159,total_hist_days,3,NR,3 days,,,,不把指数发作时长或未说明的既往发作自动写成总病程或 0。,按原文裁定，最终值见 final_reading,NR
+3,WS0159_P2,WS0159,total_hist_days,2,NR,2 days,,,,不把指数发作时长或未说明的既往发作自动写成总病程或 0。,按原文裁定，最终值见 final_reading,NR
+3,WS0159_P3,WS0159,total_hist_days,5,NR,5 days,,,,不把指数发作时长或未说明的既往发作自动写成总病程或 0。,按原文裁定，最终值见 final_reading,NR
+3,WS0551_P1,WS0551,total_hist_days,8,NR,1 day of life to day 9,,,,不把指数发作时长或未说明的既往发作自动写成总病程或 0。,按原文裁定，最终值见 final_reading,NR
+3,WS0668_P4,WS0668,total_hist_days,584,NR,two admissions 1.6 years apart (repeat US 18 months later),,,,不把指数发作时长或未说明的既往发作自动写成总病程或 0。,按原文裁定，最终值见 final_reading,NR
+3,WS0668_P5,WS0668,total_hist_days,255.5,NR,two admissions 0.7 years apart,,,,不把指数发作时长或未说明的既往发作自动写成总病程或 0。,按原文裁定，最终值见 final_reading,NR
+3,WS0668_P6,WS0668,total_hist_days,91.2,NR,three admissions over 3 months,,,,不把指数发作时长或未说明的既往发作自动写成总病程或 0。,按原文裁定，最终值见 final_reading,NR
+3,WS0709_P1,WS0709,total_hist_days,1,NR,24 hours,,,,不把指数发作时长或未说明的既往发作自动写成总病程或 0。,按原文裁定，最终值见 final_reading,NR
+3,WS0732_P1,WS0732,total_hist_days,2,NR,2 days,,,,不把指数发作时长或未说明的既往发作自动写成总病程或 0。,按原文裁定，最终值见 final_reading,NR
+3,WS1367_P2,WS1367,total_hist_days,668.8,NR,first presentation to splenectomy: 10 + 5 + 7 months,,,,不把指数发作时长或未说明的既往发作自动写成总病程或 0。,按原文裁定，最终值见 final_reading,NR
+3,WS1388_P1,WS1388,total_hist_days,1,NR,24 hours,,,,不把指数发作时长或未说明的既往发作自动写成总病程或 0。,按原文裁定，最终值见 final_reading,NR
+3,WS1859_P1,WS1859,total_hist_days,10,NR,10 d,,,,不把指数发作时长或未说明的既往发作自动写成总病程或 0。,按原文裁定，最终值见 final_reading,NR
+3,WS1859_P10,WS1859,total_hist_days,1,NR,1 d,,,,不把指数发作时长或未说明的既往发作自动写成总病程或 0。,按原文裁定，最终值见 final_reading,NR
+3,WS1859_P11,WS1859,total_hist_days,1.1,NR,27 h,,,,不把指数发作时长或未说明的既往发作自动写成总病程或 0。,按原文裁定，最终值见 final_reading,NR
+3,WS1859_P12,WS1859,total_hist_days,1,NR,24 h,,,,不把指数发作时长或未说明的既往发作自动写成总病程或 0。,按原文裁定，最终值见 final_reading,NR
+3,WS1859_P14,WS1859,total_hist_days,2.1,NR,50 h,,,,不把指数发作时长或未说明的既往发作自动写成总病程或 0。,按原文裁定，最终值见 final_reading,NR
+3,WS1859_P15,WS1859,total_hist_days,5,NR,5 d,,,,不把指数发作时长或未说明的既往发作自动写成总病程或 0。,按原文裁定，最终值见 final_reading,NR
+3,WS1859_P16,WS1859,total_hist_days,2,NR,48 h,,,,不把指数发作时长或未说明的既往发作自动写成总病程或 0。,按原文裁定，最终值见 final_reading,NR
+3,WS1859_P18,WS1859,total_hist_days,152,NR,5 个月,,,,不把指数发作时长或未说明的既往发作自动写成总病程或 0。,按原文裁定，最终值见 final_reading,NR
+3,WS1859_P19,WS1859,total_hist_days,7,NR,7 d,,,,不把指数发作时长或未说明的既往发作自动写成总病程或 0。,按原文裁定，最终值见 final_reading,NR
+3,WS1859_P2,WS1859,total_hist_days,4,NR,4 d,,,,不把指数发作时长或未说明的既往发作自动写成总病程或 0。,按原文裁定，最终值见 final_reading,NR
+3,WS1859_P3,WS1859,total_hist_days,5,NR,5 d,,,,不把指数发作时长或未说明的既往发作自动写成总病程或 0。,按原文裁定，最终值见 final_reading,NR
+3,WS1859_P4,WS1859,total_hist_days,3,NR,3 d,,,,不把指数发作时长或未说明的既往发作自动写成总病程或 0。,按原文裁定，最终值见 final_reading,NR
+3,WS1859_P5,WS1859,total_hist_days,7,NR,7 d,,,,不把指数发作时长或未说明的既往发作自动写成总病程或 0。,按原文裁定，最终值见 final_reading,NR
+3,WS1859_P6,WS1859,total_hist_days,364.8,NR,12 个月,,,,不把指数发作时长或未说明的既往发作自动写成总病程或 0。,按原文裁定，最终值见 final_reading,NR
+3,WS1859_P7,WS1859,total_hist_days,2,NR,2 d,,,,不把指数发作时长或未说明的既往发作自动写成总病程或 0。,按原文裁定，最终值见 final_reading,NR
+3,WS1859_P8,WS1859,total_hist_days,30.4,NR,1 个月,,,,不把指数发作时长或未说明的既往发作自动写成总病程或 0。,按原文裁定，最终值见 final_reading,NR
+3,WS1859_P9,WS1859,total_hist_days,10,NR,10 d,,,,不把指数发作时长或未说明的既往发作自动写成总病程或 0。,按原文裁定，最终值见 final_reading,NR
+3,WS1880_P1,WS1880,total_hist_days,3,NR,3 d,,,,不把指数发作时长或未说明的既往发作自动写成总病程或 0。,按原文裁定，最终值见 final_reading,NR
+3,WS1903_P1,WS1903,total_hist_days,4,NR,4 d,,,,不把指数发作时长或未说明的既往发作自动写成总病程或 0。,按原文裁定，最终值见 final_reading,NR
+3,WS0159_P1,WS0159,n_earlier_episodes,0,NR,3 days,,,,不把指数发作时长或未说明的既往发作自动写成总病程或 0。,按原文裁定，最终值见 final_reading,NR
+3,WS0159_P2,WS0159,n_earlier_episodes,0,NR,2 days,,,,不把指数发作时长或未说明的既往发作自动写成总病程或 0。,按原文裁定，最终值见 final_reading,NR
+3,WS0159_P3,WS0159,n_earlier_episodes,0,NR,5 days,,,,不把指数发作时长或未说明的既往发作自动写成总病程或 0。,按原文裁定，最终值见 final_reading,NR
+3,WS0551_P1,WS0551,n_earlier_episodes,0,NR,1 day of life to day 9,,,,不把指数发作时长或未说明的既往发作自动写成总病程或 0。,按原文裁定，最终值见 final_reading,NR
+3,WS0668_P1,WS0668,n_earlier_episodes,0,NR,,,,,不把指数发作时长或未说明的既往发作自动写成总病程或 0。,按原文裁定，最终值见 final_reading,NR
+3,WS0668_P2,WS0668,n_earlier_episodes,0,NR,,,,,不把指数发作时长或未说明的既往发作自动写成总病程或 0。,按原文裁定，最终值见 final_reading,NR
+3,WS0668_P3,WS0668,n_earlier_episodes,0,NR,,,,,不把指数发作时长或未说明的既往发作自动写成总病程或 0。,按原文裁定，最终值见 final_reading,NR
+3,WS0668_P4,WS0668,n_earlier_episodes,1,NR,two admissions 1.6 years apart (repeat US 18 months later),,,,不把指数发作时长或未说明的既往发作自动写成总病程或 0。,按原文裁定，最终值见 final_reading,1
+3,WS0668_P5,WS0668,n_earlier_episodes,1,NR,two admissions 0.7 years apart,,,,不把指数发作时长或未说明的既往发作自动写成总病程或 0。,按原文裁定，最终值见 final_reading,1
+3,WS0668_P6,WS0668,n_earlier_episodes,2,NR,three admissions over 3 months,,,,不把指数发作时长或未说明的既往发作自动写成总病程或 0。,按原文裁定，最终值见 final_reading,2
+3,WS0709_P1,WS0709,n_earlier_episodes,0,NR,24 hours,,,,不把指数发作时长或未说明的既往发作自动写成总病程或 0。,按原文裁定，最终值见 final_reading,NR
+3,WS0732_P1,WS0732,n_earlier_episodes,0,NR,2 days,,,,不把指数发作时长或未说明的既往发作自动写成总病程或 0。,按原文裁定，最终值见 final_reading,NR
+3,WS1388_P1,WS1388,n_earlier_episodes,0,NR,24 hours,,,,不把指数发作时长或未说明的既往发作自动写成总病程或 0。,按原文裁定，最终值见 final_reading,NR
+3,WS1880_P1,WS1880,n_earlier_episodes,0,NR,3 d,,,,不把指数发作时长或未说明的既往发作自动写成总病程或 0。,按原文裁定，最终值见 final_reading,NR
+3,WS1903_P1,WS1903,n_earlier_episodes,0,NR,4 d,,,,不把指数发作时长或未说明的既往发作自动写成总病程或 0。,按原文裁定，最终值见 final_reading,NR
+4,WS0159_P1,WS0159,idx_dur_lower_bound,Yes,No,"abdominal pain, non-bilious vomiting, diarrhea and fever ""started 3 days ago and gradually increased""",3 days,,,仅有至就诊或入院前时长、未给手术时间时，标为下限。,按原文裁定，最终值见 final_reading,Yes
+4,WS0159_P2,WS0159,idx_dur_lower_bound,Yes,No,"abdominal pain and non-bilious vomiting ""started 2 days ago""",2 days,,,仅有至就诊或入院前时长、未给手术时间时，标为下限。,按原文裁定，最终值见 final_reading,Yes
+4,WS0159_P3,WS0159,idx_dur_lower_bound,Yes,No,"abdominal pain and bilious vomiting ""that started 5 days ago""",5 days,,,仅有至就诊或入院前时长、未给手术时间时，标为下限。,按原文裁定，最终值见 final_reading,Yes
+4,WS0732_P1,WS0732,idx_dur_lower_bound,Yes,No,"2-day history of vomiting, abdominal pain, and fever",2 days,,,仅有至就诊或入院前时长、未给手术时间时，标为下限。,按原文裁定，最终值见 final_reading,Yes
+4,WS1859_P1,WS1859,idx_dur_lower_bound,Yes,No,发病时间 10 d（首发症状：腹痛；伴随：呕吐）,10 d,,,仅有至就诊或入院前时长、未给手术时间时，标为下限。,按原文裁定，最终值见 final_reading,Yes
+4,WS1859_P10,WS1859,idx_dur_lower_bound,Yes,No,发病时间 1 d（首发症状：腹痛；伴随：呕吐）,1 d,,,仅有至就诊或入院前时长、未给手术时间时，标为下限。,按原文裁定，最终值见 final_reading,Yes
+4,WS1859_P11,WS1859,idx_dur_lower_bound,Yes,No,发病时间 27 h（首发症状：腹痛；伴随：呕吐、发热）,27 h,,,仅有至就诊或入院前时长、未给手术时间时，标为下限。,按原文裁定，最终值见 final_reading,Yes
+4,WS1859_P12,WS1859,idx_dur_lower_bound,Yes,No,发病时间 24 h（首发症状：腹痛；伴随：呕吐、腹胀）,24 h,,,仅有至就诊或入院前时长、未给手术时间时，标为下限。,按原文裁定，最终值见 final_reading,Yes
+4,WS1859_P13,WS1859,idx_dur_lower_bound,Yes,No,发病时间 2 个月，加重1 d（首发症状：腹痛；伴随：呕吐）,"2 months, worsened 1 d",,,仅有至就诊或入院前时长、未给手术时间时，标为下限。,按原文裁定，最终值见 final_reading,Yes
+4,WS1859_P14,WS1859,idx_dur_lower_bound,Yes,No,发病时间 50 h（首发症状：呕吐；伴随：腹痛）,50 h,,,仅有至就诊或入院前时长、未给手术时间时，标为下限。,按原文裁定，最终值见 final_reading,Yes
+4,WS1859_P15,WS1859,idx_dur_lower_bound,Yes,No,发病时间 5 d（首发症状：腹痛；伴随：无）,5 d,,,仅有至就诊或入院前时长、未给手术时间时，标为下限。,按原文裁定，最终值见 final_reading,Yes
+4,WS1859_P16,WS1859,idx_dur_lower_bound,Yes,No,发病时间 48 h（首发症状：腹痛；伴随：腹胀、呕吐）,48 h,,,仅有至就诊或入院前时长、未给手术时间时，标为下限。,按原文裁定，最终值见 final_reading,Yes
+4,WS1859_P2,WS1859,idx_dur_lower_bound,Yes,No,发病时间 4 d（首发症状：呕吐；伴随：无）,4 d,,,仅有至就诊或入院前时长、未给手术时间时，标为下限。,按原文裁定，最终值见 final_reading,Yes
+4,WS1859_P3,WS1859,idx_dur_lower_bound,Yes,No,发病时间 5 d（首发症状：腹痛；伴随：发热）,5 d,,,仅有至就诊或入院前时长、未给手术时间时，标为下限。,按原文裁定，最终值见 final_reading,Yes
+4,WS1859_P4,WS1859,idx_dur_lower_bound,Yes,No,发病时间 3 d（首发症状：腹痛；伴随：呕吐）,3 d,,,仅有至就诊或入院前时长、未给手术时间时，标为下限。,按原文裁定，最终值见 final_reading,Yes
+4,WS1859_P5,WS1859,idx_dur_lower_bound,Yes,No,发病时间 7 d（首发症状：腹痛；伴随：发热）,7 d,,,仅有至就诊或入院前时长、未给手术时间时，标为下限。,按原文裁定，最终值见 final_reading,Yes
+4,WS1859_P6,WS1859,idx_dur_lower_bound,Yes,No,发病时间 12 个月（首发症状：腹痛；伴随：无）,12 months,,,仅有至就诊或入院前时长、未给手术时间时，标为下限。,按原文裁定，最终值见 final_reading,Yes
+4,WS1859_P7,WS1859,idx_dur_lower_bound,Yes,No,发病时间 2 d（首发症状：腹痛；伴随：发热）,2 d,,,仅有至就诊或入院前时长、未给手术时间时，标为下限。,按原文裁定，最终值见 final_reading,Yes
+4,WS1859_P8,WS1859,idx_dur_lower_bound,Yes,No,发病时间 1 个月（首发症状：腹痛；伴随：腹胀）,1 month,,,仅有至就诊或入院前时长、未给手术时间时，标为下限。,按原文裁定，最终值见 final_reading,Yes
+4,WS1859_P9,WS1859,idx_dur_lower_bound,Yes,No,发病时间 10 d（首发症状：腹痛；伴随：腹胀）,10 d,,,仅有至就诊或入院前时长、未给手术时间时，标为下限。,按原文裁定，最终值见 final_reading,Yes
+5,WS0551_P1,WS0551,idx_dur_days,8,NR,palpable left abdominal mass at 1 day of life; laparotomy at day 9 | p.302-303, | ,,,按原文可确定的症状起点和手术日期提取；不精确时仅记录时长类别。,按原文裁定，最终值见 final_reading,8
+5,WS1367_P2,WS1367,idx_dur_days,NR,NR,persistent abdominal pain until elective splenectomy | p.3, | p2-3,,,按原文可确定的症状起点和手术日期提取；不精确时仅记录时长类别。,按原文裁定，最终值见 final_reading,NR; idx_dur_cat_imprecise=>30 d
+5,WS1903_P1,WS1903,idx_dur_days,4,NR,腹痛伴发热4 d | p.239, | p1-2,,,按原文可确定的症状起点和手术日期提取；不精确时仅记录时长类别。,按原文裁定，最终值见 final_reading,4
+6,WS0159_P3,WS0159,img_us,NR,Yes,"Fig. 3, 4",p1-2,,,影像和术中证据按文中可对应信息逐例判定；影像汇总仅在范围可完全对应时适用。,按原文裁定，最终值见 final_reading,NR
+6,WS1859_P1,WS1859,img_us,NR,Yes,section 2.3-2.5 (p.370-371),Table 1,,,影像和术中证据按文中可对应信息逐例判定；影像汇总仅在范围可完全对应时适用。,按原文裁定，最终值见 final_reading,Yes
+6,WS1859_P10,WS1859,img_us,NR,Yes,section 2.3-2.5 (p.370-371),Table 1,,,影像和术中证据按文中可对应信息逐例判定；影像汇总仅在范围可完全对应时适用。,按原文裁定，最终值见 final_reading,Yes
+6,WS1859_P11,WS1859,img_us,NR,Yes,section 2.3-2.5 (p.370-371),Table 1,,,影像和术中证据按文中可对应信息逐例判定；影像汇总仅在范围可完全对应时适用。,按原文裁定，最终值见 final_reading,Yes
+6,WS1859_P12,WS1859,img_us,NR,Yes,section 2.3-2.5 (p.370-371),Table 1,,,影像和术中证据按文中可对应信息逐例判定；影像汇总仅在范围可完全对应时适用。,按原文裁定，最终值见 final_reading,Yes
+6,WS1859_P13,WS1859,img_us,NR,Yes,section 2.3-2.5 (p.370-371),Table 1,,,影像和术中证据按文中可对应信息逐例判定；影像汇总仅在范围可完全对应时适用。,按原文裁定，最终值见 final_reading,Yes
+6,WS1859_P14,WS1859,img_us,NR,Yes,section 2.3-2.5 (p.370-371),Table 1,,,影像和术中证据按文中可对应信息逐例判定；影像汇总仅在范围可完全对应时适用。,按原文裁定，最终值见 final_reading,Yes
+6,WS1859_P15,WS1859,img_us,NR,Yes,section 2.3-2.5 (p.370-371),Table 1,,,影像和术中证据按文中可对应信息逐例判定；影像汇总仅在范围可完全对应时适用。,按原文裁定，最终值见 final_reading,Yes
+6,WS1859_P18,WS1859,img_us,NR,Yes,section 2.4 (p.371),Table 1,,,影像和术中证据按文中可对应信息逐例判定；影像汇总仅在范围可完全对应时适用。,按原文裁定，最终值见 final_reading,Yes
+6,WS1859_P19,WS1859,img_us,NR,Yes,section 2.4 (p.371),Table 1,,,影像和术中证据按文中可对应信息逐例判定；影像汇总仅在范围可完全对应时适用。,按原文裁定，最终值见 final_reading,Yes
+6,WS1859_P2,WS1859,img_us,NR,Yes,section 2.3-2.5 (p.370-371),Table 1,,,影像和术中证据按文中可对应信息逐例判定；影像汇总仅在范围可完全对应时适用。,按原文裁定，最终值见 final_reading,Yes
+6,WS1859_P3,WS1859,img_us,NR,Yes,section 2.3-2.5 (p.370-371),Table 1,,,影像和术中证据按文中可对应信息逐例判定；影像汇总仅在范围可完全对应时适用。,按原文裁定，最终值见 final_reading,Yes
+6,WS1859_P4,WS1859,img_us,NR,Yes,section 2.3-2.5 (p.370-371),Table 1,,,影像和术中证据按文中可对应信息逐例判定；影像汇总仅在范围可完全对应时适用。,按原文裁定，最终值见 final_reading,Yes
+6,WS1859_P5,WS1859,img_us,NR,Yes,section 2.3-2.5 (p.370-371),Table 1,,,影像和术中证据按文中可对应信息逐例判定；影像汇总仅在范围可完全对应时适用。,按原文裁定，最终值见 final_reading,Yes
+6,WS1859_P6,WS1859,img_us,NR,Yes,section 2.3-2.5 (p.370-371),Table 1,,,影像和术中证据按文中可对应信息逐例判定；影像汇总仅在范围可完全对应时适用。,按原文裁定，最终值见 final_reading,Yes
+6,WS1859_P7,WS1859,img_us,NR,Yes,section 2.3-2.5 (p.370-371),Table 1,,,影像和术中证据按文中可对应信息逐例判定；影像汇总仅在范围可完全对应时适用。,按原文裁定，最终值见 final_reading,Yes
+6,WS1859_P8,WS1859,img_us,NR,Yes,section 2.3-2.5 (p.370-371),Table 1,,,影像和术中证据按文中可对应信息逐例判定；影像汇总仅在范围可完全对应时适用。,按原文裁定，最终值见 final_reading,Yes
+6,WS1859_P9,WS1859,img_us,NR,Yes,section 2.3-2.5 (p.370-371),Table 1,,,影像和术中证据按文中可对应信息逐例判定；影像汇总仅在范围可完全对应时适用。,按原文裁定，最终值见 final_reading,Yes
+6,WS0159_P2,WS0159,ws_basis,Imaging shows ectopic position or mobility,Imaging and operation,Fig. 2,p1-2,,,影像和术中证据按文中可对应信息逐例判定；影像汇总仅在范围可完全对应时适用。,按原文裁定，最终值见 final_reading,Imaging shows ectopic position or mobility
+6,WS0159_P3,WS0159,ws_basis,Imaging shows ectopic position or mobility,Imaging and operation,"Fig. 3, 4",p1-2,,,影像和术中证据按文中可对应信息逐例判定；影像汇总仅在范围可完全对应时适用。,按原文裁定，最终值见 final_reading,Imaging shows ectopic position or mobility
+6,WS0668_P1,WS0668,ws_basis,Imaging shows ectopic position or mobility,Imaging and operation,p.434-437 (Fig. 1-4),p2-5,,,影像和术中证据按文中可对应信息逐例判定；影像汇总仅在范围可完全对应时适用。,按原文裁定，最终值见 final_reading,Imaging and operation
+6,WS0668_P5,WS0668,ws_basis,Imaging shows ectopic position or mobility,Imaging and operation,p.434-437 (Fig. 1-4),p2-5,,,影像和术中证据按文中可对应信息逐例判定；影像汇总仅在范围可完全对应时适用。,按原文裁定，最终值见 final_reading,Imaging and operation
+6,WS0668_P6,WS0668,ws_basis,Imaging shows ectopic position or mobility,Imaging and operation,p.434-437 (Fig. 1-4),p2-5,,,影像和术中证据按文中可对应信息逐例判定；影像汇总仅在范围可完全对应时适用。,按原文裁定，最终值见 final_reading,Imaging and operation
+6,WS0668_P7,WS0668,ws_basis,Imaging shows ectopic position or mobility,Imaging and operation,p.434-437 (Fig. 1-4),p2-5,,,影像和术中证据按文中可对应信息逐例判定；影像汇总仅在范围可完全对应时适用。,按原文裁定，最终值见 final_reading,Imaging and operation
+6,WS0732_P1,WS0732,ws_basis,Operation shows ectopic position or mobility,"Torsion only, position not stated",p.305-307,p1; p3,,,影像和术中证据按文中可对应信息逐例判定；影像汇总仅在范围可完全对应时适用。,按原文裁定，最终值见 final_reading,Operation shows ectopic position or mobility
+6,WS1859_P1,WS1859,ws_basis,Operation shows ectopic position or mobility,Imaging and operation,section 2.3-2.5 (p.370-371),Table 1,,,影像和术中证据按文中可对应信息逐例判定；影像汇总仅在范围可完全对应时适用。,按原文裁定，最终值见 final_reading,Imaging and operation
+6,WS1859_P10,WS1859,ws_basis,Operation shows ectopic position or mobility,Imaging and operation,section 2.3-2.5 (p.370-371),Table 1,,,影像和术中证据按文中可对应信息逐例判定；影像汇总仅在范围可完全对应时适用。,按原文裁定，最终值见 final_reading,Imaging and operation
+6,WS1859_P11,WS1859,ws_basis,Operation shows ectopic position or mobility,Imaging and operation,section 2.3-2.5 (p.370-371),Table 1,,,影像和术中证据按文中可对应信息逐例判定；影像汇总仅在范围可完全对应时适用。,按原文裁定，最终值见 final_reading,Imaging and operation
+6,WS1859_P12,WS1859,ws_basis,Operation shows ectopic position or mobility,Imaging and operation,section 2.3-2.5 (p.370-371),Table 1,,,影像和术中证据按文中可对应信息逐例判定；影像汇总仅在范围可完全对应时适用。,按原文裁定，最终值见 final_reading,Imaging and operation
+6,WS1859_P13,WS1859,ws_basis,Operation shows ectopic position or mobility,Imaging and operation,section 2.3-2.5 (p.370-371),Table 1,,,影像和术中证据按文中可对应信息逐例判定；影像汇总仅在范围可完全对应时适用。,按原文裁定，最终值见 final_reading,Imaging and operation
+6,WS1859_P14,WS1859,ws_basis,Operation shows ectopic position or mobility,Imaging and operation,section 2.3-2.5 (p.370-371),Table 1,,,影像和术中证据按文中可对应信息逐例判定；影像汇总仅在范围可完全对应时适用。,按原文裁定，最终值见 final_reading,Imaging and operation
+6,WS1859_P15,WS1859,ws_basis,Operation shows ectopic position or mobility,Imaging and operation,section 2.3-2.5 (p.370-371),Table 1,,,影像和术中证据按文中可对应信息逐例判定；影像汇总仅在范围可完全对应时适用。,按原文裁定，最终值见 final_reading,Imaging and operation
+6,WS1859_P16,WS1859,ws_basis,Operation shows ectopic position or mobility,Imaging and operation,"Fig. 1, section 2.4-2.5 (p.370-371)",Table 1,,,影像和术中证据按文中可对应信息逐例判定；影像汇总仅在范围可完全对应时适用。,按原文裁定，最终值见 final_reading,Imaging and operation
+6,WS1859_P18,WS1859,ws_basis,Imaging shows ectopic position or mobility,Imaging and operation,section 2.4 (p.371),Table 1,,,影像和术中证据按文中可对应信息逐例判定；影像汇总仅在范围可完全对应时适用。,按原文裁定，最终值见 final_reading,Imaging shows ectopic position or mobility
+6,WS1859_P19,WS1859,ws_basis,Imaging shows ectopic position or mobility,Imaging and operation,section 2.4 (p.371),Table 1,,,影像和术中证据按文中可对应信息逐例判定；影像汇总仅在范围可完全对应时适用。,按原文裁定，最终值见 final_reading,Imaging shows ectopic position or mobility
+6,WS1859_P2,WS1859,ws_basis,Operation shows ectopic position or mobility,Imaging and operation,section 2.3-2.5 (p.370-371),Table 1,,,影像和术中证据按文中可对应信息逐例判定；影像汇总仅在范围可完全对应时适用。,按原文裁定，最终值见 final_reading,Imaging and operation
+6,WS1859_P3,WS1859,ws_basis,Operation shows ectopic position or mobility,Imaging and operation,section 2.3-2.5 (p.370-371),Table 1,,,影像和术中证据按文中可对应信息逐例判定；影像汇总仅在范围可完全对应时适用。,按原文裁定，最终值见 final_reading,Imaging and operation
+6,WS1859_P4,WS1859,ws_basis,Operation shows ectopic position or mobility,Imaging and operation,section 2.3-2.5 (p.370-371),Table 1,,,影像和术中证据按文中可对应信息逐例判定；影像汇总仅在范围可完全对应时适用。,按原文裁定，最终值见 final_reading,Imaging and operation
+6,WS1859_P5,WS1859,ws_basis,Operation shows ectopic position or mobility,Imaging and operation,section 2.3-2.5 (p.370-371),Table 1,,,影像和术中证据按文中可对应信息逐例判定；影像汇总仅在范围可完全对应时适用。,按原文裁定，最终值见 final_reading,Imaging and operation
+6,WS1859_P6,WS1859,ws_basis,Operation shows ectopic position or mobility,Imaging and operation,section 2.3-2.5 (p.370-371),Table 1,,,影像和术中证据按文中可对应信息逐例判定；影像汇总仅在范围可完全对应时适用。,按原文裁定，最终值见 final_reading,Imaging and operation
+6,WS1859_P7,WS1859,ws_basis,Operation shows ectopic position or mobility,Imaging and operation,section 2.3-2.5 (p.370-371),Table 1,,,影像和术中证据按文中可对应信息逐例判定；影像汇总仅在范围可完全对应时适用。,按原文裁定，最终值见 final_reading,Imaging and operation
+6,WS1859_P8,WS1859,ws_basis,Operation shows ectopic position or mobility,Imaging and operation,section 2.3-2.5 (p.370-371),Table 1,,,影像和术中证据按文中可对应信息逐例判定；影像汇总仅在范围可完全对应时适用。,按原文裁定，最终值见 final_reading,Imaging and operation
+6,WS1859_P9,WS1859,ws_basis,Operation shows ectopic position or mobility,Imaging and operation,section 2.3-2.5 (p.370-371),Table 1,,,影像和术中证据按文中可对应信息逐例判定；影像汇总仅在范围可完全对应时适用。,按原文裁定，最终值见 final_reading,Imaging and operation
+7,WS1859_P17,WS1859,patient row,present,(absent),Table 1 (p.371-372),,Died: treatment withdrawn after surgery. Spleen herniated into the chest with diaphragmatic hernia/eventration and gastric strangulation and rupture; authors count it among 19 splenic torsion cases. Position/torsion of the spleen not described at operation. Included as reported; check eligibility at consensus.,,无游走脾诊断或脾蒂活动／扭转描述的个案不进入 Patients 表。,按原文裁定，最终值见 final_reading,Exclude from Patients; n_children_individual=18; report note records non-eligibility
+8,WS0668,WS0668,linked_duplicates,WS0741,,,,"""All pediatric patients ... with surgically confirmed wandering spleen"" 1998-2003. Five of the 7 patients were previously reported in detail (probably Steinberg 2002, WS0741; the reference number in the text is unclear); which five is not stated, so same_patient_as is left blank. Abstract says infarction in 3 patients, discussion says torsion and infarction in 4.",,无法一一对应的可能重复仅在报告层说明，不填写 same_patient_as。,按原文裁定，最终值见 final_reading,linked_duplicates=WS0741; same_patient_as=blank; possible overlap retained in report note
