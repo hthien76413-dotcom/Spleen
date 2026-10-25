@@ -1,0 +1,14 @@
+Extraction calibration (10 reports) - format check of extraction_E2.xlsx, 25 Oct 2026
+Command: python3 -I tools/compare_extraction.py check extraction_E2.xlsx --extractor E2
+Scope: format only (list values, ids, consistency). No content of the extraction is shown or judged here.
+For: the author may forward this file unopened to Jun Yang or Hongqiang Bian. It carries no decision and no patient data.
+
+7 errors, one type: the value 'NR' is not in the drop-down list of the column `presentation`.
+All 7 are in one report (rows 32-38, patient_id WS0668_P1 to WS0668_P7).
+
+0 warnings.
+
+What the guide says: section 5.3 gives five values for `presentation` (Acute / Chronic or intermittent / Acute on chronic /
+Asymptomatic / Mass only) and no 'NR'. Most other lists in the template do have an 'NR' value, so this may be a gap in the
+template rather than a mistake by the extractor. This is for the extractors and Jun Yang to settle at the calibration
+discussion (guide section 12, item X11); nothing in the file has been changed.
