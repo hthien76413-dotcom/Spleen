@@ -1,0 +1,12 @@
+﻿"NOT FOR THE EXTRACTORS - keyword proxies and full-text-log values, not judgements"
+position,ws_id,drawn_as,nonop,d1,vague,range,hours,weeks,series,chinese,n_children_individual_in_log,in_pilot_set
+1,WS0159,stratum series,0,0,0,0,0,0,1,0,3,0
+2,WS0732,random,0,1,0,0,0,0,0,0,1,0
+3,WS1859,stratum series,1,0,0,0,0,1,1,1,19,0
+4,WS1903,stratum weeks,0,0,0,0,0,1,0,1,1,0
+5,WS0709,random,0,0,0,0,1,0,0,0,1,0
+6,WS1367,stratum nonop,1,0,0,0,0,0,0,0,1,0
+7,WS0551,stratum vague,0,0,1,0,0,0,0,0,1,0
+8,WS1880,stratum chinese,0,0,0,0,0,0,0,1,1,0
+9,WS1388,stratum d1,0,1,0,0,1,0,0,0,1,0
+10,WS0668,stratum series,0,0,0,0,0,0,1,0,7,0

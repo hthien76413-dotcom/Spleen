@@ -1,0 +1,17 @@
+Extraction calibration set: 10 reports (extraction guide section 10; protocol Section 14)
+Seed: 20261019 (fixed on 19 Oct 2026, before any full-text decision). Ranking: sha256(SEED|stratum|ws_id); final order: sha256(SEED|order|ws_id).
+Rerun: python3 -I tools/draw_extraction_calibration.py search/screening/fulltext/final/fulltext_included.csv
+
+Input: 269 rows in the included list. Left out: not Include 0; individual data by e-mail 0; pilot paper 45; not on retrieval list 0.
+Population after that: 224 reports (Include, individual data in the published report, pilot papers left out).
+Pool sizes by stratum (keyword proxies / full-text-log values): nonop 10, d1 11, vague 1, range 0, hours 11, weeks 18, series 4, chinese 48
+Fixed drawing order and minimum: nonop 1, d1 1, vague 1, range 1, hours 1, weeks 1, series 3, chinese 3. A report already drawn counts toward every stratum it belongs to; the rest is random up to N = 10.
+Drawn: 8 by stratum, 2 random.
+In the set (a report can belong to several strata): nonop 2, d1 2, vague 1, range 0, hours 2, weeks 2, series 3, chinese 3
+Minimums not met: range: 0 of 1 (pool has 0)
+Reports with an abstract in the database record: 9 of 10; English 7, Chinese 3.
+Children with individual data in the set (from the full-text log, 10 of 10 reports have a number): about 36
+
+Give the extractors only calibration_10_list.csv. The key holds the strata flags and stays closed until both have finished.
+The strata for duration wording and 'not operated' read only the database abstract and are rough; the extractors judge from the full text.
+The five own children (report OWN) are extracted separately and are not part of this set.
