@@ -23,7 +23,7 @@ Original proposed choices; decisions and changes are documented in the accompany
   * Spline: restricted cubic spline, 3 knots at the 10th, 50th and 90th percentiles of log2 days (Harrell), nonlinearity tested by a Wald
     test of the nonlinear term; fitted only if events / model degrees of freedom >= 10 (degrees of freedom counted with the spline).
   * Duplicate-report analysis (d): of two reports linked by Reports.linked_duplicates, the report carrying linked_duplicates is omitted, regardless of year (protocol v1.8).
-  * Mixed-effects model (sensitivity analysis 8) is not implemented here; use analysis_main.R (lme4::glmer).
+  * Mixed-effects model (sensitivity analysis 8): random-intercept logistic by Gauss-Hermite maximum likelihood (30 nodes) with Wald CI; cf. lme4::glmer in analysis_main.R (Laplace), so small differences are expected.
 Output: results.txt and results.csv in --out.
 """
 import argparse, collections, csv, math, os, sys
@@ -95,6 +95,49 @@ def omit_overlap_reports(df):
                 continue
             omit.add(rid)  # Protocol v1.8: omit the report stating overlap
     return omit
+
+
+def glmm_random_intercept(d, ycol="y", xcols=("l2", "age", "period2015"), cluster="report_id", nodes=30):
+    """Random-intercept logistic model by maximum likelihood (Gauss-Hermite quadrature), cf. lme4::glmer (SA8).
+    Returns dict(beta, se, sigma, n, events, clusters, note) or a string on failure. Wald SE from the numerical Hessian."""
+    from scipy.optimize import minimize
+    d = d.dropna(subset=[ycol] + list(xcols)).copy()
+    if len(d) < 5 or d[ycol].nunique() < 2:
+        return "failed: too few observations or no variation in outcome"
+    X = np.column_stack([np.ones(len(d))] + [d[c].astype(float).values for c in xcols])
+    y = d[ycol].astype(float).values
+    g = pd.factorize(d[cluster])[0]; G = g.max() + 1
+    z, w = np.polynomial.hermite.hermgauss(nodes)
+    def nll(th):
+        beta, sig = th[:-1], math.exp(th[-1])
+        eta = X @ beta
+        e = eta[:, None] + math.sqrt(2) * sig * z[None, :]
+        ll = y[:, None] * e - np.logaddexp(0, e)
+        lc = np.zeros((G, nodes)); np.add.at(lc, g, ll)
+        m = lc.max(axis=1, keepdims=True)
+        return -float(np.sum(m[:, 0] + np.log((np.exp(lc - m) * w[None, :]).sum(axis=1) / math.sqrt(math.pi))))
+    b0 = sm.Logit(y, X).fit(disp=0).params if True else np.zeros(X.shape[1])
+    best = None
+    for ls in (-1.0, 0.0):
+        r = minimize(nll, np.append(b0, ls), method="BFGS", options=dict(gtol=1e-6, maxiter=500))
+        if best is None or r.fun < best.fun:
+            best = r
+    th = best.x
+    # numerical Hessian of nll at the optimum for the fixed-effect block (central differences)
+    k = X.shape[1]; h = 1e-4; H = np.zeros((k, k)); f0 = nll(th)
+    for i in range(k):
+        for j in range(i, k):
+            def f(si, sj):
+                t = th.copy(); t[i] += si * h; t[j] += sj * h; return nll(t)
+            H[i, j] = H[j, i] = (f(1, 1) - f(1, -1) - f(-1, 1) + f(-1, -1)) / (4 * h * h)
+    try:
+        cov = np.linalg.inv(H)
+    except np.linalg.LinAlgError:
+        return "failed: singular Hessian"
+    sigma = math.exp(th[-1]); note = []
+    if sigma < 1e-2: note.append("random-intercept SD near zero (boundary): model close to ordinary logistic")
+    if not best.success: note.append("optimizer: " + str(best.message))
+    return dict(beta=float(th[1]), se=float(math.sqrt(cov[1, 1])), sigma=sigma, n=len(d), events=int(y.sum()), clusters=int(G), note="; ".join(note))
 
 
 def rcs(x, knots):
@@ -249,7 +292,13 @@ def main():
         rows.append(dict(analysis="SA5 reports judged adequate", n="", events="", clusters="", OR="", lo="", hi="", note="not run: no --rob file (report_id, adequate)"))
     primary("SA6 without Chinese-language reports", df[df.language != "Chinese"])
     rows.append(dict(analysis="SA7 without reports before 2000", n="", events="", clusters="", OR="", lo="", hi="", note="not applicable (v1.5)"))
-    rows.append(dict(analysis="SA8 mixed-effects model", n="", events="", clusters="", OR="", lo="", hi="", note="not implemented here; see analysis_main.R"))
+    r8 = glmm_random_intercept(df)
+    if isinstance(r8, str):
+        rows.append(dict(analysis="SA8 mixed-effects model", n="", events="", clusters="", OR="", lo="", hi="", note=r8))
+    else:
+        rows.append(dict(analysis="SA8 mixed-effects model", n=r8["n"], events=r8["events"], clusters=r8["clusters"], OR=round(math.exp(r8["beta"]), 3),
+                         lo=round(math.exp(r8["beta"] - 1.96 * r8["se"]), 3), hi=round(math.exp(r8["beta"] + 1.96 * r8["se"]), 3),
+                         note=("Gauss-Hermite ML, random-intercept SD %.3f. " % r8["sigma"]) + r8["note"]))
     primary("A(a) without torsion-only inclusions", df[df.ws_basis != SP_FLAG])
     for lab, val in (("A(b) splenectomy with viability NR assigned non-viable (assumption)", 1.0), ("A(b) splenectomy with viability NR assigned viable", 0.0)):
         d = df.copy(); d["yb"] = d.y; d.loc[d.nr_removed, "yb"] = val; primary(lab, d, ycol="yb")
