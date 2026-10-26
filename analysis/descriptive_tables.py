@@ -33,6 +33,8 @@ def load(path):
     _, reports, patients = ce.load(path)
     rep = pd.DataFrame(reports)
     pat = pd.DataFrame(patients)
+    if pat.empty or rep.empty:
+        sys.exit('No patient or report rows in the workbook: nothing to describe.')
     for c in ["patient_id", "report_id", "same_patient_as"]:
         if c in pat:
             pat[c] = pat[c].map(ce.txt)
