@@ -1,0 +1,292 @@
+Format check: 291 ERROR(S), 0 WARNING(S)
+  ERROR row 11 WS0342_P1: idx_dur_lower_bound 'NR' is not in the list
+  ERROR row 14 WS0078_P1: idx_dur_intermittent 'NR' is not in the list
+  ERROR row 14 WS0078_P1: idx_dur_lower_bound 'NR' is not in the list
+  ERROR row 17 WS0237_P1: idx_dur_intermittent 'NR' is not in the list
+  ERROR row 17 WS0237_P1: idx_dur_lower_bound 'NR' is not in the list
+  ERROR row 18 WS0359_P1: idx_dur_lower_bound 'NR' is not in the list
+  ERROR row 27 WS0186_P2: idx_dur_intermittent 'NR' is not in the list
+  ERROR row 27 WS0186_P2: idx_dur_lower_bound 'NR' is not in the list
+  ERROR row 28 WS0186_P4: idx_dur_intermittent 'NR' is not in the list
+  ERROR row 28 WS0186_P4: idx_dur_lower_bound 'NR' is not in the list
+  ERROR row 29 WS0186_P5: idx_dur_intermittent 'NR' is not in the list
+  ERROR row 29 WS0186_P5: idx_dur_lower_bound 'NR' is not in the list
+  ERROR row 30 WS0186_P6: idx_dur_intermittent 'NR' is not in the list
+  ERROR row 30 WS0186_P6: idx_dur_lower_bound 'NR' is not in the list
+  ERROR row 31 WS0186_P7: idx_dur_intermittent 'NR' is not in the list
+  ERROR row 31 WS0186_P7: idx_dur_lower_bound 'NR' is not in the list
+  ERROR row 32 WS0186_P8: idx_dur_intermittent 'NR' is not in the list
+  ERROR row 32 WS0186_P8: idx_dur_lower_bound 'NR' is not in the list
+  ERROR row 33 WS0228_P1: idx_dur_intermittent 'NR' is not in the list
+  ERROR row 33 WS0228_P1: idx_dur_lower_bound 'NR' is not in the list
+  ERROR row 34 WS0228_P2: idx_dur_lower_bound 'NR' is not in the list
+  ERROR row 35 WS0228_P3: idx_dur_intermittent 'NR' is not in the list
+  ERROR row 35 WS0228_P3: idx_dur_lower_bound 'NR' is not in the list
+  ERROR row 41 WS0449_P3: idx_dur_intermittent 'NR' is not in the list
+  ERROR row 41 WS0449_P3: idx_dur_lower_bound 'NR' is not in the list
+  ERROR row 41 WS0449_P3: torsion_awaiting 'NR' is not in the list
+  ERROR row 43 WS0541_P1: idx_dur_intermittent 'NR' is not in the list
+  ERROR row 43 WS0541_P1: idx_dur_lower_bound 'NR' is not in the list
+  ERROR row 45 WS0619_P1: idx_dur_intermittent 'NR' is not in the list
+  ERROR row 45 WS0619_P1: idx_dur_lower_bound 'NR' is not in the list
+  ERROR row 46 WS0623_P1: idx_dur_intermittent 'NR' is not in the list
+  ERROR row 46 WS0623_P1: idx_dur_lower_bound 'NR' is not in the list
+  ERROR row 47 WS0601_P1: idx_dur_lower_bound 'NR' is not in the list
+  ERROR row 51 WS0552_P1: idx_dur_intermittent 'NR' is not in the list
+  ERROR row 51 WS0552_P1: idx_dur_lower_bound 'NR' is not in the list
+  ERROR row 56 WS0645_P1: idx_dur_intermittent 'NR' is not in the list
+  ERROR row 56 WS0645_P1: idx_dur_lower_bound 'NR' is not in the list
+  ERROR row 56 WS0645_P1: spleen_size_cm must be a number or NR (found '12.7 × 7.64 × 7.76')
+  ERROR row 58 WS0681_P1: idx_dur_lower_bound 'NR' is not in the list
+  ERROR row 58 WS0681_P1: reason_viable_removed 'Other (specify)' is not in the list
+  ERROR row 58 WS0681_P1: spleen_size_cm must be a number or NR (found '15 cm diameter')
+  ERROR row 59 WS0699_P1: spleen_size_cm must be a number or NR (found '16 × 10 × 7.5 cm')
+  ERROR row 65 WS0780_P1: reason_viable_removed 'Other (specify)' is not in the list
+  ERROR row 65 WS0780_P1: spleen_size_cm must be a number or NR (found '6 × 5.3 × 4.8 cm mass on ultrasound; resected specimen 5 × 5 × 2 cm')
+  ERROR row 67 WS1289_P1: spleen_size_cm must be a number or NR (found '11.4 × 3.3 cm on ultrasound')
+  ERROR row 69 WS1311_P1: spleen_size_cm must be a number or NR (found '17 cm cranio-caudal dimension on CT')
+  ERROR row 71 WS1359_P1: spleen_size_cm must be a number or NR (found '190 × 70 mm on ultrasound')
+  ERROR row 72 WS1361_P1: reason_viable_removed 'Other (specify)' is not in the list
+  ERROR row 73 WS1367_P2: reason_viable_removed 'Other (specify)' is not in the list
+  ERROR row 73 WS1367_P2: spleen_size_cm must be a number or NR (found '4.8 × 8.5 × 10 cm on final contrast CT')
+  ERROR row 75 WS1507_P1: idx_dur_intermittent 'NR' is not in the list
+  ERROR row 75 WS1507_P1: idx_dur_lower_bound 'NR' is not in the list
+  ERROR row 75 WS1507_P1: torsion_at_op 'Not applicable' is not in the list
+  ERROR row 76 WS1512_P1: spleen_size_cm must be a number or NR (found '17 × 7 × 10 cm on CT')
+  ERROR row 77 WS1527_P1: spleen_size_cm must be a number or NR (found '4.5 × 4 × 1 cm resected mass')
+  ERROR row 82 WS1592_P1: reason_viable_removed 'Other (specify)' is not in the list
+  ERROR row 82 WS1592_P1: spleen_size_cm must be a number or NR (found '17 cm long axis on CT; mass approximately 14 × 8 cm')
+  ERROR row 84 WS0049_P1: idx_dur_intermittent 'NR' is not in the list
+  ERROR row 84 WS0049_P1: idx_dur_lower_bound 'NR' is not in the list
+  ERROR row 85 WS0049_P2: idx_dur_intermittent 'NR' is not in the list
+  ERROR row 85 WS0049_P2: idx_dur_lower_bound 'NR' is not in the list
+  ERROR row 86 WS0049_P3: idx_dur_intermittent 'NR' is not in the list
+  ERROR row 86 WS0049_P3: idx_dur_lower_bound 'NR' is not in the list
+  ERROR row 87 WS0049_P4: idx_dur_intermittent 'NR' is not in the list
+  ERROR row 87 WS0049_P4: idx_dur_lower_bound 'NR' is not in the list
+  ERROR row 88 WS0049_P5: idx_dur_intermittent 'NR' is not in the list
+  ERROR row 88 WS0049_P5: idx_dur_lower_bound 'NR' is not in the list
+  ERROR row 89 WS0049_P6: idx_dur_intermittent 'NR' is not in the list
+  ERROR row 89 WS0049_P6: idx_dur_lower_bound 'NR' is not in the list
+  ERROR row 90 WS0124_P1: spleen_size_cm must be a number or NR (found '13 mm')
+  ERROR row 92 WS0444_P1: reason_viable_removed 'Other (high risk of rupture and thrombotic complications)' is not in the list
+  ERROR row 96 WS0580_P4: spleen_size_cm must be a number or NR (found '9 × 7 × 4.5 cm')
+  ERROR row 97 WS0624_P1: spleen_size_cm must be a number or NR (found '10 × 7 cm')
+  ERROR row 98 WS1856_P1: spleen_size_cm must be a number or NR (found '20 × 10 × 10 cm')
+  ERROR row 99 WS1860_P1: spleen_size_cm must be a number or NR (found '15.5 × 4 cm')
+  ERROR row 102 WS1869_P1: spleen_size_cm must be a number or NR (found '9 × 5 cm')
+  ERROR row 104 WS1902_P1: spleen_size_cm must be a number or NR (found '3 × 5 × 6 cm palpable mass')
+  ERROR row 106 WS1903_P1: spleen_size_cm must be a number or NR (found '20 × 15 cm')
+  ERROR row 107 WS1908_P1: ws_basis 'Imaging' is not in the list
+  ERROR row 108 WS1913_P1: spleen_size_cm must be a number or NR (found '22 × 18 cm')
+  ERROR row 109 WS1916_P1: reason_viable_removed 'Other (developmental abnormality extending into the inguinal hernia)' is not in the list
+  ERROR row 109 WS1916_P1: spleen_size_cm must be a number or NR (found '10 × 1 × 1 cm resected splenic tissue')
+  ERROR row 110 WS1929_P1: viab_basis 'Intraoperative and pathology' is not in the list
+  ERROR row 110 WS1929_P1: spleen_size_cm must be a number or NR (found '13 x 10 x 6 cm')
+  ERROR row 111 WS1927_P1: ws_basis 'Imaging' is not in the list
+  ERROR row 111 WS1927_P1: deferred_reason 'Patient declined recommended splenectomy or splenopexy' is not in the list
+  ERROR row 111 WS1927_P1: procedure 'No splenic surgery' is not in the list
+  ERROR row 111 WS1927_P1: spleen_size_cm must be a number or NR (found '104 x 55 x 89 mm pelvic mass')
+  ERROR row 112 WS2001_P1: idx_dur_cat_imprecise '>7 to 30' is not in the list
+  ERROR row 112 WS2001_P1: viab_basis 'Intraoperative and pathology' is not in the list
+  ERROR row 112 WS2001_P1: spleen_size_cm must be a number or NR (found '10 x 7 x 5 cm')
+  ERROR row 113 WS2025_P1: presentation 'Chronic/intermittent' is not in the list
+  ERROR row 113 WS2025_P1: idx_dur_cat_imprecise '>7 to 30' is not in the list
+  ERROR row 113 WS2025_P1: fixation 'Other' is not in the list
+  ERROR row 113 WS2025_P1: spleen_size_cm must be a number or NR (found '6 x 5 x 4 cm mass on examination')
+  ERROR row 114 WS2025_P2: idx_dur_cat_imprecise '>2 to 7' is not in the list
+  ERROR row 114 WS2025_P2: fixation 'Other' is not in the list
+  ERROR row 114 WS2025_P2: spleen_size_cm must be a number or NR (found '6 x 7 x 4 cm mass on examination')
+  ERROR row 115 WS2040_P1: idx_dur_cat_imprecise '≤2' is not in the list
+  ERROR row 116 WS2041_P1: presentation 'Chronic/intermittent' is not in the list
+  ERROR row 116 WS2041_P1: idx_dur_cat_imprecise '>30' is not in the list
+  ERROR row 116 WS2041_P1: viab_basis 'Intraoperative and pathology' is not in the list
+  ERROR row 116 WS2041_P1: spleen_size_cm must be a number or NR (found '15 x 7.5 x 7 cm on CT')
+  ERROR row 117 WS2092_P1: idx_dur_cat_imprecise '≤2' is not in the list
+  ERROR row 117 WS2092_P1: viab_basis 'Not reported' is not in the list
+  ERROR row 117 WS2092_P1: spleen_size_cm must be a number or NR (found '15 x 5.5 cm on ultrasound')
+  ERROR row 118 WS2093_P1: ws_basis 'Operation' is not in the list
+  ERROR row 118 WS2093_P1: presentation 'Chronic/intermittent' is not in the list
+  ERROR row 118 WS2093_P1: idx_dur_cat_imprecise '>30' is not in the list
+  ERROR row 118 WS2093_P1: procedure 'No splenic surgery' is not in the list
+  ERROR row 119 WS2111_P1: idx_dur_cat_imprecise '>2 to 7' is not in the list
+  ERROR row 119 WS2111_P1: spleen_size_cm must be a number or NR (found '12 x 10 x 8 cm intraoperatively')
+  ERROR row 120 WS2119_P1: ws_basis 'Operation' is not in the list
+  ERROR row 120 WS2119_P1: idx_dur_cat_imprecise '≤2' is not in the list
+  ERROR row 120 WS2119_P1: viab_basis 'Not reported' is not in the list
+  ERROR row 120 WS2119_P1: spleen_size_cm must be a number or NR (found '11 x 6 x 3 cm')
+  ERROR row 121 WS2130_P1: idx_dur_cat_imprecise '>30' is not in the list
+  ERROR row 121 WS2130_P1: spleen_size_cm must be a number or NR (found '7 x 6 x 5 cm on examination')
+  ERROR row 122 WS2135_P1: idx_dur_cat_imprecise '>2 to 7' is not in the list
+  ERROR row 122 WS2135_P1: spleen_size_cm must be a number or NR (found 'Normal size intraoperatively')
+  ERROR row 123 WS2135_P2: idx_dur_cat_imprecise '>2 to 7' is not in the list
+  ERROR row 123 WS2135_P2: viab_basis 'Intraoperative and pathology' is not in the list
+  ERROR row 123 WS2135_P2: spleen_size_cm must be a number or NR (found '10 x 7 x 3 cm')
+  ERROR row 124 WS2137_P1: idx_dur_cat_imprecise '>2 to 7' is not in the list
+  ERROR row 124 WS2137_P1: viab_basis 'Not reported' is not in the list
+  ERROR row 124 WS2137_P1: spleen_size_cm must be a number or NR (found '14 x 9 x 4 cm')
+  ERROR row 125 WS2138_P1: idx_dur_cat_imprecise '>30' is not in the list
+  ERROR row 125 WS2138_P1: viab_basis 'Intraoperative and pathology' is not in the list
+  ERROR row 125 WS2138_P1: spleen_size_cm must be a number or NR (found '20 x 12 x 10 cm intraoperatively')
+  ERROR row 126 WS2313_P1: idx_dur_cat_imprecise '≤2' is not in the list
+  ERROR row 126 WS2313_P1: viab_basis 'Intraoperative and pathology' is not in the list
+  ERROR row 127 WS2348_P1: idx_dur_cat_imprecise '≤2' is not in the list
+  ERROR row 127 WS2348_P1: viab_basis 'Intraoperative and pathology' is not in the list
+  ERROR row 127 WS2348_P1: spleen_size_cm must be a number or NR (found '18 x 15 x 12 cm')
+  ERROR row 128 WS2314_P1: idx_dur_cat_imprecise '>2 to 7' is not in the list
+  ERROR row 128 WS2314_P1: viab_basis 'Intraoperative and pathology' is not in the list
+  ERROR row 129 WS2480_P1: idx_dur_cat_imprecise '>2 to 7' is not in the list
+  ERROR row 129 WS2480_P1: viab_basis 'Not reported' is not in the list
+  ERROR row 129 WS2480_P1: spleen_size_cm must be a number or NR (found '16 x 8 x 7.5 cm')
+  ERROR row 130 WS2018_P1: idx_dur_cat_imprecise '≤2' is not in the list
+  ERROR row 130 WS2018_P1: viab_basis 'Pathology' is not in the list
+  ERROR row 130 WS2018_P1: spleen_size_cm must be a number or NR (found '16.3 x 8.2 cm')
+  ERROR row 131 WS2059_P1: ws_basis 'Operation and pathology' is not in the list
+  ERROR row 131 WS2059_P1: idx_dur_cat_imprecise '>2 to 7' is not in the list
+  ERROR row 131 WS2059_P1: viab_basis 'Not reported' is not in the list
+  ERROR row 131 WS2059_P1: spleen_size_cm must be a number or NR (found '6 x 4 x 3 cm')
+  ERROR row 132 WS0577: design 'Clinical image' is not in the list
+  ERROR row 132 WS2062_P1: idx_dur_cat_imprecise '≤2' is not in the list
+  ERROR row 132 WS2062_P1: viab_basis 'Intraoperative and pathology' is not in the list
+  ERROR row 132 WS2062_P1: reason_viable_removed 'Other (acute torsion with severe congestion and enlargement)' is not in the list
+  ERROR row 132 WS2062_P1: spleen_size_cm must be a number or NR (found '20 x 10 x 8 cm')
+  ERROR row 133 WS2125_P1: idx_dur_cat_imprecise '>30' is not in the list
+  ERROR row 133 WS2125_P1: procedure 'No splenic surgery' is not in the list
+  ERROR row 133 WS2125_P1: fixation 'Yes' is not in the list
+  ERROR row 133 WS2125_P1: spleen_size_cm must be a number or NR (found '14 x 8 cm mass')
+  ERROR row 134 WS1513_P1: idx_dur_cat_imprecise '>2 to 7' is not in the list
+  ERROR row 134 WS1513_P1: viab_basis 'Intraoperative and pathology' is not in the list
+  ERROR row 135 WS1565_P1: idx_dur_cat_imprecise '>2 to 7' is not in the list
+  ERROR row 135 WS1565_P1: viab_basis 'Not reported' is not in the list
+  ERROR row 135 WS1565_P1: spleen_size_cm must be a number or NR (found '30 x 25 x 10 cm')
+  ERROR row 136 WS1880_P1: idx_dur_cat_imprecise '>2 to 7' is not in the list
+  ERROR row 136 WS1880_P1: viab_basis 'Intraoperative and pathology' is not in the list
+  ERROR row 136 WS1880_P1: spleen_size_cm must be a number or NR (found '25 x 12 x 5 cm')
+  ERROR row 137 WS2116_P1: idx_dur_cat_imprecise '≤2' is not in the list
+  ERROR row 137 WS2116_P1: viab_basis 'Not reported' is not in the list
+  ERROR row 137 WS2116_P1: reason_viable_removed 'NR' is not in the list
+  ERROR row 137 WS2116_P1: spleen_size_cm must be a number or NR (found '15.2 x 5.4 cm')
+  ERROR row 138 WS0432_P1: idx_dur_cat_imprecise '>2 to 7' is not in the list
+  ERROR row 138 WS0432_P1: viab_basis 'Intraoperative and pathology' is not in the list
+  ERROR row 138 WS0432_P1: procedure 'No splenic surgery' is not in the list
+  ERROR row 138 WS0432_P1: fixation 'Yes' is not in the list
+  ERROR row 139 WS0526_P1: ws_basis 'Operation' is not in the list
+  ERROR row 139 WS0526_P1: idx_dur_cat_imprecise '>30' is not in the list
+  ERROR row 139 WS0526_P1: viab_basis 'Not reported' is not in the list
+  ERROR row 139 WS0526_P1: spleen_size_cm must be a number or NR (found '10 x 20 cm mass on ultrasound')
+  ERROR row 140 WS0526_P2: ws_basis 'Operation' is not in the list
+  ERROR row 140 WS0526_P2: idx_dur_cat_imprecise '>30' is not in the list
+  ERROR row 141 WS0577_P1: idx_dur_cat_imprecise '≤7' is not in the list
+  ERROR row 141 WS0577_P1: procedure 'No splenic surgery' is not in the list
+  ERROR row 141 WS0577_P1: fixation 'Yes' is not in the list
+  ERROR row 142 WS1526_P1: idx_dur_cat_imprecise '>30' is not in the list
+  ERROR row 142 WS1526_P1: reason_viable_removed 'Other (hypersplenism, varices and concern for future torsion)' is not in the list
+  ERROR row 142 WS1526_P1: spleen_size_cm must be a number or NR (found '20 x 15 x 8 cm')
+  ERROR row 143 WS1704_P1: idx_dur_cat_imprecise '≤2' is not in the list
+  ERROR row 143 WS1704_P1: spleen_size_cm must be a number or NR (found '16 x 10 cm')
+  ERROR row 144 WS1589_P1: idx_dur_cat_imprecise '≤2' is not in the list
+  ERROR row 144 WS1589_P1: spleen_size_cm must be a number or NR (found '15 x 10 x 10 cm')
+  ERROR row 145 WS0132_P1: idx_dur_cat_imprecise '>2 to 7' is not in the list
+  ERROR row 145 WS0132_P1: viab_basis 'Intraoperative and pathology' is not in the list
+  ERROR row 146 WS1373_P1: idx_dur_lower_bound 'NR' is not in the list
+  ERROR row 146 WS1373_P1: idx_dur_cat_imprecise 'NR' is not in the list
+  ERROR row 147 WS1584_P1: idx_dur_cat_imprecise 'NR' is not in the list
+  ERROR row 148 WS0031_P1: idx_dur_cat_imprecise 'NR' is not in the list
+  ERROR row 149 WS0176_P1: idx_dur_cat_imprecise 'NR' is not in the list
+  ERROR row 149 WS0176_P1: reason_viable_removed 'Non-viable spleen with infarction and rupture' is not in the list
+  ERROR row 150 WS1614_P1: idx_dur_lower_bound 'NR' is not in the list
+  ERROR row 150 WS1614_P1: idx_dur_cat_imprecise 'NR' is not in the list
+  ERROR row 151 WS0042_P1: idx_dur_cat_imprecise 'NR' is not in the list
+  ERROR row 151 WS0042_P1: reason_viable_removed 'Partial necrosis and infarction' is not in the list
+  ERROR row 152 WS0055_P1: idx_dur_intermittent 'NR' is not in the list
+  ERROR row 152 WS0055_P1: idx_dur_lower_bound 'NR' is not in the list
+  ERROR row 152 WS0055_P1: idx_dur_cat_imprecise 'NR' is not in the list
+  ERROR row 152 WS0055_P1: reason_viable_removed 'Hemorrhagic necrosis from torsion' is not in the list
+  ERROR row 153 WS0067_P1: idx_dur_cat_imprecise 'NR' is not in the list
+  ERROR row 153 WS0067_P1: reason_viable_removed 'Persistent necrosis and absent perfusion after detorsion' is not in the list
+  ERROR row 154 WS0079_P1: idx_dur_cat_imprecise 'NR' is not in the list
+  ERROR row 154 WS0079_P1: reason_viable_removed 'Necrosis and non-viability' is not in the list
+  ERROR row 155 WS0108_P1: idx_dur_cat_imprecise 'NR' is not in the list
+  ERROR row 155 WS0108_P1: reason_viable_removed 'Necrotic spleen' is not in the list
+  ERROR row 156 WS0045_P1: idx_dur_lower_bound 'NR' is not in the list
+  ERROR row 156 WS0045_P1: idx_dur_cat_imprecise 'NR' is not in the list
+  ERROR row 157 WS0057_P1: idx_dur_cat_imprecise 'NR' is not in the list
+  ERROR row 158 WS0068_P1: idx_dur_cat_imprecise 'NR' is not in the list
+  ERROR row 158 WS0068_P1: reason_viable_removed 'Torsion and infarction' is not in the list
+  ERROR row 159 WS0072_P1: idx_dur_intermittent 'NR' is not in the list
+  ERROR row 159 WS0072_P1: idx_dur_lower_bound 'NR' is not in the list
+  ERROR row 159 WS0072_P1: idx_dur_cat_imprecise 'NR' is not in the list
+  ERROR row 159 WS0072_P1: reason_viable_removed 'Gangrenous and globally ischemic spleen' is not in the list
+  ERROR row 160 WS0117_P1: idx_dur_cat_imprecise 'NR' is not in the list
+  ERROR row 160 WS0117_P1: reason_viable_removed 'Splenic torsion with associated volvulus and portal hypertension' is not in the list
+  ERROR row 161 WS0142_P1: idx_dur_cat_imprecise 'NR' is not in the list
+  ERROR row 161 WS0142_P1: reason_viable_removed 'Infarction and splenomegaly' is not in the list
+  ERROR row 162 WS0156_P1: idx_dur_cat_imprecise 'NR' is not in the list
+  ERROR row 162 WS0156_P1: reason_viable_removed 'Multifocal infarction and necrosis' is not in the list
+  ERROR row 163 WS0164_P1: idx_dur_cat_imprecise 'NR' is not in the list
+  ERROR row 164 WS0172_P1: idx_dur_intermittent 'NR' is not in the list
+  ERROR row 164 WS0172_P1: idx_dur_lower_bound 'NR' is not in the list
+  ERROR row 164 WS0172_P1: idx_dur_cat_imprecise 'NR' is not in the list
+  ERROR row 164 WS0172_P1: reason_viable_removed 'No perfusion after detorsion and splenic infarction' is not in the list
+  ERROR row 165 WS0159_P1: idx_dur_cat_imprecise 'NR' is not in the list
+  ERROR row 165 WS0159_P1: reason_viable_removed 'Necrosis and absent reperfusion after detorsion' is not in the list
+  ERROR row 166 WS0159_P2: idx_dur_cat_imprecise 'NR' is not in the list
+  ERROR row 166 WS0159_P2: reason_viable_removed 'No reperfusion after detorsion' is not in the list
+  ERROR row 167 WS0159_P3: idx_dur_cat_imprecise 'NR' is not in the list
+  ERROR row 167 WS0159_P3: reason_viable_removed 'Necrosis and absent reperfusion after detorsion' is not in the list
+  ERROR row 168 WS0191_P1: idx_dur_intermittent 'NR' is not in the list
+  ERROR row 168 WS0191_P1: idx_dur_lower_bound 'NR' is not in the list
+  ERROR row 168 WS0191_P1: idx_dur_cat_imprecise 'NR' is not in the list
+  ERROR row 169 WS0193_P1: idx_dur_lower_bound 'NR' is not in the list
+  ERROR row 169 WS0193_P1: idx_dur_cat_imprecise 'NR' is not in the list
+  ERROR row 170 WS0205_P1: idx_dur_lower_bound 'NR' is not in the list
+  ERROR row 170 WS0205_P1: idx_dur_cat_imprecise 'NR' is not in the list
+  ERROR row 171 WS0220_P1: idx_dur_cat_imprecise 'NR' is not in the list
+  ERROR row 171 WS0220_P1: reason_viable_removed 'Chronic congestive splenomegaly with suspected torsion' is not in the list
+  ERROR row 172 WS0232_P1: idx_dur_cat_imprecise 'NR' is not in the list
+  ERROR row 173 WS0239_P1: idx_dur_cat_imprecise 'NR' is not in the list
+  ERROR row 173 WS0239_P1: reason_viable_removed 'Torsed wandering spleen' is not in the list
+  ERROR row 174 WS0240_P1: idx_dur_cat_imprecise 'NR' is not in the list
+  ERROR row 174 WS0240_P1: reason_viable_removed 'Massive splenomegaly and torsion' is not in the list
+  ERROR row 175 WS0244_P1: idx_dur_cat_imprecise 'NR' is not in the list
+  ERROR row 175 WS0244_P1: reason_viable_removed 'Non-viability after detorsion' is not in the list
+  ERROR row 176 WS0253_P1: idx_dur_lower_bound 'NR' is not in the list
+  ERROR row 176 WS0253_P1: idx_dur_cat_imprecise 'NR' is not in the list
+  ERROR row 176 WS0253_P1: reason_viable_removed 'Thrombosed twisted ectopic splenic mass' is not in the list
+  ERROR row 177 WS0264_P1: idx_dur_cat_imprecise 'NR' is not in the list
+  ERROR row 177 WS0264_P1: deferred_reason 'Parents did not obtain the ordered CT after the earlier ultrasound' is not in the list
+  ERROR row 177 WS0264_P1: perfusion 'Very low' is not in the list
+  ERROR row 177 WS0264_P1: reason_viable_removed 'Infarcted spleen' is not in the list
+  ERROR row 178 WS0286_P1: idx_dur_intermittent 'NR' is not in the list
+  ERROR row 178 WS0286_P1: idx_dur_lower_bound 'NR' is not in the list
+  ERROR row 178 WS0286_P1: idx_dur_cat_imprecise 'NR' is not in the list
+  ERROR row 178 WS0286_P1: torsion_awaiting 'NR' is not in the list
+  ERROR row 178 WS0286_P1: reason_viable_removed 'NR' is not in the list
+  ERROR row 179 WS0292_P1: idx_dur_cat_imprecise 'NR' is not in the list
+  ERROR row 179 WS0292_P1: deferred_reason 'Initial treatment for presumed enteric fever preceded CT diagnosis and surgery' is not in the list
+  ERROR row 179 WS0292_P1: reason_viable_removed 'NR' is not in the list
+  ERROR row 180 WS0293_P1: idx_dur_cat_imprecise 'NR' is not in the list
+  ERROR row 180 WS0293_P1: reason_viable_removed 'Extensive hemorrhagic infarction with no reperfusion after detorsion' is not in the list
+  ERROR row 181 WS0320_P1: idx_dur_intermittent 'NR' is not in the list
+  ERROR row 181 WS0320_P1: idx_dur_lower_bound 'NR' is not in the list
+  ERROR row 181 WS0320_P1: idx_dur_cat_imprecise 'NR' is not in the list
+  ERROR row 181 WS0320_P1: reason_viable_removed 'Infarcted spleen with thrombosed splenic vein and failed detorsion' is not in the list
+  ERROR row 182 WS1577_P1: idx_dur_lower_bound 'NR' is not in the list
+  ERROR row 182 WS1577_P1: idx_dur_cat_imprecise 'NR' is not in the list
+  ERROR row 182 WS1577_P1: torsion_awaiting 'NR' is not in the list
+  ERROR row 182 WS1577_P1: fixation 'Splenopexy or tethering' is not in the list
+  ERROR row 182 WS1577_P1: reason_viable_removed 'Splenic-vein thrombosis with splenomegaly, portal hypertension, and gastric varices' is not in the list
+  ERROR row 183 WS0709_P1: idx_dur_cat_imprecise 'NR' is not in the list
+  ERROR row 183 WS0709_P1: fixation 'Splenopexy' is not in the list
+  ERROR row 183 WS0709_P1: reason_viable_removed 'Follow-up scintigraphy demonstrated splenic infarction after initial detorsion and splenopexy' is not in the list
+  ERROR row 184 WS0548_P1: idx_dur_intermittent 'NR' is not in the list
+  ERROR row 184 WS0548_P1: idx_dur_lower_bound 'NR' is not in the list
+  ERROR row 184 WS0548_P1: idx_dur_cat_imprecise 'NR' is not in the list
+  ERROR row 184 WS0548_P1: reason_viable_removed 'NR' is not in the list
+  ERROR row 185 WS0719_P1: idx_dur_cat_imprecise 'NR' is not in the list
+  ERROR row 186 WS0719_P2: idx_dur_cat_imprecise 'NR' is not in the list
+  ERROR row 187 WS0719_P3: idx_dur_cat_imprecise 'NR' is not in the list
+  ERROR row 187 WS0719_P3: age_years 19.00 is 18 or more: not eligible, should not be in this sheet
+  ERROR row 188 WS0653_P1: idx_dur_cat_imprecise 'NR' is not in the list
+  ERROR row 206 WS1526: design 'Letter to the editor' is not in the list
+  ERROR row 223 WS1859: design 'Retrospective case series' is not in the list
