@@ -1,0 +1,39 @@
+﻿type,report_id,patient_id,E1,E2
+patient only in E1,WS0016,WS0016_P23,present,
+patient only in E1,WS0175,WS0175_P1,present,
+patient only in E1,WS0642,WS0642_P1,present,
+patient only in E1,WS0642,WS0642_P2,present,
+patient only in E1,WS0696,WS0696_P1,present,
+patient only in E1,WS0749,WS0749_P1,present,
+patient only in E1,WS1367,WS1367_P1,present,
+patient only in E1,WS1859,WS1859_P1,present,
+patient only in E1,WS1859,WS1859_P10,present,
+patient only in E1,WS1859,WS1859_P11,present,
+patient only in E1,WS1859,WS1859_P12,present,
+patient only in E1,WS1859,WS1859_P13,present,
+patient only in E1,WS1859,WS1859_P14,present,
+patient only in E1,WS1859,WS1859_P15,present,
+patient only in E1,WS1859,WS1859_P16,present,
+patient only in E1,WS1859,WS1859_P17,present,
+patient only in E1,WS1859,WS1859_P18,present,
+patient only in E1,WS1859,WS1859_P19,present,
+patient only in E1,WS1859,WS1859_P2,present,
+patient only in E1,WS1859,WS1859_P3,present,
+patient only in E1,WS1859,WS1859_P4,present,
+patient only in E1,WS1859,WS1859_P5,present,
+patient only in E1,WS1859,WS1859_P6,present,
+patient only in E1,WS1859,WS1859_P7,present,
+patient only in E1,WS1859,WS1859_P8,present,
+patient only in E1,WS1859,WS1859_P9,present,
+patient only in E2,WS0049,WS0049_P3,,present
+patient only in E2,WS0049,WS0049_P4,,present
+patient only in E2,WS1367,WS1367_P2,,present
+patient only in E2,WS2025,WS2025_P2,,present
+child count / patient rows differ,WS0016,,n_children_individual=1; patient rows=1,n_children_individual=0; patient rows=0
+child count / patient rows differ,WS0049,,n_children_individual=4; patient rows=4,n_children_individual=6; patient rows=6
+child count / patient rows differ,WS0175,,n_children_individual=1; patient rows=1,n_children_individual=0; patient rows=0
+child count / patient rows differ,WS0642,,n_children_individual=2; patient rows=2,n_children_individual=0; patient rows=0
+child count / patient rows differ,WS0696,,n_children_individual=1; patient rows=1,n_children_individual=0; patient rows=0
+child count / patient rows differ,WS0749,,n_children_individual=1; patient rows=1,n_children_individual=0; patient rows=0
+child count / patient rows differ,WS1859,,n_children_individual=19; patient rows=19,n_children_individual=0; patient rows=0
+child count / patient rows differ,WS2025,,n_children_individual=1; patient rows=1,n_children_individual=2; patient rows=2

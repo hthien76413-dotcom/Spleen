@@ -1,0 +1,32 @@
+EXTRACTION: COMPARISON OF THE TWO FILES
+E1 file: E1.xlsx | E2 file: E2.xlsx | made 2026-10-26
+Contains both extractors' record-level values: give it to the adjudicator only after both have finished.
+
+COVERAGE
+  Reports: 269 in E1, 269 in E2, 269 in both
+  Patients: 351 in E1, 329 in E2, 325 matched by patient_id, 26 only in E1, 4 only in E2
+  Reports where the child count or the number of patient rows differs: 8
+
+PRIMARY EXPOSURE (index-episode duration, categories recomputed from the days)
+  matched patients 325; compared 325; left out because blank in one or both files 0
+  agreement 68.0%; kappa 0.57 (rough 95% CI 0.50 to 0.64)
+  contingency (rows E1, columns E2; <=2 d / 3-7 d / 8-30 d / >30 d / NR):
+    <=2 d    49     2     2     2    20
+    3-7 d     4    43     1     0    29
+    8-30 d    0     1    13     1    10
+    >30 d     1     2     3    28     8
+    NR        3     3     8     4    88
+  days (idx_dur_days): agree within tolerance (0.5 day or 10%) in 213 of 325 where both gave a value or NR; blank in one file 0
+
+PRIMARY OUTCOME (derived from viability and procedure: Non-viable / Viable / other)
+  compared 325; left out because blank in one or both files 0
+  agreement 72.9%; kappa 0.57 (rough 95% CI 0.49 to 0.64)
+  raw viability field (Viable / Partially non-viable / Non-viable / NR / Not applicable): agreement 67.4%; kappa 0.53 (rough 95% CI 0.46 to 0.60)
+
+ALL CODED FIELDS (56 fields; free text, sources and derived columns not compared)
+  field values compared (cells filled in at least one file): 16154; agree 10731 (66.4%); blank in one file 1561; differ 3862
+  fields with the lowest agreement (at least 3 values compared): prev_surg_type 0/165, aetiology_cause 0/273, idx_dur_cat_imprecise 0/8, missed_dx_contact 0/232, fixation_other 0/58, recurrence_details 0/215, missed_dx_alt 1/230, cond_other 2/325
+
+PATIENTS ONLY IN ONE FILE
+  E1 only: WS0016_P23, WS0175_P1, WS0642_P1, WS0642_P2, WS0696_P1, WS0749_P1, WS1367_P1, WS1859_P1, WS1859_P10, WS1859_P11, WS1859_P12, WS1859_P13, WS1859_P14, WS1859_P15, WS1859_P16, WS1859_P17, WS1859_P18, WS1859_P19, WS1859_P2, WS1859_P3, WS1859_P4, WS1859_P5, WS1859_P6, WS1859_P7, WS1859_P8, WS1859_P9
+  E2 only: WS0049_P3, WS0049_P4, WS1367_P2, WS2025_P2
