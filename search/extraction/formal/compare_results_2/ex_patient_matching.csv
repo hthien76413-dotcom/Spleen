@@ -1,0 +1,6 @@
+﻿type,report_id,patient_id,E1,E2
+patient only in E1,WS0049,WS0049_P3,present,
+patient only in E1,WS0049,WS0049_P4,present,
+patient only in E1,WS0696,WS0696_P1,present,
+patient only in E2,WS0696,WS0696_P16,,present
+child count / patient rows differ,WS0049,,n_children_individual=6; patient rows=6,n_children_individual=4; patient rows=4

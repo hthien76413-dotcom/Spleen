@@ -1,0 +1,32 @@
+EXTRACTION: COMPARISON OF THE TWO FILES
+E1 file: E1.xlsx | E2 file: E2.xlsx | made 2026-10-26
+Contains both extractors' record-level values: give it to the adjudicator only after both have finished.
+
+COVERAGE
+  Reports: 269 in E1, 269 in E2, 269 in both
+  Patients: 352 in E1, 350 in E2, 349 matched by patient_id, 3 only in E1, 1 only in E2
+  Reports where the child count or the number of patient rows differs: 1
+
+PRIMARY EXPOSURE (index-episode duration, categories recomputed from the days)
+  matched patients 349; compared 349; left out because blank in one or both files 0
+  agreement 72.2%; kappa 0.64 (rough 95% CI 0.57 to 0.70)
+  contingency (rows E1, columns E2; <=2 d / 3-7 d / 8-30 d / >30 d / NR):
+    <=2 d    56     2     3     1    20
+    3-7 d     5    52     0     1    28
+    8-30 d    0     1    17     1    11
+    >30 d     2     2     2    36     9
+    NR        1     1     5     2    91
+  days (idx_dur_days): agree within tolerance (0.5 day or 10%) in 242 of 349 where both gave a value or NR; blank in one file 0
+
+PRIMARY OUTCOME (derived from viability and procedure: Non-viable / Viable / other)
+  compared 349; left out because blank in one or both files 0
+  agreement 75.1%; kappa 0.59 (rough 95% CI 0.52 to 0.67)
+  raw viability field (Viable / Partially non-viable / Non-viable / NR / Not applicable): agreement 71.1%; kappa 0.58 (rough 95% CI 0.51 to 0.65)
+
+ALL CODED FIELDS (56 fields; free text, sources and derived columns not compared)
+  field values compared (cells filled in at least one file): 17391; agree 11690 (67.2%); blank in one file 1707; differ 3994
+  fields with the lowest agreement (at least 3 values compared): prev_surg_type 0/188, aetiology_cause 0/297, idx_dur_cat_imprecise 0/9, missed_dx_contact 0/255, fixation_other 0/59, recurrence_details 0/239, missed_dx_alt 1/254, cond_other 2/349
+
+PATIENTS ONLY IN ONE FILE
+  E1 only: WS0049_P3, WS0049_P4, WS0696_P1
+  E2 only: WS0696_P16
