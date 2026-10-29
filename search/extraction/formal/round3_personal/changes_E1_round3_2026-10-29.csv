@@ -1,0 +1,5 @@
+﻿patient_id,field,my_reread_value,adjudicated_value,done,note
+WS0277_P1,viability,Partially non-viable,Non-viable,,
+WS0493_P1,viability,Partially non-viable,Viable,,
+WS0493_P1,viab_basis,Both,Intraoperative,,
+WS0789_P1,viab_basis,Both,Intraoperative,,

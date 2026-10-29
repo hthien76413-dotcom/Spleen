@@ -1,0 +1,9 @@
+﻿patient_id,field,my_reread_value,adjudicated_value,done,note
+WS0049_P5,viability,NR,Non-viable,,
+WS0049_P5,viab_basis,NR,Both,,
+WS0049_P6,viability,NR,Non-viable,,
+WS0049_P6,viab_basis,NR,Both,,
+WS0277_P1,viab_basis,Intraoperative,Both,,
+WS0642_P1,viab_basis,Intraoperative,Both,,
+WS2041_P1,viab_basis,Histology,Both,,
+WS2138_P1,viab_basis,Histology,Both,,
