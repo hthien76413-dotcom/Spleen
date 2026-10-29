@@ -1,0 +1,6 @@
+patient_id,field,my_current_value,adjudicated_value,done,note,adjudicator_ruling,final_value
+WS0141_P1,idx_dur_days,0.1,NR,,"未改，交杨俊复核：原文写腹痛、干呕 2～3 小时，并写""开腹、胃固定、脾固定在入院 4 小时内完成""，症状时间明确，按规则 1、3 可编码 0.1 天（若加入院后 4 小时则约 0.3 天），不支持填 NR。",,
+WS0734_P1,idx_dur_days,2,7,,"未改，交杨俊复核：原文只写""2-day history of acute left side abdominal pain""，没有 7 天的依据。",,
+WS2032_P1,idx_dur_days,7.5,NR,,"未改，交杨俊复核：原文写""因腹痛7～8 d""，范围按规则 3 取中点 7.5，原文给了症状时间，不支持填 NR（下限 Yes 保留）。",,
+WS2093_P1,idx_dur_lower_bound,No,Yes,,"未改，交杨俊复核：原文写""术前 1 d 禁食水补液""，可知手术在备术后次日，手术时间不是完全没写；天数为 NR（""1 年余""，只记类别），下限暂保留 No。",,
+WS2484_P1,idx_dur_days,7.5,NR,,未改，交杨俊复核：与 WS2032 是同一篇文章，理由同上。,,
